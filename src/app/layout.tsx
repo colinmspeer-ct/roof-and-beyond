@@ -30,6 +30,11 @@ export const metadata: Metadata = {
     type: "website",
     siteName: brand.dba,
     locale: "en_US",
+    title: {
+      default: `${brand.dba} | Roofs, walls, and gutters in four Pennsylvania counties`,
+      template: `%s | ${brand.dba}`,
+    },
+    description: brand.description,
   },
   robots: { index: true, follow: true },
 };

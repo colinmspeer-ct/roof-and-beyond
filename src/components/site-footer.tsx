@@ -14,8 +14,8 @@ export function SiteFooter() {
             className="h-14 w-auto"
           />
           <p className="mt-4 text-sm leading-6 text-sky">
-            {brand.dba} is the DBA of {brand.legalName}. Preview build. This
-            site is not deployed, and {brand.domain} has not been changed.
+            {brand.dbaLine}. Preview build. This site is not deployed, and{" "}
+            {brand.domain} has not been changed.
           </p>
         </div>
         <div>
@@ -68,8 +68,7 @@ export function SiteFooter() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-4 text-xs text-sky sm:flex-row sm:justify-between">
           <p>
-            © {new Date().getFullYear()} {brand.legalName}. {brand.dba} is a
-            DBA of {brand.legalName}.
+            © {new Date().getFullYear()} {brand.dba}. {brand.dbaLine}.
           </p>
           <p className="flex gap-4">
             <Link href="/privacy/" className="hover:text-white">

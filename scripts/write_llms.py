@@ -8,7 +8,7 @@ base = "https://roofnbeyond.com"
 lines = [
     "# Roof & Beyond Home Solutions",
     "",
-    "> Roof & Beyond Home Solutions is the DBA of Pro Tech Brands LLC. The legal name and schema name are Pro Tech Brands LLC. An alternate spelling is Roof and Beyond Home Solutions. This preview describes roofing, roof repair, siding, windows, gutters, and gutter guards for houses in Lancaster, Chester, Delaware, and York counties, Pennsylvania. roofnbeyond.com is not live. Bracketed placeholders are unpublished facts, not claims.",
+    "> Roof & Beyond Home Solutions estimates roofing, roof repair, siding, windows, gutters, and gutter guards for houses in Lancaster, Chester, Delaware, and York counties, Pennsylvania. Alternate spelling: Roof and Beyond Home Solutions. Roof & Beyond Home Solutions is a DBA of Pro Tech Brands LLC. roofnbeyond.com is not live. Bracketed placeholders are unpublished facts, not claims.",
     "",
     "## Do not invent",
     "- Phone: [PHONE]",

@@ -20,12 +20,13 @@ export default function TermsPage() {
     <main className="mx-auto max-w-3xl px-4 py-10">
       <JsonLd data={breadcrumbNode(crumbs)} />
       <Breadcrumbs items={crumbs} />
-      <article data-unique="true" className="mt-6 space-y-4 leading-7">
+      <p className="mt-6 leading-7">{brand.dbaLine}.</p>
+      <article data-unique="true" className="mt-4 space-y-4 leading-7">
         <h1 className="text-5xl text-navy">Terms</h1>
         <p>
-          These terms govern use of this preview website for {brand.legalName},
-          doing business as {brand.dba}. They are a draft. A lawyer should
-          revise them before anyone relies on them at {brand.domain}.
+          These terms govern use of this {brand.dba} preview website. They are
+          a draft. A lawyer should revise them before anyone relies on them at{" "}
+          {brand.domain}.
         </p>
         <p>
           Pages describe roofing, roof repair, siding, windows, gutters, and

@@ -17,8 +17,12 @@ export const metadata: Metadata = {
   title: {
     absolute: `Roofing, gutters, windows, and siding | ${brand.dba}`,
   },
-  description:
-    "Roof & Beyond Home Solutions, the DBA of Pro Tech Brands LLC, estimates roofing, roof repair, siding, windows, gutters, and gutter guards in Lancaster, Chester, Delaware, and York counties.",
+  description: brand.description,
+    openGraph: {
+      title: `Roofing, gutters, windows, and siding | ${brand.dba}`,
+      description: brand.description,
+      siteName: brand.dba,
+    },
   alternates: { canonical: "/" },
 };
 
@@ -104,9 +108,8 @@ export default function HomePage() {
             The roof, the gutters, the windows, and the walls.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-white/90">
-            {brand.dba} is the DBA of {brand.legalName}. We estimate six
-            exterior trades for houses in Lancaster, Chester, Delaware, and
-            York counties.
+            {brand.dba} estimates six exterior trades for houses in
+            Lancaster, Chester, Delaware, and York counties.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button asChild size="lg">
@@ -128,7 +131,7 @@ export default function HomePage() {
             "Six exterior services",
             "Written estimates",
             "Four Pennsylvania counties",
-            `${brand.legalName}`,
+            brand.dba,
           ].map((item) => (
             <li key={item} className="bg-white px-4 py-5 text-sm font-semibold uppercase tracking-[0.12em] text-navy">
               {item}
@@ -183,8 +186,7 @@ export default function HomePage() {
                 ratings, years in business, or awards.
               </p>
               <p>
-                {brand.dba} is how the company is known. The legal entity is{" "}
-                {brand.legalName}.
+                The name on the estimate is {brand.dba}.
               </p>
             </div>
           </div>

@@ -2,10 +2,12 @@ export const brand = {
   dba: "Roof & Beyond Home Solutions",
   legalName: "Pro Tech Brands LLC",
   alternateName: "Roof and Beyond Home Solutions",
+  dbaLine:
+    "Roof & Beyond Home Solutions is a DBA of Pro Tech Brands LLC",
   domain: "roofnbeyond.com",
   url: "https://roofnbeyond.com",
   description:
-    "Roof & Beyond Home Solutions is the DBA of Pro Tech Brands LLC. The company estimates roofing, roof repair, siding, windows, gutters, and gutter guards for houses in Lancaster, Chester, Delaware, and York counties, Pennsylvania.",
+    "Roof & Beyond Home Solutions estimates roofing, roof repair, siding, windows, gutters, and gutter guards for houses in Lancaster, Chester, Delaware, and York counties, Pennsylvania.",
 } as const;
 
 export const placeholders = {

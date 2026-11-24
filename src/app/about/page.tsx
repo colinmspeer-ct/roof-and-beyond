@@ -8,7 +8,12 @@ import { breadcrumbNode, companyGraph } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: `About ${brand.dba}`,
-  description: `${brand.dba} is the DBA of ${brand.legalName}, estimating roofing, roof repair, siding, windows, gutters, and gutter guards in four Pennsylvania counties.`,
+  description: `${brand.dba} estimates roofing, roof repair, siding, windows, gutters, and gutter guards in four Pennsylvania counties.`,
+  openGraph: {
+    title: `About ${brand.dba}`,
+    description: `${brand.dba} estimates roofing, roof repair, siding, windows, gutters, and gutter guards in four Pennsylvania counties.`,
+    siteName: brand.dba,
+  },
   alternates: { canonical: "/about/" },
 };
 
@@ -26,10 +31,10 @@ export default function AboutPage() {
       <article data-unique="true" className="mt-6">
         <h1 className="text-5xl text-navy">The company behind the name</h1>
         <p className="mt-4 leading-7">
-          {brand.dba} is the name on the work. The legal entity is{" "}
-          {brand.legalName}. The logo artwork still reads “Roof and Beyond,”
-          without the ampersand. That file is being kept as approved until a
-          revised mark is supplied. The words on this website use the ampersand.
+          {brand.dba} is the name on the work. The logo artwork still reads
+          “Roof and Beyond,” without the ampersand. That file stays as approved
+          until a revised mark is supplied. The words on this website use the
+          ampersand.
         </p>
         <p className="mt-4 leading-7">
           The work is exterior only: roofing, roof repair, siding, windows,

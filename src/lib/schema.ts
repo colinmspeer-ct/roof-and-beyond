@@ -3,9 +3,9 @@ import { counties } from "@/lib/areas";
 
 export function companyNode() {
   return {
-    "@type": "RoofingContractor",
+    "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
     "@id": `${brand.url}/#company`,
-    name: brand.legalName,
+    name: brand.dba,
     legalName: brand.legalName,
     alternateName: brand.alternateName,
     url: brand.url,

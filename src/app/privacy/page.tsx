@@ -20,12 +20,12 @@ export default function PrivacyPage() {
     <main className="mx-auto max-w-3xl px-4 py-10">
       <JsonLd data={breadcrumbNode(crumbs)} />
       <Breadcrumbs items={crumbs} />
-      <article data-unique="true" className="mt-6 space-y-4 leading-7">
+      <p className="mt-6 leading-7">{brand.dbaLine}.</p>
+      <article data-unique="true" className="mt-4 space-y-4 leading-7">
         <h1 className="text-5xl text-navy">Privacy</h1>
         <p>
-          {brand.legalName} publishes this privacy draft for the{" "}
-          {brand.dba} preview. Counsel should replace it before anyone treats{" "}
-          {brand.domain} as the live site.
+          This privacy draft is for the {brand.dba} preview. Counsel should
+          replace it before anyone treats {brand.domain} as the live site.
         </p>
         <p>
           The estimate form asks for a name, phone number, email address,
