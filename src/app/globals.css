@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #021f4d;
+  --color-navy-deep: #011433;
+  --color-ink: #14233d;
+  --color-muted: #4c5d78;
+  --color-orange: #f98527;
+  --color-orange-dark: #e06f0c;
+  --color-sky: #88cff9;
+  --color-paper: #f4f7fb;
+  --color-line: #d5deea;
+  --font-sans: var(--font-montserrat), "Montserrat", sans-serif;
+  --font-display: var(--font-fjalla), "Fjalla One", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.01em;
+}
+
+::selection {
+  background: #f98527;
+  color: #021f4d;
+}
+
+.prose-measure p + p {
+  margin-top: 1rem;
+}

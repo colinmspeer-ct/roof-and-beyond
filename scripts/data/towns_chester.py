@@ -29,7 +29,7 @@ Leave the slopes in place when the shingles still bend and the sheathing feels f
         "siding": """
 Walls inside the Atglen grid are painted frame and a fair amount of brick. Sun and the west wind take paint off a gable end first. That is a coating and wood problem. It is not a reason to skin the brick next door with vinyl. Where a gutter has been overflowing onto clapboard, the rotten boards follow the water path, course by course.
 
-Later houses toward the edge pick up vinyl and occasional fiber cement. Vinyl that has unlocked at a corner was usually pinned tight or shoved into a J-channel with no room to move. A siding price names the material on each elevation of that lot. One square-foot number does not describe every wall in the borough.
+Houses at the west edge of Atglen pick up vinyl panels and, here and there, fiber-cement planks. A panel that has popped at an outside corner usually had its nails driven home or its end jammed so it could not grow in July. Price each elevation by the material that is actually on it. A single square-foot figure will not describe both the brick block and that later wall.
 """,
         "windows": """
 Older Atglen houses still mix wood double-hungs with vinyl inserts from later owners. An insert set on a rotten sill leaves the leak in place. Street-facing sash on a narrow lot changes the front more than a rear bath window, so the openings that are actually failing belong on the list one by one.
@@ -254,25 +254,25 @@ Houses closer to the traffic light are smaller and more cut up by porches. The p
         "roof_repair": """
 Leaks on Cochranville farmhouses show at porch tie-ins and around chimneys flashed for a covering that is no longer there. The metal barn roof, if it is dripping at a seam, is a separate repair with different fasteners. Putting both on one line hides which building is failing.
 
-Asphalt on a west slope chalks, and tabs lift because nothing blocks the wind. Those courses plus new rake metal can be the repair. It becomes a replacement when the deck is soft or the granules are gone across the plane. The attic note, when the space is safe to enter, is what separates a lifted edge from a finished roof. A sound east slope is not stripped to match a west-edge repair.
+West-facing asphalt at this crossroads loses granules in the open, and the tabs along the rake curl after a winter of wind with no tree in the way. Replacing those courses and the missing drip edge can be the whole repair. Stripping the slope waits until the sheathing gives underfoot or the surface is bald from eave to ridge. If the attic is safe to enter, that look is what separates a curled edge from a roof that is finished. Leave a sound east plane alone.
 """,
         "siding": """
-Farmhouses near the Cochranville crossroads may wear wood, brick, stone, or a later skin of vinyl over older boards. Covering wet wood with a new layer locks the water in. The visit says what is under the corner board before a whole wall is ordered. Masonry farmhouse walls stay masonry. A brick gable is not a substrate for a casual wrap.
+Farmhouses near the Cochranville light may show bare wood, brick, local stone, or vinyl laid over the original clapboard. A new layer on boards that are already wet seals the damp inside the wall. Lift a corner and see the wood before ordering a full elevation. Brick and stone gables stay as masonry. They are not a backing for a panel product.
 
 Barns and roadside stands are not house siding. Splash at the bottom course is common where a porch has no gutter. The water is corrected, then the cladding. Fiber cement or vinyl, if it is the dwelling's actual skin, is measured elevation by elevation. Field dust and sun on the west wall are why the paint or the vinyl face fails there first.
 """,
         "windows": """
 Windows on Cochranville farmhouses are often tall wood double-hungs, some with storms hung in the cold months. A vinyl insert in a sound wood frame is not the same order as a full-frame unit in a wall that has settled. The list is the dwelling openings only. Barn windows and shop glazing stay off it.
 
-Glare and wind on the west wall age seals faster than on a shaded east wall. Fogged glass is a glass replacement. Storm sash that still fits can remain. Nothing on this crossroads is sold with a fuel-savings number. If West Fallowfield requires a permit for a window change, it is named before the units are built. Sills that crumble under an insert are carpenter work, written beside the window line.
+Afternoon sun on the open west wall cooks the seals in insulated glass sooner than the shaded side of the same farmhouse. A fogged pane is a glass item. Storm sash that still latches can stay through winter. No fuel-savings figure is attached to a Cochranville opening. If West Fallowfield wants a permit before a frame is changed, that step is on the paper before the shop builds the unit. A sill that powders under an insert is carpenter work, written next to the window.
 """,
         "gutters": """
 Long farmhouse eaves at Cochranville move a lot of water to a few downspouts. If those outlets splash at a stone foundation, the wet basement starts at the gutter. Open fields also drive rain past a trough hung too low, so the fascia line and the roof edge have to be seen together.
 
-Porch roofs with no metal soak the wall and the door sill. Adding a gutter there is often the useful scope even when the main eave is fine. There is no curb to catch the outflow. The quote says where the water will travel on a lane or a yard, and it separates porch metal from the main run. Hangers in soft fascia are replaced with the board, not screwed back into mush.
+A porch roof with no trough wets the door casing and the wall beneath it. Hanging a short run there can be the whole useful job even when the main eave already has metal. These lanes have no curb. The paperwork shows where that porch water will cross the yard, and it keeps the porch metal off the main-eave measurement. Soft fascia gets a new board. Hangers are not driven back into the rot.
 """,
         "gutter_guards": """
-A guard at Cochranville has to deal with field dust, seed, and the occasional tree at the yard edge, not a continuous borough canopy. A screen that is right for a shaded street can clog with chaff here and send water over the front lip onto the skirt boards.
+Covers at this crossroads meet chaff, lane dust, and one or two yard trees, not a tunnel of street maples. A mesh that works under a borough canopy mats with crop dust here and then spills over the front lip onto the skirt boards.
 
 Barn eaves are a different profile and usually stay uncovered. The dwelling runs that get a cover are named, along with the debris they are expected to pass. Maintenance does not drop away. After harvest wind and after the few yard trees drop, the outlets still need a look. No cover is described as the last time anyone will touch the trough.
 """,
