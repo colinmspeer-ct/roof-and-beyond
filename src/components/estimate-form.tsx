@@ -1,14 +1,15 @@
-"use client";
-
-import { useState } from "react";
-import { serviceOrder } from "@/content/brand";
+import Link from "next/link";
+import { brand, serviceOrder } from "@/content/brand";
 import { servicePages } from "@/content/service-pages";
-import { placeholders } from "@/content/brand";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 
+/**
+ * Launch form posts to FormSubmit. Swap this component for the HighLevel embed
+ * when that form is ready. Do not add a second form implementation beside it.
+ */
 export function EstimateForm({
   short = false,
   idPrefix = "estimate",
@@ -16,23 +17,20 @@ export function EstimateForm({
   short?: boolean;
   idPrefix?: string;
 }) {
-  const [note, setNote] = useState("");
   const field = (name: string) => `${idPrefix}-${name}`;
 
   return (
     <form
       id={idPrefix}
-      action={placeholders.formAction}
-      method="post"
-      data-form-placeholder="Replace this action with the HighLevel form embed or endpoint before launch."
+      action={`https://formsubmit.co/${brand.email}`}
+      method="POST"
       className="grid gap-4"
-      onSubmit={(event) => {
-        event.preventDefault();
-        setNote(
-          "Preview only. Nothing was sent. Replace the form action [HIGHLEVEL FORM EMBED] with the HighLevel embed before launch.",
-        );
-      }}
     >
+      <input type="hidden" name="_subject" value="Estimate request from roofnbeyond.com" />
+      <input type="hidden" name="_next" value={`${brand.url}/thank-you/`} />
+      <input type="hidden" name="_captcha" value="true" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" aria-hidden="true" />
       <div className={short ? "grid gap-4" : "grid gap-4 sm:grid-cols-2"}>
         <div className="grid gap-2">
           <Label htmlFor={field("name")}>Name</Label>
@@ -48,13 +46,8 @@ export function EstimateForm({
         </div>
         {short ? null : (
           <div className="grid gap-2">
-            <Label htmlFor={field("address")}>Address</Label>
-            <Input
-              id={field("address")}
-              name="address"
-              autoComplete="street-address"
-              required
-            />
+            <Label htmlFor={field("address")}>Property address</Label>
+            <Input id={field("address")} name="address" autoComplete="street-address" required />
           </div>
         )}
       </div>
@@ -71,7 +64,7 @@ export function EstimateForm({
             Choose one
           </option>
           {serviceOrder.map((slug) => (
-            <option key={slug} value={slug}>
+            <option key={slug} value={servicePages[slug].label}>
               {servicePages[slug].label}
             </option>
           ))}
@@ -83,17 +76,31 @@ export function EstimateForm({
           <Textarea id={field("message")} name="message" required />
         </div>
       )}
-      <p className="text-sm leading-6 text-muted">
-        Preview form. The action is the placeholder {placeholders.formAction}.
-        It will be replaced with a HighLevel form embed. Submitting here does
-        not send your details anywhere.
-      </p>
+      <div className="flex items-start gap-3">
+        <input
+          id={field("sms")}
+          name="sms_consent"
+          type="checkbox"
+          value="yes"
+          className="mt-1 size-4 accent-[#021F4D]"
+        />
+        <label htmlFor={field("sms")} className="text-sm leading-6 text-muted">
+          By checking this box, you agree to receive text messages from Roof &
+          Beyond Home Solutions about your inquiry. Message and data rates may
+          apply. Message frequency varies. Reply STOP to opt out, HELP for help.
+          Consent is not a condition of purchase. See the{" "}
+          <Link href="/privacy/" className="underline">
+            privacy
+          </Link>{" "}
+          and{" "}
+          <Link href="/terms/" className="underline">
+            terms
+          </Link>
+          .
+        </label>
+      </div>
+      <p className="text-sm leading-6 text-muted">Ask about financing options.</p>
       <Button type="submit">Request my estimate</Button>
-      {note ? (
-        <p role="status" className="border border-orange bg-white p-3 text-sm text-navy">
-          {note}
-        </p>
-      ) : null}
     </form>
   );
 }

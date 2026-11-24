@@ -4,10 +4,10 @@ import { EstimateForm } from "@/components/estimate-form";
 import { FaqList } from "@/components/faq-list";
 import { JsonLd } from "@/components/json-ld";
 import { PageCta } from "@/components/page-cta";
-import { brand, placeholders } from "@/content/brand";
+import { brand } from "@/content/brand";
 import { breadcrumbNode, faqNode } from "@/lib/schema";
 
-const description = `Contact ${brand.dba} for a written estimate on roofing, roof repair, siding, windows, gutters, or gutter guards. The form is a HighLevel placeholder in this preview.`;
+const description = `Contact ${brand.dba} for a written estimate on roofing, roof repair, siding, windows, gutters, or gutter guards. Call ${brand.phoneDisplay}.`;
 
 export const metadata: Metadata = {
   title: "Contact and free estimate",
@@ -29,7 +29,7 @@ const crumbs = [
 const faqs = [
   {
     q: "Does this form send my message?",
-    a: `Not in this preview. The action is ${placeholders.formAction} until a HighLevel embed replaces it.`,
+    a: "Yes. The form emails the office. You may also call (717) 804-0990.",
   },
   {
     q: "What should I include?",
@@ -53,8 +53,11 @@ export default function ContactPage() {
               scope. Work is not scheduled from this form.
             </p>
             <p className="mt-4 leading-7">
-              Phone {placeholders.phone}. Email {placeholders.email}. Hours{" "}
-              {placeholders.hours}. Address {placeholders.address}.
+              Call{" "}
+              <a className="underline" href={`tel:${brand.phoneTel}`}>
+                {brand.phoneDisplay}
+              </a>
+              . Email {brand.email}. Hours {brand.hours}. {brand.locality}.
             </p>
             <h2 className="mt-8 text-3xl text-navy">Before you write</h2>
             <FaqList faqs={faqs} />
@@ -67,7 +70,7 @@ export default function ContactPage() {
       </main>
       <PageCta
         heading="Prefer to talk it through?"
-        body={`Call ${placeholders.phone} or send the form. Both reach the same estimate desk once the number and the form are connected.`}
+        body={`Call ${brand.phoneDisplay} or send the form. Both reach the same estimate desk.`}
       />
     </>
   );

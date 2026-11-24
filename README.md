@@ -1,12 +1,12 @@
 # Roof & Beyond Home Solutions
 
-Preview marketing site for **Roof & Beyond Home Solutions**, the DBA of **Pro Tech Brands LLC**. The domain roofnbeyond.com is not live. This project does not deploy the site and does not change DNS.
+Marketing site for **Roof & Beyond Home Solutions**, the DBA of **Pro Tech Brands LLC**. Phone (717) 804-0990, email colin@roofnbeyond.com, hours 9 AM to 8 PM every day, location Media, PA 19063. PA HIC #PA240642 is held by Pro Tech Brands LLC. This repository does not change DNS.
 
 ## Launch build
 
 `launch.json` sets `includeTownPages` to `false`. The static export then keeps the home page, six service pages, about, contact, privacy, terms, and one page per county. Town names are plain text on the county pages. Town page source stays in the repo. Set the flag to `true` and rebuild to publish those pages again.
 
-GitHub Pages: `npm run build` writes `out/` with `CNAME` (`roofnbeyond.com`) and `.nojekyll`. There is no `basePath`. This project does not deploy that folder.
+GitHub Pages: `npm run build` writes `out/` with `CNAME` (`roofnbeyond.com`) and `.nojekyll`. There is no `basePath`. `.github/workflows/pages.yml` deploys that folder when `main` is pushed.
 
 ## Preview locally
 
@@ -36,19 +36,11 @@ npm run check:links
 
 `check:duplicates` compares the unique article text of our own pages and fails on a repeated 12-word sequence or a 6-word Jaccard score above 0.20.
 
-## Placeholders the owner must fill
+## Publish
 
-- `[PHONE]`
-- `[EMAIL]`
-- `[BUSINESS ADDRESS]`
-- `[BUSINESS HOURS]`
-- `[PA HIC #]`
-- `[FEATURED MANUFACTURERS]`
-- `[WARRANTY TERMS]`
-- `[SMS CONSENT LANGUAGE]` on the privacy and terms pages
-- `[HIGHLEVEL FORM EMBED]` as the estimate form action
+`npm run build` writes `out/` with `CNAME` and `.nojekyll`. GitHub Actions (`.github/workflows/pages.yml`) uploads that folder to GitHub Pages. There is no `basePath`. DNS is not changed by this repository.
 
-Do not publish ratings, years in business, awards, or warranty language until those facts exist.
+The estimate form posts to FormSubmit at `colin@roofnbeyond.com`. The first submission asks that inbox to confirm the address. Swap `src/components/estimate-form.tsx` for a HighLevel embed later.
 
 ## Scope
 

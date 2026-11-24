@@ -6,7 +6,7 @@ import { FaqList } from "@/components/faq-list";
 import { JsonLd } from "@/components/json-ld";
 import { PageCta } from "@/components/page-cta";
 import { TrustSignals } from "@/components/trust-signals";
-import { brand, placeholders, serviceOrder } from "@/content/brand";
+import { brand, serviceOrder } from "@/content/brand";
 import { servicePages } from "@/content/service-pages";
 import { counties, countyPath } from "@/lib/areas";
 import { companyGraph, faqNode } from "@/lib/schema";
@@ -39,16 +39,8 @@ const faqs = [
     a: "You send the address and what you are seeing. Someone looks at the exterior. You get a written scope before any work is scheduled. The form on this preview does not send yet.",
   },
   {
-    q: "Are you licensed and insured?",
-    a: `That status is not published yet. The placeholders are ${placeholders.licenseStatus} and ${placeholders.hic}.`,
-  },
-  {
-    q: "Is financing available?",
-    a: `Financing details are ${placeholders.financing} until the owner confirms an offer. This page does not describe a loan.`,
-  },
-  {
-    q: "What warranty comes with the work?",
-    a: `Warranty terms are ${placeholders.warranty} until they are documented.`,
+    q: "Are you a registered Pennsylvania contractor?",
+    a: `${brand.dba} is a DBA of ${brand.legalName}. ${brand.registration}.`,
   },
   {
     q: "Can you help after a storm?",
@@ -86,7 +78,7 @@ export default function HomePage() {
                 <Link href="#estimate">Get a free estimate</Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="/contact/">Call {placeholders.phone}</Link>
+                <a href={`tel:${brand.phoneTel}`}>{`Call us at ${brand.phoneDisplay}`}</a>
               </Button>
             </div>
           </div>

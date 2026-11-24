@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { JsonLd } from "@/components/json-ld";
 import { PageCta } from "@/components/page-cta";
-import { brand, placeholders } from "@/content/brand";
+import { brand } from "@/content/brand";
 import { breadcrumbNode } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Terms",
-  description: `Terms for using the ${brand.dba} preview website, including estimate and SMS placeholders.`,
+  description: `Terms for using the ${brand.dba} website, including the estimate form and optional text messages.`,
   alternates: { canonical: "/terms/" },
 };
 
@@ -22,13 +22,11 @@ export default function TermsPage() {
     <main className="mx-auto max-w-3xl px-4 py-10">
       <JsonLd data={breadcrumbNode(crumbs)} />
       <Breadcrumbs items={crumbs} />
-      <p className="mt-6 leading-7">{brand.dbaLine}.</p>
+      <p className="mt-6 leading-7">{brand.dbaLine}</p>
       <article data-unique="true" className="mt-4 space-y-4 leading-7">
         <h1 className="text-5xl text-navy">Terms</h1>
         <p>
-          These terms govern use of this {brand.dba} preview website. They are
-          a draft. A lawyer should revise them before anyone relies on them at{" "}
-          {brand.domain}.
+          These terms govern use of the {brand.dba} website at {brand.domain}.
         </p>
         <p>
           Pages describe roofing, roof repair, siding, windows, gutters, and
@@ -38,26 +36,23 @@ export default function TermsPage() {
           site does not schedule work.
         </p>
         <p>
-          Warranty language is {placeholders.warranty}. Manufacturer names are{" "}
-          {placeholders.manufacturers}. The Pennsylvania registration placeholder
-          is {placeholders.hic}. None of those brackets is a promise.
+          {brand.registration}, under {brand.legalName}. This site does not
+          publish manufacturer lists or warranty terms.
         </p>
         <h2 className="pt-4 text-3xl text-navy">Messages</h2>
         <p>
-          If you later opt in to texts, the consent sentence must be the
-          approved placeholder replacement: {placeholders.sms}. Until that
-          sentence exists, this preview does not enroll anyone in SMS.
+          Text messages are sent only if you check the optional box on the
+          estimate form. The wording of that box is the consent. Leaving it
+          empty does not block a request for an estimate.
         </p>
         <p>
-          The estimate form action is {placeholders.formAction}. Submitting the
-          preview form does not create a contract and does not send the
-          contents to the company.
+          Submitting the estimate form emails the office. It does not by itself
+          create a contract to do the work.
         </p>
         <p>
-          Disputes about the published site, once it is actually launched, are
-          intended to be handled under Pennsylvania law. That sentence is part
-          of the draft, not a completed forum clause. Reach{" "}
-          {placeholders.email} or {placeholders.phone} at {placeholders.address}.
+          Questions about these terms go to {brand.email} or {brand.phoneDisplay}.
+          The published location is {brand.locality}. Pennsylvania law applies
+          to the use of this website.
         </p>
       </article>
     </main>

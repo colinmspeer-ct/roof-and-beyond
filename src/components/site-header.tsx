@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { brand, placeholders, serviceOrder } from "@/content/brand";
+import { brand, serviceOrder } from "@/content/brand";
 import { servicePages } from "@/content/service-pages";
 import { Button } from "@/components/ui/button";
 
@@ -9,7 +9,9 @@ export function SiteHeader() {
       <div className="bg-navy-deep text-sky">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-2 text-xs tracking-wide">
           <p>Lancaster, Chester, Delaware, and York counties</p>
-          <p className="hidden sm:block">{placeholders.phone}</p>
+          <a className="hidden sm:block" href={`tel:${brand.phoneTel}`}>
+            {`Call us at ${brand.phoneDisplay}`}
+          </a>
         </div>
       </div>
       <div className="border-b border-white/10 bg-navy text-white">
@@ -46,9 +48,8 @@ export function SiteHeader() {
             <Link href="/about/" className="hover:text-sky">
               About
             </Link>
-            <span className="text-sky">{placeholders.phone}</span>
             <Button asChild size="sm">
-              <Link href="/contact/">Free estimate</Link>
+              <a href={`tel:${brand.phoneTel}`}>{`Call us at ${brand.phoneDisplay}`}</a>
             </Button>
           </nav>
           <details className="relative ml-auto md:hidden">
@@ -71,7 +72,10 @@ export function SiteHeader() {
               <Link href="/about/" className="block py-2 text-sm">
                 About
               </Link>
-              <Link href="/contact/" className="mt-2 block bg-orange px-3 py-3 text-center text-xs font-semibold uppercase tracking-[0.14em] text-navy">
+              <a href={`tel:${brand.phoneTel}`} className="mt-2 block bg-orange px-3 py-3 text-center text-xs font-semibold uppercase tracking-[0.12em] text-navy">
+                {`Call us at ${brand.phoneDisplay}`}
+              </a>
+              <Link href="/contact/" className="mt-2 block px-3 py-2 text-center text-sm">
                 Free estimate
               </Link>
             </div>

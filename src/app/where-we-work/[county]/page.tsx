@@ -77,7 +77,7 @@ const countyFaqs = {
     },
     {
       q: "How do I request work in York County?",
-      a: "Send the address through the contact form. Financing terms, the HIC number, and warranty language are still placeholders.",
+      a: "Call (717) 804-0990 or send the address through the contact form. The office is listed as Media, PA 19063, and hours are 9 AM to 8 PM, seven days a week.",
     },
   ],
 } as const;

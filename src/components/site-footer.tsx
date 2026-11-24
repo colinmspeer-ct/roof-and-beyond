@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { brand, placeholders, serviceOrder } from "@/content/brand";
+import { brand, serviceOrder } from "@/content/brand";
 import { servicePages } from "@/content/service-pages";
 import { counties, countyPath } from "@/lib/areas";
 
@@ -15,10 +15,7 @@ export function SiteFooter() {
             height={56}
             className="h-14 w-auto"
           />
-          <p className="mt-4 text-sm leading-6 text-sky">
-            {brand.dbaLine}. Preview build. This site is not deployed, and{" "}
-            {brand.domain} has not been changed.
-          </p>
+          <p className="mt-4 text-sm leading-6 text-sky">{brand.dbaLine}</p>
         </div>
         <div>
           <h2 className="text-sm font-semibold uppercase tracking-[0.14em] text-orange">
@@ -53,11 +50,14 @@ export function SiteFooter() {
             Contact
           </h2>
           <ul className="mt-3 space-y-2 text-sm leading-6 text-sky">
-            <li>{placeholders.phone}</li>
-            <li>{placeholders.email}</li>
-            <li>{placeholders.address}</li>
-            <li>Hours: {placeholders.hours}</li>
-            <li>PA registration: {placeholders.hic}</li>
+            <li>
+              <a href={`tel:${brand.phoneTel}`}>{`Call us at ${brand.phoneDisplay}`}</a>
+            </li>
+            <li>
+              <a href={`mailto:${brand.email}`}>{brand.email}</a>
+            </li>
+            <li>{brand.locality}</li>
+            <li>{brand.hours}</li>
           </ul>
           <Link
             href="/contact/"
@@ -70,7 +70,7 @@ export function SiteFooter() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-4 text-xs text-sky sm:flex-row sm:justify-between">
           <p>
-            © {new Date().getFullYear()} {brand.dba}. {brand.dbaLine}.
+            © {new Date().getFullYear()} {brand.dba}.
           </p>
           <p className="flex gap-4">
             <Link href="/privacy/" className="hover:text-white">

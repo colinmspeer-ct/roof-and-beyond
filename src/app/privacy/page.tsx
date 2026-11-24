@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { JsonLd } from "@/components/json-ld";
 import { PageCta } from "@/components/page-cta";
-import { brand, placeholders } from "@/content/brand";
+import { brand } from "@/content/brand";
 import { breadcrumbNode } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Privacy",
-  description: `Privacy notes for the ${brand.dba} preview site, including an SMS consent placeholder for counsel to replace.`,
+  description: `Privacy notes for ${brand.dba}, including the estimate form and optional text messages.`,
   alternates: { canonical: "/privacy/" },
 };
 
@@ -22,20 +22,19 @@ export default function PrivacyPage() {
     <main className="mx-auto max-w-3xl px-4 py-10">
       <JsonLd data={breadcrumbNode(crumbs)} />
       <Breadcrumbs items={crumbs} />
-      <p className="mt-6 leading-7">{brand.dbaLine}.</p>
+      <p className="mt-6 leading-7">{brand.dbaLine}</p>
       <article data-unique="true" className="mt-4 space-y-4 leading-7">
         <h1 className="text-5xl text-navy">Privacy</h1>
         <p>
-          This privacy draft is for the {brand.dba} preview. Counsel should
-          replace it before anyone treats {brand.domain} as the live site.
+          This page describes how {brand.dba} handles the details you send
+          from {brand.domain}.
         </p>
         <p>
           The estimate form asks for a name, phone number, email address,
-          property address, the exterior service you are asking about, and a
-          message. In this preview the form does not transmit those fields.
-          Its action is the placeholder {placeholders.formAction}. When a
-          HighLevel form replaces it, the fields will go to that system under
-          whatever terms HighLevel and the owner agree.
+          property address, the exterior service you are asking about, a
+          message, and an optional text-message consent box. The form sends
+          that information by email to {brand.email}. A scheduling embed can
+          replace the form later.
         </p>
         <p>
           The company does not sell personal information. It uses estimate
@@ -44,16 +43,16 @@ export default function PrivacyPage() {
         </p>
         <h2 className="pt-4 text-3xl text-navy">Text messages</h2>
         <p>
-          SMS consent language is not approved yet. The placeholder, which must
-          be replaced with the exact sentence counsel signs off on, is:{" "}
-          {placeholders.sms}. Do not treat this paragraph as consent language.
-          Frequency, message-and-data-rate language, and the opt-out instruction
-          belong in that replacement sentence, not in a guess on this page.
+          The optional checkbox says: By checking this box, you agree to receive
+          text messages from Roof & Beyond Home Solutions about your inquiry.
+          Message and data rates may apply. Message frequency varies. Reply STOP
+          to opt out, HELP for help. Consent is not a condition of purchase.
+          Leaving the box unchecked does not block an estimate.
         </p>
         <p>
-          Questions about this draft go to {placeholders.email} or{" "}
-          {placeholders.phone}. The business address on file is{" "}
-          {placeholders.address}.
+          Questions about this page go to {brand.email} or {brand.phoneDisplay}.
+          The published location is {brand.locality}. No street address is
+          listed.
         </p>
       </article>
     </main>

@@ -1,4 +1,4 @@
-import { brand, placeholders } from "@/content/brand";
+import { brand } from "@/content/brand";
 import { counties } from "@/lib/areas";
 
 export function companyNode() {
@@ -11,18 +11,20 @@ export function companyNode() {
     url: brand.url,
     image: `${brand.url}/brand/logo.svg`,
     description: brand.description,
-    telephone: placeholders.phone,
-    email: placeholders.email,
+    telephone: brand.phoneTel,
+    email: brand.email,
+    openingHours: "Mo-Su 09:00-20:00",
     address: {
       "@type": "PostalAddress",
-      streetAddress: placeholders.address,
+      addressLocality: "Media",
       addressRegion: "PA",
+      postalCode: "19063",
       addressCountry: "US",
     },
     identifier: {
       "@type": "PropertyValue",
       name: "Pennsylvania Home Improvement Contractor registration",
-      value: placeholders.hic,
+      value: brand.hic,
     },
     areaServed: counties.map((county) => ({
       "@type": "AdministrativeArea",

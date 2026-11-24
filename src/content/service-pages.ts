@@ -1,5 +1,4 @@
 import type { ServiceSlug } from "@/content/brand";
-import { placeholders } from "@/content/brand";
 
 export type ServicePage = {
   slug: ServiceSlug;
@@ -26,13 +25,9 @@ export const servicePages: Record<ServiceSlug, ServicePage> = {
     lede: "Roofing, on this site, means a full covering: the field, the edges, the penetrations, and the way the attic breathes. It is a different conversation from a leak repair.",
     paragraphs: [
       "Houses in these four counties do not share one roof. Lancaster city rows, Main Line slate, York split-levels, and farmhouses on open ground each shed water differently. A replacement is priced from the slope in front of the crew, including whether the deck is boards or panels and whether the soffit can feed a ridge vent.",
-      "Asphalt is the common covering on later houses. Metal shows up on farmhouses and some porches. Older slate still sits on parts of the Main Line and on some borough streets. Those are different materials. The estimate names the one proposed for that house. It does not borrow a brand from a list that has not been published. Featured manufacturers are still " +
-        placeholders.manufacturers +
-        ".",
+      "Asphalt is the common covering on later houses. Metal shows up on farmhouses and some porches. Older slate still sits on parts of the Main Line and on some borough streets. Those are different materials. The estimate names the covering proposed for that house.",
       "Edge metal, chimney flashing, and pipe boots are part of a roof, not extras discovered after tear-off, when they are visible at the visit. If a valley has been coated over and over, the deck under it is inspected before the new field goes down. Closed soffits are not paired with a vented ridge that has no intake.",
-      "Storm photos can document what a slope looks like after wind or hail. They do not decide whether an insurer pays a claim. Warranty language for a completed roof is " +
-        placeholders.warranty +
-        " until the owner publishes the actual terms. Nothing on this page is a warranty.",
+      "Storm photos can document what a slope looks like after wind or hail. They do not decide whether an insurer pays a claim. This page does not state a warranty.",
     ],
     faqs: [
       {
@@ -40,12 +35,12 @@ export const servicePages: Record<ServiceSlug, ServicePage> = {
         a: "No. Roofing here means replacing the covering on the slopes that are in the scope. Roof repair is the localized page for flashing, boots, and a few courses. The estimate says which one it is.",
       },
       {
-        q: "Do you publish a shingle brand?",
-        a: "Not yet. The manufacturer list is the placeholder " + placeholders.manufacturers + ". The product for a specific house will be named in that house's estimate.",
+        q: "Do you publish a shingle brand on this page?",
+        a: "No. The written estimate names the covering proposed for that house. This page does not list brands.",
       },
       {
-        q: "Will a new roof come with a published warranty?",
-        a: "Warranty terms are " + placeholders.warranty + " until they are written down. This page does not invent one.",
+        q: "Does this page state a roof warranty?",
+        a: "No. Any warranty that applies would be written on that house's estimate, not advertised here.",
       },
     ],
     image: {
@@ -68,9 +63,7 @@ export const servicePages: Record<ServiceSlug, ServicePage> = {
       "Ceiling stains usually start at a transition: a chimney shoulder, a sidewall, a valley, a skylight curb, or a rubber boot that has split. The field around that spot can still be flexible. In that case the work is the metal and the courses that have to come up to reset it.",
       "Tear-off becomes the honest scope when the deck is soft, the surface is bald across the plane, or the same slope has been patched until the laps no longer shed. One dripping corner does not, by itself, condemn the other slopes. The visit should say which condition was found.",
       "Row houses and twins share party walls, so a repair on one side can meet a neighbor's flashing. Farm porches dump onto a main wall. Split-level garages create valleys that a simple ranch does not have. Those details change the repair. They are written per house, on the community pages, rather than as one regional slogan.",
-      "Active leaks can be photographed for the homeowner. That record is not an insurance decision. No repair on this site is sold with a lifetime claim or a brand warranty that has not been published. See " +
-        placeholders.warranty +
-        ".",
+      "Active leaks can be photographed for the homeowner. That record is not an insurance decision. This page does not advertise a lifetime repair claim.",
     ],
     faqs: [
       {
@@ -106,11 +99,7 @@ export const servicePages: Record<ServiceSlug, ServicePage> = {
       "Vinyl, wood, fiber cement, and older aluminum all show up in this region. Brick and stone are a different assembly. Covering sound masonry because a neighboring frame wall needs paint is the wrong scope. The estimate names the material on each elevation.",
       "Vinyl that buckles was often pinned too tight or butted into a receiver with no room to move in summer. Fiber cement that stains at the first course is often splash from a short downspout or soil piled against the wall. Wood that is soft gets opened and dried before a new layer goes over it. A new layer on wet boards traps the problem.",
       "Where a roof meets a wall, kickout flashing is what keeps water from running behind the cladding. Replacing the siding and leaving that joint open recreates the stain. Row-house party walls and farmhouse brick gables stay out of a vinyl count unless the scope explicitly includes a different repair there.",
-      "No manufacturer is featured until " +
-        placeholders.manufacturers +
-        " is replaced with a real list. No cladding warranty is stated beyond " +
-        placeholders.warranty +
-        ".",
+      "The estimate names the cladding material for each elevation. This page does not list product brands.",
     ],
     faqs: [
       {
@@ -146,9 +135,7 @@ export const servicePages: Record<ServiceSlug, ServicePage> = {
       "A pocket insert is a fair product when the frame and the sill are solid. It is the wrong product when the sill is soft, because the new sash then sits on rot. A full frame is a different opening, a different flashing detail, and often a different look from the sidewalk. Street-facing sash on a narrow borough lot changes the front more than a rear bath window.",
       "Fog between panes is a failed seal in that insulated unit. It is not proof that every window on the elevation has failed. Storm sash that still latches can stay. Balances, locks, and weatherstripping are smaller repairs when the frame is sound.",
       "This page does not state a percentage of heating or cooling savings. That number depends on the house, the unit, and the install, and it is not known in the abstract. If a borough or township requires a permit for a frame change, that step is part of planning the job.",
-      "Historic-looking streets in Lititz, West Chester, Marietta, Media, and similar boroughs care about what faces the sidewalk. The estimate can leave a sound street sash in place and replace a failed rear unit. Product lines are not listed until " +
-        placeholders.manufacturers +
-        " is filled in.",
+      "Historic-looking streets in Lititz, West Chester, Marietta, Media, and similar boroughs care about what faces the sidewalk. The estimate can leave a sound street sash in place and replace a failed rear unit.",
     ],
     faqs: [
       {
@@ -184,9 +171,7 @@ export const servicePages: Record<ServiceSlug, ServicePage> = {
       "K-style troughs are common on later houses. Half-round still appears on some older eaves. The profile on the house is what gets priced. A long ranch eave moves a lot of water to two outlets. A short borough gable fails first at the inside corner. Those are different layouts.",
       "Pitch that was never set lets the high end stay dry while the low end overflows. Hangers pull out of fascia that has softened. The quote calls out the fascia board when it will not hold a fastener. Downspout extensions matter on narrow side yards, sloped driveways, and creek-side streets where the grade already runs toward the basement.",
       "Gutters also protect the wall and the first course of siding. Overflow that sheets behind the cladding shows up as a wall stain that looks like a siding failure. Fixing only the panels leaves the water where it was.",
-      "Gutter guards are a separate service. A new trough does not include a cover unless the estimate says so. No gutter brand is named while manufacturers remain " +
-        placeholders.manufacturers +
-        ".",
+      "Gutter guards are a separate service. A new trough does not include a cover unless the estimate says so.",
     ],
     faqs: [
       {
@@ -221,11 +206,7 @@ export const servicePages: Record<ServiceSlug, ServicePage> = {
     paragraphs: [
       "Maple seeds, oak leaves, pine needles, sycamore pods, and open-field dust each clog a different product. A fine screen under a sycamore can mat and send water over the lip. A cover meant for a woods lot can be a poor fit on a windy hill where the load is grit. The estimate names the trees and the gutter profile on that house.",
       "Barn eaves, half-round on an older porch, and a K-style run on a ranch are not interchangeable. A residential cover is not assumed on a low commercial roof or a metal barn. Outlets can still plug after a cover is installed. Someone still looks at them after leaf drop.",
-      "This page will not say a guard is maintenance-free, lifetime, or clog-proof. Those claims are not documented. Brands are not listed until " +
-        placeholders.manufacturers +
-        " is replaced. Any product warranty would have to appear as " +
-        placeholders.warranty +
-        " once it is real.",
+      "This page will not say a guard is maintenance-free, lifetime, or clog-proof. It also does not list cover brands.",
       "If the existing trough is pitched wrong or the fascia is soft, a cover on top of that failure does not fix it. The gutter itself is repaired or replaced first, then a cover is added only where it fits.",
     ],
     faqs: [
@@ -238,8 +219,8 @@ export const servicePages: Record<ServiceSlug, ServicePage> = {
         a: "No. Profile, pitch, and the debris from the trees on that lot decide whether a cover belongs there.",
       },
       {
-        q: "Which brands do you install?",
-        a: "None are published yet. The placeholder is " + placeholders.manufacturers + ".",
+        q: "Which cover brands does this page list?",
+        a: "None. The estimate, if a cover is included, names what is being proposed for that gutter.",
       },
     ],
     image: {

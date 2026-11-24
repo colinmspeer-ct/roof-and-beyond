@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { placeholders } from "@/content/brand";
+import { brand } from "@/content/brand";
 import { Button } from "@/components/ui/button";
 
 export function PageCta({
@@ -18,13 +18,13 @@ export function PageCta({
         </div>
         <div className="flex w-full flex-col gap-3 sm:w-auto">
           <Button asChild variant="navy" size="lg">
-            <Link href="/contact/">Free estimate</Link>
+            <a href={`tel:${brand.phoneTel}`}>{`Call us at ${brand.phoneDisplay}`}</a>
           </Button>
           <Link
             href="/contact/"
             className="text-center text-sm font-semibold uppercase tracking-[0.14em] underline"
           >
-            Call {placeholders.phone}
+            Free estimate
           </Link>
         </div>
       </div>

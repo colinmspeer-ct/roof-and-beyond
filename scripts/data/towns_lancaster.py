@@ -44,7 +44,7 @@ Open hills north of the borough drive rain sideways, so a gutter hung low misses
         "gutter_guards": """
 Guards on Adamstown borough streets have to pass leaf litter from street trees without turning the trough into a dam. A fine mesh facing an open field also loads up with windblown dust and seed. Neither product is a promise that the gutter will never be touched again.
 
-On a short front-gable run, a cover that changes the way water enters can overshoot a small corner. The estimate names the gutter profile, the tree cover, and what the cover will not stop. Featured cover brands are still [FEATURED MANUFACTURERS], so no brand is implied here.
+On a short front-gable run, a cover that changes the way water enters can overshoot a small corner. The estimate names the gutter profile, the tree cover, and what the cover will not stop. No cover brand is named on this page.
 """,
     },
     {
@@ -90,7 +90,7 @@ Downspouts on sloping lots dump water toward the neighbor's foundation if the ex
         "gutter_guards": """
 A cover on a windy Akron eave has to stay clipped. A light plastic screen becomes a sail on this hill. The debris load is grit and the occasional seed, not a deep maple mat, so a cover chosen for a woods lot can be the wrong tool.
 
-Low roofs on the old industrial block shed water differently from house eaves, and a residential guard does not belong there by default. The estimate says which profiles are being covered and that no guard means the gutter never needs attention. Brands remain [FEATURED MANUFACTURERS] until the owner publishes them.
+Low roofs on the old industrial block shed water differently from house eaves, and a residential guard does not belong there by default. The estimate says which profiles are being covered and that no guard means the gutter never needs attention. No cover brand is named for this hilltop.
 """,
     },
     {
@@ -136,7 +136,7 @@ Porch roofs without any trough soak the wall and the door sill. Adding a gutter 
         "gutter_guards": """
 Guards on a Bird-in-Hand farmhouse have to deal with open-field dust, seed, and the occasional tree at the yard edge, not a continuous maple canopy. A screen that is right for a borough street can clog with chaff here and send water over the front lip.
 
-Barn eaves are a different profile and often should be left uncovered. The estimate says which dwelling runs get a cover, which debris it is expected to pass, and that maintenance does not drop to zero. No brand is named while manufacturers are still [FEATURED MANUFACTURERS].
+Barn eaves are a different profile and often should be left uncovered. The estimate says which dwelling runs get a cover, which debris it is expected to pass, and that maintenance does not drop to zero. No cover brand is named for these farm eaves.
 """,
     },
 ]
