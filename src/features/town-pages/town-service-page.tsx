@@ -19,9 +19,11 @@ import {
   townServicePath,
   towns,
 } from "@/lib/areas";
+import { includeTownPages } from "@/content/launch";
 import { breadcrumbNode, faqNode, serviceNode } from "@/lib/schema";
 
 export function generateStaticParams() {
+  if (!includeTownPages) return [];
   return towns.flatMap((town) =>
     serviceOrder.map((service) => ({
       county: town.countySlug,
@@ -107,7 +109,7 @@ export default async function TownServicePage({
       </section>
       <div className="mt-8 flex flex-wrap gap-3">
         <Button asChild>
-          <Link href="/estimate/">Estimate this {town.name} house</Link>
+          <Link href="/contact/">Estimate this {town.name} house</Link>
         </Button>
         <Button asChild variant="outlineNavy">
           <Link href={`/exterior/${block.slug}/`}>All {block.label.toLowerCase()}</Link>

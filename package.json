@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 4177 -H 0.0.0.0",
-    "prebuild": "python3 scripts/generate_content.py && python3 scripts/write_llms.py",
+    "prebuild": "python3 scripts/generate_content.py && python3 scripts/write_llms.py && node scripts/sync-town-routes.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",

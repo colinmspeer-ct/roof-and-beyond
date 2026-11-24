@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fjalla_One, Montserrat } from "next/font/google";
+import { MobileActionBar } from "@/components/mobile-action-bar";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { brand } from "@/content/brand";
@@ -9,13 +10,18 @@ const fjalla = Fjalla_One({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-fjalla",
-  display: "swap",
+  display: "optional",
+  adjustFontFallback: true,
+  preload: false,
 });
 
 const montserrat = Montserrat({
   subsets: ["latin"],
+  weight: ["400", "600"],
   variable: "--font-montserrat",
-  display: "swap",
+  display: "optional",
+  adjustFontFallback: true,
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -54,10 +60,11 @@ export default function RootLayout({
           Skip to content
         </a>
         <SiteHeader />
-        <div id="content" className="flex-1">
+        <div id="content" className="flex-1 pb-20 md:pb-0">
           {children}
         </div>
         <SiteFooter />
+        <MobileActionBar />
       </body>
     </html>
   );

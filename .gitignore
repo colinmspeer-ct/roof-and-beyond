@@ -18,6 +18,7 @@
 /out/
 scripts/.cache/
 scripts/data/__pycache__/
+src/app/where-we-work/\[county\]/\[town\]/
 __pycache__/
 
 # production

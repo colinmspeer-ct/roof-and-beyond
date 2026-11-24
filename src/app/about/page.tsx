@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { JsonLd } from "@/components/json-ld";
+import { PageCta } from "@/components/page-cta";
 import { Button } from "@/components/ui/button";
 import { brand, placeholders } from "@/content/brand";
 import { breadcrumbNode, companyGraph } from "@/lib/schema";
@@ -24,6 +25,7 @@ const crumbs = [
 
 export default function AboutPage() {
   return (
+    <>
     <main className="mx-auto max-w-3xl px-4 py-10">
       <JsonLd data={breadcrumbNode(crumbs)} />
       <JsonLd data={companyGraph()} />
@@ -62,8 +64,10 @@ export default function AboutPage() {
         </p>
       </article>
       <Button asChild className="mt-8">
-        <Link href="/estimate/">Request an estimate</Link>
+        <Link href="/contact/">Request an estimate</Link>
       </Button>
     </main>
+    <PageCta />
+    </>
   );
 }

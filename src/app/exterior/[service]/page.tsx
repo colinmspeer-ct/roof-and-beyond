@@ -1,18 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { FaqList } from "@/components/faq-list";
 import { JsonLd } from "@/components/json-ld";
+import { PageCta } from "@/components/page-cta";
 import { brand, serviceOrder, type ServiceSlug } from "@/content/brand";
 import { servicePages } from "@/content/service-pages";
-import { counties, countyPath, towns, townServicePath } from "@/lib/areas";
+import { counties, countyPath } from "@/lib/areas";
 import { breadcrumbNode, faqNode, serviceNode } from "@/lib/schema";
 
 export function generateStaticParams() {
@@ -29,10 +25,17 @@ export async function generateMetadata({
   const { service } = await params;
   const page = servicePages[service as ServiceSlug];
   if (!page) return {};
+  const canonical = `/exterior/${page.slug}/`;
   return {
     title: page.metaTitle,
     description: page.metaDescription,
-    alternates: { canonical: `/exterior/${page.slug}/` },
+    openGraph: {
+      title: `${page.metaTitle} | ${brand.dba}`,
+      description: page.metaDescription,
+      siteName: brand.dba,
+      url: `${brand.url}${canonical}`,
+    },
+    alternates: { canonical },
   };
 }
 
@@ -49,12 +52,6 @@ export default async function ServicePage({
     { name: "Exterior", path: "/exterior/" },
     { name: page.label, path: `/exterior/${page.slug}/` },
   ];
-  const examples = towns.filter((town) =>
-    ["lititz-pa", "west-chester-pa", "media-pa", "york-city-pa", "hanover-pa", "columbia-pa"].includes(
-      town.slug,
-    ),
-  );
-
   return (
     <main>
       <JsonLd data={breadcrumbNode(crumbs)} />
@@ -69,27 +66,13 @@ export default async function ServicePage({
         })}
       />
       <section className="bg-navy text-white">
-        <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-14 lg:grid-cols-2">
-          <div>
-            <Breadcrumbs items={crumbs} tone="light" />
-            <h1 className="mt-4 text-5xl leading-[0.95] sm:text-6xl">{page.h1}</h1>
-            <p className="mt-4 text-lg leading-8 text-white/90">{page.lede}</p>
-            <Button asChild className="mt-6">
-              <Link href="/estimate/">Get a free estimate</Link>
-            </Button>
-          </div>
-          <figure>
-            <img
-              src={page.image.src}
-              alt={page.image.alt}
-              width={page.image.width}
-              height={page.image.height}
-              className="h-72 w-full object-cover sm:h-96"
-            />
-            <figcaption className="mt-2 text-xs uppercase tracking-[0.12em] text-sky">
-              Stock photo. Not a {brand.dba} project.
-            </figcaption>
-          </figure>
+        <div className="mx-auto max-w-3xl px-4 py-14">
+          <Breadcrumbs items={crumbs} tone="light" />
+          <h1 className="mt-4 text-5xl leading-[0.95] sm:text-6xl">{page.h1}</h1>
+          <p className="mt-4 max-w-xl text-lg leading-8 text-white/90">{page.lede}</p>
+          <Button asChild className="mt-6">
+            <Link href="/contact/">Get a free estimate</Link>
+          </Button>
         </div>
       </section>
       <article data-unique="true" className="mx-auto max-w-3xl px-4 py-12">
@@ -99,14 +82,24 @@ export default async function ServicePage({
           </p>
         ))}
         <h2 className="mt-10 text-3xl text-navy">Questions about {page.label.toLowerCase()}</h2>
-        <Accordion type="single" collapsible className="mt-4">
-          {page.faqs.map((faq) => (
-            <AccordionItem key={faq.q} value={faq.q}>
-              <AccordionTrigger>{faq.q}</AccordionTrigger>
-              <AccordionContent>{faq.a}</AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+        <FaqList faqs={page.faqs} />
+        <figure className="mt-10">
+          <picture>
+            <source srcSet={page.image.src.replace(".webp", ".avif")} type="image/avif" />
+            <img
+              src={page.image.src}
+              alt={page.image.alt}
+              width={page.image.width}
+              height={page.image.height}
+              sizes="(min-width: 768px) 720px, 100vw"
+              loading="lazy"
+              className="h-auto w-full"
+            />
+          </picture>
+          <figcaption className="mt-2 text-xs uppercase tracking-[0.12em] text-muted">
+            Stock photo. Not a {brand.dba} project.
+          </figcaption>
+        </figure>
       </article>
       <section className="mx-auto max-w-6xl px-4 pb-16">
         <h2 className="text-3xl text-navy">Counties</h2>
@@ -119,17 +112,8 @@ export default async function ServicePage({
             </li>
           ))}
         </ul>
-        <h2 className="mt-8 text-3xl text-navy">{page.label} in a few communities</h2>
-        <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {examples.map((town) => (
-            <li key={town.slug}>
-              <Link href={townServicePath(town, page.slug)} className="block border border-line bg-white p-4 hover:border-orange">
-                {page.label} in {town.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
       </section>
+      <PageCta heading={`Estimate ${page.label.toLowerCase()}`} />
     </main>
   );
 }

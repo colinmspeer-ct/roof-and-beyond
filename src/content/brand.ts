@@ -15,6 +15,8 @@ export const placeholders = {
   email: "[EMAIL]",
   address: "[BUSINESS ADDRESS]",
   hic: "[PA HIC #]",
+  licenseStatus: "[LICENSE STATUS]",
+  financing: "[FINANCING]",
   hours: "[BUSINESS HOURS]",
   manufacturers: "[FEATURED MANUFACTURERS]",
   warranty: "[WARRANTY TERMS]",

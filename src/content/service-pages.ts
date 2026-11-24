@@ -51,8 +51,8 @@ export const servicePages: Record<ServiceSlug, ServicePage> = {
     image: {
       src: "/images/shingles.webp",
       alt: "Close view of gray architectural asphalt shingles.",
-      width: 1800,
-      height: 1200,
+      width: 960,
+      height: 640,
     },
   },
   "roof-repair": {
@@ -89,8 +89,8 @@ export const servicePages: Record<ServiceSlug, ServicePage> = {
     image: {
       src: "/images/shingles.webp",
       alt: "Gray asphalt shingles with a few pine needles in the laps.",
-      width: 1800,
-      height: 1200,
+      width: 960,
+      height: 640,
     },
   },
   siding: {
@@ -129,8 +129,8 @@ export const servicePages: Record<ServiceSlug, ServicePage> = {
     image: {
       src: "/images/row-houses.webp",
       alt: "A row of light-colored clapboard houses along a city street.",
-      width: 1600,
-      height: 1718,
+      width: 900,
+      height: 967,
     },
   },
   windows: {
@@ -167,8 +167,8 @@ export const servicePages: Record<ServiceSlug, ServicePage> = {
     image: {
       src: "/images/window-detail.webp",
       alt: "A close view of a light-colored window frame, muntin, and screen.",
-      width: 1600,
-      height: 1200,
+      width: 1000,
+      height: 750,
     },
   },
   gutters: {
@@ -205,8 +205,8 @@ export const servicePages: Record<ServiceSlug, ServicePage> = {
     image: {
       src: "/images/gutter-rain.webp",
       alt: "Rain running into a white gutter during a storm.",
-      width: 1600,
-      height: 1200,
+      width: 1000,
+      height: 750,
     },
   },
   "gutter-guards": {
@@ -245,8 +245,8 @@ export const servicePages: Record<ServiceSlug, ServicePage> = {
     image: {
       src: "/images/gutter-rain.webp",
       alt: "An open white gutter collecting rain, with no cover installed.",
-      width: 1600,
-      height: 1200,
+      width: 1000,
+      height: 750,
     },
   },
 };

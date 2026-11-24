@@ -2,6 +2,12 @@
 
 Preview marketing site for **Roof & Beyond Home Solutions**, the DBA of **Pro Tech Brands LLC**. The domain roofnbeyond.com is not live. This project does not deploy the site and does not change DNS.
 
+## Launch build
+
+`launch.json` sets `includeTownPages` to `false`. The static export then keeps the home page, six service pages, about, contact, privacy, terms, and one page per county. Town names are plain text on the county pages. Town page source stays in the repo. Set the flag to `true` and rebuild to publish those pages again.
+
+GitHub Pages: `npm run build` writes `out/` with `CNAME` (`roofnbeyond.com`) and `.nojekyll`. There is no `basePath`. This project does not deploy that folder.
+
 ## Preview locally
 
 ```bash

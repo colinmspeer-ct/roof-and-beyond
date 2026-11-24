@@ -1,12 +1,13 @@
 import type { MetadataRoute } from "next";
 import { brand, serviceOrder } from "@/content/brand";
+import { includeTownPages } from "@/content/launch";
 import { counties, towns, townPath, townServicePath } from "@/lib/areas";
 
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date("2026-11-24");
-  const staticPaths = ["/", "/about/", "/estimate/", "/privacy/", "/terms/", "/exterior/", "/where-we-work/"];
+  const staticPaths = ["/", "/about/", "/contact/", "/privacy/", "/terms/", "/exterior/", "/where-we-work/"];
   const urls: MetadataRoute.Sitemap = staticPaths.map((path) => ({
     url: `${brand.url}${path}`,
     lastModified: now,
@@ -29,20 +30,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     });
   }
-  for (const town of towns) {
-    urls.push({
-      url: `${brand.url}${townPath(town)}`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.6,
-    });
-    for (const service of serviceOrder) {
+  if (includeTownPages) {
+    for (const town of towns) {
       urls.push({
-        url: `${brand.url}${townServicePath(town, service)}`,
+        url: `${brand.url}${townPath(town)}`,
         lastModified: now,
         changeFrequency: "monthly",
-        priority: 0.5,
+        priority: 0.6,
       });
+      for (const service of serviceOrder) {
+        urls.push({
+          url: `${brand.url}${townServicePath(town, service)}`,
+          lastModified: now,
+          changeFrequency: "monthly",
+          priority: 0.5,
+        });
+      }
     }
   }
   return urls;

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { JsonLd } from "@/components/json-ld";
+import { PageCta } from "@/components/page-cta";
 import { serviceOrder } from "@/content/brand";
 import { servicePages } from "@/content/service-pages";
 import { breadcrumbNode } from "@/lib/schema";
@@ -20,6 +21,7 @@ const crumbs = [
 
 export default function ExteriorIndexPage() {
   return (
+    <>
     <main className="mx-auto max-w-6xl px-4 py-10">
       <JsonLd data={breadcrumbNode(crumbs)} />
       <Breadcrumbs items={crumbs} />
@@ -37,9 +39,9 @@ export default function ExteriorIndexPage() {
           Chester farmhouse, a Radnor slate slope, a York split-level.
         </p>
         <p className="mt-4 leading-7">
-          Open the county lists to reach a single municipality. Townships and
-          boroughs that share a familiar name, such as Manheim and Manchester,
-          are separate links on purpose.
+          County pages name each community in text. Townships and boroughs
+          that share a familiar name, such as Manheim and Manchester, are
+          written separately so they are not treated as one place.
         </p>
       </article>
       <ul className="mt-8 grid gap-4 md:grid-cols-2">
@@ -53,5 +55,7 @@ export default function ExteriorIndexPage() {
         ))}
       </ul>
     </main>
+    <PageCta />
+    </>
   );
 }

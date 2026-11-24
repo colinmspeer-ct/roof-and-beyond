@@ -14,9 +14,11 @@ import {
   townServicePath,
   towns,
 } from "@/lib/areas";
+import { includeTownPages } from "@/content/launch";
 import { breadcrumbNode } from "@/lib/schema";
 
 export function generateStaticParams() {
+  if (!includeTownPages) return [];
   return towns.map((town) => ({
     county: town.countySlug,
     town: town.slug,
@@ -105,7 +107,7 @@ export default async function TownPage({
       ) : null}
       <div className="mt-10">
         <Button asChild>
-          <Link href="/estimate/">Get a free estimate in {town.name}</Link>
+          <Link href="/contact/">Get a free estimate in {town.name}</Link>
         </Button>
       </div>
     </main>

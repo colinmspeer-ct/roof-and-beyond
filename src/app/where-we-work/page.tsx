@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { JsonLd } from "@/components/json-ld";
+import { PageCta } from "@/components/page-cta";
 import { counties, countyPath, townsInCounty } from "@/lib/areas";
 import { breadcrumbNode } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Communities in Lancaster, Chester, Delaware, and York counties",
   description:
-    "Roof & Beyond Home Solutions lists every community it covers in Lancaster, Chester, Delaware, and York counties, with a page for each place and each exterior service.",
+    "Roof & Beyond Home Solutions lists the communities it covers in Lancaster, Chester, Delaware, and York counties. Town names are on each county page.",
   alternates: { canonical: "/where-we-work/" },
 };
 
@@ -19,6 +20,7 @@ const crumbs = [
 
 export default function WhereWeWorkPage() {
   return (
+    <>
     <main className="mx-auto max-w-6xl px-4 py-10">
       <JsonLd data={breadcrumbNode(crumbs)} />
       <Breadcrumbs items={crumbs} />
@@ -32,10 +34,9 @@ export default function WhereWeWorkPage() {
           does not exist.
         </p>
         <p className="mt-4 leading-7">
-          Open a county, then a community. Each community page describes the
-          houses and the weather on them. From there, roofing, roof repair,
-          siding, windows, gutters, and gutter guards each have a local page so
-          the trade is tied to that place.
+          Open a county to read the community names. This launch lists those
+          towns in plain text. Separate town pages stay in the project and
+          turn back on when includeTownPages is true.
         </p>
       </article>
       <div className="mt-10 grid gap-6 md:grid-cols-2">
@@ -49,22 +50,15 @@ export default function WhereWeWorkPage() {
                 </Link>
               </h2>
               <p className="mt-1 text-sm text-muted">{places.length} communities</p>
-              <ul className="mt-4 flex flex-wrap gap-2 text-sm">
-                {places.map((town) => (
-                  <li key={town.slug}>
-                    <Link
-                      href={`/where-we-work/${county.slug}/${town.slug}/`}
-                      className="underline decoration-line underline-offset-4 hover:text-orange"
-                    >
-                      {town.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+              <p className="mt-4 text-sm leading-6 text-ink">
+                {places.map((town) => `${town.name} (${town.kind})`).join("; ")}.
+              </p>
             </section>
           );
         })}
       </div>
     </main>
+    <PageCta />
+    </>
   );
 }

@@ -11,6 +11,8 @@ export function SiteFooter() {
           <img
             src="/brand/logo.svg"
             alt="Roof and Beyond Home Solutions logo"
+            width={242}
+            height={56}
             className="h-14 w-auto"
           />
           <p className="mt-4 text-sm leading-6 text-sky">
@@ -58,7 +60,7 @@ export function SiteFooter() {
             <li>PA registration: {placeholders.hic}</li>
           </ul>
           <Link
-            href="/estimate/"
+            href="/contact/"
             className="mt-4 inline-block bg-orange px-4 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-navy"
           >
             Free estimate

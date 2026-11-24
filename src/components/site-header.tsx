@@ -18,6 +18,8 @@ export function SiteHeader() {
             <img
               src="/brand/logo.svg"
               alt="Roof and Beyond Home Solutions logo"
+              width={242}
+              height={56}
               className="h-12 w-auto sm:h-14"
             />
           </Link>
@@ -46,7 +48,7 @@ export function SiteHeader() {
             </Link>
             <span className="text-sky">{placeholders.phone}</span>
             <Button asChild size="sm">
-              <Link href="/estimate/">Free estimate</Link>
+              <Link href="/contact/">Free estimate</Link>
             </Button>
           </nav>
           <details className="relative ml-auto md:hidden">
@@ -69,7 +71,7 @@ export function SiteHeader() {
               <Link href="/about/" className="block py-2 text-sm">
                 About
               </Link>
-              <Link href="/estimate/" className="mt-2 block bg-orange px-3 py-3 text-center text-xs font-semibold uppercase tracking-[0.14em] text-navy">
+              <Link href="/contact/" className="mt-2 block bg-orange px-3 py-3 text-center text-xs font-semibold uppercase tracking-[0.14em] text-navy">
                 Free estimate
               </Link>
             </div>

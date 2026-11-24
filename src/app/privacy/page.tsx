@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { JsonLd } from "@/components/json-ld";
+import { PageCta } from "@/components/page-cta";
 import { brand, placeholders } from "@/content/brand";
 import { breadcrumbNode } from "@/lib/schema";
 
@@ -17,6 +18,7 @@ const crumbs = [
 
 export default function PrivacyPage() {
   return (
+    <>
     <main className="mx-auto max-w-3xl px-4 py-10">
       <JsonLd data={breadcrumbNode(crumbs)} />
       <Breadcrumbs items={crumbs} />
@@ -55,5 +57,7 @@ export default function PrivacyPage() {
         </p>
       </article>
     </main>
+    <PageCta />
+    </>
   );
 }
