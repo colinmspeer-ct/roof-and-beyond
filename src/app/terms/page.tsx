@@ -45,16 +45,19 @@ export default function TermsPage() {
         </p>
         <p>
           Texts are not sent unless you opt in on the estimate form. If you
-          check a box, Roof & Beyond Home Solutions may text you about your
-          inquiry, estimate, or, if you also opt in to marketing, occasional
-          offers. Message frequency varies. Message and data rates may apply.
-          Reply STOP to opt out, HELP for help. Consent is not a condition of
-          purchase. Declining that option still leaves the estimate request
-          intact.
+          check a box, the office may text you about that inquiry or estimate,
+          and, if you also choose marketing messages, occasional offers. How
+          often those texts arrive will vary. Your wireless carrier may charge
+          for messages and data. Text STOP if you want the messages to stop.
+          Text HELP if you need help with the program. You can still request
+          an estimate, and you can still buy work, if you leave the boxes
+          empty. Agreeing to texts is optional and is not required to purchase
+          anything.
         </p>
         <p>
-          Carriers are not liable for any delayed or undelivered messages. See
-          the Privacy page for how mobile information is handled.
+          Wireless carriers are not responsible if a message is late or never
+          arrives. The Privacy page explains how mobile numbers and opt-in
+          records are used.
         </p>
         <p>
           Sending the form does not create a contract. Work starts only after a
