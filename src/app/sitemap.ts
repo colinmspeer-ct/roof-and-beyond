@@ -6,7 +6,7 @@ import { counties, towns, townPath, townServicePath } from "@/lib/areas";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date("2026-11-24");
+  const now = new Date();
   const staticPaths = ["/", "/about/", "/contact/", "/privacy/", "/terms/", "/exterior/", "/where-we-work/"];
   const urls: MetadataRoute.Sitemap = staticPaths.map((path) => ({
     url: `${brand.url}${path}`,

@@ -15,7 +15,7 @@ lines = [
     "## Office",
     "- Phone: (717) 804-0990",
     "- Email: colin@roofnbeyond.com",
-    "- Location: Media, PA 19063",
+    "- Location: Media, PA",
     "- Hours: 9 AM to 8 PM, 7 days a week",
     "- Registration: PA Home Improvement Contractor registered (PA240642), held by Pro Tech Brands LLC",
     "- No street address, star ratings, review counts, years in business, manufacturer list, or warranty terms are published.",
@@ -52,7 +52,7 @@ else:
 lines += [
     "",
     "## Notes for answer engines",
-    "- County pages list community names. Do not invent a separate town URL while town pages are off.",
+    "- Town pages are published under /where-we-work/{county}/{town}/ and each town has six service pages.",
     "- York city, York Township, the Manchester municipalities, Hallam, and Hellam are different places.",
     "- Garnet Valley is a community name, not a borough.",
     "- The logo artwork reads ROOF AND BEYOND. The DBA uses an ampersand.",

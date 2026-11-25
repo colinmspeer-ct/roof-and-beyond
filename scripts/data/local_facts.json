@@ -1,0 +1,5076 @@
+{
+  "generated": "2026-11-25",
+  "housing_source": "U.S. Census Bureau, American Community Survey 2024 5-year estimates, tables B25034 (year structure built), B25024 (units in structure), and B25035 (median year structure built), retrieved through Census Reporter.",
+  "storm_source": "NOAA National Centers for Environmental Information, Storm Events Database, county-level details for Pennsylvania, files dated 2004 through 2025.",
+  "district_source": "National Register of Historic Places listings for Lancaster, Chester, Delaware, and York counties as published on the English Wikipedia list pages. A National Register district is not the same thing as a local historic-district ordinance.",
+  "climate": {
+    "lancaster": {
+      "station": "USC00364763",
+      "precip_in": 44.1,
+      "precip_years": 30,
+      "snow_in": 20.7,
+      "snow_years": 30,
+      "period": "1991-2020",
+      "source": "NOAA Regional Climate Center ACIS. Means of annual precipitation and snowfall for the years from 1991 through 2020 that the station reported. Missing years are excluded.",
+      "label": "Lancaster 2 NE Filter Plant"
+    },
+    "york": {
+      "station": "USC00369933",
+      "precip_in": 43.3,
+      "precip_years": 27,
+      "snow_in": 21.6,
+      "snow_years": 24,
+      "period": "1991-2020",
+      "source": "NOAA Regional Climate Center ACIS. Means of annual precipitation and snowfall for the years from 1991 through 2020 that the station reported. Missing years are excluded.",
+      "label": "York 3 SSW Pump Station"
+    },
+    "chester": {
+      "station": "USC00369464",
+      "precip_in": 47.5,
+      "precip_years": 20,
+      "snow_in": 26.7,
+      "snow_years": 19,
+      "period": "1991-2020",
+      "source": "NOAA Regional Climate Center ACIS. Means of annual precipitation and snowfall for the years from 1991 through 2020 that the station reported. Missing years are excluded.",
+      "label": "West Chester 2 NW"
+    },
+    "delaware": {
+      "station": "KPHL",
+      "precip_in": 44.1,
+      "precip_years": 30,
+      "snow_in": 23.2,
+      "snow_years": 30,
+      "period": "1991-2020",
+      "source": "NOAA Regional Climate Center ACIS. Means of annual precipitation and snowfall for the years from 1991 through 2020 that the station reported. Missing years are excluded.",
+      "label": "Philadelphia International Airport"
+    }
+  },
+  "towns": {
+    "adamstown-pa": {
+      "slug": "adamstown-pa",
+      "name": "Adamstown",
+      "county": "lancaster",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4200364",
+        "census_name": "Adamstown borough",
+        "scope_note": "Adamstown borough is incorporated in both Lancaster County and Berks County. The ACS place total is the whole borough, not a Lancaster-only slice."
+      },
+      "housing": {
+        "units": 764,
+        "units_moe": 124,
+        "thin": false,
+        "median_year": 1996,
+        "median_moe": 4,
+        "pct_pre1939": 21,
+        "pct_pre1970": 34,
+        "pct_since1990": 61,
+        "pct_since2010": 11,
+        "pct_detached": 66,
+        "pct_attached": 23,
+        "pct_mobile": 1,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "09-JUL-06 17:25:",
+            "magnitude": "0.88",
+            "mag_type": "",
+            "location": "Adamstown",
+            "range": "",
+            "azimuth": "",
+            "attributed": true
+          },
+          {
+            "type": "Thunderstorm Wind",
+            "date": "09-JUL-06 17:07:",
+            "magnitude": "50",
+            "mag_type": "EG",
+            "location": "Adamstown",
+            "range": "",
+            "azimuth": "",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "akron-pa": {
+      "slug": "akron-pa",
+      "name": "Akron",
+      "county": "lancaster",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4200540",
+        "census_name": "Akron borough",
+        "scope_note": "Housing figures are for Akron borough."
+      },
+      "housing": {
+        "units": 1692,
+        "units_moe": 129,
+        "thin": false,
+        "median_year": 1971,
+        "median_moe": 5,
+        "pct_pre1939": 14,
+        "pct_pre1970": 49,
+        "pct_since1990": 17,
+        "pct_since2010": 4,
+        "pct_detached": 54,
+        "pct_attached": 11,
+        "pct_mobile": 3,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "27-MAY-07 19:24:",
+            "magnitude": "1.00",
+            "mag_type": "",
+            "location": "Akron",
+            "range": ".69",
+            "azimuth": "N",
+            "attributed": true
+          },
+          {
+            "type": "Thunderstorm Wind",
+            "date": "22-APR-23 14:45:",
+            "magnitude": "52.00",
+            "mag_type": "EG",
+            "location": "Akron",
+            "range": ".99",
+            "azimuth": "W",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "bird-in-hand-pa": {
+      "slug": "bird-in-hand-pa",
+      "name": "Bird-in-Hand",
+      "county": "lancaster",
+      "kind": "village in East Lampeter Township",
+      "geo": {
+        "status": "cdp",
+        "sumlevel": "160",
+        "geoid": "16000US4206496",
+        "census_name": "Bird-in-Hand CDP",
+        "scope_note": "Housing figures are for the Census place Bird-in-Hand CDP, a statistical boundary. The local description of the place is: village in East Lampeter Township."
+      },
+      "housing": {
+        "units": 130,
+        "units_moe": 86,
+        "thin": true,
+        "median_year": 1976,
+        "median_moe": 8,
+        "pct_pre1939": 11,
+        "pct_pre1970": 28,
+        "pct_since1990": 16,
+        "pct_since2010": 0,
+        "pct_detached": 100,
+        "pct_attached": 0,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "29-MAY-09 14:25:",
+            "magnitude": "1.00",
+            "mag_type": "",
+            "location": "Bird In Hand",
+            "range": ".53",
+            "azimuth": "W",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "christiana-pa": {
+      "slug": "christiana-pa",
+      "name": "Christiana",
+      "county": "lancaster",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4213512",
+        "census_name": "Christiana borough",
+        "scope_note": "Housing figures are for Christiana borough."
+      },
+      "housing": {
+        "units": 352,
+        "units_moe": 64,
+        "thin": false,
+        "median_year": 1941,
+        "median_moe": 6,
+        "pct_pre1939": 49,
+        "pct_pre1970": 74,
+        "pct_since1990": 10,
+        "pct_since2010": 3,
+        "pct_detached": 48,
+        "pct_attached": 24,
+        "pct_mobile": 3,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "27-JUL-08 17:50:",
+            "magnitude": "0.88",
+            "mag_type": "",
+            "location": "Christiana",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          },
+          {
+            "type": "Thunderstorm Wind",
+            "date": "27-JUL-08 17:40:",
+            "magnitude": "50.00",
+            "mag_type": "EG",
+            "location": "Christiana",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "columbia-pa": {
+      "slug": "columbia-pa",
+      "name": "Columbia",
+      "county": "lancaster",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4215384",
+        "census_name": "Columbia borough",
+        "scope_note": "Housing figures are for Columbia borough."
+      },
+      "housing": {
+        "units": 4936,
+        "units_moe": 351,
+        "thin": false,
+        "median_year": 1938,
+        "median_moe": null,
+        "pct_pre1939": 52,
+        "pct_pre1970": 77,
+        "pct_since1990": 6,
+        "pct_since2010": 1,
+        "pct_detached": 30,
+        "pct_attached": 31,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "14-MAY-10 17:00:",
+            "magnitude": "0.88",
+            "mag_type": "",
+            "location": "Columbia",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "14-JUL-25 17:50:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Columbia",
+            "range": "1.04",
+            "azimuth": "ENE",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": [
+        "Columbia Historic District"
+      ]
+    },
+    "denver-pa": {
+      "slug": "denver-pa",
+      "name": "Denver",
+      "county": "lancaster",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4218888",
+        "census_name": "Denver borough",
+        "scope_note": "Housing figures are for Denver borough."
+      },
+      "housing": {
+        "units": 1513,
+        "units_moe": 123,
+        "thin": false,
+        "median_year": 1975,
+        "median_moe": 4,
+        "pct_pre1939": 19,
+        "pct_pre1970": 41,
+        "pct_since1990": 23,
+        "pct_since2010": 0,
+        "pct_detached": 55,
+        "pct_attached": 27,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "19-MAY-19 19:05:",
+            "magnitude": "1.25",
+            "mag_type": "",
+            "location": "Denver",
+            "range": ".87",
+            "azimuth": "N",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "14-JUL-04 16:15:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Denver",
+            "range": "",
+            "azimuth": "",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "east-petersburg-pa": {
+      "slug": "east-petersburg-pa",
+      "name": "East Petersburg",
+      "county": "lancaster",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4221688",
+        "census_name": "East Petersburg borough",
+        "scope_note": "Housing figures are for East Petersburg borough."
+      },
+      "housing": {
+        "units": 2018,
+        "units_moe": 146,
+        "thin": false,
+        "median_year": 1964,
+        "median_moe": 4,
+        "pct_pre1939": 10,
+        "pct_pre1970": 62,
+        "pct_since1990": 3,
+        "pct_since2010": 1,
+        "pct_detached": 75,
+        "pct_attached": 24,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "30-JUN-09 12:55:",
+            "magnitude": "0.75",
+            "mag_type": "",
+            "location": "East Petersburg",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "30-JUN-25 19:59:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "East Petersburg",
+            "range": "0",
+            "azimuth": "ENE",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "elizabethtown-pa": {
+      "slug": "elizabethtown-pa",
+      "name": "Elizabethtown",
+      "county": "lancaster",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4223016",
+        "census_name": "Elizabethtown borough",
+        "scope_note": "Housing figures are for Elizabethtown borough."
+      },
+      "housing": {
+        "units": 4679,
+        "units_moe": 226,
+        "thin": false,
+        "median_year": 1964,
+        "median_moe": 8,
+        "pct_pre1939": 24,
+        "pct_pre1970": 55,
+        "pct_since1990": 20,
+        "pct_since2010": 4,
+        "pct_detached": 42,
+        "pct_attached": 21,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "31-MAY-10 18:00:",
+            "magnitude": "1.25",
+            "mag_type": "",
+            "location": "Elizabethtown",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "07-JUL-08 20:16:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Elizabethtown",
+            "range": "4",
+            "azimuth": "WSW",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "ephrata-pa": {
+      "slug": "ephrata-pa",
+      "name": "Ephrata",
+      "county": "lancaster",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4223832",
+        "census_name": "Ephrata borough",
+        "scope_note": "Housing figures are for Ephrata borough."
+      },
+      "housing": {
+        "units": 6095,
+        "units_moe": 314,
+        "thin": false,
+        "median_year": 1971,
+        "median_moe": 6,
+        "pct_pre1939": 24,
+        "pct_pre1970": 49,
+        "pct_since1990": 21,
+        "pct_since2010": 5,
+        "pct_detached": 35,
+        "pct_attached": 30,
+        "pct_mobile": 2,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "29-MAR-09 15:45:",
+            "magnitude": "0.88",
+            "mag_type": "",
+            "location": "Ephrata",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "12-AUG-04 21:45:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Ephrata",
+            "range": "",
+            "azimuth": "",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": [
+        "Ephrata Commercial Historic District"
+      ]
+    },
+    "gap-pa": {
+      "slug": "gap-pa",
+      "name": "Gap",
+      "county": "lancaster",
+      "kind": "village in Salisbury Township",
+      "geo": {
+        "status": "cdp",
+        "sumlevel": "160",
+        "geoid": "16000US4228376",
+        "census_name": "Gap CDP",
+        "scope_note": "Housing figures are for the Census place Gap CDP, a statistical boundary. The local description of the place is: village in Salisbury Township."
+      },
+      "housing": {
+        "units": 756,
+        "units_moe": 135,
+        "thin": false,
+        "median_year": 1974,
+        "median_moe": 13,
+        "pct_pre1939": 39,
+        "pct_pre1970": 46,
+        "pct_since1990": 30,
+        "pct_since2010": 1,
+        "pct_detached": 76,
+        "pct_attached": 10,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "27-JUL-06 17:15:",
+            "magnitude": "0.75",
+            "mag_type": "",
+            "location": "Gap",
+            "range": "",
+            "azimuth": "",
+            "attributed": true
+          },
+          {
+            "type": "Thunderstorm Wind",
+            "date": "31-OCT-19 21:33:",
+            "magnitude": "50.00",
+            "mag_type": "EG",
+            "location": "Gap",
+            "range": ".87",
+            "azimuth": "NE",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "intercourse-pa": {
+      "slug": "intercourse-pa",
+      "name": "Intercourse",
+      "county": "lancaster",
+      "kind": "village in Leacock Township",
+      "geo": {
+        "status": "cdp",
+        "sumlevel": "160",
+        "geoid": "16000US4237016",
+        "census_name": "Intercourse CDP",
+        "scope_note": "Housing figures are for the Census place Intercourse CDP, a statistical boundary. The local description of the place is: village in Leacock Township."
+      },
+      "housing": {
+        "units": 520,
+        "units_moe": 96,
+        "thin": false,
+        "median_year": 1988,
+        "median_moe": 12,
+        "pct_pre1939": 7,
+        "pct_pre1970": 27,
+        "pct_since1990": 48,
+        "pct_since2010": 30,
+        "pct_detached": 91,
+        "pct_attached": 5,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Thunderstorm Wind",
+            "date": "27-JUN-13 15:13:",
+            "magnitude": "50.00",
+            "mag_type": "EG",
+            "location": "Intercourse",
+            "range": "2.07",
+            "azimuth": "N",
+            "attributed": true
+          }
+        ],
+        "county_hail": {
+          "type": "Hail",
+          "date": "01-JUL-04 15:11:",
+          "magnitude": "2.50",
+          "mag_type": "",
+          "location": "Lititz",
+          "range": "",
+          "azimuth": "",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "lancaster-pa": {
+      "slug": "lancaster-pa",
+      "name": "Lancaster",
+      "county": "lancaster",
+      "kind": "city",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4241216",
+        "census_name": "Lancaster city",
+        "scope_note": "Housing figures are for Lancaster city."
+      },
+      "housing": {
+        "units": 23049,
+        "units_moe": 623,
+        "thin": false,
+        "median_year": 1938,
+        "median_moe": null,
+        "pct_pre1939": 54,
+        "pct_pre1970": 78,
+        "pct_since1990": 9,
+        "pct_since2010": 3,
+        "pct_detached": 12,
+        "pct_attached": 52,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "24-APR-06 06:35:",
+            "magnitude": "1.00",
+            "mag_type": "",
+            "location": "Lancaster",
+            "range": "3",
+            "azimuth": "NE",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "31-JUL-25 13:00:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Lancaster",
+            "range": "1.01",
+            "azimuth": "SSW",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": [
+        "Lancaster City Historic District"
+      ]
+    },
+    "landisville-pa": {
+      "slug": "landisville-pa",
+      "name": "Landisville",
+      "county": "lancaster",
+      "kind": "village in East Hempfield Township",
+      "geo": {
+        "status": "cdp",
+        "sumlevel": "160",
+        "geoid": "16000US4241304",
+        "census_name": "Landisville CDP",
+        "scope_note": "Housing figures are for the Census place Landisville CDP, a statistical boundary. The local description of the place is: village in East Hempfield Township."
+      },
+      "housing": {
+        "units": 970,
+        "units_moe": 269,
+        "thin": false,
+        "median_year": 1969,
+        "median_moe": 26,
+        "pct_pre1939": 7,
+        "pct_pre1970": 51,
+        "pct_since1990": 14,
+        "pct_since2010": 7,
+        "pct_detached": 90,
+        "pct_attached": 0,
+        "pct_mobile": 3,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "28-MAY-19 16:45:",
+            "magnitude": "0.88",
+            "mag_type": "",
+            "location": "Landisville",
+            "range": ".69",
+            "azimuth": "S",
+            "attributed": true
+          },
+          {
+            "type": "Thunderstorm Wind",
+            "date": "30-JUN-25 22:30:",
+            "magnitude": "52.00",
+            "mag_type": "EG",
+            "location": "Landisville",
+            "range": "1",
+            "azimuth": "SSE",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "leola-pa": {
+      "slug": "leola-pa",
+      "name": "Leola",
+      "county": "lancaster",
+      "kind": "village in Upper Leacock Township",
+      "geo": {
+        "status": "cdp",
+        "sumlevel": "160",
+        "geoid": "16000US4242776",
+        "census_name": "Leola CDP",
+        "scope_note": "Housing figures are for the Census place Leola CDP, a statistical boundary. The local description of the place is: village in Upper Leacock Township."
+      },
+      "housing": {
+        "units": 3057,
+        "units_moe": 268,
+        "thin": false,
+        "median_year": 1977,
+        "median_moe": 3,
+        "pct_pre1939": 13,
+        "pct_pre1970": 37,
+        "pct_since1990": 35,
+        "pct_since2010": 6,
+        "pct_detached": 63,
+        "pct_attached": 12,
+        "pct_mobile": 1,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "10-JUN-08 17:30:",
+            "magnitude": "1.75",
+            "mag_type": "",
+            "location": "Leola",
+            "range": ".87",
+            "azimuth": "NW",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "01-JUL-25 15:56:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Leola",
+            "range": ".45",
+            "azimuth": "NNW",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "lititz-pa": {
+      "slug": "lititz-pa",
+      "name": "Lititz",
+      "county": "lancaster",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4243816",
+        "census_name": "Lititz borough",
+        "scope_note": "Housing figures are for Lititz borough."
+      },
+      "housing": {
+        "units": 4112,
+        "units_moe": 240,
+        "thin": false,
+        "median_year": 1962,
+        "median_moe": 5,
+        "pct_pre1939": 32,
+        "pct_pre1970": 57,
+        "pct_since1990": 22,
+        "pct_since2010": 7,
+        "pct_detached": 43,
+        "pct_attached": 29,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "29-MAR-09 15:40:",
+            "magnitude": "1.00",
+            "mag_type": "",
+            "location": "Lititz",
+            "range": ".53",
+            "azimuth": "W",
+            "attributed": true
+          },
+          {
+            "type": "Thunderstorm Wind",
+            "date": "29-MAR-09 15:50:",
+            "magnitude": "70.00",
+            "mag_type": "EG",
+            "location": "Lititz",
+            "range": "1.25",
+            "azimuth": "ENE",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": [
+        "Lititz Moravian Historic District"
+      ]
+    },
+    "manheim-township-pa": {
+      "slug": "manheim-township-pa",
+      "name": "Manheim Township",
+      "county": "lancaster",
+      "kind": "township",
+      "geo": {
+        "status": "township",
+        "sumlevel": "060",
+        "geoid": "06000US4207146896",
+        "census_name": "Manheim township",
+        "scope_note": "Housing figures are for Manheim township in Lancaster County."
+      },
+      "housing": {
+        "units": 18231,
+        "units_moe": 522,
+        "thin": false,
+        "median_year": 1979,
+        "median_moe": 3,
+        "pct_pre1939": 8,
+        "pct_pre1970": 37,
+        "pct_since1990": 40,
+        "pct_since2010": 14,
+        "pct_detached": 60,
+        "pct_attached": 17,
+        "pct_mobile": 1,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [],
+        "county_hail": {
+          "type": "Hail",
+          "date": "01-JUL-04 15:11:",
+          "magnitude": "2.50",
+          "mag_type": "",
+          "location": "Lititz",
+          "range": "",
+          "azimuth": "",
+          "attributed": false
+        }
+      },
+      "districts": [
+        "Landis Valley Museum",
+        "Shreiner Farm"
+      ]
+    },
+    "manheim-pa": {
+      "slug": "manheim-pa",
+      "name": "Manheim",
+      "county": "lancaster",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4246888",
+        "census_name": "Manheim borough",
+        "scope_note": "Housing figures are for Manheim borough."
+      },
+      "housing": {
+        "units": 2057,
+        "units_moe": 189,
+        "thin": false,
+        "median_year": 1954,
+        "median_moe": 2,
+        "pct_pre1939": 33,
+        "pct_pre1970": 78,
+        "pct_since1990": 10,
+        "pct_since2010": 0,
+        "pct_detached": 62,
+        "pct_attached": 23,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "29-MAR-09 15:50:",
+            "magnitude": "0.88",
+            "mag_type": "",
+            "location": "Manheim",
+            "range": ".87",
+            "azimuth": "SE",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "30-JUN-25 23:00:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Manheim",
+            "range": "1",
+            "azimuth": "SSE",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": [
+        "Manheim Borough Historic District"
+      ]
+    },
+    "marietta-pa": {
+      "slug": "marietta-pa",
+      "name": "Marietta",
+      "county": "lancaster",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4247424",
+        "census_name": "Marietta borough",
+        "scope_note": "Housing figures are for Marietta borough."
+      },
+      "housing": {
+        "units": 1446,
+        "units_moe": 101,
+        "thin": false,
+        "median_year": 1938,
+        "median_moe": null,
+        "pct_pre1939": 66,
+        "pct_pre1970": 79,
+        "pct_since1990": 15,
+        "pct_since2010": 12,
+        "pct_detached": 29,
+        "pct_attached": 36,
+        "pct_mobile": 4,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [],
+        "county_hail": {
+          "type": "Hail",
+          "date": "01-JUL-04 15:11:",
+          "magnitude": "2.50",
+          "mag_type": "",
+          "location": "Lititz",
+          "range": "",
+          "azimuth": "",
+          "attributed": false
+        }
+      },
+      "districts": [
+        "Marietta Historic District"
+      ]
+    },
+    "millersville-pa": {
+      "slug": "millersville-pa",
+      "name": "Millersville",
+      "county": "lancaster",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4249728",
+        "census_name": "Millersville borough",
+        "scope_note": "Housing figures are for Millersville borough."
+      },
+      "housing": {
+        "units": 2328,
+        "units_moe": 223,
+        "thin": false,
+        "median_year": 1966,
+        "median_moe": 6,
+        "pct_pre1939": 17,
+        "pct_pre1970": 55,
+        "pct_since1990": 19,
+        "pct_since2010": 5,
+        "pct_detached": 53,
+        "pct_attached": 17,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "31-MAY-10 16:45:",
+            "magnitude": "1.00",
+            "mag_type": "",
+            "location": "Millersville",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "02-JUN-18 00:40:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Millersville",
+            "range": "1.32",
+            "azimuth": "WNW",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "mount-joy-pa": {
+      "slug": "mount-joy-pa",
+      "name": "Mount Joy",
+      "county": "lancaster",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4251656",
+        "census_name": "Mount Joy borough",
+        "scope_note": "Housing figures are for Mount Joy borough."
+      },
+      "housing": {
+        "units": 3668,
+        "units_moe": 262,
+        "thin": false,
+        "median_year": 1974,
+        "median_moe": 4,
+        "pct_pre1939": 25,
+        "pct_pre1970": 45,
+        "pct_since1990": 35,
+        "pct_since2010": 12,
+        "pct_detached": 47,
+        "pct_attached": 21,
+        "pct_mobile": 5,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Flash Flood",
+            "date": "21-AUG-04 14:30:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Mt Joy",
+            "range": "",
+            "azimuth": "",
+            "attributed": true
+          }
+        ],
+        "county_hail": {
+          "type": "Hail",
+          "date": "01-JUL-04 15:11:",
+          "magnitude": "2.50",
+          "mag_type": "",
+          "location": "Lititz",
+          "range": "",
+          "azimuth": "",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "mountville-pa": {
+      "slug": "mountville-pa",
+      "name": "Mountville",
+      "county": "lancaster",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4252016",
+        "census_name": "Mountville borough",
+        "scope_note": "Housing figures are for Mountville borough."
+      },
+      "housing": {
+        "units": 1309,
+        "units_moe": 163,
+        "thin": false,
+        "median_year": 1982,
+        "median_moe": 4,
+        "pct_pre1939": 15,
+        "pct_pre1970": 37,
+        "pct_since1990": 31,
+        "pct_since2010": 6,
+        "pct_detached": 36,
+        "pct_attached": 39,
+        "pct_mobile": 2,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "14-MAY-10 17:05:",
+            "magnitude": "1.00",
+            "mag_type": "",
+            "location": "Mountville",
+            "range": ".69",
+            "azimuth": "N",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "14-JUL-25 16:11:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Mountville",
+            "range": "1.06",
+            "azimuth": "W",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "new-holland-pa": {
+      "slug": "new-holland-pa",
+      "name": "New Holland",
+      "county": "lancaster",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4253696",
+        "census_name": "New Holland borough",
+        "scope_note": "Housing figures are for New Holland borough."
+      },
+      "housing": {
+        "units": 2353,
+        "units_moe": 220,
+        "thin": false,
+        "median_year": 1970,
+        "median_moe": 12,
+        "pct_pre1939": 23,
+        "pct_pre1970": 49,
+        "pct_since1990": 22,
+        "pct_since2010": 2,
+        "pct_detached": 55,
+        "pct_attached": 20,
+        "pct_mobile": 2,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "02-SEP-13 18:57:",
+            "magnitude": "1.00",
+            "mag_type": "",
+            "location": "New Holland",
+            "range": "1.48",
+            "azimuth": "NNW",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "21-AUG-18 22:25:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "New Holland",
+            "range": ".53",
+            "azimuth": "W",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "paradise-pa": {
+      "slug": "paradise-pa",
+      "name": "Paradise",
+      "county": "lancaster",
+      "kind": "village in Paradise Township",
+      "geo": {
+        "status": "cdp",
+        "sumlevel": "160",
+        "geoid": "16000US4257840",
+        "census_name": "Paradise CDP",
+        "scope_note": "Housing figures are for the Census place Paradise CDP, a statistical boundary. The local description of the place is: village in Paradise Township."
+      },
+      "housing": {
+        "units": 351,
+        "units_moe": 105,
+        "thin": false,
+        "median_year": 1953,
+        "median_moe": 17,
+        "pct_pre1939": 42,
+        "pct_pre1970": 62,
+        "pct_since1990": 21,
+        "pct_since2010": 16,
+        "pct_detached": 52,
+        "pct_attached": 17,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [],
+        "county_hail": {
+          "type": "Hail",
+          "date": "01-JUL-04 15:11:",
+          "magnitude": "2.50",
+          "mag_type": "",
+          "location": "Lititz",
+          "range": "",
+          "azimuth": "",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "quarryville-pa": {
+      "slug": "quarryville-pa",
+      "name": "Quarryville",
+      "county": "lancaster",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4263064",
+        "census_name": "Quarryville borough",
+        "scope_note": "Housing figures are for Quarryville borough."
+      },
+      "housing": {
+        "units": 1138,
+        "units_moe": 120,
+        "thin": false,
+        "median_year": 1977,
+        "median_moe": 7,
+        "pct_pre1939": 19,
+        "pct_pre1970": 43,
+        "pct_since1990": 38,
+        "pct_since2010": 8,
+        "pct_detached": 59,
+        "pct_attached": 17,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "27-JUL-08 11:50:",
+            "magnitude": "1.00",
+            "mag_type": "",
+            "location": "Quarryville",
+            "range": "8",
+            "azimuth": "SE",
+            "attributed": true
+          },
+          {
+            "type": "Heavy Rain",
+            "date": "06-SEP-08 13:00:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Quarryville",
+            "range": ".53",
+            "azimuth": "E",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "reamstown-pa": {
+      "slug": "reamstown-pa",
+      "name": "Reamstown",
+      "county": "lancaster",
+      "kind": "CDP in East Cocalico Township",
+      "geo": {
+        "status": "cdp",
+        "sumlevel": "160",
+        "geoid": "16000US4263664",
+        "census_name": "Reamstown CDP",
+        "scope_note": "Housing figures are for the Census place Reamstown CDP, a statistical boundary. The local description of the place is: CDP in East Cocalico Township."
+      },
+      "housing": {
+        "units": 1253,
+        "units_moe": 264,
+        "thin": false,
+        "median_year": 1983,
+        "median_moe": 3,
+        "pct_pre1939": 16,
+        "pct_pre1970": 37,
+        "pct_since1990": 31,
+        "pct_since2010": 3,
+        "pct_detached": 75,
+        "pct_attached": 11,
+        "pct_mobile": 4,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [],
+        "county_hail": {
+          "type": "Hail",
+          "date": "01-JUL-04 15:11:",
+          "magnitude": "2.50",
+          "mag_type": "",
+          "location": "Lititz",
+          "range": "",
+          "azimuth": "",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "strasburg-pa": {
+      "slug": "strasburg-pa",
+      "name": "Strasburg",
+      "county": "lancaster",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4274712",
+        "census_name": "Strasburg borough",
+        "scope_note": "Housing figures are for Strasburg borough."
+      },
+      "housing": {
+        "units": 1331,
+        "units_moe": 141,
+        "thin": false,
+        "median_year": 1976,
+        "median_moe": 12,
+        "pct_pre1939": 24,
+        "pct_pre1970": 45,
+        "pct_since1990": 24,
+        "pct_since2010": 11,
+        "pct_detached": 69,
+        "pct_attached": 16,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "24-APR-06 04:12:",
+            "magnitude": "0.75",
+            "mag_type": "",
+            "location": "Strasburg",
+            "range": "5",
+            "azimuth": "SW",
+            "attributed": true
+          },
+          {
+            "type": "Thunderstorm Wind",
+            "date": "26-JUL-12 18:30:",
+            "magnitude": "50.00",
+            "mag_type": "EG",
+            "location": "Strasburg",
+            "range": ".53",
+            "azimuth": "E",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": [
+        "Strasburg Historic District"
+      ]
+    },
+    "terre-hill-pa": {
+      "slug": "terre-hill-pa",
+      "name": "Terre Hill",
+      "county": "lancaster",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4276400",
+        "census_name": "Terre Hill borough",
+        "scope_note": "Housing figures are for Terre Hill borough."
+      },
+      "housing": {
+        "units": 396,
+        "units_moe": 103,
+        "thin": false,
+        "median_year": 1956,
+        "median_moe": 6,
+        "pct_pre1939": 37,
+        "pct_pre1970": 65,
+        "pct_since1990": 12,
+        "pct_since2010": 6,
+        "pct_detached": 74,
+        "pct_attached": 4,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "18-JUL-06 18:20:",
+            "magnitude": "1.75",
+            "mag_type": "",
+            "location": "Terre Hill",
+            "range": "",
+            "azimuth": "",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "22-AUG-21 14:13:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Terre Hill",
+            "range": ".89",
+            "azimuth": "SSW",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "willow-street-pa": {
+      "slug": "willow-street-pa",
+      "name": "Willow Street",
+      "county": "lancaster",
+      "kind": "village in West Lampeter Township",
+      "geo": {
+        "status": "cdp",
+        "sumlevel": "160",
+        "geoid": "16000US4285464",
+        "census_name": "Willow Street CDP",
+        "scope_note": "Housing figures are for the Census place Willow Street CDP, a statistical boundary. The local description of the place is: village in West Lampeter Township."
+      },
+      "housing": {
+        "units": 4578,
+        "units_moe": 407,
+        "thin": false,
+        "median_year": 1989,
+        "median_moe": 4,
+        "pct_pre1939": 8,
+        "pct_pre1970": 20,
+        "pct_since1990": 49,
+        "pct_since2010": 20,
+        "pct_detached": 37,
+        "pct_attached": 19,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "31-MAY-10 15:50:",
+            "magnitude": "1.00",
+            "mag_type": "",
+            "location": "Willow Street",
+            "range": ".49",
+            "azimuth": "NNW",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "06-JUN-05 16:05:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Willow Street",
+            "range": "6",
+            "azimuth": "S",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "atglen-pa": {
+      "slug": "atglen-pa",
+      "name": "Atglen",
+      "county": "chester",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4203384",
+        "census_name": "Atglen borough",
+        "scope_note": "Housing figures are for Atglen borough."
+      },
+      "housing": {
+        "units": 400,
+        "units_moe": 68,
+        "thin": false,
+        "median_year": 1992,
+        "median_moe": 2,
+        "pct_pre1939": 20,
+        "pct_pre1970": 31,
+        "pct_since1990": 57,
+        "pct_since2010": 3,
+        "pct_detached": 77,
+        "pct_attached": 16,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Heavy Rain",
+            "date": "19-SEP-16 08:46:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Atglen",
+            "range": ".53",
+            "azimuth": "W",
+            "attributed": true
+          }
+        ],
+        "county_hail": {
+          "type": "Hail",
+          "date": "10-AUG-08 10:10:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Exton",
+          "range": "0",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "avondale-pa": {
+      "slug": "avondale-pa",
+      "name": "Avondale",
+      "county": "chester",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4203656",
+        "census_name": "Avondale borough",
+        "scope_note": "Housing figures are for Avondale borough."
+      },
+      "housing": {
+        "units": 425,
+        "units_moe": 133,
+        "thin": true,
+        "median_year": 1938,
+        "median_moe": null,
+        "pct_pre1939": 56,
+        "pct_pre1970": 65,
+        "pct_since1990": 22,
+        "pct_since2010": 17,
+        "pct_detached": 45,
+        "pct_attached": 25,
+        "pct_mobile": 1,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Flash Flood",
+            "date": "09-JUL-25 19:00:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Avondale",
+            "range": "1",
+            "azimuth": "S",
+            "attributed": true
+          }
+        ],
+        "county_hail": {
+          "type": "Hail",
+          "date": "10-AUG-08 10:10:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Exton",
+          "range": "0",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "berwyn-pa": {
+      "slug": "berwyn-pa",
+      "name": "Berwyn",
+      "county": "chester",
+      "kind": "CDP in Easttown and Tredyffrin",
+      "geo": {
+        "status": "cdp",
+        "sumlevel": "160",
+        "geoid": "16000US4205904",
+        "census_name": "Berwyn CDP",
+        "scope_note": "Housing figures are for the Census place Berwyn CDP, a statistical boundary. The local description of the place is: CDP in Easttown and Tredyffrin."
+      },
+      "housing": {
+        "units": 1506,
+        "units_moe": 165,
+        "thin": false,
+        "median_year": 1961,
+        "median_moe": 8,
+        "pct_pre1939": 26,
+        "pct_pre1970": 60,
+        "pct_since1990": 14,
+        "pct_since2010": 8,
+        "pct_detached": 58,
+        "pct_attached": 14,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "06-JUL-20 15:17:",
+            "magnitude": "0.75",
+            "mag_type": "",
+            "location": "Berwyn",
+            "range": "1.06",
+            "azimuth": "W",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "15-JUL-14 19:00:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Berwyn",
+            "range": "1.26",
+            "azimuth": "WSW",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "chester-springs-pa": {
+      "slug": "chester-springs-pa",
+      "name": "Chester Springs",
+      "county": "chester",
+      "kind": "village in West Pikeland Township",
+      "geo": {
+        "status": "township",
+        "sumlevel": "060",
+        "geoid": "06000US4202983832",
+        "census_name": "West Pikeland township",
+        "scope_note": "Chester Springs is not a 2024 Census place. These housing figures are for West Pikeland Township, the township this village sits in, and they cover the township rather than a village boundary."
+      },
+      "housing": {
+        "units": 1400,
+        "units_moe": 70,
+        "thin": false,
+        "median_year": 1991,
+        "median_moe": 3,
+        "pct_pre1939": 6,
+        "pct_pre1970": 21,
+        "pct_since1990": 53,
+        "pct_since2010": 3,
+        "pct_detached": 87,
+        "pct_attached": 11,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [],
+        "county_hail": {
+          "type": "Hail",
+          "date": "10-AUG-08 10:10:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Exton",
+          "range": "0",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": [
+        "Chester Springs Historic District"
+      ]
+    },
+    "coatesville-pa": {
+      "slug": "coatesville-pa",
+      "name": "Coatesville",
+      "county": "chester",
+      "kind": "city",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4214712",
+        "census_name": "Coatesville city",
+        "scope_note": "Housing figures are for Coatesville city."
+      },
+      "housing": {
+        "units": 5449,
+        "units_moe": 332,
+        "thin": false,
+        "median_year": 1952,
+        "median_moe": 6,
+        "pct_pre1939": 37,
+        "pct_pre1970": 61,
+        "pct_since1990": 30,
+        "pct_since2010": 3,
+        "pct_detached": 20,
+        "pct_attached": 45,
+        "pct_mobile": 1,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "29-JUN-19 14:33:",
+            "magnitude": "1.00",
+            "mag_type": "",
+            "location": "Coatesville",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "27-APR-07 01:06:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Coatesville",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": [
+        "Coatesville Historic District",
+        "Coatesville Veterans Administration Hospital Historic District",
+        "Lukens Historic District"
+      ]
+    },
+    "cochranville-pa": {
+      "slug": "cochranville-pa",
+      "name": "Cochranville",
+      "county": "chester",
+      "kind": "CDP in West Fallowfield Township",
+      "geo": {
+        "status": "cdp",
+        "sumlevel": "160",
+        "geoid": "16000US4214808",
+        "census_name": "Cochranville CDP",
+        "scope_note": "Housing figures are for the Census place Cochranville CDP, a statistical boundary. The local description of the place is: CDP in West Fallowfield Township."
+      },
+      "housing": {
+        "units": 251,
+        "units_moe": 65,
+        "thin": false,
+        "median_year": 1961,
+        "median_moe": 19,
+        "pct_pre1939": 39,
+        "pct_pre1970": 79,
+        "pct_since1990": 12,
+        "pct_since2010": 2,
+        "pct_detached": 81,
+        "pct_attached": 2,
+        "pct_mobile": 5,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "10-AUG-08 16:40:",
+            "magnitude": "1.00",
+            "mag_type": "",
+            "location": "Cochranville",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "04-AUG-20 09:50:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Cochranville",
+            "range": "2.24",
+            "azimuth": "SSW",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "downingtown-pa": {
+      "slug": "downingtown-pa",
+      "name": "Downingtown",
+      "county": "chester",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4219752",
+        "census_name": "Downingtown borough",
+        "scope_note": "Housing figures are for Downingtown borough."
+      },
+      "housing": {
+        "units": 3697,
+        "units_moe": 234,
+        "thin": false,
+        "median_year": 1968,
+        "median_moe": 5,
+        "pct_pre1939": 21,
+        "pct_pre1970": 53,
+        "pct_since1990": 25,
+        "pct_since2010": 10,
+        "pct_detached": 22,
+        "pct_attached": 35,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "27-MAY-10 18:45:",
+            "magnitude": "0.88",
+            "mag_type": "",
+            "location": "Downingtown",
+            "range": "1.37",
+            "azimuth": "ESE",
+            "attributed": true
+          },
+          {
+            "type": "Flood",
+            "date": "31-MAR-17 17:47:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Downingtown",
+            "range": "1.1",
+            "azimuth": "SSW",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": [
+        "East Lancaster Avenue Historic District"
+      ]
+    },
+    "elverson-pa": {
+      "slug": "elverson-pa",
+      "name": "Elverson",
+      "county": "chester",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4223440",
+        "census_name": "Elverson borough",
+        "scope_note": "Housing figures are for Elverson borough."
+      },
+      "housing": {
+        "units": 674,
+        "units_moe": 67,
+        "thin": false,
+        "median_year": 1996,
+        "median_moe": 2,
+        "pct_pre1939": 23,
+        "pct_pre1970": 26,
+        "pct_since1990": 69,
+        "pct_since2010": 14,
+        "pct_detached": 41,
+        "pct_attached": 36,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "18-JUL-06 17:43:",
+            "magnitude": "1.00",
+            "mag_type": "",
+            "location": "Elverson",
+            "range": "",
+            "azimuth": "",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "27-JUL-14 21:10:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Elverson",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": [
+        "Elverson Historic District"
+      ]
+    },
+    "exton-pa": {
+      "slug": "exton-pa",
+      "name": "Exton",
+      "county": "chester",
+      "kind": "CDP in West Whiteland Township",
+      "geo": {
+        "status": "cdp",
+        "sumlevel": "160",
+        "geoid": "16000US4224440",
+        "census_name": "Exton CDP",
+        "scope_note": "Housing figures are for the Census place Exton CDP, a statistical boundary. The local description of the place is: CDP in West Whiteland Township."
+      },
+      "housing": {
+        "units": 3204,
+        "units_moe": 368,
+        "thin": false,
+        "median_year": 1995,
+        "median_moe": 3,
+        "pct_pre1939": 3,
+        "pct_pre1970": 19,
+        "pct_since1990": 62,
+        "pct_since2010": 25,
+        "pct_detached": 29,
+        "pct_attached": 17,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "28-MAY-19 17:30:",
+            "magnitude": "1.00",
+            "mag_type": "",
+            "location": "Exton",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "27-JUN-23 00:20:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Exton",
+            "range": ".21",
+            "azimuth": "NNE",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "glenmoore-pa": {
+      "slug": "glenmoore-pa",
+      "name": "Glenmoore",
+      "county": "chester",
+      "kind": "village in Wallace Township",
+      "geo": {
+        "status": "cdp",
+        "sumlevel": "160",
+        "geoid": "16000US4229704",
+        "census_name": "Glenmoore CDP",
+        "scope_note": "Housing figures are for the Census place Glenmoore CDP, a statistical boundary. The local description of the place is: village in Wallace Township."
+      },
+      "housing": {
+        "units": 338,
+        "units_moe": 85,
+        "thin": false,
+        "median_year": 1971,
+        "median_moe": 21,
+        "pct_pre1939": 29,
+        "pct_pre1970": 48,
+        "pct_since1990": 22,
+        "pct_since2010": 3,
+        "pct_detached": 71,
+        "pct_attached": 0,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "18-JUL-06 18:00:",
+            "magnitude": "0.88",
+            "mag_type": "",
+            "location": "Glenmoore",
+            "range": "",
+            "azimuth": "",
+            "attributed": true
+          },
+          {
+            "type": "Thunderstorm Wind",
+            "date": "18-JUL-06 18:00:",
+            "magnitude": "62",
+            "mag_type": "MG",
+            "location": "Glenmoore",
+            "range": "",
+            "azimuth": "",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": [
+        "Glenmoore Historic District"
+      ]
+    },
+    "honey-brook-pa": {
+      "slug": "honey-brook-pa",
+      "name": "Honey Brook",
+      "county": "chester",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4235528",
+        "census_name": "Honey Brook borough",
+        "scope_note": "Housing figures are for Honey Brook borough."
+      },
+      "housing": {
+        "units": 750,
+        "units_moe": 115,
+        "thin": false,
+        "median_year": 1973,
+        "median_moe": 12,
+        "pct_pre1939": 31,
+        "pct_pre1970": 49,
+        "pct_since1990": 39,
+        "pct_since2010": 4,
+        "pct_detached": 60,
+        "pct_attached": 22,
+        "pct_mobile": 5,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "24-APR-06 04:25:",
+            "magnitude": "0.88",
+            "mag_type": "",
+            "location": "Honey Brook",
+            "range": "10",
+            "azimuth": "SSW",
+            "attributed": true
+          },
+          {
+            "type": "Flood",
+            "date": "29-OCT-12 12:00:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Honey Brook",
+            "range": "1",
+            "azimuth": "NW",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "kennett-square-pa": {
+      "slug": "kennett-square-pa",
+      "name": "Kennett Square",
+      "county": "chester",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4239352",
+        "census_name": "Kennett Square borough",
+        "scope_note": "Housing figures are for Kennett Square borough."
+      },
+      "housing": {
+        "units": 2340,
+        "units_moe": 178,
+        "thin": false,
+        "median_year": 1957,
+        "median_moe": 4,
+        "pct_pre1939": 29,
+        "pct_pre1970": 66,
+        "pct_since1990": 14,
+        "pct_since2010": 6,
+        "pct_detached": 53,
+        "pct_attached": 15,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "12-MAY-18 18:35:",
+            "magnitude": "1.00",
+            "mag_type": "",
+            "location": "Kennett Square",
+            "range": "1.27",
+            "azimuth": "WSW",
+            "attributed": true
+          },
+          {
+            "type": "Heavy Rain",
+            "date": "09-JUL-16 16:07:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Kennett Square",
+            "range": ".87",
+            "azimuth": "SE",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": [
+        "Kennett Square Historic District"
+      ]
+    },
+    "kimberton-pa": {
+      "slug": "kimberton-pa",
+      "name": "Kimberton",
+      "county": "chester",
+      "kind": "village in East Pikeland Township",
+      "geo": {
+        "status": "cdp",
+        "sumlevel": "160",
+        "geoid": "16000US4239648",
+        "census_name": "Kimberton CDP",
+        "scope_note": "Housing figures are for the Census place Kimberton CDP, a statistical boundary. The local description of the place is: village in East Pikeland Township."
+      },
+      "housing": {
+        "units": 153,
+        "units_moe": 92,
+        "thin": true,
+        "median_year": 1946,
+        "median_moe": 9,
+        "pct_pre1939": 29,
+        "pct_pre1970": 83,
+        "pct_since1990": 17,
+        "pct_since2010": 17,
+        "pct_detached": 86,
+        "pct_attached": 7,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Thunderstorm Wind",
+            "date": "28-JUL-22 18:55:",
+            "magnitude": "50.00",
+            "mag_type": "EG",
+            "location": "Kimberton",
+            "range": ".53",
+            "azimuth": "W",
+            "attributed": true
+          }
+        ],
+        "county_hail": {
+          "type": "Hail",
+          "date": "10-AUG-08 10:10:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Exton",
+          "range": "0",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": [
+        "Kimberton Village Historic District"
+      ]
+    },
+    "landenberg-pa": {
+      "slug": "landenberg-pa",
+      "name": "Landenberg",
+      "county": "chester",
+      "kind": "village in London Britain Township",
+      "geo": {
+        "status": "township",
+        "sumlevel": "060",
+        "geoid": "06000US4202944440",
+        "census_name": "London Britain township",
+        "scope_note": "Landenberg is not a 2024 Census place. These housing figures are for London Britain Township, and they cover the township rather than the village lanes alone."
+      },
+      "housing": {
+        "units": 1101,
+        "units_moe": 110,
+        "thin": false,
+        "median_year": 1985,
+        "median_moe": 2,
+        "pct_pre1939": 9,
+        "pct_pre1970": 19,
+        "pct_since1990": 35,
+        "pct_since2010": 6,
+        "pct_detached": 98,
+        "pct_attached": 1,
+        "pct_mobile": 1,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "18-AUG-11 17:58:",
+            "magnitude": "1.25",
+            "mag_type": "",
+            "location": "Landenberg",
+            "range": ".2",
+            "azimuth": "SSW",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "13-AUG-18 06:05:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Landenberg",
+            "range": ".23",
+            "azimuth": "SW",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "lionville-pa": {
+      "slug": "lionville-pa",
+      "name": "Lionville",
+      "county": "chester",
+      "kind": "CDP in Uwchlan Township",
+      "geo": {
+        "status": "cdp",
+        "sumlevel": "160",
+        "geoid": "16000US4243744",
+        "census_name": "Lionville CDP",
+        "scope_note": "Housing figures are for the Census place Lionville CDP, a statistical boundary. The local description of the place is: CDP in Uwchlan Township."
+      },
+      "housing": {
+        "units": 3205,
+        "units_moe": 294,
+        "thin": false,
+        "median_year": 1979,
+        "median_moe": 4,
+        "pct_pre1939": 7,
+        "pct_pre1970": 30,
+        "pct_since1990": 29,
+        "pct_since2010": 6,
+        "pct_detached": 35,
+        "pct_attached": 37,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "22-MAY-14 16:00:",
+            "magnitude": "1.00",
+            "mag_type": "",
+            "location": "Lionville",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "25-JUL-23 14:45:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Lionville",
+            "range": ".77",
+            "azimuth": "NNW",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": [
+        "Lionville Historic District"
+      ]
+    },
+    "malvern-pa": {
+      "slug": "malvern-pa",
+      "name": "Malvern",
+      "county": "chester",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4246792",
+        "census_name": "Malvern borough",
+        "scope_note": "Housing figures are for Malvern borough."
+      },
+      "housing": {
+        "units": 1663,
+        "units_moe": 154,
+        "thin": false,
+        "median_year": 1974,
+        "median_moe": 3,
+        "pct_pre1939": 25,
+        "pct_pre1970": 40,
+        "pct_since1990": 29,
+        "pct_since2010": 14,
+        "pct_detached": 37,
+        "pct_attached": 24,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Thunderstorm Wind",
+            "date": "30-NOV-20 15:28:",
+            "magnitude": "50.00",
+            "mag_type": "EG",
+            "location": "Malvern",
+            "range": "1.08",
+            "azimuth": "SSE",
+            "attributed": true
+          }
+        ],
+        "county_hail": {
+          "type": "Hail",
+          "date": "10-AUG-08 10:10:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Exton",
+          "range": "0",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "oxford-pa": {
+      "slug": "oxford-pa",
+      "name": "Oxford",
+      "county": "chester",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4257480",
+        "census_name": "Oxford borough",
+        "scope_note": "Housing figures are for Oxford borough."
+      },
+      "housing": {
+        "units": 2286,
+        "units_moe": 294,
+        "thin": false,
+        "median_year": 1980,
+        "median_moe": 9,
+        "pct_pre1939": 26,
+        "pct_pre1970": 35,
+        "pct_since1990": 40,
+        "pct_since2010": 9,
+        "pct_detached": 39,
+        "pct_attached": 11,
+        "pct_mobile": 11,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "22-MAY-22 16:45:",
+            "magnitude": "0.75",
+            "mag_type": "",
+            "location": "Oxford",
+            "range": ".69",
+            "azimuth": "N",
+            "attributed": true
+          },
+          {
+            "type": "Flood",
+            "date": "28-AUG-11 09:00:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Oxford",
+            "range": "2",
+            "azimuth": "SW",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": [
+        "Oxford Historic District"
+      ]
+    },
+    "paoli-pa": {
+      "slug": "paoli-pa",
+      "name": "Paoli",
+      "county": "chester",
+      "kind": "CDP in Tredyffrin and Willistown",
+      "geo": {
+        "status": "cdp",
+        "sumlevel": "160",
+        "geoid": "16000US4257816",
+        "census_name": "Paoli CDP",
+        "scope_note": "Housing figures are for the Census place Paoli CDP, a statistical boundary. The local description of the place is: CDP in Tredyffrin and Willistown."
+      },
+      "housing": {
+        "units": 2706,
+        "units_moe": 198,
+        "thin": false,
+        "median_year": 1972,
+        "median_moe": 6,
+        "pct_pre1939": 17,
+        "pct_pre1970": 48,
+        "pct_since1990": 24,
+        "pct_since2010": 11,
+        "pct_detached": 56,
+        "pct_attached": 22,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Flash Flood",
+            "date": "18-AUG-21 23:40:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Paoli",
+            "range": ".31",
+            "azimuth": "SSW",
+            "attributed": true
+          }
+        ],
+        "county_hail": {
+          "type": "Hail",
+          "date": "10-AUG-08 10:10:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Exton",
+          "range": "0",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "parkesburg-pa": {
+      "slug": "parkesburg-pa",
+      "name": "Parkesburg",
+      "county": "chester",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4258032",
+        "census_name": "Parkesburg borough",
+        "scope_note": "Housing figures are for Parkesburg borough."
+      },
+      "housing": {
+        "units": 1492,
+        "units_moe": 123,
+        "thin": false,
+        "median_year": 1982,
+        "median_moe": 9,
+        "pct_pre1939": 27,
+        "pct_pre1970": 43,
+        "pct_since1990": 42,
+        "pct_since2010": 10,
+        "pct_detached": 55,
+        "pct_attached": 21,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "11-AUG-04 14:20:",
+            "magnitude": "0.75",
+            "mag_type": "",
+            "location": "Parkesburg",
+            "range": "",
+            "azimuth": "",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "08-JUN-21 15:20:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Parkesburg",
+            "range": "2.08",
+            "azimuth": "SW",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "phoenixville-pa": {
+      "slug": "phoenixville-pa",
+      "name": "Phoenixville",
+      "county": "chester",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4260120",
+        "census_name": "Phoenixville borough",
+        "scope_note": "Housing figures are for Phoenixville borough."
+      },
+      "housing": {
+        "units": 9205,
+        "units_moe": 474,
+        "thin": false,
+        "median_year": 1974,
+        "median_moe": 6,
+        "pct_pre1939": 27,
+        "pct_pre1970": 46,
+        "pct_since1990": 36,
+        "pct_since2010": 14,
+        "pct_detached": 22,
+        "pct_attached": 40,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "16-MAY-22 16:56:",
+            "magnitude": "0.75",
+            "mag_type": "",
+            "location": "Phoenixville",
+            "range": ".87",
+            "azimuth": "SE",
+            "attributed": true
+          },
+          {
+            "type": "Flood",
+            "date": "27-JUN-06 07:30:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Phoenixville",
+            "range": "",
+            "azimuth": "",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": [
+        "Phoenixville Historic District",
+        "Schuylkill Navigation Canal, Oakes Reach Section"
+      ]
+    },
+    "spring-city-pa": {
+      "slug": "spring-city-pa",
+      "name": "Spring City",
+      "county": "chester",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4272920",
+        "census_name": "Spring City borough",
+        "scope_note": "Housing figures are for Spring City borough."
+      },
+      "housing": {
+        "units": 2096,
+        "units_moe": 206,
+        "thin": false,
+        "median_year": 1948,
+        "median_moe": 15,
+        "pct_pre1939": 46,
+        "pct_pre1970": 76,
+        "pct_since1990": 12,
+        "pct_since2010": 5,
+        "pct_detached": 21,
+        "pct_attached": 35,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "27-MAY-10 17:07:",
+            "magnitude": "1.00",
+            "mag_type": "",
+            "location": "Spring City",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          },
+          {
+            "type": "Thunderstorm Wind",
+            "date": "29-JUN-19 14:58:",
+            "magnitude": "50.00",
+            "mag_type": "EG",
+            "location": "Spring City",
+            "range": ".87",
+            "azimuth": "SW",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "thorndale-pa": {
+      "slug": "thorndale-pa",
+      "name": "Thorndale",
+      "county": "chester",
+      "kind": "CDP in Caln Township",
+      "geo": {
+        "status": "cdp",
+        "sumlevel": "160",
+        "geoid": "16000US4276584",
+        "census_name": "Thorndale CDP",
+        "scope_note": "Housing figures are for the Census place Thorndale CDP, a statistical boundary. The local description of the place is: CDP in Caln Township."
+      },
+      "housing": {
+        "units": 1548,
+        "units_moe": 278,
+        "thin": false,
+        "median_year": 1976,
+        "median_moe": 4,
+        "pct_pre1939": 4,
+        "pct_pre1970": 33,
+        "pct_since1990": 22,
+        "pct_since2010": 4,
+        "pct_detached": 60,
+        "pct_attached": 5,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "30-JUN-15 13:55:",
+            "magnitude": "1.25",
+            "mag_type": "",
+            "location": "Thorndale",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "31-JUL-09 15:00:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Thorndale",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "west-chester-pa": {
+      "slug": "west-chester-pa",
+      "name": "West Chester",
+      "county": "chester",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4282704",
+        "census_name": "West Chester borough",
+        "scope_note": "Housing figures are for West Chester borough."
+      },
+      "housing": {
+        "units": 8087,
+        "units_moe": 436,
+        "thin": false,
+        "median_year": 1954,
+        "median_moe": 8,
+        "pct_pre1939": 43,
+        "pct_pre1970": 60,
+        "pct_since1990": 18,
+        "pct_since2010": 12,
+        "pct_detached": 17,
+        "pct_attached": 31,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "29-JUN-12 03:50:",
+            "magnitude": "1.00",
+            "mag_type": "",
+            "location": "West Chester",
+            "range": ".87",
+            "azimuth": "SE",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "25-JUL-11 18:00:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "West Chester",
+            "range": ".8",
+            "azimuth": "SW",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": [
+        "West Chester Boarding School for Boys",
+        "West Chester Downtown Historic District",
+        "West Chester State College Quadrangle Historic District"
+      ]
+    },
+    "west-grove-pa": {
+      "slug": "west-grove-pa",
+      "name": "West Grove",
+      "county": "chester",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4283104",
+        "census_name": "West Grove borough",
+        "scope_note": "Housing figures are for West Grove borough."
+      },
+      "housing": {
+        "units": 993,
+        "units_moe": 74,
+        "thin": false,
+        "median_year": 1971,
+        "median_moe": 9,
+        "pct_pre1939": 26,
+        "pct_pre1970": 49,
+        "pct_since1990": 25,
+        "pct_since2010": 0,
+        "pct_detached": 69,
+        "pct_attached": 21,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Flash Flood",
+            "date": "12-JUL-13 08:30:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "West Grove",
+            "range": "3",
+            "azimuth": "W",
+            "attributed": true
+          }
+        ],
+        "county_hail": {
+          "type": "Hail",
+          "date": "10-AUG-08 10:10:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Exton",
+          "range": "0",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "aston-pa": {
+      "slug": "aston-pa",
+      "name": "Aston",
+      "county": "delaware",
+      "kind": "township",
+      "geo": {
+        "status": "township",
+        "sumlevel": "060",
+        "geoid": "06000US4204503336",
+        "census_name": "Aston township",
+        "scope_note": "Housing figures are for Aston township in Delaware County."
+      },
+      "housing": {
+        "units": 6341,
+        "units_moe": 314,
+        "thin": false,
+        "median_year": 1970,
+        "median_moe": 3,
+        "pct_pre1939": 5,
+        "pct_pre1970": 50,
+        "pct_since1990": 24,
+        "pct_since2010": 1,
+        "pct_detached": 73,
+        "pct_attached": 15,
+        "pct_mobile": 3,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [],
+        "county_hail": {
+          "type": "Hail",
+          "date": "29-MAR-09 17:28:",
+          "magnitude": "1.75",
+          "mag_type": "",
+          "location": "Boothwyn",
+          "range": "0",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "chadds-ford-pa": {
+      "slug": "chadds-ford-pa",
+      "name": "Chadds Ford",
+      "county": "delaware",
+      "kind": "township",
+      "geo": {
+        "status": "township",
+        "sumlevel": "060",
+        "geoid": "06000US4204512442",
+        "census_name": "Chadds Ford township",
+        "scope_note": "Housing figures are for Chadds Ford township in Delaware County."
+      },
+      "housing": {
+        "units": 1612,
+        "units_moe": 140,
+        "thin": false,
+        "median_year": 1983,
+        "median_moe": 4,
+        "pct_pre1939": 5,
+        "pct_pre1970": 20,
+        "pct_since1990": 33,
+        "pct_since2010": 6,
+        "pct_detached": 66,
+        "pct_attached": 14,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "28-AUG-20 15:10:",
+            "magnitude": "0.88",
+            "mag_type": "",
+            "location": "Chadds Ford",
+            "range": "1.06",
+            "azimuth": "W",
+            "attributed": true
+          },
+          {
+            "type": "Flood",
+            "date": "28-JUN-06 04:45:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Chadds Ford",
+            "range": "",
+            "azimuth": "",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": [
+        "Chadds Ford Historic District",
+        "Twin Bridges Rural Historic District"
+      ]
+    },
+    "chester-heights-pa": {
+      "slug": "chester-heights-pa",
+      "name": "Chester Heights",
+      "county": "delaware",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4213232",
+        "census_name": "Chester Heights borough",
+        "scope_note": "Housing figures are for Chester Heights borough."
+      },
+      "housing": {
+        "units": 1434,
+        "units_moe": 118,
+        "thin": false,
+        "median_year": 1987,
+        "median_moe": 4,
+        "pct_pre1939": 5,
+        "pct_pre1970": 15,
+        "pct_since1990": 43,
+        "pct_since2010": 10,
+        "pct_detached": 22,
+        "pct_attached": 51,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [],
+        "county_hail": {
+          "type": "Hail",
+          "date": "29-MAR-09 17:28:",
+          "magnitude": "1.75",
+          "mag_type": "",
+          "location": "Boothwyn",
+          "range": "0",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": [
+        "Chester Heights Camp Meeting Historic District"
+      ]
+    },
+    "garnet-valley-pa": {
+      "slug": "garnet-valley-pa",
+      "name": "Garnet Valley",
+      "county": "delaware",
+      "kind": "school-district community, not a municipality",
+      "geo": {
+        "status": "none",
+        "scope_note": "Garnet Valley is a school-district and community name, not a borough or a 2024 Census place. This page does not borrow a neighboring township's housing table and present it as a Garnet Valley count."
+      },
+      "housing": null,
+      "storms": {
+        "events": [],
+        "county_hail": {
+          "type": "Hail",
+          "date": "29-MAR-09 17:28:",
+          "magnitude": "1.75",
+          "mag_type": "",
+          "location": "Boothwyn",
+          "range": "0",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "glen-mills-pa": {
+      "slug": "glen-mills-pa",
+      "name": "Glen Mills",
+      "county": "delaware",
+      "kind": "village in Concord Township",
+      "geo": {
+        "status": "township",
+        "sumlevel": "060",
+        "geoid": "06000US4204515488",
+        "census_name": "Concord township",
+        "scope_note": "Glen Mills is not a 2024 Census place. These housing figures are for Concord Township, which contains the village, and they are a township count."
+      },
+      "housing": {
+        "units": 7102,
+        "units_moe": 347,
+        "thin": false,
+        "median_year": 1997,
+        "median_moe": 3,
+        "pct_pre1939": 4,
+        "pct_pre1970": 19,
+        "pct_since1990": 64,
+        "pct_since2010": 16,
+        "pct_detached": 54,
+        "pct_attached": 11,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "22-MAY-14 16:14:",
+            "magnitude": "1.50",
+            "mag_type": "",
+            "location": "Glen Mills",
+            "range": ".4",
+            "azimuth": "ESE",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "09-JUL-25 18:38:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Glen Mills",
+            "range": "1",
+            "azimuth": "E",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "media-pa": {
+      "slug": "media-pa",
+      "name": "Media",
+      "county": "delaware",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4248480",
+        "census_name": "Media borough",
+        "scope_note": "Housing figures are for Media borough."
+      },
+      "housing": {
+        "units": 3105,
+        "units_moe": 172,
+        "thin": false,
+        "median_year": 1959,
+        "median_moe": 3,
+        "pct_pre1939": 28,
+        "pct_pre1970": 66,
+        "pct_since1990": 14,
+        "pct_since2010": 10,
+        "pct_detached": 18,
+        "pct_attached": 24,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "27-JUL-14 22:40:",
+            "magnitude": "0.88",
+            "mag_type": "",
+            "location": "Media",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "07-AUG-20 17:40:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Media",
+            "range": ".68",
+            "azimuth": "W",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "newtown-square-pa": {
+      "slug": "newtown-square-pa",
+      "name": "Newtown Square",
+      "county": "delaware",
+      "kind": "census-designated place in Newtown Township",
+      "geo": {
+        "status": "township",
+        "sumlevel": "060",
+        "geoid": "06000US4204554224",
+        "census_name": "Newtown township, Delaware County",
+        "scope_note": "The 2024 Census place list used here has no Newtown Square CDP. These housing figures are for Newtown Township in Delaware County."
+      },
+      "housing": {
+        "units": 6299,
+        "units_moe": 348,
+        "thin": false,
+        "median_year": 1968,
+        "median_moe": 3,
+        "pct_pre1939": 8,
+        "pct_pre1970": 53,
+        "pct_since1990": 29,
+        "pct_since2010": 20,
+        "pct_detached": 62,
+        "pct_attached": 14,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [],
+        "county_hail": {
+          "type": "Hail",
+          "date": "29-MAR-09 17:28:",
+          "magnitude": "1.75",
+          "mag_type": "",
+          "location": "Boothwyn",
+          "range": "0",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "radnor-pa": {
+      "slug": "radnor-pa",
+      "name": "Radnor",
+      "county": "delaware",
+      "kind": "township",
+      "geo": {
+        "status": "township",
+        "sumlevel": "060",
+        "geoid": "06000US4204563264",
+        "census_name": "Radnor township",
+        "scope_note": "Housing figures are for Radnor township in Delaware County."
+      },
+      "housing": {
+        "units": 10263,
+        "units_moe": 368,
+        "thin": false,
+        "median_year": 1962,
+        "median_moe": 3,
+        "pct_pre1939": 20,
+        "pct_pre1970": 62,
+        "pct_since1990": 12,
+        "pct_since2010": 3,
+        "pct_detached": 56,
+        "pct_attached": 9,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Heavy Rain",
+            "date": "16-NOV-06 16:00:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Radnor",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          }
+        ],
+        "county_hail": {
+          "type": "Hail",
+          "date": "29-MAR-09 17:28:",
+          "magnitude": "1.75",
+          "mag_type": "",
+          "location": "Boothwyn",
+          "range": "0",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": [
+        "Downtown Wayne Historic District",
+        "North Wayne Historic District",
+        "South Wayne Historic District"
+      ]
+    },
+    "thornton-pa": {
+      "slug": "thornton-pa",
+      "name": "Thornton",
+      "county": "delaware",
+      "kind": "village in Thornbury Township",
+      "geo": {
+        "status": "township",
+        "sumlevel": "060",
+        "geoid": "06000US4204576576",
+        "census_name": "Thornbury township, Delaware County",
+        "scope_note": "Thornton is not a 2024 Census place. These housing figures are for Thornbury Township in Delaware County, not the Chester County township of the same name."
+      },
+      "housing": {
+        "units": 2324,
+        "units_moe": 291,
+        "thin": false,
+        "median_year": 1997,
+        "median_moe": 3,
+        "pct_pre1939": 12,
+        "pct_pre1970": 25,
+        "pct_since1990": 63,
+        "pct_since2010": 7,
+        "pct_detached": 79,
+        "pct_attached": 17,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Flash Flood",
+            "date": "13-AUG-13 07:00:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Thornton",
+            "range": "1.27",
+            "azimuth": "WNW",
+            "attributed": true
+          }
+        ],
+        "county_hail": {
+          "type": "Hail",
+          "date": "29-MAR-09 17:28:",
+          "magnitude": "1.75",
+          "mag_type": "",
+          "location": "Boothwyn",
+          "range": "0",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": [
+        "Thornton Village Historic District"
+      ]
+    },
+    "york-city-pa": {
+      "slug": "york-city-pa",
+      "name": "York",
+      "county": "york",
+      "kind": "city",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4287048",
+        "census_name": "York city",
+        "scope_note": "Housing figures are for York city."
+      },
+      "housing": {
+        "units": 19505,
+        "units_moe": 601,
+        "thin": false,
+        "median_year": 1941,
+        "median_moe": 3,
+        "pct_pre1939": 49,
+        "pct_pre1970": 80,
+        "pct_since1990": 9,
+        "pct_since2010": 2,
+        "pct_detached": 22,
+        "pct_attached": 40,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "29-MAR-09 15:10:",
+            "magnitude": "0.88",
+            "mag_type": "",
+            "location": "York",
+            "range": ".87",
+            "azimuth": "SW",
+            "attributed": true
+          },
+          {
+            "type": "Flood",
+            "date": "24-JUL-18 23:52:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "York",
+            "range": ".87",
+            "azimuth": "NW",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": [
+        "Fairmount Historic District",
+        "Northwest York Historic District",
+        "Springdale Historic District",
+        "York Historic District"
+      ]
+    },
+    "york-township-pa": {
+      "slug": "york-township-pa",
+      "name": "York Township",
+      "county": "york",
+      "kind": "township",
+      "geo": {
+        "status": "township",
+        "sumlevel": "060",
+        "geoid": "06000US4213387056",
+        "census_name": "York township",
+        "scope_note": "Housing figures are for York township in York County."
+      },
+      "housing": {
+        "units": 13508,
+        "units_moe": 504,
+        "thin": false,
+        "median_year": 1982,
+        "median_moe": 3,
+        "pct_pre1939": 6,
+        "pct_pre1970": 31,
+        "pct_since1990": 40,
+        "pct_since2010": 9,
+        "pct_detached": 54,
+        "pct_attached": 18,
+        "pct_mobile": 2,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [],
+        "county_hail": {
+          "type": "Hail",
+          "date": "14-MAY-10 16:45:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Starview",
+          "range": ".69",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "springettsbury-pa": {
+      "slug": "springettsbury-pa",
+      "name": "Springettsbury Township",
+      "county": "york",
+      "kind": "township",
+      "geo": {
+        "status": "township",
+        "sumlevel": "060",
+        "geoid": "06000US4213372992",
+        "census_name": "Springettsbury township",
+        "scope_note": "Housing figures are for Springettsbury township in York County."
+      },
+      "housing": {
+        "units": 10396,
+        "units_moe": 359,
+        "thin": false,
+        "median_year": 1969,
+        "median_moe": 3,
+        "pct_pre1939": 10,
+        "pct_pre1970": 53,
+        "pct_since1990": 19,
+        "pct_since2010": 5,
+        "pct_detached": 66,
+        "pct_attached": 11,
+        "pct_mobile": 1,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [],
+        "county_hail": {
+          "type": "Hail",
+          "date": "14-MAY-10 16:45:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Starview",
+          "range": ".69",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": [
+        "East York Historic District",
+        "Pleasureville Historic District"
+      ]
+    },
+    "manchester-township-pa": {
+      "slug": "manchester-township-pa",
+      "name": "Manchester Township",
+      "county": "york",
+      "kind": "township",
+      "geo": {
+        "status": "township",
+        "sumlevel": "060",
+        "geoid": "06000US4213346872",
+        "census_name": "Manchester township",
+        "scope_note": "Housing figures are for Manchester township in York County."
+      },
+      "housing": {
+        "units": 7431,
+        "units_moe": 421,
+        "thin": false,
+        "median_year": 1993,
+        "median_moe": 2,
+        "pct_pre1939": 6,
+        "pct_pre1970": 31,
+        "pct_since1990": 57,
+        "pct_since2010": 4,
+        "pct_detached": 75,
+        "pct_attached": 22,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [],
+        "county_hail": {
+          "type": "Hail",
+          "date": "14-MAY-10 16:45:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Starview",
+          "range": ".69",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": [
+        "Sinking Springs Farms"
+      ]
+    },
+    "west-manchester-pa": {
+      "slug": "west-manchester-pa",
+      "name": "West Manchester Township",
+      "county": "york",
+      "kind": "township",
+      "geo": {
+        "status": "township",
+        "sumlevel": "060",
+        "geoid": "06000US4213383432",
+        "census_name": "West Manchester township",
+        "scope_note": "Housing figures are for West Manchester township in York County."
+      },
+      "housing": {
+        "units": 8163,
+        "units_moe": 294,
+        "thin": false,
+        "median_year": 1977,
+        "median_moe": 3,
+        "pct_pre1939": 8,
+        "pct_pre1970": 39,
+        "pct_since1990": 30,
+        "pct_since2010": 3,
+        "pct_detached": 68,
+        "pct_attached": 15,
+        "pct_mobile": 1,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [],
+        "county_hail": {
+          "type": "Hail",
+          "date": "14-MAY-10 16:45:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Starview",
+          "range": ".69",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "dover-township-pa": {
+      "slug": "dover-township-pa",
+      "name": "Dover Township",
+      "county": "york",
+      "kind": "township",
+      "geo": {
+        "status": "township",
+        "sumlevel": "060",
+        "geoid": "06000US4213319704",
+        "census_name": "Dover township",
+        "scope_note": "Housing figures are for Dover township in York County."
+      },
+      "housing": {
+        "units": 9834,
+        "units_moe": 436,
+        "thin": false,
+        "median_year": 1988,
+        "median_moe": 3,
+        "pct_pre1939": 7,
+        "pct_pre1970": 25,
+        "pct_since1990": 47,
+        "pct_since2010": 13,
+        "pct_detached": 63,
+        "pct_attached": 21,
+        "pct_mobile": 8,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [],
+        "county_hail": {
+          "type": "Hail",
+          "date": "14-MAY-10 16:45:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Starview",
+          "range": ".69",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "dover-pa": {
+      "slug": "dover-pa",
+      "name": "Dover",
+      "county": "york",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4219696",
+        "census_name": "Dover borough",
+        "scope_note": "Housing figures are for Dover borough."
+      },
+      "housing": {
+        "units": 819,
+        "units_moe": 148,
+        "thin": false,
+        "median_year": 1974,
+        "median_moe": 4,
+        "pct_pre1939": 16,
+        "pct_pre1970": 40,
+        "pct_since1990": 25,
+        "pct_since2010": 1,
+        "pct_detached": 64,
+        "pct_attached": 4,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "19-AUG-11 15:15:",
+            "magnitude": "0.88",
+            "mag_type": "",
+            "location": "Dover",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          },
+          {
+            "type": "Flood",
+            "date": "15-APR-07 13:30:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Dover",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "red-lion-pa": {
+      "slug": "red-lion-pa",
+      "name": "Red Lion",
+      "county": "york",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4263840",
+        "census_name": "Red Lion borough",
+        "scope_note": "Housing figures are for Red Lion borough."
+      },
+      "housing": {
+        "units": 2817,
+        "units_moe": 259,
+        "thin": false,
+        "median_year": 1941,
+        "median_moe": 9,
+        "pct_pre1939": 49,
+        "pct_pre1970": 71,
+        "pct_since1990": 9,
+        "pct_since2010": 0,
+        "pct_detached": 30,
+        "pct_attached": 36,
+        "pct_mobile": 3,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "27-JUL-08 11:15:",
+            "magnitude": "1.50",
+            "mag_type": "",
+            "location": "Red Lion",
+            "range": "0",
+            "azimuth": "E",
+            "attributed": true
+          },
+          {
+            "type": "Thunderstorm Wind",
+            "date": "28-SEP-06 16:40:",
+            "magnitude": "50",
+            "mag_type": "EG",
+            "location": "Red Lion",
+            "range": "",
+            "azimuth": "",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": [
+        "Red Lion Borough Historic District"
+      ]
+    },
+    "hanover-pa": {
+      "slug": "hanover-pa",
+      "name": "Hanover",
+      "county": "york",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4232448",
+        "census_name": "Hanover borough",
+        "scope_note": "Housing figures are for Hanover borough."
+      },
+      "housing": {
+        "units": 8029,
+        "units_moe": 408,
+        "thin": false,
+        "median_year": 1956,
+        "median_moe": 3,
+        "pct_pre1939": 32,
+        "pct_pre1970": 70,
+        "pct_since1990": 15,
+        "pct_since2010": 5,
+        "pct_detached": 46,
+        "pct_attached": 22,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "29-MAR-09 14:48:",
+            "magnitude": "1.00",
+            "mag_type": "",
+            "location": "Hanover",
+            "range": ".69",
+            "azimuth": "N",
+            "attributed": true
+          },
+          {
+            "type": "Flood",
+            "date": "28-AUG-11 07:00:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Hanover",
+            "range": ".23",
+            "azimuth": "E",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": [
+        "Hanover Historic District"
+      ]
+    },
+    "shrewsbury-pa": {
+      "slug": "shrewsbury-pa",
+      "name": "Shrewsbury",
+      "county": "york",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4270568",
+        "census_name": "Shrewsbury borough",
+        "scope_note": "Housing figures are for Shrewsbury borough."
+      },
+      "housing": {
+        "units": 1772,
+        "units_moe": 122,
+        "thin": false,
+        "median_year": 1986,
+        "median_moe": 4,
+        "pct_pre1939": 9,
+        "pct_pre1970": 21,
+        "pct_since1990": 42,
+        "pct_since2010": 11,
+        "pct_detached": 77,
+        "pct_attached": 8,
+        "pct_mobile": 1,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "26-JUN-09 17:06:",
+            "magnitude": "0.75",
+            "mag_type": "",
+            "location": "Shrewsbury",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          },
+          {
+            "type": "Thunderstorm Wind",
+            "date": "23-JUN-15 16:00:",
+            "magnitude": "50.00",
+            "mag_type": "EG",
+            "location": "Shrewsbury",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": [
+        "Shrewsbury Historic District"
+      ]
+    },
+    "shrewsbury-township-pa": {
+      "slug": "shrewsbury-township-pa",
+      "name": "Shrewsbury Township",
+      "county": "york",
+      "kind": "township",
+      "geo": {
+        "status": "township",
+        "sumlevel": "060",
+        "geoid": "06000US4213370576",
+        "census_name": "Shrewsbury township",
+        "scope_note": "Housing figures are for Shrewsbury township in York County."
+      },
+      "housing": {
+        "units": 2802,
+        "units_moe": 193,
+        "thin": false,
+        "median_year": 1983,
+        "median_moe": 3,
+        "pct_pre1939": 7,
+        "pct_pre1970": 18,
+        "pct_since1990": 35,
+        "pct_since2010": 8,
+        "pct_detached": 83,
+        "pct_attached": 8,
+        "pct_mobile": 4,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [],
+        "county_hail": {
+          "type": "Hail",
+          "date": "14-MAY-10 16:45:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Starview",
+          "range": ".69",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "dallastown-pa": {
+      "slug": "dallastown-pa",
+      "name": "Dallastown",
+      "county": "york",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4218072",
+        "census_name": "Dallastown borough",
+        "scope_note": "Housing figures are for Dallastown borough."
+      },
+      "housing": {
+        "units": 1669,
+        "units_moe": 155,
+        "thin": false,
+        "median_year": 1958,
+        "median_moe": 9,
+        "pct_pre1939": 34,
+        "pct_pre1970": 64,
+        "pct_since1990": 14,
+        "pct_since2010": 5,
+        "pct_detached": 42,
+        "pct_attached": 23,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "27-JUL-08 11:30:",
+            "magnitude": "1.00",
+            "mag_type": "",
+            "location": "Dallastown",
+            "range": "5",
+            "azimuth": "SE",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "25-JUL-18 16:27:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Dallastown",
+            "range": ".53",
+            "azimuth": "W",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "spring-garden-pa": {
+      "slug": "spring-garden-pa",
+      "name": "Spring Garden Township",
+      "county": "york",
+      "kind": "township",
+      "geo": {
+        "status": "township",
+        "sumlevel": "060",
+        "geoid": "06000US4213373168",
+        "census_name": "Spring Garden township",
+        "scope_note": "Housing figures are for Spring Garden township in York County."
+      },
+      "housing": {
+        "units": 4596,
+        "units_moe": 250,
+        "thin": false,
+        "median_year": 1957,
+        "median_moe": 2,
+        "pct_pre1939": 15,
+        "pct_pre1970": 71,
+        "pct_since1990": 21,
+        "pct_since2010": 5,
+        "pct_detached": 74,
+        "pct_attached": 19,
+        "pct_mobile": 1,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [],
+        "county_hail": {
+          "type": "Hail",
+          "date": "14-MAY-10 16:45:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Starview",
+          "range": ".69",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "windsor-pa": {
+      "slug": "windsor-pa",
+      "name": "Windsor Township",
+      "county": "york",
+      "kind": "township",
+      "geo": {
+        "status": "township",
+        "sumlevel": "060",
+        "geoid": "06000US4213385736",
+        "census_name": "Windsor township",
+        "scope_note": "Housing figures are for Windsor township in York County."
+      },
+      "housing": {
+        "units": 6845,
+        "units_moe": 292,
+        "thin": false,
+        "median_year": 1991,
+        "median_moe": 3,
+        "pct_pre1939": 10,
+        "pct_pre1970": 30,
+        "pct_since1990": 52,
+        "pct_since2010": 5,
+        "pct_detached": 78,
+        "pct_attached": 14,
+        "pct_mobile": 5,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [],
+        "county_hail": {
+          "type": "Hail",
+          "date": "14-MAY-10 16:45:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Starview",
+          "range": ".69",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "hellam-pa": {
+      "slug": "hellam-pa",
+      "name": "Hellam Township",
+      "county": "york",
+      "kind": "township",
+      "geo": {
+        "status": "township",
+        "sumlevel": "060",
+        "geoid": "06000US4213333728",
+        "census_name": "Hellam township",
+        "scope_note": "Housing figures are for Hellam township in York County."
+      },
+      "housing": {
+        "units": 2531,
+        "units_moe": 312,
+        "thin": false,
+        "median_year": 1977,
+        "median_moe": 5,
+        "pct_pre1939": 12,
+        "pct_pre1970": 35,
+        "pct_since1990": 22,
+        "pct_since2010": 1,
+        "pct_detached": 81,
+        "pct_attached": 8,
+        "pct_mobile": 10,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [],
+        "county_hail": {
+          "type": "Hail",
+          "date": "14-MAY-10 16:45:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Starview",
+          "range": ".69",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": [
+        "Codorus Forge and Furnace Historic District"
+      ]
+    },
+    "wrightsville-pa": {
+      "slug": "wrightsville-pa",
+      "name": "Wrightsville",
+      "county": "york",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4286640",
+        "census_name": "Wrightsville borough",
+        "scope_note": "Housing figures are for Wrightsville borough."
+      },
+      "housing": {
+        "units": 848,
+        "units_moe": 129,
+        "thin": false,
+        "median_year": 1944,
+        "median_moe": 9,
+        "pct_pre1939": 46,
+        "pct_pre1970": 82,
+        "pct_since1990": 7,
+        "pct_since2010": 2,
+        "pct_detached": 54,
+        "pct_attached": 23,
+        "pct_mobile": 2,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "22-MAY-14 14:45:",
+            "magnitude": "0.88",
+            "mag_type": "",
+            "location": "Wrightsville",
+            "range": ".69",
+            "azimuth": "S",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "09-JUL-25 17:20:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Wrightsville",
+            "range": "1.67",
+            "azimuth": "SW",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": [
+        "Wrightsville Historic District"
+      ]
+    },
+    "glen-rock-pa": {
+      "slug": "glen-rock-pa",
+      "name": "Glen Rock",
+      "county": "york",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4229760",
+        "census_name": "Glen Rock borough",
+        "scope_note": "Housing figures are for Glen Rock borough."
+      },
+      "housing": {
+        "units": 868,
+        "units_moe": 175,
+        "thin": false,
+        "median_year": 1955,
+        "median_moe": 13,
+        "pct_pre1939": 39,
+        "pct_pre1970": 57,
+        "pct_since1990": 16,
+        "pct_since2010": 2,
+        "pct_detached": 53,
+        "pct_attached": 16,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "26-JUN-09 16:55:",
+            "magnitude": "0.88",
+            "mag_type": "",
+            "location": "Glen Rock",
+            "range": ".69",
+            "azimuth": "S",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "11-JUN-11 20:15:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Glen Rock",
+            "range": ".39",
+            "azimuth": "SSW",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": [
+        "Glen Rock Historic District"
+      ]
+    },
+    "stewartstown-pa": {
+      "slug": "stewartstown-pa",
+      "name": "Stewartstown",
+      "county": "york",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4274104",
+        "census_name": "Stewartstown borough",
+        "scope_note": "Housing figures are for Stewartstown borough."
+      },
+      "housing": {
+        "units": 776,
+        "units_moe": 101,
+        "thin": false,
+        "median_year": 1990,
+        "median_moe": 5,
+        "pct_pre1939": 27,
+        "pct_pre1970": 38,
+        "pct_since1990": 51,
+        "pct_since2010": 18,
+        "pct_detached": 53,
+        "pct_attached": 21,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "30-JUL-19 18:05:",
+            "magnitude": "0.75",
+            "mag_type": "",
+            "location": "Stewartstown",
+            "range": ".53",
+            "azimuth": "E",
+            "attributed": true
+          },
+          {
+            "type": "Thunderstorm Wind",
+            "date": "30-JUL-19 18:10:",
+            "magnitude": "52.00",
+            "mag_type": "EG",
+            "location": "Stewartstown",
+            "range": ".49",
+            "azimuth": "ENE",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "new-freedom-pa": {
+      "slug": "new-freedom-pa",
+      "name": "New Freedom",
+      "county": "york",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4253568",
+        "census_name": "New Freedom borough",
+        "scope_note": "Housing figures are for New Freedom borough."
+      },
+      "housing": {
+        "units": 1943,
+        "units_moe": 167,
+        "thin": false,
+        "median_year": 1989,
+        "median_moe": 3,
+        "pct_pre1939": 8,
+        "pct_pre1970": 18,
+        "pct_since1990": 47,
+        "pct_since2010": 8,
+        "pct_detached": 86,
+        "pct_attached": 10,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "26-JUN-09 17:05:",
+            "magnitude": "0.88",
+            "mag_type": "",
+            "location": "New Freedom",
+            "range": ".69",
+            "azimuth": "N",
+            "attributed": true
+          },
+          {
+            "type": "Thunderstorm Wind",
+            "date": "25-MAY-04 18:00:",
+            "magnitude": "50",
+            "mag_type": "EG",
+            "location": "New Freedom",
+            "range": "",
+            "azimuth": "",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "west-york-pa": {
+      "slug": "west-york-pa",
+      "name": "West York",
+      "county": "york",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4284288",
+        "census_name": "West York borough",
+        "scope_note": "Housing figures are for West York borough."
+      },
+      "housing": {
+        "units": 1971,
+        "units_moe": 223,
+        "thin": false,
+        "median_year": 1938,
+        "median_moe": null,
+        "pct_pre1939": 54,
+        "pct_pre1970": 92,
+        "pct_since1990": 0,
+        "pct_since2010": 0,
+        "pct_detached": 23,
+        "pct_attached": 46,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Flash Flood",
+            "date": "14-JUL-25 16:08:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "West York",
+            "range": ".87",
+            "azimuth": "NE",
+            "attributed": true
+          }
+        ],
+        "county_hail": {
+          "type": "Hail",
+          "date": "14-MAY-10 16:45:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Starview",
+          "range": ".69",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "north-york-pa": {
+      "slug": "north-york-pa",
+      "name": "North York",
+      "county": "york",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4255608",
+        "census_name": "North York borough",
+        "scope_note": "Housing figures are for North York borough."
+      },
+      "housing": {
+        "units": 1133,
+        "units_moe": 166,
+        "thin": false,
+        "median_year": 1946,
+        "median_moe": 11,
+        "pct_pre1939": 46,
+        "pct_pre1970": 79,
+        "pct_since1990": 13,
+        "pct_since2010": 12,
+        "pct_detached": 12,
+        "pct_attached": 44,
+        "pct_mobile": 1,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Flash Flood",
+            "date": "11-JUN-11 19:30:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "North York",
+            "range": ".85",
+            "azimuth": "S",
+            "attributed": true
+          }
+        ],
+        "county_hail": {
+          "type": "Hail",
+          "date": "14-MAY-10 16:45:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Starview",
+          "range": ".69",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "spring-grove-pa": {
+      "slug": "spring-grove-pa",
+      "name": "Spring Grove",
+      "county": "york",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4273192",
+        "census_name": "Spring Grove borough",
+        "scope_note": "Housing figures are for Spring Grove borough."
+      },
+      "housing": {
+        "units": 994,
+        "units_moe": 139,
+        "thin": false,
+        "median_year": 1959,
+        "median_moe": 12,
+        "pct_pre1939": 37,
+        "pct_pre1970": 57,
+        "pct_since1990": 31,
+        "pct_since2010": 3,
+        "pct_detached": 51,
+        "pct_attached": 20,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Flash Flood",
+            "date": "10-JUN-09 15:55:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Spring Grove",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          }
+        ],
+        "county_hail": {
+          "type": "Hail",
+          "date": "14-MAY-10 16:45:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Starview",
+          "range": ".69",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": [
+        "Spring Grove Borough Historic District"
+      ]
+    },
+    "manchester-pa": {
+      "slug": "manchester-pa",
+      "name": "Manchester",
+      "county": "york",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4246864",
+        "census_name": "Manchester borough",
+        "scope_note": "Housing figures are for Manchester borough."
+      },
+      "housing": {
+        "units": 1172,
+        "units_moe": 136,
+        "thin": false,
+        "median_year": 1975,
+        "median_moe": 6,
+        "pct_pre1939": 26,
+        "pct_pre1970": 41,
+        "pct_since1990": 32,
+        "pct_since2010": 8,
+        "pct_detached": 68,
+        "pct_attached": 10,
+        "pct_mobile": 4,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "18-JUL-12 14:06:",
+            "magnitude": "0.75",
+            "mag_type": "",
+            "location": "Manchester",
+            "range": ".69",
+            "azimuth": "N",
+            "attributed": true
+          },
+          {
+            "type": "Flood",
+            "date": "10-MAR-11 13:30:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Manchester",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "hallam-pa": {
+      "slug": "hallam-pa",
+      "name": "Hallam",
+      "county": "york",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4232056",
+        "census_name": "Hallam borough",
+        "scope_note": "Housing figures are for Hallam borough."
+      },
+      "housing": {
+        "units": 1068,
+        "units_moe": 102,
+        "thin": false,
+        "median_year": 1992,
+        "median_moe": 8,
+        "pct_pre1939": 23,
+        "pct_pre1970": 37,
+        "pct_since1990": 53,
+        "pct_since2010": 0,
+        "pct_detached": 28,
+        "pct_attached": 41,
+        "pct_mobile": 3,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "22-MAY-14 15:10:",
+            "magnitude": "1.00",
+            "mag_type": "",
+            "location": "Hallam",
+            "range": "0",
+            "azimuth": "N",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "09-JUL-25 16:51:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Hallam",
+            "range": "1.06",
+            "azimuth": "W",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "jacobus-pa": {
+      "slug": "jacobus-pa",
+      "name": "Jacobus",
+      "county": "york",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4237640",
+        "census_name": "Jacobus borough",
+        "scope_note": "Housing figures are for Jacobus borough."
+      },
+      "housing": {
+        "units": 735,
+        "units_moe": 116,
+        "thin": false,
+        "median_year": 1972,
+        "median_moe": 5,
+        "pct_pre1939": 17,
+        "pct_pre1970": 46,
+        "pct_since1990": 31,
+        "pct_since2010": 11,
+        "pct_detached": 92,
+        "pct_attached": 2,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "09-JUN-06 12:51:",
+            "magnitude": "0.75",
+            "mag_type": "",
+            "location": "Jacobus",
+            "range": "",
+            "azimuth": "",
+            "attributed": true
+          },
+          {
+            "type": "Flash Flood",
+            "date": "18-JUN-13 11:20:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Jacobus",
+            "range": ".53",
+            "azimuth": "W",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "dillsburg-pa": {
+      "slug": "dillsburg-pa",
+      "name": "Dillsburg",
+      "county": "york",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4219208",
+        "census_name": "Dillsburg borough",
+        "scope_note": "Housing figures are for Dillsburg borough."
+      },
+      "housing": {
+        "units": 1079,
+        "units_moe": 99,
+        "thin": false,
+        "median_year": 1983,
+        "median_moe": 6,
+        "pct_pre1939": 27,
+        "pct_pre1970": 39,
+        "pct_since1990": 41,
+        "pct_since2010": 5,
+        "pct_detached": 52,
+        "pct_attached": 14,
+        "pct_mobile": 10,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "19-JUN-07 16:45:",
+            "magnitude": "0.88",
+            "mag_type": "",
+            "location": "Dillsburg",
+            "range": ".69",
+            "azimuth": "S",
+            "attributed": true
+          },
+          {
+            "type": "Thunderstorm Wind",
+            "date": "26-JUN-09 15:20:",
+            "magnitude": "50.00",
+            "mag_type": "EG",
+            "location": "Dillsburg",
+            "range": ".69",
+            "azimuth": "S",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "mount-wolf-pa": {
+      "slug": "mount-wolf-pa",
+      "name": "Mount Wolf",
+      "county": "york",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4252056",
+        "census_name": "Mount Wolf borough",
+        "scope_note": "Housing figures are for Mount Wolf borough."
+      },
+      "housing": {
+        "units": 518,
+        "units_moe": 120,
+        "thin": false,
+        "median_year": 1948,
+        "median_moe": 6,
+        "pct_pre1939": 32,
+        "pct_pre1970": 78,
+        "pct_since1990": 7,
+        "pct_since2010": 4,
+        "pct_detached": 63,
+        "pct_attached": 24,
+        "pct_mobile": 0,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Hail",
+            "date": "21-SEP-24 22:48:",
+            "magnitude": "1.50",
+            "mag_type": "",
+            "location": "Mt Wolf",
+            "range": "1.06",
+            "azimuth": "W",
+            "attributed": true
+          },
+          {
+            "type": "Thunderstorm Wind",
+            "date": "21-SEP-24 22:56:",
+            "magnitude": "52.00",
+            "mag_type": "EG",
+            "location": "Mt Wolf",
+            "range": ".64",
+            "azimuth": "SSW",
+            "attributed": true
+          }
+        ],
+        "county_hail": null
+      },
+      "districts": []
+    },
+    "yoe-pa": {
+      "slug": "yoe-pa",
+      "name": "Yoe",
+      "county": "york",
+      "kind": "borough",
+      "geo": {
+        "status": "place",
+        "sumlevel": "160",
+        "geoid": "16000US4287040",
+        "census_name": "Yoe borough",
+        "scope_note": "Housing figures are for Yoe borough."
+      },
+      "housing": {
+        "units": 481,
+        "units_moe": 101,
+        "thin": false,
+        "median_year": 1972,
+        "median_moe": 6,
+        "pct_pre1939": 37,
+        "pct_pre1970": 45,
+        "pct_since1990": 11,
+        "pct_since2010": 3,
+        "pct_detached": 27,
+        "pct_attached": 14,
+        "pct_mobile": 1,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [
+          {
+            "type": "Flash Flood",
+            "date": "14-JUL-25 16:42:",
+            "magnitude": "",
+            "mag_type": "",
+            "location": "Yoe",
+            "range": ".95",
+            "azimuth": "NNE",
+            "attributed": true
+          }
+        ],
+        "county_hail": {
+          "type": "Hail",
+          "date": "14-MAY-10 16:45:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Starview",
+          "range": ".69",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "penn-township-pa": {
+      "slug": "penn-township-pa",
+      "name": "Penn Township",
+      "county": "york",
+      "kind": "township",
+      "geo": {
+        "status": "township",
+        "sumlevel": "060",
+        "geoid": "06000US4213358888",
+        "census_name": "Penn township",
+        "scope_note": "Housing figures are for Penn township in York County."
+      },
+      "housing": {
+        "units": 7155,
+        "units_moe": 331,
+        "thin": false,
+        "median_year": 1983,
+        "median_moe": 3,
+        "pct_pre1939": 13,
+        "pct_pre1970": 35,
+        "pct_since1990": 39,
+        "pct_since2010": 12,
+        "pct_detached": 69,
+        "pct_attached": 21,
+        "pct_mobile": 3,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [],
+        "county_hail": {
+          "type": "Hail",
+          "date": "14-MAY-10 16:45:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Starview",
+          "range": ".69",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "fairview-pa": {
+      "slug": "fairview-pa",
+      "name": "Fairview Township",
+      "county": "york",
+      "kind": "township",
+      "geo": {
+        "status": "township",
+        "sumlevel": "060",
+        "geoid": "06000US4213324936",
+        "census_name": "Fairview township",
+        "scope_note": "Housing figures are for Fairview township in York County."
+      },
+      "housing": {
+        "units": 7114,
+        "units_moe": 244,
+        "thin": false,
+        "median_year": 1983,
+        "median_moe": 4,
+        "pct_pre1939": 7,
+        "pct_pre1970": 29,
+        "pct_since1990": 42,
+        "pct_since2010": 8,
+        "pct_detached": 78,
+        "pct_attached": 11,
+        "pct_mobile": 4,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [],
+        "county_hail": {
+          "type": "Hail",
+          "date": "14-MAY-10 16:45:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Starview",
+          "range": ".69",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "conewago-pa": {
+      "slug": "conewago-pa",
+      "name": "Conewago Township",
+      "county": "york",
+      "kind": "township",
+      "geo": {
+        "status": "township",
+        "sumlevel": "060",
+        "geoid": "06000US4213315656",
+        "census_name": "Conewago township",
+        "scope_note": "Housing figures are for Conewago township in York County."
+      },
+      "housing": {
+        "units": 3581,
+        "units_moe": 186,
+        "thin": false,
+        "median_year": 1990,
+        "median_moe": 6,
+        "pct_pre1939": 20,
+        "pct_pre1970": 28,
+        "pct_since1990": 50,
+        "pct_since2010": 16,
+        "pct_detached": 73,
+        "pct_attached": 13,
+        "pct_mobile": 11,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [],
+        "county_hail": {
+          "type": "Hail",
+          "date": "14-MAY-10 16:45:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Starview",
+          "range": ".69",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": []
+    },
+    "newberry-pa": {
+      "slug": "newberry-pa",
+      "name": "Newberry Township",
+      "county": "york",
+      "kind": "township",
+      "geo": {
+        "status": "township",
+        "sumlevel": "060",
+        "geoid": "06000US4213353224",
+        "census_name": "Newberry township",
+        "scope_note": "Housing figures are for Newberry township in York County."
+      },
+      "housing": {
+        "units": 6396,
+        "units_moe": 330,
+        "thin": false,
+        "median_year": 1984,
+        "median_moe": 3,
+        "pct_pre1939": 8,
+        "pct_pre1970": 21,
+        "pct_since1990": 38,
+        "pct_since2010": 11,
+        "pct_detached": 73,
+        "pct_attached": 8,
+        "pct_mobile": 17,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [],
+        "county_hail": {
+          "type": "Hail",
+          "date": "14-MAY-10 16:45:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Starview",
+          "range": ".69",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": [
+        "Kise Mill Bridge Historic District"
+      ]
+    },
+    "east-manchester-pa": {
+      "slug": "east-manchester-pa",
+      "name": "East Manchester Township",
+      "county": "york",
+      "kind": "township",
+      "geo": {
+        "status": "township",
+        "sumlevel": "060",
+        "geoid": "06000US4213321464",
+        "census_name": "East Manchester township",
+        "scope_note": "Housing figures are for East Manchester township in York County."
+      },
+      "housing": {
+        "units": 3370,
+        "units_moe": 182,
+        "thin": false,
+        "median_year": 1991,
+        "median_moe": 5,
+        "pct_pre1939": 6,
+        "pct_pre1970": 25,
+        "pct_since1990": 51,
+        "pct_since2010": 9,
+        "pct_detached": 84,
+        "pct_attached": 3,
+        "pct_mobile": 11,
+        "release_id": "acs2024_5yr",
+        "release_name": "ACS 2024 5-year",
+        "release_years": "2020-2024"
+      },
+      "storms": {
+        "events": [],
+        "county_hail": {
+          "type": "Hail",
+          "date": "14-MAY-10 16:45:",
+          "magnitude": "2.00",
+          "mag_type": "",
+          "location": "Starview",
+          "range": ".69",
+          "azimuth": "N",
+          "attributed": false
+        }
+      },
+      "districts": []
+    }
+  }
+}

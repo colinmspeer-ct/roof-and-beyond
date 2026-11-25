@@ -8,7 +8,7 @@ export default function NotFound() {
         The address does not match a service, a county, or a community Roof
         & Beyond Home Solutions has published.
       </p>
-      <Link href="/" className="mt-6 inline-block text-orange">
+      <Link href="/" className="mt-6 inline-flex min-h-12 items-center text-navy underline">
         Back to the home page
       </Link>
     </main>

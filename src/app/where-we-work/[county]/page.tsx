@@ -6,9 +6,10 @@ import { FaqList } from "@/components/faq-list";
 import { JsonLd } from "@/components/json-ld";
 import { PageCta } from "@/components/page-cta";
 import { countyCopy } from "@/content/county-pages";
-import { brand, serviceOrder } from "@/content/brand";
+import { brand, serviceOrder, socialImage } from "@/content/brand";
 import { servicePages } from "@/content/service-pages";
-import { counties, getCounty, townsInCounty } from "@/lib/areas";
+import { counties, getCounty, townPath, townsInCounty } from "@/lib/areas";
+import { includeTownPages } from "@/content/launch";
 import { breadcrumbNode, faqNode } from "@/lib/schema";
 
 export function generateStaticParams() {
@@ -30,10 +31,11 @@ export async function generateMetadata({
     title: copy.metaTitle,
     description: copy.metaDescription,
     openGraph: {
-      title: `${copy.metaTitle} | ${brand.dba}`,
+      title: copy.metaTitle,
       description: copy.metaDescription,
       siteName: brand.dba,
       url: `${brand.url}/where-we-work/${county.slug}/`,
+      images: [socialImage],
     },
     alternates: { canonical: `/where-we-work/${county.slug}/` },
   };
@@ -46,8 +48,8 @@ const countyFaqs = {
       a: "No. The city has brick rows and shared eaves. Boroughs such as Lititz and Ephrata keep shorter, older roofs. Farm valleys carry longer planes. The county page lists the names; the estimate is still per house.",
     },
     {
-      q: "Do you publish a separate Lancaster town page right now?",
-      a: "Not in this launch build. The communities are listed here in plain text. Town pages stay in the project and can be turned back on later.",
+      q: "Does each Lancaster community have its own page?",
+      a: "Yes. The list below links a page for each community, and each of those pages links roofing, roof repair, siding, windows, gutters, and gutter guards.",
     },
   ],
   chester: [
@@ -57,7 +59,7 @@ const countyFaqs = {
     },
     {
       q: "Where do I ask for a Chester County estimate?",
-      a: "Use the contact form and put the street address in the message. This county page does not link out to a page for each town.",
+      a: "Open the town page from the list below, or call (717) 804-0990. The estimate form is on the contact page.",
     },
   ],
   delaware: [
@@ -67,7 +69,7 @@ const countyFaqs = {
     },
     {
       q: "Is Garnet Valley a borough?",
-      a: "No. It is a community and school-district name. It is listed as text with the other places, not as its own town page in this launch.",
+      a: "No. It is a community and school-district name. It still has its own page, and that page does not borrow another township's housing table.",
     },
   ],
   york: [
@@ -77,7 +79,7 @@ const countyFaqs = {
     },
     {
       q: "How do I request work in York County?",
-      a: "Call (717) 804-0990 or send the address through the contact form. The office is listed as Media, PA 19063, and hours are 9 AM to 8 PM, seven days a week.",
+      a: "Call (717) 804-0990 or send the address through the contact form. The office is listed as Media, PA, and hours are 9 AM to 8 PM, seven days a week.",
     },
   ],
 } as const;
@@ -111,22 +113,42 @@ export default async function CountyPage({
               {paragraph}
             </p>
           ))}
-          <h2 className="mt-10 text-3xl text-navy">Towns served in {county.name}</h2>
-          <p className="mt-4 leading-7">
-            {places.map((town) => `${town.name} (${town.kind})`).join("; ")}.
-          </p>
-          <h2 className="mt-10 text-3xl text-navy">Services in {county.name}</h2>
-          {serviceOrder.map((service) => (
-            <p key={service} className="mt-4 leading-7">
-              <Link href={`/exterior/${service}/`} className="font-semibold text-navy underline decoration-orange">
-                {servicePages[service].label}
-              </Link>
-              . {servicePages[service].lede}
-            </p>
-          ))}
           <h2 className="mt-10 text-3xl text-navy">Questions about {county.name}</h2>
           <FaqList faqs={faqs} />
         </article>
+        <h2 className="mt-10 text-3xl text-navy">Towns served in {county.name}</h2>
+          {includeTownPages ? (
+            <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+              {places.map((town) => (
+                <li key={town.slug}>
+                  <Link
+                    href={townPath(town)}
+                    className="flex min-h-12 items-center justify-between gap-3 border border-line bg-white px-3 py-2 hover:border-orange"
+                  >
+                    <span className="font-semibold text-navy">{town.name}</span>
+                    <span className="text-sm text-muted">{town.kind}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="mt-4 leading-7">
+              {places.map((town) => `${town.name} (${town.kind})`).join("; ")}.
+            </p>
+          )}
+          <h2 className="mt-10 text-3xl text-navy">Services in {county.name}</h2>
+          <ul className="mt-4 flex flex-wrap gap-2">
+            {serviceOrder.map((service) => (
+              <li key={service}>
+                <Link
+                  href={`/exterior/${service}/`}
+                  className="inline-flex min-h-12 items-center border border-line bg-white px-3 py-2 text-sm hover:border-orange"
+                >
+                  {servicePages[service].label}
+                </Link>
+              </li>
+            ))}
+          </ul>
       </main>
       <PageCta heading={`Estimate a house in ${county.name}`} />
     </>

@@ -30,11 +30,10 @@ export default function PrivacyPage() {
           from {brand.domain}.
         </p>
         <p>
-          The estimate form asks for a name, phone number, email address,
-          property address, the exterior service you are asking about, a
-          message, and an optional text-message consent box. The form sends
-          that information by email to {brand.email}. A scheduling embed can
-          replace the form later.
+          The estimate form is the embedded Roofing Services Registration form.
+          It collects the contact and property details printed on that form.
+          {brand.dba} uses the submission to answer the inquiry. A text-message
+          choice, if the form shows one, is optional.
         </p>
         <p>
           The company does not sell personal information. It uses estimate
@@ -50,9 +49,8 @@ export default function PrivacyPage() {
           Leaving the box unchecked does not block an estimate.
         </p>
         <p>
-          Questions about this page go to {brand.email} or {brand.phoneDisplay}.
-          The published location is {brand.locality}. No street address is
-          listed.
+          For a privacy question, email {brand.email} or call {brand.phoneDisplay}.
+          Media, PA is the published city. No street address is listed.
         </p>
       </article>
     </main>

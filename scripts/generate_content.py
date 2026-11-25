@@ -14,6 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent / "data"))
+COPY_PATH = ROOT / "scripts" / "data" / "local_copy.json"
 
 from towns_lancaster import TOWNS as LANCASTER  # noqa: E402
 from towns_lancaster_rest import TOWNS as LANCASTER_REST  # noqa: E402
@@ -108,7 +109,13 @@ def meta_desc(text: str, limit: int = 158) -> str:
     return cut.rstrip(",;:") + "."
 
 
-def build_town(raw: dict) -> dict:
+def load_copy() -> dict:
+    if not COPY_PATH.exists():
+        raise SystemExit("missing scripts/data/local_copy.json; run python3 scripts/compose_local.py")
+    return json.loads(COPY_PATH.read_text())["towns"]
+
+
+def build_town(raw: dict, copy: dict) -> dict:
     county = COUNTIES[raw["county"]]
     paras = paragraphs(raw["town"])
     if wc(" ".join(paras)) < 120:
@@ -119,20 +126,19 @@ def build_town(raw: dict) -> dict:
         body = paragraphs(raw[key])
         if wc(" ".join(body)) < 80:
             raise SystemExit(f"{raw['slug']} {key} copy is under 80 words")
-        frames = Q_FRAMES[key]
-        faqs = []
-        for i, para in enumerate(body[:2]):
-            frame = frames[i % len(frames)]
-            q = frame.format(name=raw["name"], hook=hook)
-            faqs.append({"q": q, "a": para})
+        extra = copy["services"][slug]
         services[slug] = {
             "label": label,
             "slug": slug,
             "h1": f"{label} on houses in {raw['name']}",
-            "metaTitle": f"{label} in {raw['name']}, {county['name']}",
+            "metaTitle": f"{label} in {raw['name']}, PA",
             "metaDescription": meta_desc(body[0]),
             "paragraphs": body,
-            "faqs": faqs,
+            "faqs": extra["faqs"],
+            "answer": extra["answer"],
+            "costHeading": extra["costHeading"],
+            "costParagraphs": extra["costParagraphs"],
+            "priceNote": extra["priceNote"],
         }
     return {
         "slug": raw["slug"],
@@ -149,12 +155,21 @@ def build_town(raw: dict) -> dict:
         "metaDescription": meta_desc(paras[0]),
         "paragraphs": paras,
         "services": services,
+        "riskLead": copy["riskLead"],
+        "answer": copy["answer"],
+        "localSections": copy["localSections"],
+        "faqs": copy["faqs"],
+        "sources": copy["sources"],
     }
 
 
 def main() -> None:
     raws = LANCASTER + LANCASTER_REST + CHESTER + DELAWARE + YORK
-    towns = [build_town(r) for r in raws]
+    copy = load_copy()
+    missing = [raw["slug"] for raw in raws if raw["slug"] not in copy]
+    if missing:
+        raise SystemExit(f"local copy missing {missing[:5]}")
+    towns = [build_town(raw, copy[raw["slug"]]) for raw in raws]
     slugs = [t["slug"] for t in towns]
     if len(slugs) != len(set(slugs)):
         raise SystemExit("duplicate town slug")

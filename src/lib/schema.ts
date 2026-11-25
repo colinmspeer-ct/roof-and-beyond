@@ -3,7 +3,7 @@ import { counties } from "@/lib/areas";
 
 export function companyNode() {
   return {
-    "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+    "@type": ["RoofingContractor", "LocalBusiness"],
     "@id": `${brand.url}/#company`,
     name: brand.dba,
     legalName: brand.legalName,
@@ -18,7 +18,7 @@ export function companyNode() {
       "@type": "PostalAddress",
       addressLocality: "Media",
       addressRegion: "PA",
-      postalCode: "19063",
+      postalCode: brand.postalCode,
       addressCountry: "US",
     },
     identifier: {

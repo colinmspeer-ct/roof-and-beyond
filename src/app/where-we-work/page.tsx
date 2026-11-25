@@ -3,7 +3,8 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { JsonLd } from "@/components/json-ld";
 import { PageCta } from "@/components/page-cta";
-import { counties, countyPath, townsInCounty } from "@/lib/areas";
+import { counties, countyPath, townPath, townsInCounty } from "@/lib/areas";
+import { includeTownPages } from "@/content/launch";
 import { breadcrumbNode } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -34,9 +35,10 @@ export default function WhereWeWorkPage() {
           does not exist.
         </p>
         <p className="mt-4 leading-7">
-          Open a county to read the community names. This launch lists those
-          towns in plain text. Separate town pages stay in the project and
-          turn back on when includeTownPages is true.
+          Open a county, then a town. Each town page links roofing, roof repair,
+          siding, windows, gutters, and gutter guards for houses in that place.
+          The figures on a town page are tied to that place: Census housing
+          years, NOAA storm rows, and any National Register district that matched.
         </p>
       </article>
       <div className="mt-10 grid gap-6 md:grid-cols-2">
@@ -50,9 +52,21 @@ export default function WhereWeWorkPage() {
                 </Link>
               </h2>
               <p className="mt-1 text-sm text-muted">{places.length} communities</p>
-              <p className="mt-4 text-sm leading-6 text-ink">
-                {places.map((town) => `${town.name} (${town.kind})`).join("; ")}.
-              </p>
+              {includeTownPages ? (
+                <ul className="mt-4 flex flex-wrap gap-2">
+                  {places.map((town) => (
+                    <li key={town.slug}>
+                      <Link href={townPath(town)} className="inline-flex min-h-12 items-center border border-line px-3 py-2 text-sm hover:border-orange">
+                        {town.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="mt-4 text-sm leading-6 text-ink">
+                  {places.map((town) => `${town.name} (${town.kind})`).join("; ")}.
+                </p>
+              )}
             </section>
           );
         })}

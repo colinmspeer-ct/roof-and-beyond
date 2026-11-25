@@ -12,9 +12,17 @@ export const brand = {
   phoneTel: "+17178040990",
   email: "colin@roofnbeyond.com",
   hours: "9 AM to 8 PM, 7 days a week",
-  locality: "Media, PA 19063",
+  locality: "Media, PA",
+  postalCode: "19063",
   hic: "PA240642",
   registration: "PA Home Improvement Contractor registered (PA240642)",
+} as const;
+
+export const socialImage = {
+  url: "/og/default.png",
+  width: 1200,
+  height: 630,
+  alt: "Roof and Beyond Home Solutions, Media, PA",
 } as const;
 
 export const serviceOrder = [

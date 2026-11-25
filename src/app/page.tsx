@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { EstimateForm } from "@/components/estimate-form";
 import { FaqList } from "@/components/faq-list";
 import { JsonLd } from "@/components/json-ld";
 import { PageCta } from "@/components/page-cta";
 import { TrustSignals } from "@/components/trust-signals";
-import { brand, serviceOrder } from "@/content/brand";
+import { brand, serviceOrder, socialImage } from "@/content/brand";
 import { servicePages } from "@/content/service-pages";
 import { counties, countyPath } from "@/lib/areas";
 import { companyGraph, faqNode } from "@/lib/schema";
@@ -21,6 +20,7 @@ export const metadata: Metadata = {
     description: brand.description,
     siteName: brand.dba,
     url: brand.url,
+    images: [socialImage],
   },
   alternates: { canonical: "/" },
 };
@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     q: "How does a free estimate work?",
-    a: "You send the address and what you are seeing. Someone looks at the exterior. You get a written scope before any work is scheduled. The form on this preview does not send yet.",
+    a: "You send the address and what you are seeing through the estimate form, or you call. Someone looks at the exterior. You get a written scope before any work is scheduled.",
   },
   {
     q: "Are you a registered Pennsylvania contractor?",
@@ -66,30 +66,33 @@ export default function HomePage() {
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-sky">
               Lancaster, Chester, Delaware, and York counties
             </p>
-            <h1 className="mt-4 max-w-xl text-5xl leading-[0.95] sm:text-6xl">
+            <h1 className="mt-4 max-w-xl text-4xl leading-[0.95] text-white sm:text-6xl">
               A written estimate for the outside of the house.
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-8 text-white/90">
               {brand.dba} prices roofing, roof repair, siding, windows, gutters,
-              and gutter guards before any work is scheduled.
+              and gutter guards on houses before any work is scheduled.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button asChild size="lg">
-                <Link href="#estimate">Get a free estimate</Link>
+                <Link href="/contact/#estimate">Get a free estimate</Link>
               </Button>
               <Button asChild size="lg" variant="outline">
                 <a href={`tel:${brand.phoneTel}`}>{`Call us at ${brand.phoneDisplay}`}</a>
               </Button>
             </div>
-          </div>
-          <div id="estimate" className="bg-white p-5 text-navy shadow-lg">
-            <h2 className="text-3xl">Request the visit</h2>
-            <p className="mt-2 text-sm leading-6 text-muted">
-              Name, phone, email, and the trade. Address can wait until the full form.
+            <p className="mt-4 text-sm text-sky">
+              {brand.hours}. Based in Media, PA. PA HIC #{brand.hic}.
             </p>
-            <div className="mt-4">
-              <EstimateForm short idPrefix="home-estimate" />
-            </div>
+          </div>
+          <div className="border border-white/15 bg-white/5 p-5">
+            <h2 className="text-3xl">What the visit covers</h2>
+            <ul className="mt-4 space-y-3 text-sm leading-6 text-white/90">
+              <li>Roofing and roof repair, kept as separate scopes.</li>
+              <li>Siding, windows, gutters, and gutter guards.</li>
+              <li>A written estimate before anything is scheduled.</li>
+              <li>Residential houses only.</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -147,8 +150,7 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-4 py-16">
         <h2 className="text-4xl text-navy">Counties we cover</h2>
         <p className="mt-4 max-w-3xl leading-7 text-muted">
-          Open a county to read the town names. This launch build does not
-          publish a separate page for each town.
+          Open a county, then a town. Each town page links the six trades.
         </p>
         <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {counties.map((county) => (
