@@ -40,6 +40,13 @@ export default function PrivacyPage() {
           details to look at a house and reply. Access is limited to people
           who schedule or perform that work.
         </p>
+        <h2 className="pt-4 text-3xl text-navy">Mobile information</h2>
+        <p>
+          No mobile information will be shared with third parties or affiliates
+          for marketing or promotional purposes. All the above categories exclude
+          text messaging originator opt-in data and consent; this information
+          will not be shared with any third parties.
+        </p>
         <h2 className="pt-4 text-3xl text-navy">Text messages</h2>
         <p>
           The optional checkbox says: By checking this box, you agree to receive

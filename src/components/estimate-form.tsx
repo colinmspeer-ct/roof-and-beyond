@@ -33,6 +33,19 @@ export function EstimateForm({
         title="Roofing Services Registration"
         loading="lazy"
       />
+      <p className="mt-3 text-sm leading-7 text-slate-700">
+        The optional checkboxes on the form are how you opt in to texts. Message
+        frequency varies. Message and data rates may apply. Reply STOP to opt
+        out, HELP for help. Consent is not a condition of purchase. See our{" "}
+        <a className="underline" href="/privacy/">
+          Privacy
+        </a>{" "}
+        and{" "}
+        <a className="underline" href="/terms/">
+          Terms
+        </a>
+        .
+      </p>
       <Script src="https://link.msgsndr.com/js/form_embed.js" strategy="lazyOnload" />
     </div>
   );

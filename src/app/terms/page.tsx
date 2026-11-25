@@ -39,10 +39,22 @@ export default function TermsPage() {
           {brand.registration}, under {brand.legalName}. This site does not
           publish manufacturer lists or warranty terms.
         </p>
-        <h2 className="pt-4 text-3xl text-navy">Messages</h2>
+        <h2 className="pt-4 text-3xl text-navy">SMS Terms</h2>
         <p>
-          Texts are not sent unless you opt in on the estimate form. Declining
-          that option still leaves the estimate request intact.
+          Program name: Roof & Beyond Home Solutions Customer Texts.
+        </p>
+        <p>
+          Texts are not sent unless you opt in on the estimate form. If you
+          check a box, Roof & Beyond Home Solutions may text you about your
+          inquiry, estimate, or, if you also opt in to marketing, occasional
+          offers. Message frequency varies. Message and data rates may apply.
+          Reply STOP to opt out, HELP for help. Consent is not a condition of
+          purchase. Declining that option still leaves the estimate request
+          intact.
+        </p>
+        <p>
+          Carriers are not liable for any delayed or undelivered messages. See
+          the Privacy page for how mobile information is handled.
         </p>
         <p>
           Sending the form does not create a contract. Work starts only after a
