@@ -42,10 +42,11 @@ export default function PrivacyPage() {
         </p>
         <h2 className="pt-4 text-3xl text-navy">Mobile information</h2>
         <p>
-          No mobile information will be shared with third parties or affiliates
-          for marketing or promotional purposes. All the above categories exclude
-          text messaging originator opt-in data and consent; this information
-          will not be shared with any third parties.
+          If you give a mobile number or agree to texts, that number and that
+          yes stay with this company. We will not hand them to another firm,
+          or to a related business, so those businesses can advertise their
+          own work. A yes to texts is used only to send the messages you
+          asked for and to run the estimate desk.
         </p>
         <h2 className="pt-4 text-3xl text-navy">Text messages</h2>
         <p>
