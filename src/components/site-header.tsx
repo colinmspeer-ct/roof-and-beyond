@@ -48,6 +48,9 @@ export function SiteHeader() {
             <Link href="/about/" className="hover:text-sky">
               About
             </Link>
+            <Link href="/contact/#estimate" className="hover:text-sky">
+              Free estimate
+            </Link>
             <Button asChild size="sm">
               <a href={`tel:${brand.phoneTel}`}>{`Call us at ${brand.phoneDisplay}`}</a>
             </Button>

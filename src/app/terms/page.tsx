@@ -41,18 +41,16 @@ export default function TermsPage() {
         </p>
         <h2 className="pt-4 text-3xl text-navy">Messages</h2>
         <p>
-          Text messages are sent only if you check the optional box on the
-          estimate form. The wording of that box is the consent. Leaving it
-          empty does not block a request for an estimate.
+          Texts are not sent unless you opt in on the estimate form. Declining
+          that option still leaves the estimate request intact.
         </p>
         <p>
-          Submitting the estimate form emails the office. It does not by itself
-          create a contract to do the work.
+          Sending the form does not create a contract. Work starts only after a
+          written scope is approved.
         </p>
         <p>
-          Questions about these terms go to {brand.email} or {brand.phoneDisplay}.
-          The published location is {brand.locality}. Pennsylvania law applies
-          to the use of this website.
+          Term questions reach {brand.email} and {brand.phoneDisplay}. Pennsylvania
+          law applies to use of this website.
         </p>
       </article>
     </main>

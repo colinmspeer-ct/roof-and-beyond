@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/breadcrumbs";
 import { FaqList } from "@/components/faq-list";
 import { JsonLd } from "@/components/json-ld";
 import { PageCta } from "@/components/page-cta";
-import { brand, serviceOrder, type ServiceSlug } from "@/content/brand";
+import { brand, serviceOrder, socialImage, type ServiceSlug } from "@/content/brand";
 import { servicePages } from "@/content/service-pages";
 import { counties, countyPath } from "@/lib/areas";
 import { breadcrumbNode, faqNode, serviceNode } from "@/lib/schema";
@@ -30,10 +30,11 @@ export async function generateMetadata({
     title: page.metaTitle,
     description: page.metaDescription,
     openGraph: {
-      title: `${page.metaTitle} | ${brand.dba}`,
+      title: page.metaTitle,
       description: page.metaDescription,
       siteName: brand.dba,
       url: `${brand.url}${canonical}`,
+      images: [socialImage],
     },
     alternates: { canonical },
   };

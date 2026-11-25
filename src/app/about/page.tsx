@@ -4,16 +4,17 @@ import { Breadcrumbs } from "@/components/breadcrumbs";
 import { JsonLd } from "@/components/json-ld";
 import { PageCta } from "@/components/page-cta";
 import { Button } from "@/components/ui/button";
-import { brand } from "@/content/brand";
+import { brand, socialImage } from "@/content/brand";
 import { breadcrumbNode, companyGraph } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: `About ${brand.dba}`,
+  title: "About the company",
   description: `${brand.dba} estimates roofing, roof repair, siding, windows, gutters, and gutter guards in four Pennsylvania counties.`,
   openGraph: {
-    title: `About ${brand.dba}`,
+    title: "About the company",
     description: `${brand.dba} estimates roofing, roof repair, siding, windows, gutters, and gutter guards in four Pennsylvania counties.`,
     siteName: brand.dba,
+    images: [socialImage],
   },
   alternates: { canonical: "/about/" },
 };

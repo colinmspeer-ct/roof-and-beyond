@@ -4,7 +4,7 @@ Marketing site for **Roof & Beyond Home Solutions**, the DBA of **Pro Tech Brand
 
 ## Launch build
 
-`launch.json` sets `includeTownPages` to `false`. The static export then keeps the home page, six service pages, about, contact, privacy, terms, and one page per county. Town names are plain text on the county pages. Town page source stays in the repo. Set the flag to `true` and rebuild to publish those pages again.
+`launch.json` sets `includeTownPages` to `true`. The static export publishes a page for each community and a page for each community plus each of the six services. County pages link the towns. Set the flag to `false` and rebuild to publish county pages only.
 
 GitHub Pages: `npm run build` writes `out/` with `CNAME` (`roofnbeyond.com`) and `.nojekyll`. There is no `basePath`. `.github/workflows/pages.yml` deploys that folder when `main` is pushed.
 
@@ -40,7 +40,7 @@ npm run check:links
 
 `npm run build` writes `out/` with `CNAME` and `.nojekyll`. GitHub Actions (`.github/workflows/pages.yml`) uploads that folder to GitHub Pages. There is no `basePath`. DNS is not changed by this repository.
 
-The estimate form posts to FormSubmit at `colin@roofnbeyond.com`. The first submission asks that inbox to confirm the address. Swap `src/components/estimate-form.tsx` for a HighLevel embed later.
+The estimate form is the HighLevel Roofing Services Registration embed in `src/components/estimate-form.tsx`. The public location is Media, PA. No street address is published.
 
 ## Scope
 

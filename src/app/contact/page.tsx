@@ -4,7 +4,7 @@ import { EstimateForm } from "@/components/estimate-form";
 import { FaqList } from "@/components/faq-list";
 import { JsonLd } from "@/components/json-ld";
 import { PageCta } from "@/components/page-cta";
-import { brand } from "@/content/brand";
+import { brand, socialImage } from "@/content/brand";
 import { breadcrumbNode, faqNode } from "@/lib/schema";
 
 const description = `Contact ${brand.dba} for a written estimate on roofing, roof repair, siding, windows, gutters, or gutter guards. Call ${brand.phoneDisplay}.`;
@@ -13,10 +13,11 @@ export const metadata: Metadata = {
   title: "Contact and free estimate",
   description,
   openGraph: {
-    title: `Contact and free estimate | ${brand.dba}`,
+    title: "Contact and free estimate",
     description,
     siteName: brand.dba,
     url: `${brand.url}/contact/`,
+    images: [socialImage],
   },
   alternates: { canonical: "/contact/" },
 };
@@ -29,7 +30,7 @@ const crumbs = [
 const faqs = [
   {
     q: "Does this form send my message?",
-    a: "Yes. The form emails the office. You may also call (717) 804-0990.",
+    a: "Yes. The form on this page is the Roofing Services Registration form. Submitting it sends the inquiry to the company. You may also call (717) 804-0990.",
   },
   {
     q: "What should I include?",

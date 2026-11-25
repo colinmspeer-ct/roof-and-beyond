@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export function PageCta({
   heading = "Get a written estimate",
-  body = "Tell us the address and which part of the exterior you want looked at. The form is still a preview.",
+  body = "Call or send the address through the estimate form. The visit comes before any work is scheduled. Houses only.",
 }: {
   heading?: string;
   body?: string;

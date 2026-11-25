@@ -55,8 +55,16 @@ def main() -> None:
     sentences: set[str] = set()
     grams: set[str] = set()
     for url in urls:
-        request = urllib.request.Request(url, headers=UA)
-        raw = urllib.request.urlopen(request, timeout=40).read().decode("utf-8", "replace")
+        raw = ""
+        for attempt in range(3):
+            try:
+                request = urllib.request.Request(url, headers=UA)
+                raw = urllib.request.urlopen(request, timeout=40).read().decode("utf-8", "replace")
+                break
+            except Exception as error:
+                if attempt == 2:
+                    raise SystemExit(f"failed {url}: {error}") from error
+                time.sleep(1.5)
         parser = Visible()
         parser.feed(raw)
         text = html.unescape("".join(parser.parts))

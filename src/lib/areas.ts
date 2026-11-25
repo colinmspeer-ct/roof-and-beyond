@@ -3,6 +3,8 @@ import type { ServiceSlug } from "@/content/brand";
 
 export type Faq = { q: string; a: string };
 
+export type LocalSection = { heading: string; paragraphs: string[] };
+
 export type ServiceBlock = {
   label: string;
   slug: ServiceSlug;
@@ -11,6 +13,10 @@ export type ServiceBlock = {
   metaDescription: string;
   paragraphs: string[];
   faqs: Faq[];
+  answer: string;
+  costHeading: string;
+  costParagraphs: string[];
+  priceNote: string;
 };
 
 export type Town = {
@@ -28,6 +34,11 @@ export type Town = {
   metaDescription: string;
   paragraphs: string[];
   services: Record<ServiceSlug, ServiceBlock>;
+  riskLead: string;
+  answer: string;
+  localSections: LocalSection[];
+  faqs: Faq[];
+  sources: string[];
 };
 
 export type CountyRecord = {

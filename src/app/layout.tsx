@@ -3,7 +3,7 @@ import { Fjalla_One, Montserrat } from "next/font/google";
 import { MobileActionBar } from "@/components/mobile-action-bar";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { brand } from "@/content/brand";
+import { brand, socialImage } from "@/content/brand";
 import "./globals.css";
 
 const fjalla = Fjalla_One({
@@ -41,6 +41,11 @@ export const metadata: Metadata = {
       template: `%s | ${brand.dba}`,
     },
     description: brand.description,
+    images: [socialImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [socialImage.url],
   },
   robots: { index: true, follow: true },
 };
