@@ -1,0 +1,125 @@
+{
+  "direction": "Photorealistic documentary photograph for a residential exterior services website, with realistic southeastern Pennsylvania architecture and plausible trade details. Natural textures, precise straight lines, neutral color grading. No text, letters, numbers, logos, signage, labels, watermarks, house numbers, vehicles, or identifiable faces. Never depict this as a named contractor's project.",
+  "scenes": {
+    "roof-replacement-stone-farmhouse": {
+      "size": "1536x1024",
+      "prompt": "Wide three-quarter view of a Pennsylvania fieldstone farmhouse with a charcoal architectural shingle roof, a mature maple and late-afternoon light. Keep the roof prominent."
+    },
+    "roof-replacement-lancaster-colonial": {
+      "size": "1536x1024",
+      "prompt": "Lancaster County brick colonial with a new slate-gray asphalt roof, white trim and a shaded front lawn. Show both the front slope and the gable end."
+    },
+    "roof-replacement-chester-colonial": {
+      "size": "1536x1024",
+      "prompt": "Pale stone and clapboard Chester County colonial with dark brown architectural shingles and copper-colored chimney flashing. Photograph across a broad lawn in soft daylight."
+    },
+    "roof-replacement-york-ranch": {
+      "size": "1536x1024",
+      "prompt": "Single-story York County brick ranch with a low charcoal asphalt roof above deep white eaves. Photograph from the corner of the lawn on a clear spring morning."
+    },
+    "roof-replacement-harnessed-crew": {
+      "size": "1536x1024",
+      "prompt": "Two roofers viewed from behind at medium distance, installing architectural shingles on a simple gable with correctly worn fall-arrest harnesses and visible rooftop lifelines. Plain unmarked workwear and no packaging."
+    },
+    "roof-replacement-tear-off": {
+      "size": "1536x1024",
+      "prompt": "Side view from off the roof of a residential roof tear-off in progress, with stripped wood decking on half a plane and remaining old asphalt shingles. No workers, debris kept away from the gutter."
+    },
+    "roof-repair-flashed-chimney": {
+      "size": "1536x1024",
+      "prompt": "Close detail of neatly stepped metal flashing and counterflashing where a red brick chimney meets dark gray architectural shingles. Soft overcast light shows the junction clearly."
+    },
+    "roof-repair-wind-damage": {
+      "size": "1024x1024",
+      "prompt": "Close detail of asphalt roof wind damage with three irregular missing shingles exposing the underlayment beneath. Intact gray shingle courses frame the damaged spot."
+    },
+    "roof-repair-ice-dam": {
+      "size": "1536x1024",
+      "prompt": "Winter ground-level view of a Pennsylvania house with a ridge of ice and short icicles at the edge of its asphalt roof. Show patches of melting snow farther upslope."
+    },
+    "roof-repair-shingle-patch": {
+      "size": "1536x1024",
+      "prompt": "Close view of a localized asphalt shingle repair with a small patch of darker charcoal shingles blended in with the neighboring courses. Keep the weathered granules crisp."
+    },
+    "roof-repair-vent-boot": {
+      "size": "1024x1024",
+      "prompt": "Detail of a black plumbing vent boot fitted into the asphalt shingles on a simple residential roof. Frame the overlapping shingle courses and textured rubber collar."
+    },
+    "siding-lancaster-twins": {
+      "size": "1536x1024",
+      "prompt": "Pair of attached Lancaster County homes with cream and pale blue horizontal vinyl siding, two front porches and crisp white window trim. Street-level view angled slightly upward, no front doors or number plaques in frame."
+    },
+    "siding-delaware-row-homes": {
+      "size": "1536x1024",
+      "prompt": "Delaware County row houses with light horizontal siding at the upper stories above red brick. Frame the party-line transitions and repeated upper-story windows from sidewalk height, cropped above the doors."
+    },
+    "siding-vinyl-installation": {
+      "size": "1536x1024",
+      "prompt": "Medium view from behind of an installer snapping a pale gray vinyl siding panel into place on a low wall with plain unprinted housewrap. Plain clothing and no face visible."
+    },
+    "siding-split-level": {
+      "size": "1536x1024",
+      "prompt": "Wide three-quarter view of a Pennsylvania split-level house with sage vinyl siding above a lower brick wall. Show the horizontal transition along the front of the house."
+    },
+    "siding-window-trim": {
+      "size": "1024x1024",
+      "prompt": "Close detail of white window trim where it meets blue vinyl siding courses. Emphasize the neat return at the bottom corner and fine surface textures."
+    },
+    "window-replacement-double-hung": {
+      "size": "1024x1024",
+      "prompt": "Exterior close view of a white double-hung replacement window in a brick colonial wall. Show two sashes, a clear meeting rail and the white sill."
+    },
+    "window-replacement-stone-opening": {
+      "size": "1536x1024",
+      "prompt": "New white double-hung window set into a deep fieldstone opening on a Pennsylvania farmhouse. Photograph slightly from the side to show the stone reveal."
+    },
+    "window-replacement-installation": {
+      "size": "1536x1024",
+      "prompt": "Interior shoulder-level detail of gloved hands holding a small plain unmarked level against a newly set white replacement window jamb. Natural light, no face and absolutely no printed markings."
+    },
+    "window-replacement-ranch-pair": {
+      "size": "1536x1024",
+      "prompt": "Paired double-hung replacement windows with white frames in a low red brick ranch wall, photographed nearly straight on. Green shrubbery below both sills."
+    },
+    "window-replacement-trim-detail": {
+      "size": "1024x1024",
+      "prompt": "Close detail of a closed replacement window with a white frame and sill against sage horizontal siding. Soft light across the caulk seam."
+    },
+    "gutter-installation-seamless": {
+      "size": "1536x1024",
+      "prompt": "Ground-up view of a clean seamless white aluminum gutter with a matching downspout elbow at the corner of a Pennsylvania colonial. Include the fascia and top courses of siding."
+    },
+    "gutter-installation-brick-downspout": {
+      "size": "1536x1024",
+      "prompt": "Dark seamless gutter and matching downspout on a red brick Pennsylvania row home. Include the routed downspout from the eave to near ground, framing out doors and numbers."
+    },
+    "gutter-installation-hail-dents": {
+      "size": "1024x1024",
+      "prompt": "Close side-lit view of shallow rounded hail dents in an unpainted aluminum gutter below dark asphalt shingles. Dents are realistic and subtle."
+    },
+    "gutter-installation-fall-rain": {
+      "size": "1536x1024",
+      "prompt": "Close exterior view of a white gutter and elbow carrying roof runoff on a wet autumn day. Soft yellow maple leaves blur in the background."
+    },
+    "gutter-installation-ranch-eave": {
+      "size": "1536x1024",
+      "prompt": "Long white seamless gutter following the straight eave of a one-story Pennsylvania ranch. Shoot looking up the run from the downspout corner in even daylight."
+    },
+    "gutter-guards-fall-maple": {
+      "size": "1536x1024",
+      "prompt": "Close photo of dark fine mesh gutter guards over an aluminum trough on a shingle roof. A few red maple leaves rest on the mesh in autumn light."
+    },
+    "gutter-guards-mesh-detail": {
+      "size": "1024x1024",
+      "prompt": "Macro detail of clean stainless mesh gutter guard on a white aluminum gutter beneath charcoal asphalt shingles. Show the guard edge meeting the outer gutter lip."
+    },
+    "gutter-guards-pine-needles": {
+      "size": "1024x1024",
+      "prompt": "Oblique view of a fine mesh gutter guard along a brown roof with just a few pine needles resting on it. Show the covered run receding toward a roof corner."
+    },
+    "gutter-guards-open-and-covered": {
+      "size": "1536x1024",
+      "prompt": "Single realistic photo of two adjoining sections of one gutter, one open and one covered with a fitted mesh guard, beneath a residential shingle edge. No divider line or annotation."
+    }
+  }
+}
