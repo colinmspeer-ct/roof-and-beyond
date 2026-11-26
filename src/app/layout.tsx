@@ -1,27 +1,18 @@
 import type { Metadata } from "next";
-import { Fjalla_One, Montserrat } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import { MobileActionBar } from "@/components/mobile-action-bar";
 import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
+import { SiteHeader, TopBar } from "@/components/site-header";
 import { brand, socialImage } from "@/content/brand";
 import "./globals.css";
 
-const fjalla = Fjalla_One({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-fjalla",
-  display: "optional",
-  adjustFontFallback: true,
-  preload: false,
-});
-
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["400", "600"],
+  weight: ["400", "600", "700", "800"],
   variable: "--font-montserrat",
-  display: "optional",
+  display: "swap",
   adjustFontFallback: true,
-  preload: false,
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -56,16 +47,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${fjalla.variable} ${montserrat.variable}`}>
+    <html lang="en" className={montserrat.variable}>
       <body className="flex min-h-screen flex-col font-sans antialiased">
         <a
           href="#content"
-          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-orange focus:px-3 focus:py-2 focus:text-navy"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-orange focus:px-3 focus:py-2 focus:font-bold focus:text-navy"
         >
           Skip to content
         </a>
+        <TopBar />
         <SiteHeader />
-        <div id="content" className="flex-1 pb-20 md:pb-0">
+        <div id="content" className="flex-1 pb-24 md:pb-0">
           {children}
         </div>
         <SiteFooter />

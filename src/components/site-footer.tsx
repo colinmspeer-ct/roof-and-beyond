@@ -1,78 +1,151 @@
 import Link from "next/link";
+import { Clock, Mail, MapPin, Phone, ShieldCheck } from "lucide-react";
 import { brand, serviceOrder } from "@/content/brand";
 import { servicePages } from "@/content/service-pages";
 import { counties, countyPath } from "@/lib/areas";
+import {
+  GbpMapPlaceholder,
+  InsuranceStatusPlaceholder,
+  SocialLinksPlaceholder,
+} from "@/components/placeholders";
+
+const heading = "text-xs font-bold uppercase tracking-[0.18em] text-orange";
+const link = "inline-flex min-h-9 items-center text-[15px] text-white/80 hover:text-white";
 
 export function SiteFooter() {
   return (
     <footer className="mt-auto bg-navy-deep text-white">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 md:grid-cols-4">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div>
           <img
             src="/brand/logo.svg"
             alt="Roof and Beyond Home Solutions logo"
             width={242}
             height={56}
+            loading="lazy"
             className="h-14 w-auto"
           />
-          <p className="mt-4 text-sm leading-6 text-sky">{brand.dbaLine}</p>
+          <p className="mt-5 max-w-sm text-[15px] leading-7 text-white/75">
+            Roofing, roof repair, siding, windows, gutters, and gutter guards
+            for houses in Lancaster, Chester, Delaware, and York counties.
+          </p>
+          <ul className="mt-5 space-y-2 text-[15px] text-white/85">
+            <li>
+              <a href={`tel:${brand.phoneTel}`} className="inline-flex min-h-9 items-center gap-2 font-bold text-white hover:text-orange">
+                <Phone aria-hidden="true" className="size-4 text-orange" />
+                {brand.phoneDisplay}
+              </a>
+            </li>
+            <li>
+              <a href={`mailto:${brand.email}`} className="inline-flex min-h-9 items-center gap-2 hover:text-white">
+                <Mail aria-hidden="true" className="size-4 text-orange" />
+                {brand.email}
+              </a>
+            </li>
+            <li className="flex items-center gap-2">
+              <Clock aria-hidden="true" className="size-4 text-orange" />
+              {brand.hours}
+            </li>
+            <li className="flex items-center gap-2">
+              <MapPin aria-hidden="true" className="size-4 text-orange" />
+              Based in {brand.locality}
+            </li>
+            <li className="flex items-center gap-2">
+              <ShieldCheck aria-hidden="true" className="size-4 text-orange" />
+              PA HIC #{brand.hic}
+            </li>
+          </ul>
+          <InsuranceStatusPlaceholder />
+          <SocialLinksPlaceholder />
         </div>
-        <div>
-          <h2 className="text-sm font-semibold uppercase tracking-[0.14em] text-orange">
-            Exterior
-          </h2>
-          <ul className="mt-3 space-y-2 text-sm">
+        <nav aria-label="Services">
+          <h2 className={heading}>Services</h2>
+          <ul className="mt-4 space-y-1">
             {serviceOrder.map((slug) => (
               <li key={slug}>
-                <Link href={`/exterior/${slug}/`} className="hover:text-sky">
+                <Link href={`/exterior/${slug}/`} className={link}>
                   {servicePages[slug].label}
                 </Link>
               </li>
             ))}
+            <li>
+              <Link href="/exterior/" className={link}>
+                All services
+              </Link>
+            </li>
           </ul>
-        </div>
-        <div>
-          <h2 className="text-sm font-semibold uppercase tracking-[0.14em] text-orange">
-            Counties
-          </h2>
-          <ul className="mt-3 space-y-2 text-sm">
+        </nav>
+        <nav aria-label="Service area">
+          <h2 className={heading}>Where we work</h2>
+          <ul className="mt-4 space-y-1">
             {counties.map((county) => (
               <li key={county.slug}>
-                <Link href={countyPath(county.slug)} className="hover:text-sky">
+                <Link href={countyPath(county.slug)} className={link}>
                   {county.name}
                 </Link>
               </li>
             ))}
-          </ul>
-        </div>
-        <div>
-          <h2 className="text-sm font-semibold uppercase tracking-[0.14em] text-orange">
-            Contact
-          </h2>
-          <ul className="mt-3 space-y-2 text-sm leading-6 text-sky">
             <li>
-              <a href={`tel:${brand.phoneTel}`}>{`Call us at ${brand.phoneDisplay}`}</a>
+              <Link href="/where-we-work/" className={link}>
+                All communities
+              </Link>
+            </li>
+          </ul>
+        </nav>
+        <nav aria-label="Company">
+          <h2 className={heading}>Company</h2>
+          <ul className="mt-4 space-y-1">
+            <li>
+              <Link href="/about/" className={link}>
+                About
+              </Link>
             </li>
             <li>
-              <a href={`mailto:${brand.email}`}>{brand.email}</a>
+              <Link href="/contact/" className={link}>
+                Contact
+              </Link>
             </li>
-            <li>{brand.locality}</li>
-            <li>{brand.hours}</li>
+            <li>
+              <Link href="/contact/#estimate" className={link}>
+                Free estimate
+              </Link>
+            </li>
+            <li>
+              <Link href="/sitemap/" className={link}>
+                Sitemap
+              </Link>
+            </li>
+            <li>
+              <a href="/sitemap.xml" className={link}>
+                XML sitemap
+              </a>
+            </li>
+            <li>
+              <Link href="/privacy/" className={link}>
+                Privacy
+              </Link>
+            </li>
+            <li>
+              <Link href="/terms/" className={link}>
+                Terms
+              </Link>
+            </li>
           </ul>
-          <Link
-            href="/contact/"
-            className="mt-4 inline-block bg-orange px-4 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-navy"
-          >
-            Free estimate
-          </Link>
-        </div>
+        </nav>
       </div>
+      <GbpMapPlaceholder />
       <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-4 text-xs text-sky sm:flex-row sm:justify-between">
+        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-5 text-[13px] leading-6 text-white/65 md:flex-row md:items-center md:justify-between">
           <p>
-            © {new Date().getFullYear()} {brand.dba}.
+            © {new Date().getFullYear()} {brand.dbaLine}
           </p>
-          <p className="flex gap-4">
+          <p className="flex flex-wrap gap-x-4">
+            <Link href="/sitemap/" className="hover:text-white">
+              Sitemap
+            </Link>
+            <a href="/sitemap.xml" className="hover:text-white">
+              sitemap.xml
+            </a>
             <Link href="/privacy/" className="hover:text-white">
               Privacy
             </Link>
