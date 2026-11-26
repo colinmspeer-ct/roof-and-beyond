@@ -17,7 +17,7 @@ from towns_chester import TOWNS as CHESTER  # noqa: E402
 from towns_delaware import TOWNS as DELAWARE  # noqa: E402
 from towns_york import TOWNS as YORK  # noqa: E402
 from towns_cumberland import FACTS as CUMBERLAND_FACTS, TOWNS as CUMBERLAND  # noqa: E402
-from towns_extension import DAUPHIN  # noqa: E402
+from towns_extension import DAUPHIN, YORK_EXTENSION  # noqa: E402
 
 FACTS_PATH = ROOT / "scripts" / "data" / "local_facts.json"
 OUT_PATH = ROOT / "scripts" / "data" / "local_copy.json"
@@ -375,6 +375,7 @@ def build_researched_copy(town: dict) -> dict:
 
 
 def build_copy(towns: list[dict], facts: dict) -> dict:
+    york_research = json.loads((ROOT / "scripts/data/york_research.json").read_text())
     county_label = {
         "lancaster": "Lancaster County",
         "chester": "Chester County",
@@ -414,6 +415,15 @@ def build_copy(towns: list[dict], facts: dict) -> dict:
         housing_text = housing_summary(place, housing)
         storm_text = storm_summary(name, fact["storms"], county)
         permits = permit_guidance(name, fact["districts"])
+        research = york_research.get(town["slug"], {})
+        primary_urls = []
+        if "weather" in research:
+            storm_text, *weather_urls = research["weather"]
+            primary_urls.extend(weather_urls)
+        if "permit" in research:
+            permits, *permit_urls = research["permit"]
+            primary_urls.extend(permit_urls)
+            services["roofing"]["answer"] += " " + permits
         payload[town["slug"]] = {
             "riskLead": home_guidance(name, place, housing),
             "answer": housing_text,
@@ -432,7 +442,7 @@ def build_copy(towns: list[dict], facts: dict) -> dict:
                 {"q": f"Does a storm report establish damage at my {name} home?", "a": f"A report gives the date and location of a storm. An inspection of your {name} home can document damage to shingles, flashing, siding, or gutters."},
                 {"q": f"Where do I check permit or historic district requirements in {name}?", "a": f"Contact the municipality that serves your address in {name} and ask what it requires for your planned exterior work."},
             ],
-            "sources": SOURCES
+            "sources": primary_urls + SOURCES
             + [
                 (
                     f"{climate['label']}: about {climate['precip_in']} inches of precipitation "
@@ -490,7 +500,7 @@ def similarity_report(pages: list[tuple[str, str]]) -> tuple[int, float, str]:
 
 def main() -> None:
     facts = json.loads(FACTS_PATH.read_text())
-    towns = LANCASTER + LANCASTER_REST + CHESTER + DELAWARE + YORK + CUMBERLAND + DAUPHIN
+    towns = LANCASTER + LANCASTER_REST + CHESTER + DELAWARE + YORK + YORK_EXTENSION + CUMBERLAND + DAUPHIN
     copy = build_copy(towns, facts)
     shared12, score, pair = similarity_report(article_texts(towns))
     print(f"shared12={shared12} jaccard={score:.4f} {pair}")

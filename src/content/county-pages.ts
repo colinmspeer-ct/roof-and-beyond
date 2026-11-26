@@ -43,7 +43,7 @@ export const countyCopy: Record<
     metaDescription:
       "House exterior estimates in York County, from the city and its townships to Hanover, Red Lion, and the southern boroughs.",
     paragraphs: [
-      "York County coverage includes the city, the large townships around it, and the boroughs people actually name: Hanover, Red Lion, Dallastown, West York, Spring Grove, Dillsburg, Wrightsville, and the southern towns along Interstate 83.",
+      "York County coverage includes the city, the large townships around it, and the boroughs people actually name: Hanover, Red Lion, Dallastown, West York, Spring Grove, Dillsburg, Wrightsville, Lewisberry, Wellsville, and the southern towns along Interstate 83.",
       "York city is not York Township. Manchester borough is not Manchester Township, and neither is East Manchester Township. Hallam and Hellam are spelled differently because they are different places. Dover borough sits inside Dover Township and has its own page. Mixing those names sends a homeowner to the wrong housing stock.",
       "Codorus Creek runs through the city, and the Susquehanna bounds Wrightsville. Low streets in those places have a flood history that a Leader Heights split-level does not. The community pages keep that difference in the first paragraph.",
     ],

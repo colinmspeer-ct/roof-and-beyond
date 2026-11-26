@@ -1,0 +1,60 @@
+{
+  "Lewisberry": {
+    "kind": "borough",
+    "housing": {
+      "units": 210,
+      "units_moe": 51,
+      "thin": false,
+      "median_year": 1948,
+      "median_moe": 21,
+      "pct_pre1939": 44,
+      "pct_pre1970": 61,
+      "pct_since1990": 19,
+      "pct_since2010": 0,
+      "pct_detached": 80,
+      "pct_attached": 4,
+      "pct_mobile": 0
+    },
+    "zips": [
+      "17339"
+    ],
+    "storm": "NOAA recorded a September 2024 storm that brought down trees near York Haven in Newberry Township. That nearby record gives regional context for the Lewisberry borough page.",
+    "permit": "Lewisberry’s zoning and permits page provides its residential permit forms and plan information.",
+    "sources": [
+      "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4213342968",
+      "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+      "https://www.ycpc.org/228/Municipal-Plan-Status-PDF",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1209248",
+      "https://lewisberryborough.org/residents/zoning-permits/"
+    ]
+  },
+  "Wellsville": {
+    "kind": "borough",
+    "housing": {
+      "units": 110,
+      "units_moe": 29,
+      "thin": false,
+      "median_year": 1938,
+      "median_moe": null,
+      "pct_pre1939": 59,
+      "pct_pre1970": 78,
+      "pct_since1990": 14,
+      "pct_since2010": 5,
+      "pct_detached": 70,
+      "pct_attached": 15,
+      "pct_mobile": 2
+    },
+    "zips": [
+      "17365"
+    ],
+    "storm": "NOAA recorded strong thunderstorm winds near Dover in York County on June 29, 2024. The report describes the Dover area.",
+    "permit": "The National Register nomination documents the Wellsville Historic District. Ask the borough whether separate local rules apply to the proposed changes.",
+    "sources": [
+      "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4213382200",
+      "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+      "https://www.ycpc.org/228/Municipal-Plan-Status-PDF",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1189015",
+      "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-079/NPS_PA/77001205.pdf"
+    ]
+  }
+}

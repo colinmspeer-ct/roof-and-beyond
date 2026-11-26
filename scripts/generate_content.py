@@ -22,7 +22,7 @@ from towns_chester import TOWNS as CHESTER  # noqa: E402
 from towns_delaware import TOWNS as DELAWARE  # noqa: E402
 from towns_york import TOWNS as YORK  # noqa: E402
 from towns_cumberland import TOWNS as CUMBERLAND  # noqa: E402
-from towns_extension import DAUPHIN  # noqa: E402
+from towns_extension import DAUPHIN, YORK_EXTENSION  # noqa: E402
 
 COUNTIES = {
     "lancaster": {
@@ -182,7 +182,7 @@ def assign_photo_indices(towns: list[dict]) -> None:
 
 
 def main() -> None:
-    raws = LANCASTER + LANCASTER_REST + CHESTER + DELAWARE + YORK + CUMBERLAND + DAUPHIN
+    raws = LANCASTER + LANCASTER_REST + CHESTER + DELAWARE + YORK + YORK_EXTENSION + CUMBERLAND + DAUPHIN
     copy = load_copy()
     missing = [raw["slug"] for raw in raws if raw["slug"] not in copy]
     if missing:
@@ -198,12 +198,10 @@ def main() -> None:
         for n in t["neighbors"]:
             if n not in known:
                 raise SystemExit(f"{t['slug']} missing neighbor {n}")
-    expected = {"lancaster": 28, "chester": 24, "delaware": 9, "cumberland": 35, "dauphin": 17}
+    expected = {"lancaster": 28, "chester": 24, "delaware": 9, "cumberland": 35, "dauphin": 17, "york": 35}
     for key, count in expected.items():
         if len(by_county[key]) != count:
             raise SystemExit(f"{key} has {len(by_county[key])}, expected {count}")
-    if len(by_county["york"]) < 16:
-        raise SystemExit("York County list is too small")
     assign_photo_indices(towns)
     out_dir = ROOT / "src" / "content" / "generated"
     out_dir.mkdir(parents=True, exist_ok=True)

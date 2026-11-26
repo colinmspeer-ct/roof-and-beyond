@@ -1,0 +1,124 @@
+{
+  "york-city-pa": {
+    "permit": [
+      "For work visible from a public street or alley within York’s local HARB district, contact the city about historic review before changing the exterior. The city also says a building permit is required when replacement exceeds 25% of any one roof surface.",
+      "https://www.yorkcity.org/government/authorities-boards-and-commissions/historical-architecture-review-board-harb/",
+      "https://www.yorkcity.org/decd/bureau-of-permits-and-inspections/"
+    ],
+    "weather": [
+      "NOAA reported fallen trees and wires in York after thunderstorm winds estimated near 60 mph on July 15, 2024. Check for branch impact and loose roof edges from the ground.",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1194297"
+    ]
+  },
+  "hanover-pa": {
+    "permit": [
+      "Hanover’s residential building permit form covers structural changes and additions. Describe any decking or framing changes when asking which paperwork applies.",
+      "https://www.hanoverboroughpa.gov/239/Forms"
+    ],
+    "weather": [
+      "NOAA recorded 1.75-inch hail on the south side of Hanover and in Parkville in September 2024. Ask for a ground-level look at vulnerable metal and an inspection of the affected roof slopes.",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1209207"
+    ]
+  },
+  "red-lion-pa": {
+    "permit": [
+      "Red Lion directs applicants to submit building permits through its borough office. Its permit summary lists structural changes to a dwelling among work that requires a permit.",
+      "https://redlionpa.org/departments-services/codes-enforcement-zoning/building-permits/",
+      "https://redlionpa.org/forms-publications/borough-forms-publications/planning-zoning-building-permits-and-publications/"
+    ]
+  },
+  "springettsbury-pa": {
+    "permit": [
+      "Springettsbury’s Community Development Department handles building permits. Describe the existing roof and any new framing separately when you check your proposed scope.",
+      "https://springettsbury.com/construction/community-development/"
+    ],
+    "weather": [
+      "NOAA logged a July 16, 2024 thunderstorm that downed dozens of trees in Springettsbury Township, including one that fell on a home.",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1200469"
+    ]
+  },
+  "york-township-pa": {
+    "permit": [
+      "York Township’s Building and Zoning Department asks property owners to contact the township about permit requirements for the proposed work. Confirm the parcel before using the township instructions.",
+      "https://yorktownshippa.gov/departments-2/building-and-zoning/"
+    ]
+  },
+  "spring-garden-pa": {
+    "permit": [
+      "Spring Garden’s permit page lists replacement of shingles or a rubber roof as permit-exempt. It lists roof framing replacement and a new roof over a porch or patio as building permit work.",
+      "https://www.springgardentwp.org/building-permits/"
+    ]
+  },
+  "west-manchester-pa": {
+    "permit": [
+      "West Manchester Township lists asphalt-shingle replacement, house siding, and same-size window replacement among projects that need no permit. Confirm the scope with Zoning and Codes if work extends beyond those listed items.",
+      "https://westmanchestertownship.com/departments/zoning-codes/"
+    ]
+  },
+  "wrightsville-pa": {
+    "permit": [
+      "Wrightsville publishes building permit instructions on its Permits and Ordinances page. Ask the borough to review the actual scope when work changes an exterior assembly.",
+      "https://wrightsvilleborough.com/permits-and-ordinances/"
+    ]
+  },
+  "dover-pa": {
+    "weather": [
+      "NOAA recorded a June 29, 2024 thunderstorm that brought down multiple trees near Dover, with wind estimated at 60 mph.",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1189015"
+    ],
+    "permit": [
+      "Dover Borough publishes its own building and zoning permit form. Use the borough form for a borough parcel and describe the roof work in the application.",
+      "https://www.doverboroughpa.com/forms/2024/DoverBoroBuildingPermit.pdf"
+    ]
+  },
+  "glen-rock-pa": {
+    "weather": [
+      "NOAA reports quarter-sized hail in Glen Rock on April 15, 2024. Compare sheltered and exposed roof features when documenting evidence of impact.",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1163692"
+    ],
+    "permit": [
+      "Glen Rock maintains separate residential building and zoning applications and directs residents to its borough office for scope-specific questions.",
+      "https://www.glenrockpa.org/ordinancespermits/permits/"
+    ]
+  },
+  "new-freedom-pa": {
+    "weather": [
+      "NOAA recorded 1.5-inch hail northeast of New Freedom on April 15, 2024. A roof inspection can check the most exposed slopes and metal details.",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1163693"
+    ]
+  },
+  "stewartstown-pa": {
+    "weather": [
+      "NOAA recorded downed trees and a fence southeast of Stewartstown in a June 5, 2024 thunderstorm. The reported wind was estimated near 60 mph.",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1193247"
+    ],
+    "permit": [
+      "Stewartstown publishes residential building and zoning applications for borough properties and directs homeowners to contact the borough office before applying.",
+      "https://stewartstown.org/codes-enforcement-zoning/"
+    ]
+  },
+  "manchester-pa": {
+    "weather": [
+      "NOAA’s September 21, 2024 storm narrative reports 1.5-inch hail in Manchester. The event record uses Mount Wolf as its location label.",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1209206"
+    ]
+  },
+  "mount-wolf-pa": {
+    "weather": [
+      "NOAA reports downed trees and power lines in Mount Wolf during a September 21, 2024 thunderstorm with winds estimated near 60 mph.",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1209257"
+    ]
+  },
+  "dallastown-pa": {
+    "permit": [
+      "Dallastown’s building permit guidelines list roofing and changing the dimensions of a window opening. The borough asks applicants to submit drawings with the application.",
+      "https://dallastownboro.com/building-permits-guidelines/"
+    ]
+  },
+  "dillsburg-pa": {
+    "permit": [
+      "Dillsburg’s ordinances page says a building permit is needed before new construction. For repairs to the existing roof, ask the borough how it classifies the planned work.",
+      "https://dillsburg.com/ordinances/"
+    ]
+  }
+}

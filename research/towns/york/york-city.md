@@ -1,0 +1,8 @@
+# York
+
+- Census geography 16000US4287048 (York city). ACS 2020–2024 estimates 19,505 housing units, median construction year 1941, 22% detached and 40% attached. [ACS tables](https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=16000US4287048)
+- NOAA reported fallen trees and wires in York after thunderstorm winds estimated near 60 mph on July 15, 2024. Check for branch impact and loose roof edges from the ground. [Primary source 1](https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1194297)
+- For work visible from a public street or alley within York’s local HARB district, contact the city about historic review before changing the exterior. The city also says a building permit is required when replacement exceeds 25% of any one roof surface. [Primary source 1](https://www.yorkcity.org/government/authorities-boards-and-commissions/historical-architecture-review-board-harb/) · [Primary source 2](https://www.yorkcity.org/decd/bureau-of-permits-and-inspections/)
+- Existing local weather context includes Hail, 29-MAR-09, reported location York; Flood, 24-JUL-18, reported location York. [NOAA Storm Events Database](https://www.ncei.noaa.gov/access/storm-events-database/)
+- Station figures describe the York 3 SSW Pump Station and its 1991–2020 reporting period. [Regional Climate Center ACIS](https://www.rcc-acis.org/)
+- Existing National Register references include Fairmount Historic District, Northwest York Historic District, Springdale Historic District, York Historic District. [National Register database](https://www.nps.gov/subjects/nationalregister/database-research.htm)
