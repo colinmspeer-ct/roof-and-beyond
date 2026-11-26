@@ -4,3 +4,4 @@
 - ZIP areas are 2020 ZCTA land overlaps. [Census relationships](https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html)
 - Winter storm declaration in January 2016 and Tropical Storm Debby in August 2024 are county-level records. [County hazard plan](https://www.cumberlandcountypa.gov/DocumentCenter/View/54454/TEXT---2025-Cumberland-County-HMP_Plan-111325)
 - Municipal jurisdiction should be checked against the parcel. [County municipality directory](https://www.cumberlandcountypa.gov/1975/MDJ-Jurisdiction-by-Municipality)
+- For regional context, NOAA documents trees and wires down west of Mount Holly Springs in September 2023. Inspect exposed roof edges and branch damage after strong winds. [NOAA event 1128969](https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1128969)

@@ -285,12 +285,12 @@ def build_cumberland_copy(town: dict) -> dict:
             ],
         }
 
-    carlisle_review = (
-        "In Carlisle’s Historic District, ask the borough about its Historical Architectural Review "
-        "Board application before changing an exterior feature visible from a public way."
-    ) if name == "Carlisle" else ""
-    if carlisle_review:
-        services["roofing"]["answer"] += " " + carlisle_review
+    permit, *permit_urls = record.get("permit", [""])
+    weather, *weather_urls = record.get("weather", [
+        "The county’s 2025 hazard mitigation plan lists a federal declaration for the January 2016 winter storm and a Pennsylvania declaration for Tropical Storm Debby in August 2024."
+    ])
+    if permit:
+        services["roofing"]["answer"] += " " + permit
 
     return {
         "answer": (
@@ -304,13 +304,13 @@ def build_cumberland_copy(town: dict) -> dict:
         "localSections": [{
             "heading": f"Cumberland County weather context for {name}",
             "paragraphs": [
-                "The county’s 2025 hazard mitigation plan lists a federal declaration for the January 2016 winter storm and a Pennsylvania declaration for Tropical Storm Debby in August 2024.",
+                weather,
                 f"After a storm at your {name} home, note when the leak or overflow began and take ground-level photos of the affected roof edge, wall or outlet.",
             ],
         }, {
             "heading": f"ZIP areas and permits in {name}",
             "paragraphs": list(filter(None, [
-                carlisle_review,
+                permit,
                 f"The ZIP areas shown for {name} are Census ZIP Code Tabulation Areas that overlap the community. "
                 "Confirm your property's mailing ZIP before submitting an estimate request.",
                 f"Use the municipality on the parcel record when you ask about permits for a {name} exterior project. "
@@ -327,7 +327,8 @@ def build_cumberland_copy(town: dict) -> dict:
             "U.S. Census Bureau, 2020 ZIP Code Tabulation Area relationships for county subdivisions and places.",
             "Pennsylvania Public Utility Commission, 717 and 223 area-code overlay.",
             "Cumberland County, municipal jurisdiction directory and 2025 hazard mitigation plan maps.",
-            *(["https://www.carlislepa.org/government/boards_commissions/historical_architectural_review_board.php"] if carlisle_review else []),
+            *weather_urls,
+            *permit_urls,
             SOURCES[-1],
         ],
         "services": services,

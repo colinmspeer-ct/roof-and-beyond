@@ -4,3 +4,4 @@
 - ZIP areas are 2020 ZCTA land overlaps. [Census relationships](https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html)
 - Winter storm declaration in January 2016 and Tropical Storm Debby in August 2024 are county-level records. [County hazard plan](https://www.cumberlandcountypa.gov/DocumentCenter/View/54454/TEXT---2025-Cumberland-County-HMP_Plan-111325)
 - Municipal jurisdiction should be checked against the parcel. [County municipality directory](https://www.cumberlandcountypa.gov/1975/MDJ-Jurisdiction-by-Municipality)
+- In June 2024, NOAA recorded thunderstorm gusts estimated at 60 mph that knocked down multiple trees west of Enola. [NOAA event 1194812](https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1194812)

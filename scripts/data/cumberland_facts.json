@@ -29,7 +29,11 @@
         "pct_detached": 90,
         "pct_attached": 4,
         "pct_mobile": 0
-      }
+      },
+      "weather": [
+        "NOAA’s report of September 2023 hail on the south end of Carlisle gives regional context for Boiling Springs. Inspect exposed roof metal for impact evidence after a storm.",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1120350"
+      ]
     },
     "Camp Hill": {
       "geoid": "06000US4204111000",
@@ -51,7 +55,15 @@
         "pct_detached": 76,
         "pct_attached": 3,
         "pct_mobile": 0
-      }
+      },
+      "weather": [
+        "NOAA logged a tree that fell onto wires north-northwest of Camp Hill in June 2024. The report estimates gusts at 60 mph.",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1194810"
+      ],
+      "permit": [
+        "Camp Hill publishes a residential building permit application. Confirm how the borough classifies the roof work before submitting the form.",
+        "https://cms8.revize.com/revize/camphillborough/Forms/2023/Building%20Permit%20Application%20-%20Residential%20%202023.pdf"
+      ]
     },
     "Carlisle": {
       "geoid": "06000US4204111272",
@@ -73,7 +85,16 @@
         "pct_detached": 36,
         "pct_attached": 27,
         "pct_mobile": 0
-      }
+      },
+      "weather": [
+        "NOAA reported downed trees and power lines in Carlisle during June 30, 2025 thunderstorm winds estimated at 70 mph. An earlier NOAA entry records penny-sized hail on the south end of Carlisle in September 2023.",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1261556",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1120350"
+      ],
+      "permit": [
+        "In Carlisle’s Historic District, ask the borough about its Historical Architectural Review Board application before changing an exterior feature visible from a public way.",
+        "https://www.carlislepa.org/government/boards_commissions/historical_architectural_review_board.php"
+      ]
     },
     "Cooke Township": {
       "geoid": "06000US4204115920",
@@ -120,7 +141,11 @@
         "pct_detached": 88,
         "pct_attached": 1,
         "pct_mobile": 10
-      }
+      },
+      "weather": [
+        "For regional context, NOAA documents trees and wires down west of Mount Holly Springs in September 2023. Inspect exposed roof edges and branch damage after strong winds.",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1128969"
+      ]
     },
     "East Pennsboro Township": {
       "geoid": "06000US4204121680",
@@ -146,7 +171,11 @@
         "pct_detached": 53,
         "pct_attached": 21,
         "pct_mobile": 2
-      }
+      },
+      "weather": [
+        "A June 2024 NOAA report places downed trees west of Enola during severe thunderstorm winds. At a house with branches over the roof, record any change in the edge line from grade.",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1194812"
+      ]
     },
     "Enola": {
       "geoid": "16000US4223744",
@@ -169,7 +198,11 @@
         "pct_detached": 40,
         "pct_attached": 23,
         "pct_mobile": 2
-      }
+      },
+      "weather": [
+        "In June 2024, NOAA recorded thunderstorm gusts estimated at 60 mph that knocked down multiple trees west of Enola.",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1194812"
+      ]
     },
     "Hampden Township": {
       "geoid": "06000US4204132296",
@@ -194,7 +227,11 @@
         "pct_detached": 61,
         "pct_attached": 22,
         "pct_mobile": 3
-      }
+      },
+      "weather": [
+        "NOAA recorded storm winds and downed trees west of Enola in June 2024. The report provides West Shore context for checks of rake edges and branch impact.",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1194812"
+      ]
     },
     "Hopewell Township": {
       "geoid": "06000US4204135672",
@@ -240,7 +277,15 @@
         "pct_detached": 42,
         "pct_attached": 26,
         "pct_mobile": 0
-      }
+      },
+      "weather": [
+        "An NCEI report indexed under Lemoyne describes a tree falling on wires north-northwest of Camp Hill in June 2024. Use the reported location for regional context.",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1194810"
+      ],
+      "permit": [
+        "Lemoyne publishes building and zoning permit forms. The borough uses third-party review for work requiring plan review and inspections.",
+        "https://lemoynepa.com/departments/planning-zoning/permit-applications/"
+      ]
     },
     "Lower Allen Township": {
       "geoid": "06000US4204144832",
@@ -266,7 +311,11 @@
         "pct_detached": 53,
         "pct_attached": 11,
         "pct_mobile": 2
-      }
+      },
+      "permit": [
+        "Lower Allen Township says both roof replacement and reshingling require a building permit. Check the township’s roof permit materials for the proposed scope.",
+        "https://www.latwp.org/departments/community_development/do_i_need_a_permit_.php"
+      ]
     },
     "Lower Frankford Township": {
       "geoid": "06000US4204144904",
@@ -383,7 +432,11 @@
         "pct_detached": 89,
         "pct_attached": 4,
         "pct_mobile": 1
-      }
+      },
+      "weather": [
+        "NOAA reports that a June 2024 thunderstorm brought down trees and wires west of Brandtsville along Creek Road. Inspect exposed trim and note any branch contact after a storm.",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1193136"
+      ]
     },
     "Mount Holly Springs": {
       "geoid": "06000US4204151592",
@@ -405,7 +458,11 @@
         "pct_detached": 52,
         "pct_attached": 19,
         "pct_mobile": 7
-      }
+      },
+      "weather": [
+        "NOAA logged multiple trees and wires down west of Mount Holly Springs during a September 2023 thunderstorm with estimated gusts near 60 mph.",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1128969"
+      ]
     },
     "New Cumberland": {
       "geoid": "06000US4204153464",
@@ -428,7 +485,15 @@
         "pct_detached": 68,
         "pct_attached": 14,
         "pct_mobile": 0
-      }
+      },
+      "weather": [
+        "NOAA reports a tree down on a New Cumberland property during a June 2024 thunderstorm with gusts estimated at 60 mph.",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1194813"
+      ],
+      "permit": [
+        "New Cumberland lists roof replacement on its Codes Enforcement and Zoning page and directs property owners to its building code official before the project.",
+        "https://newcumberlandborough.com/departments/codes-enforcement-and-zoning/"
+      ]
     },
     "Newburg": {
       "geoid": "06000US4204153344",
@@ -472,7 +537,12 @@
         "pct_detached": 31,
         "pct_attached": 30,
         "pct_mobile": 2
-      }
+      },
+      "weather": [
+        "NOAA reports downed trees and wires in Newville on July 28, 2023, and a fallen tree near the borough on July 25, 2025.",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1113388",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1276576"
+      ]
     },
     "North Middleton Township": {
       "geoid": "06000US4204155216",
@@ -495,7 +565,11 @@
         "pct_detached": 68,
         "pct_attached": 20,
         "pct_mobile": 7
-      }
+      },
+      "weather": [
+        "NOAA reported that a June 2025 thunderstorm knocked a tree onto a home north of Carlisle. The report estimates gusts at 70 mph.",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1261557"
+      ]
     },
     "North Newton Township": {
       "geoid": "06000US4204155248",
@@ -564,7 +638,11 @@
         "pct_detached": 33,
         "pct_attached": 9,
         "pct_mobile": 0
-      }
+      },
+      "weather": [
+        "In the surrounding Cumberland Valley, NOAA recorded one-inch hail near Cleversburg in August 2023. In Shippensburg, identify which roof face was exposed before asking for a hail inspection.",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1117899"
+      ]
     },
     "Shippensburg Township": {
       "geoid": "06000US4204170360",
@@ -608,7 +686,11 @@
         "pct_detached": 52,
         "pct_attached": 25,
         "pct_mobile": 0
-      }
+      },
+      "weather": [
+        "A June 2024 NOAA report places a fallen tree and estimated 60 mph gusts north-northwest of Shiremanstown on Good Hope Road.",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1194811"
+      ]
     },
     "Silver Spring Township": {
       "geoid": "06000US4204170792",
@@ -633,7 +715,11 @@
         "pct_detached": 74,
         "pct_attached": 16,
         "pct_mobile": 3
-      }
+      },
+      "weather": [
+        "NOAA reported a tree that fell across U.S. Route 11 west of Hogestown in July 2023 during gusts estimated near 60 mph.",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1112743"
+      ]
     },
     "South Middleton Township": {
       "geoid": "06000US4204172336",
@@ -660,7 +746,11 @@
         "pct_detached": 68,
         "pct_attached": 12,
         "pct_mobile": 9
-      }
+      },
+      "weather": [
+        "For nearby weather context, NOAA documents hail on the south end of Carlisle on September 7, 2023. Its reported size was 0.75 inch.",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1120350"
+      ]
     },
     "South Newton Township": {
       "geoid": "06000US4204172384",

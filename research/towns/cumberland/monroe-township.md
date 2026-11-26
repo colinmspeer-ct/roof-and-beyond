@@ -4,3 +4,4 @@
 - ZIP areas are 2020 ZCTA land overlaps. [Census relationships](https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html)
 - Winter storm declaration in January 2016 and Tropical Storm Debby in August 2024 are county-level records. [County hazard plan](https://www.cumberlandcountypa.gov/DocumentCenter/View/54454/TEXT---2025-Cumberland-County-HMP_Plan-111325)
 - Municipal jurisdiction should be checked against the parcel. [County municipality directory](https://www.cumberlandcountypa.gov/1975/MDJ-Jurisdiction-by-Municipality)
+- NOAA reports that a June 2024 thunderstorm brought down trees and wires west of Brandtsville along Creek Road. Inspect exposed trim and note any branch contact after a storm. [NOAA event 1193136](https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1193136)

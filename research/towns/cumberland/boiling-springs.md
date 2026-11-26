@@ -4,3 +4,4 @@
 - ZIP areas are 2020 ZCTA land overlaps. [Census relationships](https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html)
 - Winter storm declaration in January 2016 and Tropical Storm Debby in August 2024 are county-level records. [County hazard plan](https://www.cumberlandcountypa.gov/DocumentCenter/View/54454/TEXT---2025-Cumberland-County-HMP_Plan-111325)
 - Municipal jurisdiction should be checked against the parcel. [County municipality directory](https://www.cumberlandcountypa.gov/1975/MDJ-Jurisdiction-by-Municipality)
+- NOAA’s report of September 2023 hail on the south end of Carlisle gives regional context for Boiling Springs. Inspect exposed roof metal for impact evidence after a storm. [NOAA event 1120350](https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1120350)
