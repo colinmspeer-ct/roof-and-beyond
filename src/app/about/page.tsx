@@ -61,7 +61,6 @@ export default function AboutPage() {
           <p>{brand.dbaLine}</p>
           <p>
             The registration is held by {brand.legalName}. {brand.registration}.
-            The logo artwork still reads “Roof and Beyond,” without the ampersand.
             The words on this website use the ampersand.
           </p>
           <p>

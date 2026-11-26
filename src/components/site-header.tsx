@@ -40,11 +40,12 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-2.5">
         <Link href="/" className="shrink-0" aria-label={`${brand.dba} home`}>
           <img
-            src="/brand/logo.svg"
-            alt="Roof and Beyond Home Solutions logo"
-            width={242}
-            height={56}
-            className="h-11 w-auto rounded-md sm:h-12"
+            src="/brand/rb-combined-logo.svg"
+            alt="Roof & Beyond Home Solutions"
+            width={260}
+            height={50}
+            loading="lazy"
+            className="h-[38px] w-auto sm:h-12"
           />
         </Link>
 

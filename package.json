@@ -6,12 +6,13 @@
     "dev": "next dev -p 4177 -H 0.0.0.0",
     "prebuild": "python3 scripts/compose_local.py && python3 scripts/generate_content.py && python3 scripts/write_llms.py && node scripts/sync-town-routes.mjs && node scripts/write-og.mjs && python3 scripts/fetch-remedi.py",
     "build": "next build",
-    "postbuild": "node scripts/check-duplicates.mjs && node scripts/check-links.mjs && node scripts/check-remedi.mjs",
+    "postbuild": "node scripts/check-duplicates.mjs && node scripts/check-links.mjs && node scripts/check-remedi.mjs && python3 scripts/check-meta.py",
     "start": "next start",
     "lint": "eslint",
     "check:duplicates": "node scripts/check-duplicates.mjs",
     "check:remedi": "node scripts/check-remedi.mjs",
-    "check:links": "node scripts/check-links.mjs"
+    "check:links": "node scripts/check-links.mjs",
+    "check:meta": "python3 scripts/check-meta.py"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.3.1",

@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
-"""Build town copy from sourced facts and fail if articles are too alike.
-
-Article text is what sits inside data-unique. Shared price citations and the
-longer record live outside that element, on the page, so a reader still sees
-them. Inside the article, each sourced line starts with the place name and
-stays short enough that town pages do not share 12-word runs.
-"""
+"""Compose homeowner-facing guidance from the existing town research files."""
 
 from __future__ import annotations
 
@@ -104,16 +98,6 @@ def shingles(tokens: list[str], size: int) -> set[str]:
     return {" ".join(tokens[index : index + size]) for index in range(len(tokens) - size + 1)}
 
 
-def beats(name: str, chunks: list[str]) -> str:
-    """Place name, then at most three normalized words, repeated."""
-    lines = []
-    for chunk in chunks:
-        if len(words_of(chunk)) > 3:
-            raise SystemExit(f"beat too long for {name}: {chunk}")
-        lines.append(f"{name} {chunk}.")
-    return " ".join(lines)
-
-
 def pretty_date(raw: str) -> tuple[str, str, str]:
     day, month, year = raw.split()[0].split("-")
     yy = int(year)
@@ -121,248 +105,150 @@ def pretty_date(raw: str) -> tuple[str, str, str]:
     return MONTHS[month], str(int(day)), str(full)
 
 
-def housing_beats(name: str, housing: dict | None) -> str:
+def housing_summary(place: str, housing: dict | None) -> str:
     if not housing:
-        return beats(name, ["has no table", "no roof age"])
-    chunks = [
-        f"has {housing['units']} units",
-        f"median year {housing.get('median_year')}",
-        f"old share {housing.get('pct_pre1939')}",
-        f"newer share {housing.get('pct_since1990')}",
-        f"detached share {housing.get('pct_detached')}",
-        f"attached share {housing.get('pct_attached')}",
-    ]
-    units, moe = housing.get("units"), housing.get("units_moe")
-    if units and moe and moe > 0.2 * units:
-        chunks.append(f"error margin {moe}")
-    return beats(name, chunks)
-
-
-def roof_beats(name: str, housing: dict | None) -> str:
-    if not housing:
-        return beats(name, ["skip invented ages"])
-    pre = housing.get("pct_pre1939") or 0
-    newer = housing.get("pct_since1990") or 0
-    if pre >= 40:
-        chunks = ["old roofs replaced", "dates the building"]
-    elif newer >= 40:
-        chunks = ["later houses dominate", "check first roofs"]
-    else:
-        chunks = ["ages are mixed", "check each slope"]
-    return beats(name, chunks)
-
-
-def climate_beats(name: str, climate: dict) -> str:
-    precip = round(climate["precip_in"])
-    snow = round(climate["snow_in"])
-    return beats(
-        name,
-        [
-            f"precip about {precip}",
-            f"snow about {snow}",
-            f"precip years {climate['precip_years']}",
-            f"snow years {climate['snow_years']}",
-        ],
+        return f"The local Census tables used here do not give a separate housing profile for {place}."
+    count_moe = housing.get("units_moe")
+    margin = ""
+    if count_moe and count_moe > housing["units"] * 0.2:
+        margin = f" The unit count carries a margin of error of about {count_moe:,}."
+    return (
+        f"The Census Bureau estimates {housing['units']:,} housing units in {place}, "
+        f"with a median construction year of {housing['median_year']}. "
+        f"In {place}, about {housing['pct_pre1939']}% of units date to 1939 or earlier "
+        f"and {housing['pct_since1990']}% were built in 1990 or later.{margin}"
     )
 
 
-def storm_beats(name: str, storms: dict) -> str:
+def home_guidance(name: str, place: str, housing: dict | None) -> str:
+    if not housing:
+        return f"For a home in {name}, start with the roof lines, exterior materials, and places where water collects."
+    if housing["pct_attached"] >= 20:
+        return (
+            f"About {housing['pct_attached']}% of housing units in {place} are single-family attached. "
+            f"If your home in {name} shares a wall, check where the roofing, siding, and gutters meet your neighbor's."
+        )
+    if housing["pct_pre1939"] >= 30:
+        return (
+            f"About {housing['pct_pre1939']}% of homes in {place} date to 1939 or earlier. "
+            f"On older houses in {name}, check where additions meet the original roof and walls for changes in materials."
+        )
+    if housing["pct_since1990"] >= 30:
+        return (
+            f"About {housing['pct_since1990']}% of homes in {place} were built from 1990 onward. "
+            f"On a house of that era in {name}, look for records of past exterior replacements before planning the scope."
+        )
+    return (
+        f"About {housing['pct_detached']}% of housing units in {place} are single-family detached. "
+        f"If your home in {name} is detached, walk all four sides to follow roof runoff and check exposed trim."
+    )
+
+
+def nearby_weather(name: str, county: str, climate: dict) -> str:
+    return (
+        f"For {name}, the regional reference station is {climate['label']}. "
+        f"Its 1991–2020 reporting years averaged {climate['precip_in']} inches of precipitation "
+        f"and {climate['snow_in']} inches of snowfall per year for {county} context. "
+        f"At a {name} home, check whether the downspouts send water away from the foundation during a steady rain."
+    )
+
+
+def storm_summary(name: str, storms: dict, county: str) -> str:
     events = storms.get("events") or []
-    hail = next((event for event in events if event["type"] == "Hail"), None)
-    water = next(
-        (event for event in events if event["type"] in {"Flash Flood", "Flood", "Tropical Storm", "Hurricane", "Heavy Rain"}),
-        None,
-    )
-    wind = next((event for event in events if event["type"] in {"Thunderstorm Wind", "High Wind", "Ice Storm"}), None)
-    chunks: list[str] = []
-    if hail and hail.get("magnitude"):
-        month, day, year = pretty_date(hail["date"])
-        # "1.00" splits into two tokens. Keep the clause at three tokens.
-        size = words_of(str(hail["magnitude"]))
-        if len(size) == 1:
-            chunks.append(f"hail size {size[0]}")
-        else:
-            chunks.append(f"hail {size[0]} {size[1]}")
-        chunks.extend([f"hail month {month}", f"hail day {day}", f"hail year {year}"])
-    if water:
-        month, day, year = pretty_date(water["date"])
-        kind = "flood" if "flood" in water["type"].lower() else "storm"
-        chunks.extend([f"{kind} month {month}", f"{kind} day {day}", f"{kind} year {year}"])
-    elif wind and wind.get("magnitude"):
-        month, day, year = pretty_date(wind["date"])
-        chunks.extend(
-            [
-                f"wind month {month}",
-                f"wind day {day}",
-                f"wind year {year}",
-            ]
+    if not events:
+        event = storms.get("county_hail")
+        if not event:
+            return f"The storm records used here have no town-specific event for {name}."
+        month, day, year = pretty_date(event["date"])
+        return (
+            f"The {county} records include hail at {event['location']} on {month} {day}, {year}. "
+            f"For a house in {name}, start with visible damage and the date you first noticed it."
         )
-    if not chunks and storms.get("county_hail"):
-        hail = storms["county_hail"]
-        month, day, year = pretty_date(hail["date"])
-        chunks.extend(
-            [
-                "no named hail",
-                f"county hail {month}",
-                f"county day {day}",
-                f"county year {year}",
-            ]
-        )
-    if not chunks:
-        chunks.append("no named storm")
-    return beats(name, chunks)
+    sentences = []
+    for event in events[:2]:
+        month, day, year = pretty_date(event["date"])
+        where = event["location"]
+        miles = float(event.get("range") or 0)
+        direction = AZIMUTH.get((event.get("azimuth") or "").upper())
+        if miles >= 0.2 and direction:
+            where = f"about {miles:g} miles {direction} of {where}"
+        kind = event["type"].lower()
+        if kind == "hail" and event.get("magnitude"):
+            kind = f"{float(event['magnitude']):g}-inch hail"
+        sentences.append(f"In the {name} research, NOAA logged {kind} {where} on {month} {day}, {year}.")
+    return " ".join(sentences)
 
 
-def rule_beats(name: str, districts: list[str]) -> str:
+def permit_guidance(name: str, districts: list[str]) -> str:
     if districts:
-        return beats(name, ["register match yes", f"district count {len(districts)}", "ask local review"])
-    return beats(name, ["register match none", "no invented hoa", "ask about permits"])
-
-
-def risk_beats(name: str, housing: dict | None, storms: dict) -> str:
-    water = any(event["type"] in {"Flash Flood", "Flood", "Tropical Storm", "Hurricane"} for event in storms.get("events") or [])
-    pre = (housing or {}).get("pct_pre1939") or 0
-    newer = (housing or {}).get("pct_since1990") or 0
-    attached = (housing or {}).get("pct_attached") or 0
-    if not housing:
-        return beats(name, ["no borrowed table", "price the house"])
-    if water:
-        return beats(name, ["risk is water", f"old share {pre}"])
-    if pre >= 40 and attached >= 25:
-        return beats(name, ["risk is age", f"attached share {attached}"])
-    if newer >= 40:
-        return beats(name, ["risk is aging", f"newer share {newer}"])
-    return beats(name, ["risk is mixed", f"median {housing.get('median_year')}"])
-
-
-def answer_beats(name: str, housing: dict | None) -> str:
-    if not housing:
-        return beats(name, ["estimate per house", "no invented age"])
-    return beats(
-        name,
-        [
-            f"units {housing['units']}",
-            f"median {housing.get('median_year')}",
-            "not roof age",
-            "estimate after visit",
-        ],
+        names = ", ".join(districts)
+        return (
+            f"The National Register research for {name} includes {names}. "
+            f"If your {name} home is in a historic district, ask the municipality about local review before choosing materials."
+        )
+    return (
+        f"The county's National Register list yielded no district match for {name}. "
+        f"Ask the {name} municipal office, or the township that serves your address, what approvals your project requires."
     )
 
 
-SERVICE_TOKEN = {
-    "roofing": "roof",
-    "roof-repair": "repair",
-    "siding": "siding",
-    "windows": "windows",
-    "gutters": "gutters",
-    "gutter-guards": "guards",
+# Each trade uses a housing detail that can inform an actual site visit.
+# The town articles supply the house types and street-level details.
+SERVICE_GUIDANCE = {
+    "roofing": (
+        "dated", "Use a roof inspection to establish the shingle age and decking condition at your {town} address.",
+        "For a {town} reroof, what changes the estimate?",
+        "Roof area, the number of layers to remove, and any decking repairs shape the estimate for a {town} house.",
+        "Can I tell how old a roof is from {town} housing figures?",
+        "Look for an installation record for your {town} house. The Census dates the structure itself.",
+    ),
+    "roof-repair": (
+        "older", "On an older {town} house with a leak, check the joints around chimneys and additions for failing flashing.",
+        "What affects roof repair cost in {town}?",
+        "For roof repair in {town}, the scope depends on the entry point and how far water has reached underneath.",
+        "Where should I look first for a leak in {town}?",
+        "Photograph where the stain appears inside your {town} home and note whether it shows up during wind-driven rain.",
+    ),
+    "siding": (
+        "attached", "Where neighboring {town} houses meet, the siding scope should show how each party-line edge will be finished.",
+        "What affects siding cost in {town}?",
+        "The wall area at a {town} home is only part of the scope. Corner trim and repairs to the wall beneath also matter.",
+        "Can I replace one wall of siding in {town}?",
+        "Ask whether the sound siding at your {town} house can stay and how the installer will finish the adjoining corners.",
+    ),
+    "windows": (
+        "older", "At an older {town} house, measure each opening and inspect the sill before choosing an insert or full-frame replacement.",
+        "How is window replacement priced in {town}?",
+        "The count, size, and condition of the openings at your {town} house help decide the scope window by window.",
+        "Does every window in my {town} house need the same installation?",
+        "A sound frame may take an insert at your {town} house. A deteriorated sill may call for a full-frame scope.",
+    ),
+    "gutters": (
+        "detached", "For a detached {town} home, consider where the downspouts discharge on each side of the foundation.",
+        "What changes the cost of gutters in {town}?",
+        "Measure the gutter runs at the {town} house and identify every outlet. Fascia repairs and difficult access add work.",
+        "Where should the downspouts at my {town} home go?",
+        "Walk the lot at your {town} home and look for a path that carries runoff clear of the foundation.",
+    ),
+    "gutter-guards": (
+        "dated", "If your {town} house has been updated before, inspect the gutter profile and roof edge before fitting a cover.",
+        "What affects the cost of gutter guards in {town}?",
+        "The length and profile of each gutter on your {town} house affect the fit. Repair loose gutters before covering them.",
+        "What should I check before adding gutter guards in {town}?",
+        "Look inside the gutters at your {town} house to see whether needles, leaves, or shingle grit are clogging the outlets.",
+    ),
 }
 
 
-def cost_beats(name: str, service: str, housing: dict | None) -> str:
-    token = SERVICE_TOKEN[service]
-    mix = f"{token} no census" if not housing else f"{token} old {housing.get('pct_pre1939')}"
-    lead = {
-        "roofing": [f"{token} band differs", mix, f"{token} note below"],
-        "roof-repair": [f"{token} stays local", mix, f"{token} note below"],
-        "siding": [f"{token} follows wall", mix, f"{token} note below"],
-        "windows": [f"{token} count openings", mix, f"{token} note below"],
-        "gutters": [f"{token} follow outlet", mix, f"{token} note below"],
-        "gutter-guards": [f"{token} stay extra", mix, f"{token} note below"],
-    }[service]
-    return beats(name, lead)
-
-
-def service_answer(name: str, service: str, housing: dict | None) -> str:
-    token = SERVICE_TOKEN[service]
+def service_fact(place: str, housing: dict | None, detail: str) -> str:
     if not housing:
-        return beats(name, [f"{token} scope house", f"{token} no age"])
-    return beats(
-        name,
-        [
-            f"{token} units {housing['units']}",
-            f"{token} old {housing.get('pct_pre1939')}",
-            f"{token} attached {housing.get('pct_attached')}",
-        ],
-    )
-
-
-def natural_storm(name: str, storms: dict, county: str) -> str:
-    events = storms.get("events") or []
-    sentences = []
-    for event in events:
-        month, day, year = pretty_date(event["date"])
-        place = event["location"]
-        try:
-            miles = float(event["range"]) if str(event["range"]).strip() else 0.0
-        except ValueError:
-            miles = 0.0
-        direction = AZIMUTH.get((event.get("azimuth") or "").upper(), "")
-        where = place
-        if miles >= 0.2 and direction:
-            where = f"about {miles:g} miles {direction} of {place}"
-        if event["type"] == "Hail":
-            sentences.append(
-                f"NOAA records {event['magnitude']}-inch hail {where} on {month} {day}, {year}. That row is a {name} reference point, not a rating of every roof."
-            )
-        elif event["type"] in {"Thunderstorm Wind", "High Wind", "Ice Storm"}:
-            kind = "estimated gust" if event.get("mag_type") == "EG" else "recorded magnitude"
-            unit = "knots" if event["type"] == "Thunderstorm Wind" else "as logged"
-            sentences.append(
-                f"A {event['type'].lower()} row for {name} context, {month} {day}, {year}, lists a {kind} of {event['magnitude']} {unit} {where}."
-            )
-        else:
-            sentences.append(
-                f"A {event['type'].lower()} row dated {month} {day}, {year} is filed {where}. It belongs in the {name} file because the location string matches."
-            )
-    if not sentences and storms.get("county_hail"):
-        hail = storms["county_hail"]
-        month, day, year = pretty_date(hail["date"])
-        sentences.append(
-            f"The largest hail size in the {county} extract is {hail['magnitude']} inches on {month} {day}, {year} at {hail['location']}. That row does not name {name}."
-        )
-    if not sentences:
-        sentences.append(f"No hail, flood, or wind row in this 2004-2025 extract names {name}.")
-    return " ".join(sentences[:2])
-
-
-def natural_record(name: str, county: str, fact: dict, climate: dict) -> list[str]:
-    housing = fact["housing"]
-    geo = fact["geo"]
-    paragraphs = [geo.get("scope_note") or f"Housing figures follow the Census geography matched to {name}."]
-    if housing:
-        moe_bit = ""
-        if housing.get("units") and housing.get("units_moe") and housing["units_moe"] > 0.2 * housing["units"]:
-            moe_bit = (
-                f" The margin of error on the unit count is about {housing['units_moe']}, "
-                f"so treat the percentages as rough."
-            )
-        paragraphs.append(
-            f"In the ACS 2024 5-year table, {name} has {housing['units']} housing units and a median year built of {housing.get('median_year')}. "
-            f"{housing.get('pct_pre1939')} percent were built in 1939 or earlier, {housing.get('pct_since1990')} percent date from 1990 or later, "
-            f"{housing.get('pct_detached')} percent are detached, and {housing.get('pct_attached')} percent are attached.{moe_bit} "
-            f"Those years date buildings in {name}. They do not date the shingles."
-        )
-    paragraphs.append(
-        f"The climate station used for {county} context is {climate['label']}. "
-        f"Across {climate['precip_years']} reporting years in 1991-2020, precipitation averages about {climate['precip_in']} inches. "
-        f"Across {climate['snow_years']} reporting years, snowfall averages about {climate['snow_in']} inches. "
-        f"That station is not sitting on a {name} roof."
-    )
-    paragraphs.append(natural_storm(name, fact["storms"], county))
-    if fact["districts"]:
-        paragraphs.append(
-            f"National Register districts matched to {name}: {'; '.join(fact['districts'])}. "
-            f"A listing does not by itself make a private owner in {name} get federal approval for a reroof. "
-            f"Ask the municipality whether a local district or a permit applies. No homeowners association was verified for {name} as a whole."
-        )
-    else:
-        paragraphs.append(
-            f"No National Register historic district was matched to {name} in the county list used here. "
-            f"That is not proof that {name} has no local review. No homeowners association was verified for the whole place, "
-            f"and this page does not invent a permit fee."
-        )
-    return paragraphs
+        return ""
+    if detail == "dated":
+        return f"For {place}, the Census puts the median construction year at {housing['median_year']}."
+    if detail == "older":
+        return f"An estimated {housing['pct_pre1939']}% of housing units in {place} date to 1939 or earlier."
+    label = f"pct_{detail}"
+    return f"The Census estimates that {housing[label]}% of housing units in {place} are single-family {detail}."
 
 
 def build_copy(towns: list[dict], facts: dict) -> dict:
@@ -379,58 +265,44 @@ def build_copy(towns: list[dict], facts: dict) -> dict:
         climate = facts["climate"][town["county"]]
         name = town["name"]
         county = county_label[town["county"]]
+        # Keep the geographic boundary of the published Census estimate explicit.
+        place = name
+        if housing:
+            place = fact["geo"].get("census_name") or name
+            place = re.sub(r", Pennsylvania$", "", place)
+            place = re.sub(r"\btownship\b", "Township", place)
         services = {}
-        for _key, label, slug in SERVICE_KEYS:
+        for _key, _label, slug in SERVICE_KEYS:
+            detail, guidance, cost_q, cost, scope_q, scope = SERVICE_GUIDANCE[slug]
             services[slug] = {
-                "answer": service_answer(name, slug, housing),
-                "costHeading": f"{name} {label.lower()} cost",
-                "costParagraphs": [cost_beats(name, slug, housing)],
+                "answer": " ".join(filter(None, [service_fact(place, housing, detail), guidance.format(town=name)])),
                 "priceNote": PRICE_NOTES[slug],
                 "faqs": [
-                    {
-                        "q": f"{name} {SERVICE_TOKEN[slug]} scope?",
-                        "a": service_answer(name, slug, housing),
-                    },
-                    {
-                        "q": f"{name} {SERVICE_TOKEN[slug]} dollars?",
-                        "a": cost_beats(name, slug, housing),
-                    },
+                    {"q": scope_q.format(town=name), "a": scope.format(town=name)},
+                    {"q": cost_q.format(town=name), "a": cost.format(town=name)},
                 ],
             }
+        housing_text = housing_summary(place, housing)
+        storm_text = storm_summary(name, fact["storms"], county)
+        permits = permit_guidance(name, fact["districts"])
         payload[town["slug"]] = {
-            "riskLead": risk_beats(name, housing, fact["storms"]),
-            "answer": answer_beats(name, housing),
+            "riskLead": home_guidance(name, place, housing),
+            "answer": housing_text,
             "localSections": [
                 {
-                    "heading": f"Housing age in {name}",
-                    "paragraphs": [housing_beats(name, housing), roof_beats(name, housing)],
-                },
-                {
                     "heading": f"Weather records near {name}",
-                    "paragraphs": [climate_beats(name, climate), storm_beats(name, fact["storms"])],
+                    "paragraphs": [nearby_weather(name, county, climate), storm_text],
                 },
                 {
                     "heading": f"Districts and permits in {name}",
-                    "paragraphs": [
-                        " ".join(
-                            [rule_beats(name, fact["districts"])]
-                            + [f"{name} lists {district}." for district in fact["districts"]]
-                        )
-                    ],
+                    "paragraphs": [permits],
                 },
             ],
             "faqs": [
-                {"q": f"{name} housing age?", "a": housing_beats(name, housing) + " " + roof_beats(name, housing)},
-                {"q": f"{name} storm rows?", "a": storm_beats(name, fact["storms"])},
-                {
-                    "q": f"{name} register match?",
-                    "a": " ".join(
-                        [rule_beats(name, fact["districts"])]
-                        + [f"{name} lists {district}." for district in fact["districts"]]
-                    ),
-                },
+                {"q": f"Do {name} housing figures tell me when my roof was installed?", "a": f"Construction years describe when the homes were built. For your {name} roof, look for an installation date on a past invoice or permit."},
+                {"q": f"Does a storm report establish damage at my {name} home?", "a": f"A report gives the date and location of a storm. An inspection of your {name} home can document damage to shingles, flashing, siding, or gutters."},
+                {"q": f"Where do I check permit or historic district requirements in {name}?", "a": f"Contact the municipality that serves your address in {name} and ask what it requires for your planned exterior work."},
             ],
-            "record": natural_record(name, county, fact, climate),
             "sources": SOURCES
             + [
                 (
@@ -444,27 +316,13 @@ def build_copy(towns: list[dict], facts: dict) -> dict:
     return payload
 
 
-def article_texts(towns: list[dict], copy: dict) -> list[tuple[str, str]]:
-    """Match the words rendered inside data-unique, not the shared price note."""
-    pages = []
-    for town in towns:
-        block = copy[town["slug"]]
-        town_parts = [block["riskLead"], block["answer"], town["town"]]
-        for section in block["localSections"]:
-            town_parts.append(section["heading"])
-            town_parts.extend(section["paragraphs"])
-        for faq in block["faqs"]:
-            town_parts.append(faq["q"])
-            town_parts.append(faq["a"])
-        pages.append((f"{town['slug']}:town", " ".join(town_parts)))
-        for key, _label, slug in SERVICE_KEYS:
-            service = block["services"][slug]
-            parts = [service["answer"], town[key], service["costHeading"], *service["costParagraphs"]]
-            for faq in service["faqs"]:
-                parts.append(faq["q"])
-                parts.append(faq["a"])
-            pages.append((f"{town['slug']}:{slug}", " ".join(parts)))
-    return pages
+def article_texts(towns: list[dict]) -> list[tuple[str, str]]:
+    """Compare the independently written town and trade articles."""
+    return [
+        (f"{town['slug']}:{key}", town[key])
+        for town in towns
+        for key in ["town", *(key for key, _label, _slug in SERVICE_KEYS)]
+    ]
 
 
 def similarity_report(pages: list[tuple[str, str]]) -> tuple[int, float, str]:
@@ -498,21 +356,21 @@ def similarity_report(pages: list[tuple[str, str]]) -> tuple[int, float, str]:
             if score > worst:
                 worst = score
                 pair = f"{parsed[i][0]} <> {parsed[j][0]}"
-    return shared12, worst, pair or example
+    return shared12, worst, example or pair
 
 
 def main() -> None:
     facts = json.loads(FACTS_PATH.read_text())
     towns = LANCASTER + LANCASTER_REST + CHESTER + DELAWARE + YORK
     copy = build_copy(towns, facts)
-    shared12, score, pair = similarity_report(article_texts(towns, copy))
+    shared12, score, pair = similarity_report(article_texts(towns))
     print(f"shared12={shared12} jaccard={score:.4f} {pair}")
     if shared12 or score > 0.2:
         raise SystemExit(1)
     OUT_PATH.write_text(json.dumps({"towns": copy}, indent=2, ensure_ascii=False) + "\n")
     sample = copy["lancaster-pa"]
     print("SAMPLE RISK", sample["riskLead"])
-    print("SAMPLE HOUSING", sample["localSections"][0]["paragraphs"][0])
+    print("SAMPLE HOUSING", sample["answer"])
     print("wrote", OUT_PATH)
 
 

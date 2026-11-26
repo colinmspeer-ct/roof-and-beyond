@@ -18,10 +18,10 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div>
           <img
-            src="/brand/logo.svg"
-            alt="Roof and Beyond Home Solutions logo"
-            width={242}
-            height={56}
+            src="/brand/rb-combined-logo-dark.svg"
+            alt="Roof & Beyond Home Solutions"
+            width={260}
+            height={50}
             loading="lazy"
             className="h-14 w-auto"
           />

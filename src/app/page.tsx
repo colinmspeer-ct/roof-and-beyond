@@ -16,7 +16,7 @@ import { companyGraph, faqNode } from "@/lib/schema";
 
 const title = `Roofing Contractor & Roofers in Lancaster, Chester, Delaware & York Counties, PA | ${brand.dba}`;
 const description =
-  "Roofing, roof repair, siding, windows, gutters, and gutter guards for houses in Lancaster, Chester, Delaware, and York counties, PA. Free written estimates. Call (717) 804-0990.";
+  "Get a free estimate for roofing, siding, windows, or gutters in Lancaster, Chester, Delaware, and York counties, PA. Call (717) 804-0990.";
 
 export const metadata: Metadata = {
   title: { absolute: title },

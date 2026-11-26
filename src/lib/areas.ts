@@ -14,8 +14,6 @@ export type ServiceBlock = {
   paragraphs: string[];
   faqs: Faq[];
   answer: string;
-  costHeading: string;
-  costParagraphs: string[];
   priceNote: string;
 };
 

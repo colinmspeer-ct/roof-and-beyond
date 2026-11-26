@@ -11,7 +11,7 @@ import { breadcrumbNode } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Sitemap: every service, county, and town page",
   description:
-    "HTML sitemap for Roof & Beyond Home Solutions: all exterior services, the four counties, and every community page with its roofing, siding, window, and gutter pages.",
+    "Browse the Roof & Beyond Home Solutions sitemap for roofing, siding, window, and gutter pages by county and town.",
   alternates: { canonical: "/sitemap/" },
 };
 

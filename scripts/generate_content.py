@@ -50,40 +50,6 @@ SERVICES = [
     ("gutter_guards", "Gutter guards", "gutter-guards"),
 ]
 
-Q_FRAMES = {
-    "roofing": [
-        "Which roof shapes dominate around {hook}?",
-        "What does a full roof scope have to separate in {name}?",
-        "Where do {name} roofs differ from one street to the next?",
-    ],
-    "roof_repair": [
-        "Where do active leaks show up around {hook}?",
-        "When is a patch the wrong scope in {name}?",
-        "What should a repair visit look at first in {name}?",
-    ],
-    "siding": [
-        "Which wall materials are actually on houses near {hook}?",
-        "What fails first on exterior walls in {name}?",
-        "How should a siding scope treat masonry in {name}?",
-    ],
-    "windows": [
-        "What window mix exists around {hook}?",
-        "Which openings should a {name} estimate name individually?",
-        "What water signs show up at windows in {name}?",
-    ],
-    "gutters": [
-        "Where does roof water go wrong around {hook}?",
-        "What gutter detail matters on {name} lots?",
-        "How do downspouts fail in {name}?",
-    ],
-    "gutter_guards": [
-        "What debris would a guard have to pass near {hook}?",
-        "When is a gutter cover a poor fit in {name}?",
-        "What should a guard estimate refuse to promise in {name}?",
-    ],
-}
-
-
 def clean(text: str) -> str:
     text = re.sub(r"[ \t]+\n", "\n", text.strip())
     text = re.sub(r"\n{3,}", "\n\n", text)
@@ -99,14 +65,25 @@ def wc(text: str) -> int:
     return len(re.findall(r"[A-Za-z0-9'&-]+", text))
 
 
-def meta_desc(text: str, limit: int = 158) -> str:
-    one = re.sub(r"\s+", " ", text).strip()
-    if len(one) <= limit:
-        return one
-    cut = one[: limit - 1]
-    if " " in cut:
-        cut = cut.rsplit(" ", 1)[0]
-    return cut.rstrip(",;:") + "."
+META_DETAILS = {
+    "roofing": "Get a written scope for roof replacement, including tear-off and flashing.",
+    "roof-repair": "Request an estimate for leaks, loose shingles, or damaged flashing.",
+    "siding": "Get a written estimate that covers siding, trim, and wall preparation.",
+    "windows": "Request a window replacement estimate based on each opening.",
+    "gutters": "Get an estimate for gutter runs, outlets, and downspouts.",
+    "gutter-guards": "Ask which gutter covers fit your roof edge and existing gutters.",
+}
+
+
+def meta_description(name: str, service: str | None = None) -> str:
+    if service:
+        label = "window replacement" if service == "windows" else service.replace("-", " ")
+        description = f"Request {label} in {name}, PA. {META_DETAILS[service]}"
+    else:
+        description = f"Get a written estimate for roofing, siding, windows, or gutters in {name}, PA."
+    if len(description) > 155:
+        raise SystemExit(f"Meta description exceeds 155 characters: {description}")
+    return description
 
 
 def load_copy() -> dict:
@@ -132,12 +109,10 @@ def build_town(raw: dict, copy: dict) -> dict:
             "slug": slug,
             "h1": f"{label} on houses in {raw['name']}",
             "metaTitle": f"{label} in {raw['name']}, PA",
-            "metaDescription": meta_desc(body[0]),
+            "metaDescription": meta_description(raw["name"], slug),
             "paragraphs": body,
             "faqs": extra["faqs"],
             "answer": extra["answer"],
-            "costHeading": extra["costHeading"],
-            "costParagraphs": extra["costParagraphs"],
             "priceNote": extra["priceNote"],
         }
     return {
@@ -152,7 +127,7 @@ def build_town(raw: dict, copy: dict) -> dict:
         "hook": hook,
         "h1": raw.get("h1") or f"Roofs, walls, and water on houses in {raw['name']}",
         "metaTitle": f"Exterior work in {raw['name']}, {county['name']}",
-        "metaDescription": meta_desc(paras[0]),
+        "metaDescription": meta_description(raw["name"]),
         "paragraphs": paras,
         "services": services,
         "riskLead": copy["riskLead"],

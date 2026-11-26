@@ -8,7 +8,7 @@ export const countyCopy: Record<
     h1: "Lancaster County houses, from brick rows to farm ridges",
     metaTitle: "Exterior work in Lancaster County, Pennsylvania",
     metaDescription:
-      "Roofing, roof repair, siding, windows, gutters, and gutter guards for Lancaster County communities from the Susquehanna boroughs to the eastern farm valleys.",
+      "Get a written estimate for roofing, roof repair, siding, windows, gutters, or gutter guards in Lancaster County, PA.",
     paragraphs: [
       "Lancaster County in this service area runs from the Susquehanna boroughs of Columbia and Marietta, through the brick city, out to Lititz and Ephrata, and south toward Quarryville. The housing changes that fast. Row houses share gutters and party walls. Moravian and market towns keep short, cut-up roofs. Farm valleys along routes 340, 23, and 30 carry long dwelling planes next to barns.",
       "Winter ice collects on shaded borough eaves. Open township lots take more wind at the rakes. Creek streets in places such as Ephrata and Christiana stay damp longer than hill streets in Akron or Terre Hill. Those are reasons to read the community page, not reasons to treat the county as one roof.",

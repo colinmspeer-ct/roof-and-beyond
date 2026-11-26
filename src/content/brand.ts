@@ -7,7 +7,7 @@ export const brand = {
   domain: "roofnbeyond.com",
   url: "https://roofnbeyond.com",
   description:
-    "Roof & Beyond Home Solutions estimates roofing, roof repair, siding, windows, gutters, and gutter guards for houses in Lancaster, Chester, Delaware, and York counties, Pennsylvania.",
+    "Roof & Beyond Home Solutions provides roofing, siding, window, and gutter estimates in Lancaster, Chester, Delaware, and York counties, PA.",
   phoneDisplay: "(717) 804-0990",
   phoneTel: "+17178040990",
   email: "colin@roofnbeyond.com",

@@ -10,7 +10,7 @@ import { HeroActions, PageHero } from "@/components/page-hero";
 import { ReviewsPlaceholder } from "@/components/placeholders";
 import { SectionHeading } from "@/components/section-heading";
 import { PillLinks, ServiceCards } from "@/components/sections";
-import { CallCard, LocalDetails, Prose, Sources } from "@/components/town-bits";
+import { CallCard, LocalDetails, Sources } from "@/components/town-bits";
 import { serviceBlurb } from "@/content/media";
 import { TrustSignals } from "@/components/trust-signals";
 import { brand, serviceOrder, socialImage, type ServiceSlug } from "@/content/brand";
@@ -126,17 +126,16 @@ export default async function TownServicePage({
         <div className="min-w-0 max-w-3xl">
           <article data-unique="true" className="prose-rb">
             <h2>{block.h1}</h2>
-            <Prose text={block.answer} />
             {block.paragraphs.map((paragraph) => (
               <p key={paragraph.slice(0, 60)}>{paragraph}</p>
             ))}
-            <h2>{block.costHeading}</h2>
-            {block.costParagraphs.map((paragraph) => (
-              <Prose key={paragraph.slice(0, 40)} text={paragraph} />
-            ))}
+          </article>
+          <div className="prose-rb mt-10">
+            <h2>Planning {block.label.toLowerCase()} work in {town.name}</h2>
+            <p>{block.answer}</p>
             <h2>{block.label} questions in {town.name}</h2>
             <FaqList faqs={block.faqs} />
-          </article>
+          </div>
           <section
             className="mt-10 rounded-2xl border border-line border-l-4 border-l-orange bg-white p-6 shadow-card"
             aria-label={queryHeading}

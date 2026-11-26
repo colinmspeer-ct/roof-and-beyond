@@ -9,19 +9,6 @@ export function shortKind(kind: string) {
   return kind.split(" in ")[0].split(",")[0];
 }
 
-/** Splits telegraphic data sentences into a bullet list, keeps prose as <p>. */
-export function Prose({ text }: { text: string }) {
-  const parts = text.split(/(?<=\.)\s+/).filter(Boolean);
-  if (parts.length < 3) return <p>{text}</p>;
-  return (
-    <ul className="facts">
-      {parts.map((part) => (
-        <li key={part}>{part}</li>
-      ))}
-    </ul>
-  );
-}
-
 const areaCodes: Record<Town["county"], string> = {
   lancaster: "717 / 223",
   york: "717 / 223",

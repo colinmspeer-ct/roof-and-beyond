@@ -9,7 +9,7 @@ import { HeroActions, PageHero } from "@/components/page-hero";
 import { ReviewsPlaceholder } from "@/components/placeholders";
 import { SectionHeading } from "@/components/section-heading";
 import { PillLinks, ServiceCards } from "@/components/sections";
-import { CallCard, LocalDetails, Prose, Sources, shortKind } from "@/components/town-bits";
+import { CallCard, LocalDetails, Sources, shortKind } from "@/components/town-bits";
 import { TrustSignals } from "@/components/trust-signals";
 import { brand, socialImage } from "@/content/brand";
 import { countyPhoto } from "@/content/media";
@@ -112,22 +112,25 @@ export default async function TownPage({
         <div className="min-w-0 max-w-3xl">
           <article data-unique="true" className="prose-rb">
             <h2>{town.h1}</h2>
-            <Prose text={town.riskLead} />
-            <Prose text={town.answer} />
             {town.paragraphs.map((paragraph) => (
               <p key={paragraph.slice(0, 60)}>{paragraph}</p>
             ))}
+          </article>
+          <div className="prose-rb mt-10">
+            <h2>Housing and exterior work in {town.name}</h2>
+            <p>{town.answer}</p>
+            <p>{town.riskLead}</p>
             {town.localSections.map((section) => (
               <section key={section.heading}>
                 <h2>{section.heading}</h2>
                 {section.paragraphs.map((paragraph) => (
-                  <Prose key={paragraph.slice(0, 60)} text={paragraph} />
+                  <p key={paragraph}>{paragraph}</p>
                 ))}
               </section>
             ))}
             <h2>{town.name} questions</h2>
             <FaqList faqs={town.faqs} />
-          </article>
+          </div>
           <div className="mt-10">
             <FactKey />
           </div>
