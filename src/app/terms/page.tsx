@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Breadcrumbs } from "@/components/breadcrumbs";
+import { PlainHero } from "@/components/plain-hero";
 import { JsonLd } from "@/components/json-ld";
 import { PageCta } from "@/components/page-cta";
 import { brand } from "@/content/brand";
@@ -19,12 +19,12 @@ const crumbs = [
 export default function TermsPage() {
   return (
     <>
-    <main className="mx-auto max-w-3xl px-4 py-10">
+    <PlainHero crumbs={crumbs} eyebrow="Legal" />
+    <main className="mx-auto max-w-3xl px-4 py-12 lg:py-16">
       <JsonLd data={breadcrumbNode(crumbs)} />
-      <Breadcrumbs items={crumbs} />
-      <p className="mt-6 leading-7">{brand.dbaLine}</p>
-      <article data-unique="true" className="mt-4 space-y-4 leading-7">
-        <h1 className="text-5xl text-navy">Terms</h1>
+      <p className="text-sm leading-6 text-muted">{brand.dbaLine}</p>
+      <article data-unique="true" className="prose-rb mt-6 space-y-4 [&_a]:font-semibold [&_a]:text-navy [&_a]:underline">
+        <h1 className="!mt-0 text-4xl text-navy sm:text-5xl">Terms</h1>
         <p>
           These terms govern use of the {brand.dba} website at {brand.domain}.
         </p>
@@ -39,7 +39,7 @@ export default function TermsPage() {
           {brand.registration}, under {brand.legalName}. This site does not
           publish manufacturer lists or warranty terms.
         </p>
-        <h2 className="pt-4 text-3xl text-navy">SMS Terms</h2>
+        <h2 className="pt-4">SMS Terms</h2>
         <p>
           Program name: Roof & Beyond Home Solutions Customer Texts.
         </p>

@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Button } from "@/components/ui/button";
-import { Breadcrumbs } from "@/components/breadcrumbs";
+import { EstimateSection, QuickEstimate } from "@/components/estimate-card";
 import { FactKey } from "@/components/fact-key";
 import { FaqList } from "@/components/faq-list";
 import { JsonLd } from "@/components/json-ld";
 import { PageCta } from "@/components/page-cta";
+import { HeroActions, PageHero } from "@/components/page-hero";
+import { ReviewsPlaceholder } from "@/components/placeholders";
+import { SectionHeading } from "@/components/section-heading";
+import { PillLinks, ServiceCards } from "@/components/sections";
+import { CallCard, LocalDetails, Prose, Sources, shortKind } from "@/components/town-bits";
 import { TrustSignals } from "@/components/trust-signals";
-import { brand, serviceOrder, socialImage } from "@/content/brand";
-import { servicePages } from "@/content/service-pages";
+import { brand, socialImage } from "@/content/brand";
+import { countyPhoto } from "@/content/media";
 import {
   getCounty,
   getTown,
@@ -17,6 +20,7 @@ import {
   townPath,
   townServicePath,
   towns,
+  townsInCounty,
 } from "@/lib/areas";
 import { includeTownPages } from "@/content/launch";
 import { breadcrumbNode, companyGraph, faqNode, serviceNode } from "@/lib/schema";
@@ -40,11 +44,12 @@ export async function generateMetadata({
   const town = getTown(townSlug);
   if (!town || town.countySlug !== county) return {};
   const canonical = townPath(town);
+  const title = `Roofing, Siding & Gutters in ${town.name}, PA | Roofers in ${town.countyName}`;
   return {
-    title: town.metaTitle,
+    title,
     description: town.metaDescription,
     openGraph: {
-      title: town.metaTitle,
+      title,
       description: town.metaDescription,
       url: canonical,
       images: [socialImage],
@@ -69,112 +74,118 @@ export default async function TownPage({
     { name: town.name, path: townPath(town) },
   ];
   const nearby = neighborTowns(town);
-  const prose = (text: string) => {
-    const parts = text.split(/(?<=\.)\s+/).filter(Boolean);
-    if (parts.length < 3) {
-      return <p className="mt-4 leading-7">{text}</p>;
-    }
-    return (
-      <ul className="mt-4 list-disc space-y-1 pl-5 leading-7">
-        {parts.map((part) => (
-          <li key={part}>{part}</li>
-        ))}
-      </ul>
-    );
-  };
+  const sameCounty = townsInCounty(town.countySlug).filter(
+    (item) => item.slug !== town.slug && !town.neighbors.includes(item.slug),
+  );
 
   return (
-    <>
-      <main className="mx-auto max-w-6xl px-4 py-10">
-        <JsonLd data={breadcrumbNode(crumbs)} />
-        <JsonLd data={companyGraph()} />
-        <JsonLd data={faqNode(town.faqs)} />
-        <JsonLd
-          data={serviceNode({
-            name: `Exterior work in ${town.name}, Pennsylvania`,
-            serviceType: "Residential exterior work",
-            url: `${brand.url}${townPath(town)}`,
-            description: town.metaDescription,
-            areaName: `${town.name}, ${town.countyName}, Pennsylvania`,
-          })}
-        />
-        <Breadcrumbs items={crumbs} />
-        <p className="mt-6 text-sm font-semibold uppercase tracking-[0.14em] text-[#9a3412]">
-          {town.countyName} · {town.kind}
-          {town.zips.length ? ` · ${town.zips.join(", ")}` : ""}
-        </p>
-        <h1 className="mt-3 max-w-3xl text-4xl leading-[0.95] text-navy sm:text-5xl">{town.h1}</h1>
-        <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-          <Button asChild size="lg">
-            <a href={`tel:${brand.phoneTel}`}>{`Call us at ${brand.phoneDisplay}`}</a>
-          </Button>
-          <Button asChild size="lg" variant="outlineNavy">
-            <Link href="/contact/#estimate">Free estimate</Link>
-          </Button>
+    <main>
+      <JsonLd data={breadcrumbNode(crumbs)} />
+      <JsonLd data={companyGraph()} />
+      <JsonLd data={faqNode(town.faqs)} />
+      <JsonLd
+        data={serviceNode({
+          name: `Exterior work in ${town.name}, Pennsylvania`,
+          serviceType: "Residential exterior work",
+          url: `${brand.url}${townPath(town)}`,
+          description: town.metaDescription,
+          areaName: `${town.name}, ${town.countyName}, Pennsylvania`,
+        })}
+      />
+      <PageHero
+        photo={countyPhoto[town.county]}
+        crumbs={crumbs}
+        eyebrow={`${town.countyName} · ${shortKind(town.kind)}${town.zips.length ? ` · ${town.zips.join(", ")}` : ""}`}
+        title={
+          <>
+            Roofing, siding &amp; gutters in <span className="text-orange">{town.name}, PA</span>
+          </>
+        }
+        sub={`Roofing, roof repair, siding, windows, gutters, and gutter guards for houses in ${town.name}, ${town.countyName}. You get the scope in writing before any work is scheduled.`}
+        actions={<HeroActions phoneDisplay={brand.phoneDisplay} phoneTel={brand.phoneTel} />}
+        checks={["Free written estimate", `PA HIC #${brand.hic}`, "Houses only"]}
+        aside={<QuickEstimate title={`Free estimate in ${town.name}`} />}
+      />
+      <TrustSignals />
+
+      <div className="mx-auto grid max-w-7xl gap-12 px-4 py-14 lg:grid-cols-[minmax(0,1fr)_20rem] lg:py-20">
+        <div className="min-w-0 max-w-3xl">
+          <article data-unique="true" className="prose-rb">
+            <h2>{town.h1}</h2>
+            <Prose text={town.riskLead} />
+            <Prose text={town.answer} />
+            {town.paragraphs.map((paragraph) => (
+              <p key={paragraph.slice(0, 60)}>{paragraph}</p>
+            ))}
+            {town.localSections.map((section) => (
+              <section key={section.heading}>
+                <h2>{section.heading}</h2>
+                {section.paragraphs.map((paragraph) => (
+                  <Prose key={paragraph.slice(0, 60)} text={paragraph} />
+                ))}
+              </section>
+            ))}
+            <h2>{town.name} questions</h2>
+            <FaqList faqs={town.faqs} />
+          </article>
+          <div className="mt-10">
+            <FactKey />
+          </div>
         </div>
-        <TrustSignals />
-        <FactKey />
-        <article data-unique="true" className="mt-8 max-w-3xl">
-          {prose(town.riskLead)}
-          {prose(town.answer)}
-          {town.paragraphs.map((paragraph) => (
-            <p key={paragraph.slice(0, 60)} className="mt-4 leading-7">
-              {paragraph}
-            </p>
-          ))}
-          {town.localSections.map((section) => (
-            <section key={section.heading} className="mt-8">
-              <h2 className="text-3xl text-navy">{section.heading}</h2>
-              {section.paragraphs.map((paragraph) => (
-                <div key={paragraph.slice(0, 60)}>{prose(paragraph)}</div>
-              ))}
-            </section>
-          ))}
-          <FaqList faqs={town.faqs} />
-        </article>
-        <h2 className="mt-10 text-3xl text-navy">Services on houses in {town.name}</h2>
-        <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {serviceOrder.map((service) => (
-            <li key={service}>
-              <Link
-                href={townServicePath(town, service)}
-                className="block h-full min-h-12 border border-line bg-white p-4 hover:border-orange"
-              >
-                <span className="text-xl text-navy">{servicePages[service].label}</span>
-                <span className="mt-2 block text-sm leading-6 text-muted">
-                  {town.services[service].metaDescription}
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <aside className="space-y-6 lg:sticky lg:top-28 lg:self-start">
+          <CallCard />
+          <LocalDetails town={town} />
+        </aside>
+      </div>
+
+      <ReviewsPlaceholder context={town.slug} />
+
+      <section className="bg-paper">
+        <div className="mx-auto max-w-7xl px-4 py-16">
+          <SectionHeading
+            eyebrow={`Services in ${town.name}`}
+            title={`Roofing and exterior services in ${town.name}`}
+            intro={`Each page applies the trade to houses in ${town.name}: local housing age, storm records, and what goes into the estimate.`}
+          />
+          <div className="mt-10">
+            <ServiceCards
+              hrefFor={(slug) => townServicePath(town, slug)}
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-16">
         {nearby.length ? (
           <>
-            <h2 className="mt-10 text-3xl text-navy">Nearby communities</h2>
-            <ul className="mt-4 flex flex-wrap gap-3">
-              {nearby.map((item) => (
-                <li key={item.slug}>
-                  <Link
-                    href={townPath(item)}
-                    className="inline-flex min-h-12 items-center border border-line bg-white px-3 py-2 text-sm hover:border-orange"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <SectionHeading eyebrow="Nearby" title={`Communities near ${town.name}`} />
+            <div className="mt-6">
+              <PillLinks links={nearby.map((item) => ({ href: townPath(item), label: item.name, note: shortKind(item.kind) }))} />
+            </div>
           </>
         ) : null}
-        <aside className="mt-10 max-w-3xl text-sm leading-6 text-muted" aria-label="Sources">
-          <h2 className="text-xl text-navy">Sources</h2>
-          <ul className="mt-3 list-disc space-y-2 pl-5">
-            {town.sources.map((source) => (
-              <li key={source.slice(0, 48)}>{source}</li>
-            ))}
-          </ul>
-        </aside>
-      </main>
-      <PageCta heading={`Free estimate in ${town.name}`} body={`Call ${brand.phoneDisplay} or send the address. Houses only. The written estimate is the price.`} />
-    </>
+        {sameCounty.length ? (
+          <>
+            <h2 className="mt-12 text-2xl text-navy">More towns in {town.countyName}</h2>
+            <div className="mt-5">
+              <PillLinks links={sameCounty.map((item) => ({ href: townPath(item), label: item.name, note: shortKind(item.kind) }))} />
+            </div>
+          </>
+        ) : null}
+        <div className="mt-12 max-w-3xl">
+          <Sources sources={town.sources} />
+        </div>
+      </section>
+
+      <EstimateSection
+        heading={`Free roofing and exterior estimate in ${town.name}`}
+        body={`Send the ${town.name} address and what you are seeing. The written scope comes before anything is scheduled.`}
+      />
+      <PageCta
+        heading={`Free estimate in ${town.name}`}
+        body={`Call ${brand.phoneDisplay} or send the address. Houses only. The written estimate is the price.`}
+        estimateHref="#estimate"
+      />
+    </main>
   );
 }

@@ -1,14 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Button } from "@/components/ui/button";
-import { Breadcrumbs } from "@/components/breadcrumbs";
+import { Phone } from "lucide-react";
 import { FaqList } from "@/components/faq-list";
 import { JsonLd } from "@/components/json-ld";
 import { PageCta } from "@/components/page-cta";
+import { EstimateSection, QuickEstimate } from "@/components/estimate-card";
+import { HeroActions, PageHero } from "@/components/page-hero";
+import { Picture } from "@/components/picture";
+import { ReviewsPlaceholder, VideoPlaceholder } from "@/components/placeholders";
+import { SectionHeading } from "@/components/section-heading";
+import { CountyCards, ServiceCards } from "@/components/sections";
+import { TrustSignals } from "@/components/trust-signals";
 import { brand, serviceOrder, socialImage, type ServiceSlug } from "@/content/brand";
+import { serviceKeyword, servicePhoto } from "@/content/media";
 import { servicePages } from "@/content/service-pages";
-import { counties, countyPath } from "@/lib/areas";
 import { breadcrumbNode, faqNode, serviceNode } from "@/lib/schema";
 
 export function generateStaticParams() {
@@ -16,6 +22,8 @@ export function generateStaticParams() {
 }
 
 export const dynamicParams = false;
+
+const AREA = "Lancaster, Chester, Delaware & York Counties, PA";
 
 export async function generateMetadata({
   params,
@@ -26,11 +34,13 @@ export async function generateMetadata({
   const page = servicePages[service as ServiceSlug];
   if (!page) return {};
   const canonical = `/exterior/${page.slug}/`;
+  const kw = serviceKeyword[page.slug];
+  const title = `${kw.h1} in ${AREA} | ${kw.variation}`;
   return {
-    title: page.metaTitle,
+    title,
     description: page.metaDescription,
     openGraph: {
-      title: page.metaTitle,
+      title,
       description: page.metaDescription,
       siteName: brand.dba,
       url: `${brand.url}${canonical}`,
@@ -48,6 +58,8 @@ export default async function ServicePage({
   const { service } = await params;
   const page = servicePages[service as ServiceSlug];
   if (!page) notFound();
+  const kw = serviceKeyword[page.slug];
+  const photo = servicePhoto[page.slug];
   const crumbs = [
     { name: "Home", path: "/" },
     { name: "Exterior", path: "/exterior/" },
@@ -66,55 +78,104 @@ export default async function ServicePage({
           areaName: "Lancaster, Chester, Delaware, and York counties, Pennsylvania",
         })}
       />
-      <section className="bg-navy text-white">
-        <div className="mx-auto max-w-3xl px-4 py-14">
-          <Breadcrumbs items={crumbs} tone="light" />
-          <h1 className="mt-4 text-5xl leading-[0.95] sm:text-6xl">{page.h1}</h1>
-          <p className="mt-4 max-w-xl text-lg leading-8 text-white/90">{page.lede}</p>
-          <Button asChild className="mt-6">
-            <Link href="/contact/">Get a free estimate</Link>
-          </Button>
+      <PageHero
+        photo={photo}
+        crumbs={crumbs}
+        eyebrow={`${kw.variation} · houses only`}
+        title={
+          <>
+            {kw.h1} in <span className="text-orange">{AREA}</span>
+          </>
+        }
+        sub={page.lede}
+        actions={<HeroActions phoneDisplay={brand.phoneDisplay} phoneTel={brand.phoneTel} />}
+        checks={["Free written estimate", `PA HIC #${brand.hic}`, "9 AM–8 PM daily"]}
+        aside={<QuickEstimate title={`Free ${page.label.toLowerCase()} estimate`} />}
+      />
+      <TrustSignals />
+
+      <div className="mx-auto grid max-w-7xl gap-12 px-4 py-14 lg:grid-cols-[minmax(0,1fr)_20rem] lg:py-20">
+        <article data-unique="true" className="prose-rb min-w-0 max-w-3xl">
+          <h2>{page.h1}</h2>
+          {page.paragraphs.map((paragraph) => (
+            <p key={paragraph.slice(0, 40)}>{paragraph}</p>
+          ))}
+          <h2>Questions about {page.label.toLowerCase()}</h2>
+          <FaqList faqs={page.faqs} openFirst />
+          <figure className="mt-12">
+            <div className="overflow-hidden rounded-2xl shadow-card">
+              <Picture photo={photo} sizes="(min-width: 1024px) 720px, 100vw" className="block" imgClassName="h-auto" />
+            </div>
+            <figcaption className="mt-2 text-xs text-muted">Stock photo. Not a {brand.dba} project.</figcaption>
+          </figure>
+        </article>
+        <aside className="lg:sticky lg:top-28 lg:self-start">
+          <div className="rounded-2xl bg-navy p-6 text-white">
+            <p className="text-xl font-extrabold tracking-tight">Talk to someone today</p>
+            <p className="mt-2 text-[15px] leading-6 text-white/80">{brand.hours}.</p>
+            <a
+              href={`tel:${brand.phoneTel}`}
+              className="mt-4 flex h-13 items-center justify-center gap-2 rounded-lg bg-orange font-bold text-navy hover:bg-orange-dark"
+            >
+              <Phone aria-hidden="true" className="size-4" />
+              {brand.phoneDisplay}
+            </a>
+            <a
+              href="#estimate"
+              className="mt-2 flex h-13 items-center justify-center rounded-lg border-2 border-white font-bold text-white hover:bg-white hover:text-navy"
+            >
+              Request an estimate
+            </a>
+          </div>
+          <nav aria-label="Other services" className="mt-6 rounded-2xl border border-line bg-white p-5">
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-rust">All services</p>
+            <ul className="mt-3 space-y-1">
+              {serviceOrder.map((slug) => (
+                <li key={slug}>
+                  <Link
+                    href={`/exterior/${slug}/`}
+                    aria-current={slug === page.slug ? "page" : undefined}
+                    className={`flex min-h-11 items-center rounded-lg px-3 text-[15px] font-semibold ${
+                      slug === page.slug ? "bg-paper text-rust" : "text-navy hover:bg-paper"
+                    }`}
+                  >
+                    {servicePages[slug].label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </aside>
+      </div>
+
+      <ReviewsPlaceholder context={page.slug} />
+      <VideoPlaceholder topic={page.slug} />
+
+      <section className="bg-paper">
+        <div className="mx-auto max-w-7xl px-4 py-16">
+          <SectionHeading
+            eyebrow="Where we work"
+            title={`${page.label} across four Pennsylvania counties`}
+            intro="Each county page lists the towns we serve. Town pages show local housing and storm records next to the service."
+          />
+          <div className="mt-10">
+            <CountyCards />
+          </div>
         </div>
       </section>
-      <article data-unique="true" className="mx-auto max-w-3xl px-4 py-12">
-        {page.paragraphs.map((paragraph) => (
-          <p key={paragraph.slice(0, 40)} className="mb-4 leading-7">
-            {paragraph}
-          </p>
-        ))}
-        <h2 className="mt-10 text-3xl text-navy">Questions about {page.label.toLowerCase()}</h2>
-        <FaqList faqs={page.faqs} />
-        <figure className="mt-10">
-          <picture>
-            <source srcSet={page.image.src.replace(".webp", ".avif")} type="image/avif" />
-            <img
-              src={page.image.src}
-              alt={page.image.alt}
-              width={page.image.width}
-              height={page.image.height}
-              sizes="(min-width: 768px) 720px, 100vw"
-              loading="lazy"
-              className="h-auto w-full"
-            />
-          </picture>
-          <figcaption className="mt-2 text-xs uppercase tracking-[0.12em] text-muted">
-            Stock photo. Not a {brand.dba} project.
-          </figcaption>
-        </figure>
-      </article>
-      <section className="mx-auto max-w-6xl px-4 pb-16">
-        <h2 className="text-3xl text-navy">Counties</h2>
-        <ul className="mt-4 flex flex-wrap gap-3">
-          {counties.map((county) => (
-            <li key={county.slug}>
-              <Link href={countyPath(county.slug)} className="border border-line bg-white px-3 py-2 text-sm hover:border-orange">
-                {county.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
+
+      <section className="mx-auto max-w-7xl px-4 py-16">
+        <SectionHeading eyebrow="More exterior work" title="Other services for your house" />
+        <div className="mt-10">
+          <ServiceCards exclude={page.slug} />
+        </div>
       </section>
-      <PageCta heading={`Estimate ${page.label.toLowerCase()}`} />
+
+      <EstimateSection
+        heading={`Get a free ${page.label.toLowerCase()} estimate`}
+        body={`Tell us the address and what you are seeing. The ${page.label.toLowerCase()} scope goes on paper before anything is scheduled.`}
+      />
+      <PageCta heading={`Need ${page.label.toLowerCase()} on your house?`} estimateHref="#estimate" />
     </main>
   );
 }

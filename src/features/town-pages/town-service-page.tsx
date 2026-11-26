@@ -1,14 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Button } from "@/components/ui/button";
-import { Breadcrumbs } from "@/components/breadcrumbs";
+import { EstimateSection, QuickEstimate } from "@/components/estimate-card";
 import { FactKey } from "@/components/fact-key";
 import { FaqList } from "@/components/faq-list";
 import { JsonLd } from "@/components/json-ld";
 import { PageCta } from "@/components/page-cta";
+import { HeroActions, PageHero } from "@/components/page-hero";
+import { ReviewsPlaceholder } from "@/components/placeholders";
+import { SectionHeading } from "@/components/section-heading";
+import { PillLinks, ServiceCards } from "@/components/sections";
+import { CallCard, LocalDetails, Prose, Sources } from "@/components/town-bits";
+import { serviceBlurb } from "@/content/media";
+import { TrustSignals } from "@/components/trust-signals";
 import { brand, serviceOrder, socialImage, type ServiceSlug } from "@/content/brand";
-import { servicePages } from "@/content/service-pages";
+import { serviceKeyword, servicePhoto } from "@/content/media";
 import {
   getTown,
   neighborTowns,
@@ -43,11 +49,13 @@ export async function generateMetadata({
   const block = town.services[service as ServiceSlug];
   if (!block) return {};
   const canonical = townServicePath(town, block.slug);
+  const kw = serviceKeyword[block.slug];
+  const title = `${kw.h1} in ${town.name}, PA | ${kw.variation} in ${town.countyName}`;
   return {
-    title: block.metaTitle,
+    title,
     description: block.metaDescription,
     openGraph: {
-      title: block.metaTitle,
+      title,
       description: block.metaDescription,
       url: canonical,
       images: [socialImage],
@@ -66,6 +74,7 @@ export default async function TownServicePage({
   if (!town || town.countySlug !== county) notFound();
   const block = town.services[service as ServiceSlug];
   if (!block) notFound();
+  const kw = serviceKeyword[block.slug];
   const crumbs = [
     { name: "Home", path: "/" },
     { name: "Where we work", path: "/where-we-work/" },
@@ -74,19 +83,6 @@ export default async function TownServicePage({
     { name: block.label, path: townServicePath(town, block.slug) },
   ];
   const nearby = neighborTowns(town).slice(0, 4);
-  const prose = (text: string) => {
-    const parts = text.split(/(?<=\.)\s+/).filter(Boolean);
-    if (parts.length < 3) {
-      return <p className="mt-4 leading-7">{text}</p>;
-    }
-    return (
-      <ul className="mt-4 list-disc space-y-1 pl-5 leading-7">
-        {parts.map((part) => (
-          <li key={part}>{part}</li>
-        ))}
-      </ul>
-    );
-  };
   const queryHeading = {
     roofing: `Roof replacement cost in ${town.name}, PA`,
     "roof-repair": `Roof repair cost in ${town.name}, PA`,
@@ -97,107 +93,126 @@ export default async function TownServicePage({
   }[block.slug];
 
   return (
-    <>
-      <main className="mx-auto max-w-6xl px-4 py-10">
-        <JsonLd data={breadcrumbNode(crumbs)} />
-        <JsonLd data={companyGraph()} />
-        <JsonLd data={faqNode(block.faqs)} />
-        <JsonLd
-          data={serviceNode({
-            name: `${block.label} in ${town.name}, Pennsylvania`,
-            serviceType: block.label,
-            url: `${brand.url}${townServicePath(town, block.slug)}`,
-            description: block.metaDescription,
-            areaName: `${town.name}, ${town.countyName}, Pennsylvania`,
-          })}
-        />
-        <Breadcrumbs items={crumbs} />
-        <p className="mt-6 text-sm font-semibold uppercase tracking-[0.14em] text-[#9a3412]">
-          {block.label} · {town.name}
-        </p>
-        <h1 className="mt-3 max-w-3xl text-4xl leading-[0.95] text-navy sm:text-5xl">{block.h1}</h1>
-        <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-          <Button asChild size="lg">
-            <a href={`tel:${brand.phoneTel}`}>{`Call us at ${brand.phoneDisplay}`}</a>
-          </Button>
-          <Button asChild size="lg" variant="outlineNavy">
-            <Link href="/contact/#estimate">Free estimate</Link>
-          </Button>
-        </div>
-        <FactKey />
-        <article data-unique="true" className="mt-8 max-w-3xl">
-          {prose(block.answer)}
-          {block.paragraphs.map((paragraph) => (
-            <p key={paragraph.slice(0, 60)} className="mt-4 leading-7">
-              {paragraph}
-            </p>
-          ))}
-          <h2 className="mt-8 text-3xl text-navy">{block.costHeading}</h2>
-          {block.costParagraphs.map((paragraph) => (
-            <div key={paragraph.slice(0, 40)}>{prose(paragraph)}</div>
-          ))}
-          <FaqList faqs={block.faqs} />
-        </article>
-        <section className="mt-8 max-w-3xl border border-line bg-white p-4" aria-label={queryHeading}>
-          <h2 className="text-2xl text-navy">{queryHeading}</h2>
-          <p className="mt-3 leading-7">{block.priceNote}</p>
-          <p className="mt-3 text-sm leading-6 text-muted">
-            Houses only. The written estimate for this {town.name} house is the price.
-          </p>
-        </section>
-        <div className="mt-8 flex flex-wrap gap-3">
-          <Button asChild variant="outlineNavy">
-            <Link href={`/exterior/${block.slug}/`}>All {block.label.toLowerCase()}</Link>
-          </Button>
-          <Button asChild variant="outlineNavy">
-            <Link href={townPath(town)}>{town.name} overview</Link>
-          </Button>
-        </div>
-        <h2 className="mt-10 text-2xl text-navy">Other work in {town.name}</h2>
-        <ul className="mt-3 flex flex-wrap gap-2">
-          {serviceOrder
-            .filter((item) => item !== block.slug)
-            .map((item) => (
-              <li key={item}>
-                <Link
-                  href={townServicePath(town, item)}
-                  className="inline-flex min-h-12 items-center border border-line bg-white px-3 py-2 text-sm hover:border-orange"
-                >
-                  {servicePages[item].label}
-                </Link>
-              </li>
+    <main>
+      <JsonLd data={breadcrumbNode(crumbs)} />
+      <JsonLd data={companyGraph()} />
+      <JsonLd data={faqNode(block.faqs)} />
+      <JsonLd
+        data={serviceNode({
+          name: `${block.label} in ${town.name}, Pennsylvania`,
+          serviceType: block.label,
+          url: `${brand.url}${townServicePath(town, block.slug)}`,
+          description: block.metaDescription,
+          areaName: `${town.name}, ${town.countyName}, Pennsylvania`,
+        })}
+      />
+      <PageHero
+        photo={servicePhoto[block.slug]}
+        crumbs={crumbs}
+        eyebrow={`${kw.variation} · ${town.countyName}`}
+        title={
+          <>
+            {kw.h1} in <span className="text-orange">{town.name}, PA</span>
+          </>
+        }
+        sub={`${block.label} for houses in ${town.name}, ${town.countyName}. ${serviceBlurb[block.slug]}`}
+        actions={<HeroActions phoneDisplay={brand.phoneDisplay} phoneTel={brand.phoneTel} />}
+        checks={["Free written estimate", `PA HIC #${brand.hic}`, "Houses only"]}
+        aside={<QuickEstimate title={`Free ${block.label.toLowerCase()} estimate in ${town.name}`} />}
+      />
+      <TrustSignals />
+
+      <div className="mx-auto grid max-w-7xl gap-12 px-4 py-14 lg:grid-cols-[minmax(0,1fr)_20rem] lg:py-20">
+        <div className="min-w-0 max-w-3xl">
+          <article data-unique="true" className="prose-rb">
+            <h2>{block.h1}</h2>
+            <Prose text={block.answer} />
+            {block.paragraphs.map((paragraph) => (
+              <p key={paragraph.slice(0, 60)}>{paragraph}</p>
             ))}
-        </ul>
+            <h2>{block.costHeading}</h2>
+            {block.costParagraphs.map((paragraph) => (
+              <Prose key={paragraph.slice(0, 40)} text={paragraph} />
+            ))}
+            <h2>{block.label} questions in {town.name}</h2>
+            <FaqList faqs={block.faqs} />
+          </article>
+          <section
+            className="mt-10 rounded-2xl border border-line border-l-4 border-l-orange bg-white p-6 shadow-card"
+            aria-label={queryHeading}
+          >
+            <h2 className="text-2xl text-navy">{queryHeading}</h2>
+            <p className="mt-3 text-base leading-7">{block.priceNote}</p>
+            <p className="mt-3 text-sm leading-6 text-muted">
+              Houses only. The written estimate for this {town.name} house is the price.
+            </p>
+          </section>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <Link
+              href={`/exterior/${block.slug}/`}
+              className="inline-flex h-12 items-center justify-center rounded-lg border-2 border-navy px-5 font-bold text-navy hover:bg-navy hover:text-white"
+            >
+              All {block.label.toLowerCase()}
+            </Link>
+            <Link
+              href={townPath(town)}
+              className="inline-flex h-12 items-center justify-center rounded-lg border-2 border-navy px-5 font-bold text-navy hover:bg-navy hover:text-white"
+            >
+              {town.name} overview
+            </Link>
+          </div>
+          <div className="mt-10">
+            <FactKey />
+          </div>
+        </div>
+        <aside className="space-y-6 lg:sticky lg:top-28 lg:self-start">
+          <CallCard />
+          <LocalDetails town={town} />
+        </aside>
+      </div>
+
+      <ReviewsPlaceholder context={`${town.slug}-${block.slug}`} />
+
+      <section className="bg-paper">
+        <div className="mx-auto max-w-7xl px-4 py-16">
+          <SectionHeading eyebrow={`More in ${town.name}`} title={`Other work on houses in ${town.name}`} />
+          <div className="mt-10">
+            <ServiceCards
+              exclude={block.slug}
+              hrefFor={(slug) => townServicePath(town, slug)}
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-16">
         {nearby.length ? (
           <>
-            <h2 className="mt-8 text-2xl text-navy">{block.label} nearby</h2>
-            <ul className="mt-3 flex flex-wrap gap-2">
-              {nearby.map((item) => (
-                <li key={item.slug}>
-                  <Link
-                    href={townServicePath(item, block.slug)}
-                    className="inline-flex min-h-12 items-center border border-line bg-white px-3 py-2 text-sm hover:border-orange"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <SectionHeading eyebrow="Nearby" title={`${block.label} near ${town.name}`} />
+            <div className="mt-6">
+              <PillLinks
+                links={nearby.map((item) => ({
+                  href: townServicePath(item, block.slug),
+                  label: `${block.label} in ${item.name}`,
+                }))}
+              />
+            </div>
           </>
         ) : null}
-        <aside className="mt-10 max-w-3xl text-sm leading-6 text-muted" aria-label="Sources">
-          <h2 className="text-xl text-navy">Sources</h2>
-          <ul className="mt-3 list-disc space-y-2 pl-5">
-            {town.sources.map((source) => (
-              <li key={source.slice(0, 48)}>{source}</li>
-            ))}
-          </ul>
-        </aside>
-      </main>
+        <div className="mt-12 max-w-3xl">
+          <Sources sources={town.sources} />
+        </div>
+      </section>
+
+      <EstimateSection
+        heading={`Free ${block.label.toLowerCase()} estimate in ${town.name}`}
+        body={`Send the ${town.name} address and what you are seeing. The ${block.label.toLowerCase()} scope goes on paper before anything is scheduled.`}
+      />
       <PageCta
         heading={`Free ${block.label.toLowerCase()} estimate in ${town.name}`}
         body={`Call ${brand.phoneDisplay} or use the form. Residential houses only.`}
+        estimateHref="#estimate"
       />
-    </>
+    </main>
   );
 }

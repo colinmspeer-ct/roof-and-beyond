@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Breadcrumbs } from "@/components/breadcrumbs";
+import { PlainHero } from "@/components/plain-hero";
 import { JsonLd } from "@/components/json-ld";
 import { PageCta } from "@/components/page-cta";
 import { brand } from "@/content/brand";
@@ -19,12 +19,12 @@ const crumbs = [
 export default function PrivacyPage() {
   return (
     <>
-    <main className="mx-auto max-w-3xl px-4 py-10">
+    <PlainHero crumbs={crumbs} eyebrow="Legal" />
+    <main className="mx-auto max-w-3xl px-4 py-12 lg:py-16">
       <JsonLd data={breadcrumbNode(crumbs)} />
-      <Breadcrumbs items={crumbs} />
-      <p className="mt-6 leading-7">{brand.dbaLine}</p>
-      <article data-unique="true" className="mt-4 space-y-4 leading-7">
-        <h1 className="text-5xl text-navy">Privacy</h1>
+      <p className="text-sm leading-6 text-muted">{brand.dbaLine}</p>
+      <article data-unique="true" className="prose-rb mt-6 space-y-4 [&_a]:font-semibold [&_a]:text-navy [&_a]:underline">
+        <h1 className="!mt-0 text-4xl text-navy sm:text-5xl">Privacy</h1>
         <p>
           This page describes how {brand.dba} handles the details you send
           from {brand.domain}.
@@ -40,7 +40,7 @@ export default function PrivacyPage() {
           details to look at a house and reply. Access is limited to people
           who schedule or perform that work.
         </p>
-        <h2 className="pt-4 text-3xl text-navy">Mobile information</h2>
+        <h2 className="pt-4">Mobile information</h2>
         <p>
           If you give a mobile number or agree to texts, that number and that
           yes stay with this company. We will not hand them to another firm,
@@ -48,7 +48,7 @@ export default function PrivacyPage() {
           own work. A yes to texts is used only to send the messages you
           asked for and to run the estimate desk.
         </p>
-        <h2 className="pt-4 text-3xl text-navy">Text messages</h2>
+        <h2 className="pt-4">Text messages</h2>
         <p>
           The optional checkbox says: By checking this box, you agree to receive
           text messages from Roof & Beyond Home Solutions about your inquiry.

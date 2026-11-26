@@ -1,23 +1,29 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { FaqList } from "@/components/faq-list";
 import { JsonLd } from "@/components/json-ld";
 import { PageCta } from "@/components/page-cta";
+import { EstimateCard } from "@/components/estimate-card";
+import { HeroActions, PageHero } from "@/components/page-hero";
+import { Picture } from "@/components/picture";
+import { ReviewsPlaceholder, VideoPlaceholder } from "@/components/placeholders";
+import { SectionHeading } from "@/components/section-heading";
+import { AnswerBlock, CountyCards, ServiceCards, Steps } from "@/components/sections";
 import { TrustSignals } from "@/components/trust-signals";
-import { brand, serviceOrder, socialImage } from "@/content/brand";
-import { servicePages } from "@/content/service-pages";
-import { counties, countyPath } from "@/lib/areas";
+import { brand, socialImage } from "@/content/brand";
+import { photos } from "@/content/media";
 import { companyGraph, faqNode } from "@/lib/schema";
 
+const title = `Roofing Contractor & Roofers in Lancaster, Chester, Delaware & York Counties, PA | ${brand.dba}`;
+const description =
+  "Roofing, roof repair, siding, windows, gutters, and gutter guards for houses in Lancaster, Chester, Delaware, and York counties, PA. Free written estimates. Call (717) 804-0990.";
+
 export const metadata: Metadata = {
-  title: {
-    absolute: `Free roof and exterior estimates | ${brand.dba}`,
-  },
-  description: brand.description,
+  title: { absolute: title },
+  description,
   openGraph: {
-    title: `Free roof and exterior estimates | ${brand.dba}`,
-    description: brand.description,
+    title,
+    description,
     siteName: brand.dba,
     url: brand.url,
     images: [socialImage],
@@ -46,13 +52,14 @@ const faqs = [
     q: "Can you help after a storm?",
     a: "A visit can photograph the roof, gutters, siding, and windows and can turn into a written estimate. It does not decide whether an insurance carrier pays a claim.",
   },
-];
-
-const steps = [
-  { n: "01", title: "Tell us the address", body: "Name the service and what you are seeing: a stain, a drip, a soft sill, or a gutter that overflows." },
-  { n: "02", title: "We look at the exterior", body: "The visit covers the slope, the walls, the openings, and where water leaves the roof." },
-  { n: "03", title: "You get it in writing", body: "The estimate lists what is included and what is left alone." },
-  { n: "04", title: "Work follows that scope", body: "Nothing is scheduled until you approve the paper." },
+  {
+    q: "Do you work on commercial buildings?",
+    a: "No. The company works on houses only, from row homes and twins to detached houses and farmhouses.",
+  },
+  {
+    q: "When can I reach someone?",
+    a: `Phones are answered ${brand.hours}. Call ${brand.phoneDisplay} or send the estimate form at any hour.`,
+  },
 ];
 
 export default function HomePage() {
@@ -60,116 +67,153 @@ export default function HomePage() {
     <main>
       <JsonLd data={companyGraph()} />
       <JsonLd data={faqNode(faqs)} />
-      <section className="bg-navy text-white">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-14 lg:grid-cols-[1.15fr_0.85fr] lg:py-20">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-sky">
-              Lancaster, Chester, Delaware, and York counties
-            </p>
-            <h1 className="mt-4 max-w-xl text-4xl leading-[0.95] text-white sm:text-6xl">
-              A written estimate for the outside of the house.
-            </h1>
-            <p className="mt-5 max-w-xl text-lg leading-8 text-white/90">
-              {brand.dba} prices roofing, roof repair, siding, windows, gutters,
-              and gutter guards on houses before any work is scheduled.
-            </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Button asChild size="lg">
-                <Link href="/contact/#estimate">Get a free estimate</Link>
-              </Button>
-              <Button asChild size="lg" variant="outline">
-                <a href={`tel:${brand.phoneTel}`}>{`Call us at ${brand.phoneDisplay}`}</a>
-              </Button>
-            </div>
-            <p className="mt-4 text-sm text-sky">
-              {brand.hours}. Based in Media, PA. PA HIC #{brand.hic}.
-            </p>
+      <PageHero
+        photo={photos.clapboard}
+        eyebrow="Roofing & exterior contractor · Media, PA"
+        title={
+          <>
+            Roofing, siding &amp; gutters for houses in{" "}
+            <span className="text-orange">Lancaster, Chester, Delaware &amp; York counties</span>
+          </>
+        }
+        sub="Roof replacement, roof repair, siding, windows, gutters, and gutter guards. A free written estimate comes first, so you know the scope and the price before anything is scheduled."
+        actions={<HeroActions phoneDisplay={brand.phoneDisplay} phoneTel={brand.phoneTel} />}
+        checks={["Free written estimate", `PA HIC #${brand.hic}`, "Open 9 AM–8 PM, 7 days"]}
+        aside={
+          <div id="estimate" className="scroll-mt-24">
+            <EstimateCard contained eager idPrefix="home-estimate" />
           </div>
-          <div className="border border-white/15 bg-white/5 p-5">
-            <h2 className="text-3xl">What the visit covers</h2>
-            <ul className="mt-4 space-y-3 text-sm leading-6 text-white/90">
-              <li>Roofing and roof repair, kept as separate scopes.</li>
-              <li>Siding, windows, gutters, and gutter guards.</li>
-              <li>A written estimate before anything is scheduled.</li>
-              <li>Residential houses only.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+        }
+      />
       <TrustSignals />
-      <section className="mx-auto max-w-6xl px-4 py-16">
-        <h2 className="text-4xl text-navy sm:text-5xl">Six services, kept separate</h2>
-        <p className="mt-4 max-w-3xl leading-7 text-muted">
-          A full roof, a leak repair, a wall, a window, a gutter, and a gutter
-          cover are different scopes. Pick the one that matches the house.
-        </p>
-        <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {serviceOrder.map((slug) => {
-            const service = servicePages[slug];
-            return (
-              <Link
-                key={slug}
-                href={`/exterior/${slug}/`}
-                className="group border border-line bg-white p-5 hover:border-orange"
-              >
-                <h3 className="text-2xl text-navy group-hover:text-orange">{service.label}</h3>
-                <p className="mt-3 text-sm leading-6 text-muted">{service.lede}</p>
-              </Link>
-            );
-          })}
-        </div>
-      </section>
-      <section className="bg-white">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 lg:grid-cols-2">
-          <picture>
-            <source srcSet="/images/shingles.avif" type="image/avif" />
-            <img
-              src="/images/shingles.webp"
-              alt="Close view of gray architectural asphalt shingles."
-              width={960}
-              height={640}
-              sizes="(min-width: 1024px) 480px, 100vw"
-              loading="lazy"
-              className="h-auto w-full"
-            />
-          </picture>
+
+      <section className="mx-auto max-w-7xl px-4 py-16 lg:py-20">
+        <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-center">
           <div>
-            <h2 className="text-4xl text-navy">What happens after you ask</h2>
-            <ol className="mt-6 space-y-5">
-              {steps.map((step) => (
-                <li key={step.n}>
-                  <p className="text-sm font-semibold text-[#9a3412]">{step.n}</p>
-                  <h3 className="text-2xl text-navy">{step.title}</h3>
-                  <p className="mt-1 leading-7 text-muted">{step.body}</p>
-                </li>
-              ))}
-            </ol>
+            <SectionHeading
+              eyebrow="Who we are"
+              title="A roofing company that keeps every exterior job separate"
+            />
+            <div className="mt-6">
+              <AnswerBlock>
+                <strong>{brand.dba}</strong> is a residential <strong>roofing</strong> and exterior
+                contractor based in {brand.locality} (PA HIC #{brand.hic}). We estimate{" "}
+                <strong>roof replacement</strong>, <strong>roof repair</strong>, <strong>siding</strong>,{" "}
+                <strong>windows</strong>, <strong>gutters</strong>, and <strong>gutter guards</strong> for
+                houses in Lancaster, Chester, Delaware, and York counties. Call{" "}
+                <a className="font-bold text-navy underline" href={`tel:${brand.phoneTel}`}>
+                  {brand.phoneDisplay}
+                </a>
+                , {brand.hours}.
+              </AnswerBlock>
+            </div>
+            <p className="mt-6 text-lg leading-8 text-muted">
+              A full roof, a leak repair, a wall, a window, a gutter, and a gutter
+              cover are different scopes. A roofer who prices a lifted shingle as a
+              new roof wastes your money; one who calls a rotted deck a patch wastes
+              your roof. The written estimate names which of the six the house needs
+              and which it does not.
+            </p>
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+              <Link
+                href="/exterior/"
+                className="inline-flex h-13 items-center justify-center rounded-lg bg-navy px-6 font-bold text-white hover:bg-navy-deep"
+              >
+                See all services
+              </Link>
+              <Link
+                href="/about/"
+                className="inline-flex h-13 items-center justify-center rounded-lg border-2 border-navy px-6 font-bold text-navy hover:bg-navy hover:text-white"
+              >
+                About the company
+              </Link>
+            </div>
+          </div>
+          <div className="relative">
+            <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-lift">
+              <Picture
+                photo={photos.shingles}
+                sizes="(min-width: 1024px) 560px, 100vw"
+                className="block h-full"
+              />
+            </div>
+            <p className="mt-2 text-xs text-muted">Stock photo. Not a {brand.dba} project.</p>
           </div>
         </div>
       </section>
-      <section className="mx-auto max-w-6xl px-4 py-16">
-        <h2 className="text-4xl text-navy">Counties we cover</h2>
-        <p className="mt-4 max-w-3xl leading-7 text-muted">
-          Open a county, then a town. Each town page links the six trades.
-        </p>
-        <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {counties.map((county) => (
-            <li key={county.slug}>
-              <Link href={countyPath(county.slug)} className="block border border-line bg-white p-4 hover:border-orange">
-                <span className="text-2xl text-navy">{county.name}</span>
-                <span className="mt-1 block text-sm text-muted">{county.towns.length} communities listed</span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </section>
-      <section className="mx-auto max-w-3xl px-4 pb-16">
-        <h2 className="text-4xl text-navy">Questions before you call</h2>
-        <div className="mt-6">
-          <FaqList faqs={faqs} />
+
+      <ReviewsPlaceholder context="home" />
+
+      <section className="bg-paper">
+        <div className="mx-auto max-w-7xl px-4 py-16 lg:py-20">
+          <SectionHeading
+            align="center"
+            eyebrow="Exterior services"
+            title="Roofing and exterior services for your house"
+            intro="Pick the job that matches what you are seeing. Each page explains the scope, the common problems, and what goes into the estimate."
+          />
+          <div className="mt-10">
+            <ServiceCards />
+          </div>
         </div>
       </section>
-      <PageCta />
+
+      <section className="mx-auto max-w-7xl px-4 py-16 lg:py-20">
+        <SectionHeading
+          align="center"
+          eyebrow="How it works"
+          title="From first call to written estimate in four steps"
+          intro="No pressure and no surprise line items. The scope is on paper before anyone sets a date."
+        />
+        <div className="mt-10">
+          <Steps />
+        </div>
+        <div className="mt-10 text-center">
+          <a
+            href="#estimate"
+            className="inline-flex h-14 items-center justify-center rounded-lg bg-orange px-8 text-lg font-bold text-navy hover:bg-orange-dark"
+          >
+            Start step one: get a free estimate
+          </a>
+        </div>
+      </section>
+
+      <VideoPlaceholder topic="home" />
+
+      <section className="bg-paper">
+        <div className="mx-auto max-w-7xl px-4 py-16 lg:py-20">
+          <SectionHeading
+            eyebrow="Where we work"
+            title="Roofers serving four Pennsylvania counties"
+            intro="Open a county to see every community by name. Each town page links roofing, roof repair, siding, windows, gutters, and gutter guards for houses there."
+          />
+          <div className="mt-10">
+            <CountyCards />
+          </div>
+          <p className="mt-8 text-[15px] text-muted">
+            Looking for a specific town?{" "}
+            <Link href="/sitemap/" className="font-bold text-navy underline underline-offset-4">
+              Browse the full sitemap
+            </Link>{" "}
+            or{" "}
+            <Link href="/where-we-work/" className="font-bold text-navy underline underline-offset-4">
+              see all communities
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-3xl px-4 py-16 lg:py-20">
+        <SectionHeading align="center" eyebrow="FAQ" title="Roofing and exterior questions, answered" />
+        <FaqList faqs={faqs} openFirst />
+      </section>
+
+      <PageCta
+        heading="Ready for a straight answer on your roof?"
+        body="Send the address or call. You get a written scope for the roof, walls, windows, or gutters before any work is scheduled."
+        estimateHref="#estimate"
+      />
     </main>
   );
 }
