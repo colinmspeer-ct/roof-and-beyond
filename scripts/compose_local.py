@@ -17,6 +17,7 @@ from towns_chester import TOWNS as CHESTER  # noqa: E402
 from towns_delaware import TOWNS as DELAWARE  # noqa: E402
 from towns_york import TOWNS as YORK  # noqa: E402
 from towns_cumberland import FACTS as CUMBERLAND_FACTS, TOWNS as CUMBERLAND  # noqa: E402
+from towns_extension import DAUPHIN  # noqa: E402
 
 FACTS_PATH = ROOT / "scripts" / "data" / "local_facts.json"
 OUT_PATH = ROOT / "scripts" / "data" / "local_copy.json"
@@ -333,6 +334,46 @@ def build_cumberland_copy(town: dict) -> dict:
     }
 
 
+def build_researched_copy(town: dict) -> dict:
+    name = town["name"]
+    fact = town["research"]
+    h = fact["housing"]
+    total = f"{h['units']:,}"
+    year = h["median_year"]
+    detached = h["pct_detached"]
+    attached = h["pct_attached"]
+    old = h["pct_pre1939"]
+    services = {}
+    details = {
+        "roofing": f"The ACS median year built in {name} is {year}. That survey counts about {total} housing units across {name}.",
+        "roof-repair": f"About {old}% of {name} housing dates to 1939 or earlier. The {name} median is {year} for building age.",
+        "siding": f"Of about {total} homes in {name}, about {attached}% are single-family attached. The ACS puts {name}’s detached share at {detached}%.",
+        "windows": f"For {name} housing, the ACS gives {year} as the median construction year. About {old}% of {name} homes predate 1940.",
+        "gutters": f"About {detached}% of {name} housing units are single-family detached. For {name}, the ACS counts about {total} units overall.",
+        "gutter-guards": f"The ACS counts roughly {total} units in {name}. About {attached}% share the single-family attached classification there.",
+    }
+    for service, (_, _, cost_q, cost, scope_q, scope) in SERVICE_GUIDANCE.items():
+        services[service] = {
+            "answer": details[service],
+            "priceNote": PRICE_NOTES[service],
+            "faqs": [
+                {"q": scope_q.format(town=name), "a": scope.format(town=name)},
+                {"q": cost_q.format(town=name), "a": cost.format(town=name)},
+            ],
+        }
+    return {
+        "answer": f"The ACS estimates {total} housing units in {name}. The median construction year in {name} is {year}. About {detached}% are detached houses. The attached single-family share in {name} is {attached}%. The total for {name} carries a margin of error of {h['units_moe']:,} units.",
+        "riskLead": "",
+        "localSections": [
+            {"heading": f"Weather records near {name}", "paragraphs": [fact["storm"]]},
+            {"heading": f"Permit and property checks in {name}", "paragraphs": [fact["permit"]]},
+        ],
+        "faqs": [{"q": f"Where can I confirm exterior permit requirements in {name}?", "a": fact["permit"]}],
+        "sources": fact["sources"],
+        "services": services,
+    }
+
+
 def build_copy(towns: list[dict], facts: dict) -> dict:
     county_label = {
         "lancaster": "Lancaster County",
@@ -342,6 +383,9 @@ def build_copy(towns: list[dict], facts: dict) -> dict:
     }
     payload = {}
     for town in towns:
+        if town.get("research"):
+            payload[town["slug"]] = build_researched_copy(town)
+            continue
         if town["county"] == "cumberland":
             payload[town["slug"]] = build_cumberland_copy(town)
             continue
@@ -446,7 +490,7 @@ def similarity_report(pages: list[tuple[str, str]]) -> tuple[int, float, str]:
 
 def main() -> None:
     facts = json.loads(FACTS_PATH.read_text())
-    towns = LANCASTER + LANCASTER_REST + CHESTER + DELAWARE + YORK + CUMBERLAND
+    towns = LANCASTER + LANCASTER_REST + CHESTER + DELAWARE + YORK + CUMBERLAND + DAUPHIN
     copy = build_copy(towns, facts)
     shared12, score, pair = similarity_report(article_texts(towns))
     print(f"shared12={shared12} jaccard={score:.4f} {pair}")

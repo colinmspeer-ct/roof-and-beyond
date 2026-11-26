@@ -18,13 +18,13 @@ export const servicePages: Record<ServiceSlug, ServicePage> = {
     slug: "roofing",
     label: "Roofing",
     nav: "Roofing",
-    metaTitle: "House roofing in Lancaster, Chester, Delaware, York, and Cumberland counties",
+    metaTitle: "House roofing in Lancaster, Chester, Delaware, York, Cumberland, and Dauphin counties",
     metaDescription:
-      "Full roof replacements for houses across five Pennsylvania counties, with ventilation, decking, and edge metal called out in the written estimate.",
+      "Full roof replacements for houses across six Pennsylvania counties, with ventilation, decking, and edge metal called out in the written estimate.",
     h1: "A new roof starts with the roof that is already there",
     lede: "Roofing, on this site, means a full covering: the field, the edges, the penetrations, and the way the attic breathes. It is a different conversation from a leak repair.",
     paragraphs: [
-      "Houses in these five counties do not share one roof. Lancaster city rows, Main Line slate, York split-levels, and farmhouses on open ground each shed water differently. A replacement is priced from the slope in front of the crew, including whether the deck is boards or panels and whether the soffit can feed a ridge vent.",
+      "Houses in these six counties do not share one roof. Lancaster city rows, Main Line slate, York split-levels, and farmhouses on open ground each shed water differently. A replacement is priced from the slope in front of the crew, including whether the deck is boards or panels and whether the soffit can feed a ridge vent.",
       "Asphalt is the common covering on later houses. Metal shows up on farmhouses and some porches. Older slate still sits on parts of the Main Line and on some borough streets. Those are different materials. The estimate names the covering proposed for that house.",
       "Edge metal, chimney flashing, and pipe boots are part of a roof, not extras discovered after tear-off, when they are visible at the visit. If a valley has been coated over and over, the deck under it is inspected before the new field goes down. Closed soffits are not paired with a vented ridge that has no intake.",
       "Storm photos can document what a slope looks like after wind or hail. They do not decide whether an insurer pays a claim. This page does not state a warranty.",
@@ -54,7 +54,7 @@ export const servicePages: Record<ServiceSlug, ServicePage> = {
     slug: "roof-repair",
     label: "Roof repair",
     nav: "Roof repair",
-    metaTitle: "Roof leak repair for houses in five Pennsylvania counties",
+    metaTitle: "Roof leak repair for houses in six Pennsylvania counties",
     metaDescription:
       "Localized roof repairs for flashing, pipe boots, and damaged courses, with a clear line between a patch and a full replacement.",
     h1: "A leak has an address on the roof, not just a stain on the ceiling",
@@ -90,7 +90,7 @@ export const servicePages: Record<ServiceSlug, ServicePage> = {
     slug: "siding",
     label: "Siding",
     nav: "Siding",
-    metaTitle: "House siding repair and replacement in five Pennsylvania counties",
+    metaTitle: "House siding repair and replacement in six Pennsylvania counties",
     metaDescription:
       "Siding work for vinyl, wood, and fiber cement, with masonry left as masonry unless the estimate says otherwise.",
     h1: "Wall cladding only works if the water in front of it is solved",
@@ -162,7 +162,7 @@ export const servicePages: Record<ServiceSlug, ServicePage> = {
     slug: "gutters",
     label: "Gutters",
     nav: "Gutters",
-    metaTitle: "Gutters and downspouts for houses in five Pennsylvania counties",
+    metaTitle: "Gutters and downspouts for houses in six Pennsylvania counties",
     metaDescription:
       "Gutter replacement and repair focused on pitch, outlets, and where the downspout actually discharges.",
     h1: "A gutter is doing its job only if the water leaves the foundation",

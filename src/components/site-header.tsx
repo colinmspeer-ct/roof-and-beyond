@@ -16,7 +16,7 @@ export function TopBar() {
           <span className="truncate">
             <span className="sm:hidden">Five Pennsylvania counties</span>
             <span className="hidden sm:inline">
-              Serving houses in Lancaster, Chester, Delaware, York &amp; Cumberland counties, PA
+              Serving houses in Lancaster, Chester, Delaware, York, Cumberland &amp; Dauphin counties, PA
             </span>
           </span>
         </p>
@@ -40,11 +40,12 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-2.5">
         <Link href="/" className="shrink-0" aria-label={`${brand.dba} home`}>
           <img
-            src="/brand/rb-combined-logo.svg"
+            src="/brand/rb-combined-logo-on-white-600.png"
+            srcSet="/brand/rb-combined-logo-on-white-600.png 600w, /brand/rb-combined-logo-on-white.png 4327w"
+            sizes="(min-width: 640px) 189px, 150px"
             alt="Roof & Beyond Home Solutions"
-            width={260}
-            height={50}
-            loading="lazy"
+            width={600}
+            height={152}
             className="h-[38px] w-auto sm:h-12"
           />
         </Link>

@@ -78,6 +78,21 @@ export const photos = {
     "gutter-guards-fall-maple", 1280, 720,
     "Maple leaves rest on a guard along the roof edge. The gutter guard screen covers the trough beneath the leaves.",
   ),
+  street: file("borough-street-mixed-homes", 1120, 630, "A line of houses with different roof heights faces a borough street."),
+  ladder: file("gutter-installation-worker-ladder", 1280, 720, "An installer on a ladder works along a gutter at the eave."),
+  overflow: file("gutter-overflow-heavy-rain", 1280, 720, "Rainwater pours over a gutter lip during a downpour."),
+  aerial: file("neighborhood-aerial-new-roof", 1120, 630, "An overhead view shows several roof shapes and the yards between them."),
+  inspection: file("roof-inspection-harnessed-roofer", 1280, 720, "A harnessed worker inspects a sloped roof."),
+  metal: file("roof-metal-cumberland-limestone-farmhouse", 1280, 720, "A metal roof covers a stone farmhouse."),
+  cape: file("roof-replacement-brick-cape-cod", 1120, 630, "A brick Cape Cod has a shingle roof above its front facade."),
+  rows: file("roof-replacement-harrisburg-brick-rowhomes", 1280, 720, "Attached brick rowhouses sit under closely spaced roof edges."),
+  suburban: file("roof-replacement-suburban-colonial", 1280, 720, "A colonial house has a broad shingle roof and several exterior openings."),
+  ranch: file("roof-replacement-york-brick-ranch", 1280, 720, "A low roof extends across the front of a brick ranch."),
+  winter: file("roof-winter-farmhouse-snow", 1280, 720, "Snow covers a farmhouse roof and the ground around it."),
+  victorian: file("siding-victorian-borough-home", 1200, 675, "A Victorian-style house has decorative trim and siding along its exterior."),
+  tarp: file("storm-damage-emergency-tarp", 1280, 720, "A tarp covers a damaged area on a roof."),
+  tree: file("storm-damage-tree-on-roof", 1280, 720, "A fallen tree rests against a damaged roof."),
+  twinWindows: file("window-siding-brick-twin", 1280, 720, "Windows and siding sit above brickwork on attached homes."),
 } as const;
 
 export const servicePhoto: Record<ServiceSlug, Photo> = {
@@ -104,25 +119,30 @@ export const countyPhoto: Record<Town["county"], Photo> = {
   delaware: photos.twins,
   york: photos.splitLevel,
   cumberland: photos.farmhouse,
+  dauphin: photos.rows,
 };
 
-const exteriorPhotos = [
-  photos.home, photos.farmhouse, photos.brickColonial, photos.twins,
-  photos.splitLevel,
-];
+const boroughPhotos = [photos.rows, photos.victorian, photos.street, photos.twinWindows, photos.cape];
+const townshipPhotos = [photos.metal, photos.ranch, photos.winter, photos.suburban, photos.aerial];
 
 const localServicePhotos: Record<ServiceSlug, Photo[]> = {
-  roofing: [photos.brickColonial, photos.farmhouse, photos.crew, photos.tearOff, photos.home],
-  "roof-repair": [photos.flashing, photos.iceDam, photos.storm, photos.tearOff, photos.farmhouse],
-  siding: [photos.twins, photos.vinyl, photos.splitLevel, photos.home, photos.brickRanch],
-  windows: [photos.stoneOpening, photos.brickRanch, photos.home, photos.brickColonial, photos.twins],
-  gutters: [photos.seamless, photos.iceDam, photos.guards, photos.home, photos.farmhouse],
-  "gutter-guards": [photos.guards, photos.seamless, photos.home, photos.iceDam, photos.brickColonial],
+  roofing: [photos.brickColonial, photos.inspection, photos.crew, photos.tearOff, photos.aerial],
+  "roof-repair": [photos.flashing, photos.tree, photos.tarp, photos.storm, photos.iceDam],
+  siding: [photos.twins, photos.vinyl, photos.victorian, photos.splitLevel, photos.twinWindows],
+  windows: [photos.stoneOpening, photos.brickRanch, photos.twinWindows, photos.cape, photos.ranch],
+  gutters: [photos.seamless, photos.overflow, photos.ladder, photos.winter, photos.iceDam],
+  "gutter-guards": [photos.guards, photos.ladder, photos.overflow, photos.seamless, photos.winter],
 };
 
-export function townPhoto(town: Town, service?: ServiceSlug): Photo {
-  const pool = service ? localServicePhotos[service] : exteriorPhotos;
-  return pool[town.photoIndex];
+export function townPhotos(town: Town, service?: ServiceSlug): Photo[] {
+  const residential = town.kind === "township" ? townshipPhotos : boroughPhotos;
+  const pool = service ? localServicePhotos[service] : residential;
+  const keyword = service ? serviceKeyword[service].h1.toLowerCase() : "roofing and exterior work";
+  const selection = [0, 1, 2].map((offset) => pool[(town.photoIndex + offset) % pool.length]);
+  return selection.map((photo) => ({
+    ...photo,
+    alt: `${photo.alt.split(". ")[0].replace(/\.$/, "")}. Illustrative example for ${keyword} in ${town.name}.`,
+  }));
 }
 
 /** Short card copy for service tiles (outside the unique-content article). */

@@ -23,7 +23,7 @@ export function generateStaticParams() {
 
 export const dynamicParams = false;
 
-const AREA = "Lancaster, Chester, Delaware, York & Cumberland Counties, PA";
+const AREA = "Lancaster, Chester, Delaware, York, Cumberland & Dauphin Counties, PA";
 
 export async function generateMetadata({
   params,
@@ -75,7 +75,7 @@ export default async function ServicePage({
           serviceType: page.label,
           url: `${brand.url}/exterior/${page.slug}/`,
           description: page.metaDescription,
-          areaName: "Lancaster, Chester, Delaware, York, and Cumberland counties, Pennsylvania",
+          areaName: "Lancaster, Chester, Delaware, York, Cumberland, and Dauphin counties, Pennsylvania",
         })}
       />
       <PageHero
@@ -179,7 +179,7 @@ export default async function ServicePage({
         <div className="mx-auto max-w-7xl px-4 py-16">
           <SectionHeading
             eyebrow="Where we work"
-            title={`${page.label} across five Pennsylvania counties`}
+            title={`${page.label} across six Pennsylvania counties`}
             intro="Each county page lists the towns we serve. Town pages show local housing figures and explain the scope of each service."
           />
           <div className="mt-10">

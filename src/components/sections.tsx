@@ -11,11 +11,13 @@ export function ServiceCards({
   blurbFor = (slug) => serviceBlurb[slug],
   exclude,
   linkLabel = "Explore",
+  showPhotos = true,
 }: {
   hrefFor?: (slug: ServiceSlug) => string;
   blurbFor?: (slug: ServiceSlug) => string;
   exclude?: ServiceSlug;
   linkLabel?: string;
+  showPhotos?: boolean;
 }) {
   const list = serviceOrder.filter((slug) => slug !== exclude);
   return (
@@ -28,15 +30,15 @@ export function ServiceCards({
               href={hrefFor(slug)}
               className="group flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-white shadow-card transition hover:-translate-y-0.5 hover:shadow-lift"
             >
-              <div className="relative aspect-[16/10] overflow-hidden bg-paper">
+              {showPhotos && <div className="relative aspect-[16/10] overflow-hidden bg-paper">
                 <Picture
                   photo={servicePhoto[slug]}
                   sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw"
                   className="absolute inset-0"
                   imgClassName={`transition duration-500 group-hover:scale-105 ${slug === "gutter-guards" ? "object-[30%_80%]" : ""}`}
                 />
-              </div>
-              <p className="px-5 pt-2 text-xs text-muted">Illustrative photo</p>
+                <p className="absolute bottom-2 left-2 rounded bg-navy-deep/85 px-2 py-1 text-xs text-white">Illustrative photo</p>
+              </div>}
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="text-xl text-navy">{page.label}</h3>
                 <p className="mt-2 flex-1 text-[15px] leading-6 text-muted">{blurbFor(slug)}</p>
@@ -82,6 +84,7 @@ const countyTagline: Record<string, string> = {
   delaware: "The western slice of the county around the Media county seat.",
   york: "The city, its ring of townships, and the boroughs out toward the river.",
   cumberland: "West Shore boroughs, Carlisle, and townships across the Cumberland Valley.",
+  dauphin: "Harrisburg, Hershey, and boroughs up the Susquehanna.",
 };
 
 export function CountyCards({ current }: { current?: string }) {

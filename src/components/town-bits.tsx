@@ -13,6 +13,7 @@ const areaCodes: Record<Town["county"], string> = {
   lancaster: "717 / 223",
   york: "717 / 223",
   cumberland: "717 / 223",
+  dauphin: "717 / 223",
   chester: "610 / 484",
   delaware: "610 / 484",
 };
@@ -21,7 +22,7 @@ export function LocalDetails({ town }: { town: Town }) {
   const rows: [string, React.ReactNode][] = [
     ["County", <Link key="c" href={countyPath(town.countySlug)} className="font-semibold text-navy underline underline-offset-4">{town.countyName}</Link>],
     ["Type", town.kind.charAt(0).toUpperCase() + town.kind.slice(1)],
-    [town.county === "cumberland" ? "ZIP areas" : "ZIP codes", town.zips.length ? town.zips.join(", ") : "n/a"],
+    [["cumberland", "dauphin"].includes(town.county) ? "ZIP areas" : "ZIP codes", town.zips.length ? town.zips.join(", ") : "n/a"],
     ["Area codes", areaCodes[town.county]],
   ];
   return (
@@ -70,7 +71,11 @@ export function Sources({ sources }: { sources: string[] }) {
       </summary>
       <ul className="mt-3 list-disc space-y-2 pl-5">
         {sources.map((source) => (
-          <li key={source.slice(0, 48)}>{source}</li>
+          <li key={source}>
+            {source.startsWith("https://") ? (
+              <a href={source} className="break-all underline underline-offset-2">{source}</a>
+            ) : source}
+          </li>
         ))}
       </ul>
     </details>

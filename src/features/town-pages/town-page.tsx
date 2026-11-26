@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { EstimateSection, QuickEstimate } from "@/components/estimate-card";
+import { LocalGallery } from "@/components/local-gallery";
 import { FactKey } from "@/components/fact-key";
 import { FaqList } from "@/components/faq-list";
 import { JsonLd } from "@/components/json-ld";
@@ -12,7 +13,7 @@ import { PillLinks, ServiceCards } from "@/components/sections";
 import { CallCard, LocalDetails, Sources, shortKind } from "@/components/town-bits";
 import { TrustSignals } from "@/components/trust-signals";
 import { brand, socialImage } from "@/content/brand";
-import { townPhoto } from "@/content/media";
+import { townPhotos } from "@/content/media";
 import {
   getCounty,
   getTown,
@@ -73,6 +74,7 @@ export default async function TownPage({
     { name: town.countyName, path: `/where-we-work/${town.countySlug}/` },
     { name: town.name, path: townPath(town) },
   ];
+  const [hero, ...gallery] = townPhotos(town);
   const nearby = neighborTowns(town);
   const sameCounty = townsInCounty(town.countySlug).filter(
     (item) => item.slug !== town.slug && !town.neighbors.includes(item.slug),
@@ -82,7 +84,7 @@ export default async function TownPage({
     <>
       <h2>Housing and exterior work in {town.name}</h2>
       <p>{town.answer}</p>
-      <p>{town.riskLead}</p>
+      {town.riskLead && <p>{town.riskLead}</p>}
     </>
   );
 
@@ -101,7 +103,7 @@ export default async function TownPage({
         })}
       />
       <PageHero
-        photo={townPhoto(town)}
+        photo={hero}
         crumbs={crumbs}
         eyebrow={`${town.countyName} · ${shortKind(town.kind)}${town.zips.length ? ` · ${town.zips.join(", ")}` : ""}`}
         title={
@@ -109,7 +111,7 @@ export default async function TownPage({
             Roofing, siding &amp; gutters in <span className="text-orange">{town.name}, PA</span>
           </>
         }
-        sub={`Roofing, roof repair, siding, windows, gutters, and gutter guards for houses in ${town.name}, ${town.countyName}. You get the scope in writing before any work is scheduled.`}
+        sub={town.researched ? town.paragraphs[0].split(". ")[0] + "." : `Roofing, roof repair, siding, windows, gutters, and gutter guards for houses in ${town.name}, ${town.countyName}. You get the scope in writing before any work is scheduled.`}
         actions={<HeroActions phoneDisplay={brand.phoneDisplay} phoneTel={brand.phoneTel} />}
         checks={["Free written estimate", `PA HIC #${brand.hic}`, "Houses only"]}
         aside={<QuickEstimate title={`Free estimate in ${town.name}`} />}
@@ -123,10 +125,10 @@ export default async function TownPage({
             {town.paragraphs.map((paragraph) => (
               <p key={paragraph.slice(0, 60)}>{paragraph}</p>
             ))}
-            {town.county === "cumberland" ? housing : null}
+            {town.county === "cumberland" || town.researched ? housing : null}
           </article>
           <div className="prose-rb mt-10">
-            {town.county !== "cumberland" ? housing : null}
+            {town.county !== "cumberland" && !town.researched ? housing : null}
             {town.localSections.map((section) => (
               <section key={section.heading}>
                 <h2>{section.heading}</h2>
@@ -148,6 +150,7 @@ export default async function TownPage({
         </aside>
       </div>
 
+      <LocalGallery photos={gallery} />
       <ReviewsPlaceholder context={town.slug} />
 
       <section className="bg-paper">
@@ -159,6 +162,7 @@ export default async function TownPage({
           />
           <div className="mt-10">
             <ServiceCards
+              showPhotos={false}
               hrefFor={(slug) => townServicePath(town, slug)}
             />
           </div>

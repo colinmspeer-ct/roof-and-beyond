@@ -13,9 +13,9 @@ import { breadcrumbNode } from "@/lib/schema";
 import { shortKind } from "@/components/town-bits";
 
 export const metadata: Metadata = {
-  title: "Roofers Serving Lancaster, Chester, Delaware, York & Cumberland Counties | Service Area",
+  title: "Roofers Serving Lancaster, Chester, Delaware, York, Cumberland & Dauphin Counties | Service Area",
   description:
-    "Find roofing and exterior services by town in Lancaster, Chester, Delaware, York, and Cumberland counties, Pennsylvania.",
+    "Find roofing and exterior services by town in Lancaster, Chester, Delaware, York, Cumberland, and Dauphin counties, Pennsylvania.",
   alternates: { canonical: "/where-we-work/" },
 };
 
@@ -36,7 +36,7 @@ export default function WhereWeWorkPage() {
         eyebrow={`${total} communities · ${counties.length} counties`}
         title={
           <>
-            Where we work: <span className="text-orange">Lancaster, Chester, Delaware, York &amp; Cumberland counties</span>
+            Where we work: <span className="text-orange">Lancaster, Chester, Delaware, York, Cumberland &amp; Dauphin counties</span>
           </>
         }
         sub="Find your county, then your town. Every town page links roofing, roof repair, siding, windows, gutters, and gutter guards for houses there."
@@ -47,7 +47,7 @@ export default function WhereWeWorkPage() {
         <article data-unique="true" className="prose-rb max-w-3xl">
           <h2>Communities, not a vague service area</h2>
           <p>
-            Find towns across five Pennsylvania counties, from Media and the Main
+            Find towns across six Pennsylvania counties, from Media and the Main
             Line to Lancaster, York, and the Cumberland Valley. Cumberland has
             pages for all 33 municipalities, plus Boiling Springs and Enola.
           </p>

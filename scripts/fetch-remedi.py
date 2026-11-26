@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import html
 import re
+import sys
 import time
 import urllib.request
 from html.parser import HTMLParser
@@ -49,6 +50,10 @@ def norm(text: str) -> str:
 
 def main() -> None:
     CACHE.mkdir(parents=True, exist_ok=True)
+    cache_files = [CACHE / "remedi-sentences.txt", CACHE / "remedi-8grams.txt"]
+    if "--use-cache" in sys.argv and all(path.is_file() and path.stat().st_size for path in cache_files):
+        print("Using the existing overlap comparison corpus")
+        return
     req = urllib.request.Request(SITEMAP, headers=UA)
     xml = urllib.request.urlopen(req, timeout=40).read().decode("utf-8", "replace")
     urls = re.findall(r"<loc>(.*?)</loc>", xml)

@@ -22,6 +22,7 @@ from towns_chester import TOWNS as CHESTER  # noqa: E402
 from towns_delaware import TOWNS as DELAWARE  # noqa: E402
 from towns_york import TOWNS as YORK  # noqa: E402
 from towns_cumberland import TOWNS as CUMBERLAND  # noqa: E402
+from towns_extension import DAUPHIN  # noqa: E402
 
 COUNTIES = {
     "lancaster": {
@@ -40,6 +41,7 @@ COUNTIES = {
         "slug": "york-county-pennsylvania",
         "name": "York County",
     },
+    "dauphin": {"slug": "dauphin-county-pennsylvania", "name": "Dauphin County"},
     "cumberland": {
         "slug": "cumberland-county-pennsylvania",
         "name": "Cumberland County",
@@ -103,6 +105,8 @@ def build_town(raw: dict, copy: dict) -> dict:
     cumberland = raw["county"] == "cumberland"
     meta_place = f"{raw['name']}, {county['name']}" if cumberland else raw["name"]
     town_article = [*paras, copy["answer"], copy["riskLead"]] if cumberland else paras
+    if raw.get("research"):
+        town_article = [*paras, copy["answer"], *(p for section in copy["localSections"] for p in section["paragraphs"])]
     if wc(" ".join(town_article)) < 120:
         raise SystemExit(f"{raw['slug']} town copy is under 120 words")
     hook = raw.get("hook", raw["name"])
@@ -111,6 +115,8 @@ def build_town(raw: dict, copy: dict) -> dict:
         body = paragraphs(raw[key])
         extra = copy["services"][slug]
         service_article = [*body, extra["answer"]] if cumberland else body
+        if raw.get("research"):
+            service_article = [*body, extra["answer"]]
         if wc(" ".join(service_article)) < 80:
             raise SystemExit(f"{raw['slug']} {key} copy is under 80 words")
         services[slug] = {
@@ -125,6 +131,7 @@ def build_town(raw: dict, copy: dict) -> dict:
             "priceNote": extra["priceNote"],
         }
     return {
+        **({"researched": True} if raw.get("research") else {}),
         "slug": raw["slug"],
         "name": raw["name"],
         "county": raw["county"],
@@ -153,9 +160,9 @@ def assign_photo_indices(towns: list[dict]) -> None:
     for town in towns:
         for neighbor in town["neighbors"]:
             adjacency[neighbor].add(town["slug"])
-    assigned = {}
-    remaining = set(adjacency)
-    usage = [0] * 5
+    assigned = {"harrisburg-pa": 0}
+    remaining = set(adjacency) - assigned.keys()
+    usage = [1, 0, 0, 0, 0]
     while remaining:
         def rank(slug: str) -> tuple:
             used = {assigned[adjacent] for adjacent in adjacency[slug] if adjacent in assigned}
@@ -175,7 +182,7 @@ def assign_photo_indices(towns: list[dict]) -> None:
 
 
 def main() -> None:
-    raws = LANCASTER + LANCASTER_REST + CHESTER + DELAWARE + YORK + CUMBERLAND
+    raws = LANCASTER + LANCASTER_REST + CHESTER + DELAWARE + YORK + CUMBERLAND + DAUPHIN
     copy = load_copy()
     missing = [raw["slug"] for raw in raws if raw["slug"] not in copy]
     if missing:
@@ -191,7 +198,7 @@ def main() -> None:
         for n in t["neighbors"]:
             if n not in known:
                 raise SystemExit(f"{t['slug']} missing neighbor {n}")
-    expected = {"lancaster": 28, "chester": 24, "delaware": 9, "cumberland": 35}
+    expected = {"lancaster": 28, "chester": 24, "delaware": 9, "cumberland": 35, "dauphin": 17}
     for key, count in expected.items():
         if len(by_county[key]) != count:
             raise SystemExit(f"{key} has {len(by_county[key])}, expected {count}")
@@ -211,6 +218,8 @@ def main() -> None:
     }
     dest = out_dir / "areas.json"
     dest.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n")
+    for key, slugs in by_county.items():
+        print(f"{key}: {len(slugs)} town pages, {len(slugs) * len(SERVICES)} town × service pages")
     print(
         f"wrote {dest} towns={len(towns)} "
         f"york={len(by_county['york'])} cumberland={len(by_county['cumberland'])} "

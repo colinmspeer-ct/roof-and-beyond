@@ -16279,6 +16279,1998 @@
           ]
         }
       }
+    },
+    "harrisburg-pa": {
+      "answer": "The ACS estimates 24,130 housing units in Harrisburg. The median construction year in Harrisburg is 1947. About 14% are detached houses. The attached single-family share in Harrisburg is 43%. The total for Harrisburg carries a margin of error of 759 units.",
+      "riskLead": "",
+      "localSections": [
+        {
+          "heading": "Weather records near Harrisburg",
+          "paragraphs": [
+            "The county hazard plan names Harrisburg among the communities affected by flash flooding during the remnants of Tropical Storm Debby in August 2024."
+          ]
+        },
+        {
+          "heading": "Permit and property checks in Harrisburg",
+          "paragraphs": [
+            "Harrisburg’s Historic Architectural Review Board reviews projects under the city’s historic preservation rules. Ask the city how the proposed change would be reviewed."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Where can I confirm exterior permit requirements in Harrisburg?",
+          "a": "Harrisburg’s Historic Architectural Review Board reviews projects under the city’s historic preservation rules. Ask the city how the proposed change would be reviewed."
+        }
+      ],
+      "sources": [
+        "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204332800",
+        "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+        "https://www.dauphincounty.gov/about-the-county/municipalities",
+        "https://www.dauphincounty.gov/docs/default-source/public-safety/hazard-mitigation-plan.pdf",
+        "https://www.harrisburgpa.gov/government/boards_commissions/architectural_review_board.php"
+      ],
+      "services": {
+        "roofing": {
+          "answer": "The ACS median year built in Harrisburg is 1947. That survey counts about 24,130 housing units across Harrisburg.",
+          "priceNote": "Published band, not a local bid. Jack Gray, RRO, Pennsylvania Roof Replacement Cost Guide (Roof Observations, updated January 11, 2026) puts architectural asphalt near $7.10 per square foot installed on a simple 6/12 pitch, about $12,070 for 1,700 square feet of roof, including that table's tear-off allowance. Three-tab asphalt is near $6.45 per square foot. The guide says complexity can add as much as 30 percent. Angi, Philadelphia shingle costs, updated May 26, 2026, shows project totals about $7,695 to $24,624, typical near $10,773. Slate on that Pennsylvania table starts near $24 per square foot. None of these figures is a Roof & Beyond price.",
+          "faqs": [
+            {
+              "q": "Can I tell how old a roof is from Harrisburg housing figures?",
+              "a": "Look for an installation record for your Harrisburg house. The Census dates the structure itself."
+            },
+            {
+              "q": "For a Harrisburg reroof, what changes the estimate?",
+              "a": "Roof area, the number of layers to remove, and any decking repairs shape the estimate for a Harrisburg house."
+            }
+          ]
+        },
+        "roof-repair": {
+          "answer": "About 43% of Harrisburg housing dates to 1939 or earlier. The Harrisburg median is 1947 for building age.",
+          "priceNote": "A repair is not a percentage of a replacement. The January 11, 2026 Pennsylvania guide prices full roofs (about $6.45 per square foot for 3-tab and about $7.10 for architectural asphalt on a simple 6/12), not one number for a flashing repair. If the field is done, that replacement band is the published context. The visit decides which scope this house is.",
+          "faqs": [
+            {
+              "q": "Where should I look first for a leak in Harrisburg?",
+              "a": "Photograph where the stain appears inside your Harrisburg home and note whether it shows up during wind-driven rain."
+            },
+            {
+              "q": "What affects roof repair cost in Harrisburg?",
+              "a": "For roof repair in Harrisburg, the scope depends on the entry point and how far water has reached underneath."
+            }
+          ]
+        },
+        "siding": {
+          "answer": "Of about 24,130 homes in Harrisburg, about 43% are single-family attached. The ACS puts Harrisburg’s detached share at 14%.",
+          "priceNote": "Angi, vinyl siding in Philadelphia, updated February 25, 2026: about $2 to $9 per square foot installed, and a typical project about $6,277 to $16,986. That is a Philadelphia vinyl band. Brick and stone are not in it. It is not a bid for this house.",
+          "faqs": [
+            {
+              "q": "Can I replace one wall of siding in Harrisburg?",
+              "a": "Ask whether the sound siding at your Harrisburg house can stay and how the installer will finish the adjoining corners."
+            },
+            {
+              "q": "What affects siding cost in Harrisburg?",
+              "a": "The wall area at a Harrisburg home is only part of the scope. Corner trim and repairs to the wall beneath also matter."
+            }
+          ]
+        },
+        "windows": {
+          "answer": "For Harrisburg housing, the ACS gives 1947 as the median construction year. About 43% of Harrisburg homes predate 1940.",
+          "priceNote": "Modernize, Window Replacement Cost in Pennsylvania, updated August 27, 2026: about $1,028 per window installed as a statewide average. The same guide's city table only runs from about $1,019 to $1,038, and it lists both Lancaster and York at $1,028, so it does not show a meaningful local discount. Count the openings on this house.",
+          "faqs": [
+            {
+              "q": "Does every window in my Harrisburg house need the same installation?",
+              "a": "A sound frame may take an insert at your Harrisburg house. A deteriorated sill may call for a full-frame scope."
+            },
+            {
+              "q": "How is window replacement priced in Harrisburg?",
+              "a": "The count, size, and condition of the openings at your Harrisburg house help decide the scope window by window."
+            }
+          ]
+        },
+        "gutters": {
+          "answer": "About 14% of Harrisburg housing units are single-family detached. For Harrisburg, the ACS counts about 24,130 units overall.",
+          "priceNote": "Angi, gutter installation in Philadelphia, updated July 8, 2026: about $5 to $36 per linear foot, aluminum about $7 to $12, and a typical project about $737 to $1,998. Outlet location and fascia condition move a job around inside that band. This is not a local bid.",
+          "faqs": [
+            {
+              "q": "Where should the downspouts at my Harrisburg home go?",
+              "a": "Walk the lot at your Harrisburg home and look for a path that carries runoff clear of the foundation."
+            },
+            {
+              "q": "What changes the cost of gutters in Harrisburg?",
+              "a": "Measure the gutter runs at the Harrisburg house and identify every outlet. Fascia repairs and difficult access add work."
+            }
+          ]
+        },
+        "gutter-guards": {
+          "answer": "The ACS counts roughly 24,130 units in Harrisburg. About 43% share the single-family attached classification there.",
+          "priceNote": "The same Angi Philadelphia gutter guide, updated July 8, 2026, lists gutter guards around $4 to $11 per linear foot. A cover does not mean the gutter never needs a look, and it is the wrong first step when the trough or the fascia has already failed.",
+          "faqs": [
+            {
+              "q": "What should I check before adding gutter guards in Harrisburg?",
+              "a": "Look inside the gutters at your Harrisburg house to see whether needles, leaves, or shingle grit are clogging the outlets."
+            },
+            {
+              "q": "What affects the cost of gutter guards in Harrisburg?",
+              "a": "The length and profile of each gutter on your Harrisburg house affect the fit. Repair loose gutters before covering them."
+            }
+          ]
+        }
+      }
+    },
+    "hershey-pa": {
+      "answer": "The ACS estimates 5,982 housing units in Hershey. The median construction year in Hershey is 1970. About 48% are detached houses. The attached single-family share in Hershey is 15%. The total for Hershey carries a margin of error of 376 units.",
+      "riskLead": "",
+      "localSections": [
+        {
+          "heading": "Weather records near Hershey",
+          "paragraphs": [
+            "NOAA indexes a June 22, 2010 wind event under Hershey. The narrative places widespread damage west of Campbelltown in Derry Township."
+          ]
+        },
+        {
+          "heading": "Permit and property checks in Hershey",
+          "paragraphs": [
+            "For a Hershey parcel in Derry Township, use the township’s building permit page or ask Community Development about the change you plan."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Where can I confirm exterior permit requirements in Hershey?",
+          "a": "For a Hershey parcel in Derry Township, use the township’s building permit page or ask Community Development about the change you plan."
+        }
+      ],
+      "sources": [
+        "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=16000US4234144",
+        "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+        "https://www.dauphincounty.gov/about-the-county/municipalities",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=227803",
+        "https://www.derrytownship.org/permits/derry-township_permits"
+      ],
+      "services": {
+        "roofing": {
+          "answer": "The ACS median year built in Hershey is 1970. That survey counts about 5,982 housing units across Hershey.",
+          "priceNote": "Published band, not a local bid. Jack Gray, RRO, Pennsylvania Roof Replacement Cost Guide (Roof Observations, updated January 11, 2026) puts architectural asphalt near $7.10 per square foot installed on a simple 6/12 pitch, about $12,070 for 1,700 square feet of roof, including that table's tear-off allowance. Three-tab asphalt is near $6.45 per square foot. The guide says complexity can add as much as 30 percent. Angi, Philadelphia shingle costs, updated May 26, 2026, shows project totals about $7,695 to $24,624, typical near $10,773. Slate on that Pennsylvania table starts near $24 per square foot. None of these figures is a Roof & Beyond price.",
+          "faqs": [
+            {
+              "q": "Can I tell how old a roof is from Hershey housing figures?",
+              "a": "Look for an installation record for your Hershey house. The Census dates the structure itself."
+            },
+            {
+              "q": "For a Hershey reroof, what changes the estimate?",
+              "a": "Roof area, the number of layers to remove, and any decking repairs shape the estimate for a Hershey house."
+            }
+          ]
+        },
+        "roof-repair": {
+          "answer": "About 10% of Hershey housing dates to 1939 or earlier. The Hershey median is 1970 for building age.",
+          "priceNote": "A repair is not a percentage of a replacement. The January 11, 2026 Pennsylvania guide prices full roofs (about $6.45 per square foot for 3-tab and about $7.10 for architectural asphalt on a simple 6/12), not one number for a flashing repair. If the field is done, that replacement band is the published context. The visit decides which scope this house is.",
+          "faqs": [
+            {
+              "q": "Where should I look first for a leak in Hershey?",
+              "a": "Photograph where the stain appears inside your Hershey home and note whether it shows up during wind-driven rain."
+            },
+            {
+              "q": "What affects roof repair cost in Hershey?",
+              "a": "For roof repair in Hershey, the scope depends on the entry point and how far water has reached underneath."
+            }
+          ]
+        },
+        "siding": {
+          "answer": "Of about 5,982 homes in Hershey, about 15% are single-family attached. The ACS puts Hershey’s detached share at 48%.",
+          "priceNote": "Angi, vinyl siding in Philadelphia, updated February 25, 2026: about $2 to $9 per square foot installed, and a typical project about $6,277 to $16,986. That is a Philadelphia vinyl band. Brick and stone are not in it. It is not a bid for this house.",
+          "faqs": [
+            {
+              "q": "Can I replace one wall of siding in Hershey?",
+              "a": "Ask whether the sound siding at your Hershey house can stay and how the installer will finish the adjoining corners."
+            },
+            {
+              "q": "What affects siding cost in Hershey?",
+              "a": "The wall area at a Hershey home is only part of the scope. Corner trim and repairs to the wall beneath also matter."
+            }
+          ]
+        },
+        "windows": {
+          "answer": "For Hershey housing, the ACS gives 1970 as the median construction year. About 10% of Hershey homes predate 1940.",
+          "priceNote": "Modernize, Window Replacement Cost in Pennsylvania, updated August 27, 2026: about $1,028 per window installed as a statewide average. The same guide's city table only runs from about $1,019 to $1,038, and it lists both Lancaster and York at $1,028, so it does not show a meaningful local discount. Count the openings on this house.",
+          "faqs": [
+            {
+              "q": "Does every window in my Hershey house need the same installation?",
+              "a": "A sound frame may take an insert at your Hershey house. A deteriorated sill may call for a full-frame scope."
+            },
+            {
+              "q": "How is window replacement priced in Hershey?",
+              "a": "The count, size, and condition of the openings at your Hershey house help decide the scope window by window."
+            }
+          ]
+        },
+        "gutters": {
+          "answer": "About 48% of Hershey housing units are single-family detached. For Hershey, the ACS counts about 5,982 units overall.",
+          "priceNote": "Angi, gutter installation in Philadelphia, updated July 8, 2026: about $5 to $36 per linear foot, aluminum about $7 to $12, and a typical project about $737 to $1,998. Outlet location and fascia condition move a job around inside that band. This is not a local bid.",
+          "faqs": [
+            {
+              "q": "Where should the downspouts at my Hershey home go?",
+              "a": "Walk the lot at your Hershey home and look for a path that carries runoff clear of the foundation."
+            },
+            {
+              "q": "What changes the cost of gutters in Hershey?",
+              "a": "Measure the gutter runs at the Hershey house and identify every outlet. Fascia repairs and difficult access add work."
+            }
+          ]
+        },
+        "gutter-guards": {
+          "answer": "The ACS counts roughly 5,982 units in Hershey. About 15% share the single-family attached classification there.",
+          "priceNote": "The same Angi Philadelphia gutter guide, updated July 8, 2026, lists gutter guards around $4 to $11 per linear foot. A cover does not mean the gutter never needs a look, and it is the wrong first step when the trough or the fascia has already failed.",
+          "faqs": [
+            {
+              "q": "What should I check before adding gutter guards in Hershey?",
+              "a": "Look inside the gutters at your Hershey house to see whether needles, leaves, or shingle grit are clogging the outlets."
+            },
+            {
+              "q": "What affects the cost of gutter guards in Hershey?",
+              "a": "The length and profile of each gutter on your Hershey house affect the fit. Repair loose gutters before covering them."
+            }
+          ]
+        }
+      }
+    },
+    "hummelstown-pa": {
+      "answer": "The ACS estimates 2,308 housing units in Hummelstown. The median construction year in Hummelstown is 1965. About 56% are detached houses. The attached single-family share in Hummelstown is 7%. The total for Hummelstown carries a margin of error of 161 units.",
+      "riskLead": "",
+      "localSections": [
+        {
+          "heading": "Weather records near Hummelstown",
+          "paragraphs": [
+            "The county hazard plan lists heavy snowfall in Hummelstown on February 12–13, 2024."
+          ]
+        },
+        {
+          "heading": "Permit and property checks in Hummelstown",
+          "paragraphs": [
+            "The borough zoning map shows a historic district. Compare the parcel to the map and confirm review with the borough for the proposed change."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Where can I confirm exterior permit requirements in Hummelstown?",
+          "a": "The borough zoning map shows a historic district. Compare the parcel to the map and confirm review with the borough for the proposed change."
+        }
+      ],
+      "sources": [
+        "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204336232",
+        "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+        "https://www.dauphincounty.gov/about-the-county/municipalities",
+        "https://www.dauphincounty.gov/docs/default-source/public-safety/hazard-mitigation-plan.pdf",
+        "https://hummelstown.gov/vertical/sites/%7B437B2BC8-0AC7-4EFC-83ED-3C811AD97AEB%7D/uploads/Hummelstown_Boro_Zoning_Map_-_Overlay_and_Boundary_Update.pdf"
+      ],
+      "services": {
+        "roofing": {
+          "answer": "The ACS median year built in Hummelstown is 1965. That survey counts about 2,308 housing units across Hummelstown.",
+          "priceNote": "Published band, not a local bid. Jack Gray, RRO, Pennsylvania Roof Replacement Cost Guide (Roof Observations, updated January 11, 2026) puts architectural asphalt near $7.10 per square foot installed on a simple 6/12 pitch, about $12,070 for 1,700 square feet of roof, including that table's tear-off allowance. Three-tab asphalt is near $6.45 per square foot. The guide says complexity can add as much as 30 percent. Angi, Philadelphia shingle costs, updated May 26, 2026, shows project totals about $7,695 to $24,624, typical near $10,773. Slate on that Pennsylvania table starts near $24 per square foot. None of these figures is a Roof & Beyond price.",
+          "faqs": [
+            {
+              "q": "Can I tell how old a roof is from Hummelstown housing figures?",
+              "a": "Look for an installation record for your Hummelstown house. The Census dates the structure itself."
+            },
+            {
+              "q": "For a Hummelstown reroof, what changes the estimate?",
+              "a": "Roof area, the number of layers to remove, and any decking repairs shape the estimate for a Hummelstown house."
+            }
+          ]
+        },
+        "roof-repair": {
+          "answer": "About 17% of Hummelstown housing dates to 1939 or earlier. The Hummelstown median is 1965 for building age.",
+          "priceNote": "A repair is not a percentage of a replacement. The January 11, 2026 Pennsylvania guide prices full roofs (about $6.45 per square foot for 3-tab and about $7.10 for architectural asphalt on a simple 6/12), not one number for a flashing repair. If the field is done, that replacement band is the published context. The visit decides which scope this house is.",
+          "faqs": [
+            {
+              "q": "Where should I look first for a leak in Hummelstown?",
+              "a": "Photograph where the stain appears inside your Hummelstown home and note whether it shows up during wind-driven rain."
+            },
+            {
+              "q": "What affects roof repair cost in Hummelstown?",
+              "a": "For roof repair in Hummelstown, the scope depends on the entry point and how far water has reached underneath."
+            }
+          ]
+        },
+        "siding": {
+          "answer": "Of about 2,308 homes in Hummelstown, about 7% are single-family attached. The ACS puts Hummelstown’s detached share at 56%.",
+          "priceNote": "Angi, vinyl siding in Philadelphia, updated February 25, 2026: about $2 to $9 per square foot installed, and a typical project about $6,277 to $16,986. That is a Philadelphia vinyl band. Brick and stone are not in it. It is not a bid for this house.",
+          "faqs": [
+            {
+              "q": "Can I replace one wall of siding in Hummelstown?",
+              "a": "Ask whether the sound siding at your Hummelstown house can stay and how the installer will finish the adjoining corners."
+            },
+            {
+              "q": "What affects siding cost in Hummelstown?",
+              "a": "The wall area at a Hummelstown home is only part of the scope. Corner trim and repairs to the wall beneath also matter."
+            }
+          ]
+        },
+        "windows": {
+          "answer": "For Hummelstown housing, the ACS gives 1965 as the median construction year. About 17% of Hummelstown homes predate 1940.",
+          "priceNote": "Modernize, Window Replacement Cost in Pennsylvania, updated August 27, 2026: about $1,028 per window installed as a statewide average. The same guide's city table only runs from about $1,019 to $1,038, and it lists both Lancaster and York at $1,028, so it does not show a meaningful local discount. Count the openings on this house.",
+          "faqs": [
+            {
+              "q": "Does every window in my Hummelstown house need the same installation?",
+              "a": "A sound frame may take an insert at your Hummelstown house. A deteriorated sill may call for a full-frame scope."
+            },
+            {
+              "q": "How is window replacement priced in Hummelstown?",
+              "a": "The count, size, and condition of the openings at your Hummelstown house help decide the scope window by window."
+            }
+          ]
+        },
+        "gutters": {
+          "answer": "About 56% of Hummelstown housing units are single-family detached. For Hummelstown, the ACS counts about 2,308 units overall.",
+          "priceNote": "Angi, gutter installation in Philadelphia, updated July 8, 2026: about $5 to $36 per linear foot, aluminum about $7 to $12, and a typical project about $737 to $1,998. Outlet location and fascia condition move a job around inside that band. This is not a local bid.",
+          "faqs": [
+            {
+              "q": "Where should the downspouts at my Hummelstown home go?",
+              "a": "Walk the lot at your Hummelstown home and look for a path that carries runoff clear of the foundation."
+            },
+            {
+              "q": "What changes the cost of gutters in Hummelstown?",
+              "a": "Measure the gutter runs at the Hummelstown house and identify every outlet. Fascia repairs and difficult access add work."
+            }
+          ]
+        },
+        "gutter-guards": {
+          "answer": "The ACS counts roughly 2,308 units in Hummelstown. About 7% share the single-family attached classification there.",
+          "priceNote": "The same Angi Philadelphia gutter guide, updated July 8, 2026, lists gutter guards around $4 to $11 per linear foot. A cover does not mean the gutter never needs a look, and it is the wrong first step when the trough or the fascia has already failed.",
+          "faqs": [
+            {
+              "q": "What should I check before adding gutter guards in Hummelstown?",
+              "a": "Look inside the gutters at your Hummelstown house to see whether needles, leaves, or shingle grit are clogging the outlets."
+            },
+            {
+              "q": "What affects the cost of gutter guards in Hummelstown?",
+              "a": "The length and profile of each gutter on your Hummelstown house affect the fit. Repair loose gutters before covering them."
+            }
+          ]
+        }
+      }
+    },
+    "middletown-pa": {
+      "answer": "The ACS estimates 4,767 housing units in Middletown. The median construction year in Middletown is 1958. About 33% are detached houses. The attached single-family share in Middletown is 21%. The total for Middletown carries a margin of error of 250 units.",
+      "riskLead": "",
+      "localSections": [
+        {
+          "heading": "Weather records near Middletown",
+          "paragraphs": [
+            "The county hazard plan lists Middletown for heavy snow in February 2024 and severe weather from Ida’s remnants in September 2021."
+          ]
+        },
+        {
+          "heading": "Permit and property checks in Middletown",
+          "paragraphs": [
+            "Middletown’s codes fee schedule includes a roofing permit category for roof repair. Confirm the paperwork for the proposed work with the borough."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Where can I confirm exterior permit requirements in Middletown?",
+          "a": "Middletown’s codes fee schedule includes a roofing permit category for roof repair. Confirm the paperwork for the proposed work with the borough."
+        }
+      ],
+      "sources": [
+        "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204349128",
+        "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+        "https://www.dauphincounty.gov/about-the-county/municipalities",
+        "https://www.dauphincounty.gov/docs/default-source/public-safety/hazard-mitigation-plan.pdf",
+        "https://middletownborough.com/government/code-enforcement/fees/"
+      ],
+      "services": {
+        "roofing": {
+          "answer": "The ACS median year built in Middletown is 1958. That survey counts about 4,767 housing units across Middletown.",
+          "priceNote": "Published band, not a local bid. Jack Gray, RRO, Pennsylvania Roof Replacement Cost Guide (Roof Observations, updated January 11, 2026) puts architectural asphalt near $7.10 per square foot installed on a simple 6/12 pitch, about $12,070 for 1,700 square feet of roof, including that table's tear-off allowance. Three-tab asphalt is near $6.45 per square foot. The guide says complexity can add as much as 30 percent. Angi, Philadelphia shingle costs, updated May 26, 2026, shows project totals about $7,695 to $24,624, typical near $10,773. Slate on that Pennsylvania table starts near $24 per square foot. None of these figures is a Roof & Beyond price.",
+          "faqs": [
+            {
+              "q": "Can I tell how old a roof is from Middletown housing figures?",
+              "a": "Look for an installation record for your Middletown house. The Census dates the structure itself."
+            },
+            {
+              "q": "For a Middletown reroof, what changes the estimate?",
+              "a": "Roof area, the number of layers to remove, and any decking repairs shape the estimate for a Middletown house."
+            }
+          ]
+        },
+        "roof-repair": {
+          "answer": "About 27% of Middletown housing dates to 1939 or earlier. The Middletown median is 1958 for building age.",
+          "priceNote": "A repair is not a percentage of a replacement. The January 11, 2026 Pennsylvania guide prices full roofs (about $6.45 per square foot for 3-tab and about $7.10 for architectural asphalt on a simple 6/12), not one number for a flashing repair. If the field is done, that replacement band is the published context. The visit decides which scope this house is.",
+          "faqs": [
+            {
+              "q": "Where should I look first for a leak in Middletown?",
+              "a": "Photograph where the stain appears inside your Middletown home and note whether it shows up during wind-driven rain."
+            },
+            {
+              "q": "What affects roof repair cost in Middletown?",
+              "a": "For roof repair in Middletown, the scope depends on the entry point and how far water has reached underneath."
+            }
+          ]
+        },
+        "siding": {
+          "answer": "Of about 4,767 homes in Middletown, about 21% are single-family attached. The ACS puts Middletown’s detached share at 33%.",
+          "priceNote": "Angi, vinyl siding in Philadelphia, updated February 25, 2026: about $2 to $9 per square foot installed, and a typical project about $6,277 to $16,986. That is a Philadelphia vinyl band. Brick and stone are not in it. It is not a bid for this house.",
+          "faqs": [
+            {
+              "q": "Can I replace one wall of siding in Middletown?",
+              "a": "Ask whether the sound siding at your Middletown house can stay and how the installer will finish the adjoining corners."
+            },
+            {
+              "q": "What affects siding cost in Middletown?",
+              "a": "The wall area at a Middletown home is only part of the scope. Corner trim and repairs to the wall beneath also matter."
+            }
+          ]
+        },
+        "windows": {
+          "answer": "For Middletown housing, the ACS gives 1958 as the median construction year. About 27% of Middletown homes predate 1940.",
+          "priceNote": "Modernize, Window Replacement Cost in Pennsylvania, updated August 27, 2026: about $1,028 per window installed as a statewide average. The same guide's city table only runs from about $1,019 to $1,038, and it lists both Lancaster and York at $1,028, so it does not show a meaningful local discount. Count the openings on this house.",
+          "faqs": [
+            {
+              "q": "Does every window in my Middletown house need the same installation?",
+              "a": "A sound frame may take an insert at your Middletown house. A deteriorated sill may call for a full-frame scope."
+            },
+            {
+              "q": "How is window replacement priced in Middletown?",
+              "a": "The count, size, and condition of the openings at your Middletown house help decide the scope window by window."
+            }
+          ]
+        },
+        "gutters": {
+          "answer": "About 33% of Middletown housing units are single-family detached. For Middletown, the ACS counts about 4,767 units overall.",
+          "priceNote": "Angi, gutter installation in Philadelphia, updated July 8, 2026: about $5 to $36 per linear foot, aluminum about $7 to $12, and a typical project about $737 to $1,998. Outlet location and fascia condition move a job around inside that band. This is not a local bid.",
+          "faqs": [
+            {
+              "q": "Where should the downspouts at my Middletown home go?",
+              "a": "Walk the lot at your Middletown home and look for a path that carries runoff clear of the foundation."
+            },
+            {
+              "q": "What changes the cost of gutters in Middletown?",
+              "a": "Measure the gutter runs at the Middletown house and identify every outlet. Fascia repairs and difficult access add work."
+            }
+          ]
+        },
+        "gutter-guards": {
+          "answer": "The ACS counts roughly 4,767 units in Middletown. About 21% share the single-family attached classification there.",
+          "priceNote": "The same Angi Philadelphia gutter guide, updated July 8, 2026, lists gutter guards around $4 to $11 per linear foot. A cover does not mean the gutter never needs a look, and it is the wrong first step when the trough or the fascia has already failed.",
+          "faqs": [
+            {
+              "q": "What should I check before adding gutter guards in Middletown?",
+              "a": "Look inside the gutters at your Middletown house to see whether needles, leaves, or shingle grit are clogging the outlets."
+            },
+            {
+              "q": "What affects the cost of gutter guards in Middletown?",
+              "a": "The length and profile of each gutter on your Middletown house affect the fit. Repair loose gutters before covering them."
+            }
+          ]
+        }
+      }
+    },
+    "lower-paxton-township-pa": {
+      "answer": "The ACS estimates 22,669 housing units in Lower Paxton Township. The median construction year in Lower Paxton Township is 1980. About 59% are detached houses. The attached single-family share in Lower Paxton Township is 14%. The total for Lower Paxton Township carries a margin of error of 738 units.",
+      "riskLead": "",
+      "localSections": [
+        {
+          "heading": "Weather records near Lower Paxton Township",
+          "paragraphs": [
+            "NOAA recorded hail east of Progress and at the northwest end of Rutherford on September 21, 2024. The entries concern the locations named in the reports."
+          ]
+        },
+        {
+          "heading": "Permit and property checks in Lower Paxton Township",
+          "paragraphs": [
+            "Lower Paxton Township publishes building code and permit contacts. Ask the codes office how it treats the actual reroof scope, including structural repairs."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Where can I confirm exterior permit requirements in Lower Paxton Township?",
+          "a": "Lower Paxton Township publishes building code and permit contacts. Ask the codes office how it treats the actual reroof scope, including structural repairs."
+        }
+      ],
+      "sources": [
+        "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204345056",
+        "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+        "https://www.dauphincounty.gov/about-the-county/municipalities",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1209204",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1209209",
+        "https://lowerpaxton-pa.gov/171/Building-Codes"
+      ],
+      "services": {
+        "roofing": {
+          "answer": "The ACS median year built in Lower Paxton Township is 1980. That survey counts about 22,669 housing units across Lower Paxton Township.",
+          "priceNote": "Published band, not a local bid. Jack Gray, RRO, Pennsylvania Roof Replacement Cost Guide (Roof Observations, updated January 11, 2026) puts architectural asphalt near $7.10 per square foot installed on a simple 6/12 pitch, about $12,070 for 1,700 square feet of roof, including that table's tear-off allowance. Three-tab asphalt is near $6.45 per square foot. The guide says complexity can add as much as 30 percent. Angi, Philadelphia shingle costs, updated May 26, 2026, shows project totals about $7,695 to $24,624, typical near $10,773. Slate on that Pennsylvania table starts near $24 per square foot. None of these figures is a Roof & Beyond price.",
+          "faqs": [
+            {
+              "q": "Can I tell how old a roof is from Lower Paxton Township housing figures?",
+              "a": "Look for an installation record for your Lower Paxton Township house. The Census dates the structure itself."
+            },
+            {
+              "q": "For a Lower Paxton Township reroof, what changes the estimate?",
+              "a": "Roof area, the number of layers to remove, and any decking repairs shape the estimate for a Lower Paxton Township house."
+            }
+          ]
+        },
+        "roof-repair": {
+          "answer": "About 6% of Lower Paxton Township housing dates to 1939 or earlier. The Lower Paxton Township median is 1980 for building age.",
+          "priceNote": "A repair is not a percentage of a replacement. The January 11, 2026 Pennsylvania guide prices full roofs (about $6.45 per square foot for 3-tab and about $7.10 for architectural asphalt on a simple 6/12), not one number for a flashing repair. If the field is done, that replacement band is the published context. The visit decides which scope this house is.",
+          "faqs": [
+            {
+              "q": "Where should I look first for a leak in Lower Paxton Township?",
+              "a": "Photograph where the stain appears inside your Lower Paxton Township home and note whether it shows up during wind-driven rain."
+            },
+            {
+              "q": "What affects roof repair cost in Lower Paxton Township?",
+              "a": "For roof repair in Lower Paxton Township, the scope depends on the entry point and how far water has reached underneath."
+            }
+          ]
+        },
+        "siding": {
+          "answer": "Of about 22,669 homes in Lower Paxton Township, about 14% are single-family attached. The ACS puts Lower Paxton Township’s detached share at 59%.",
+          "priceNote": "Angi, vinyl siding in Philadelphia, updated February 25, 2026: about $2 to $9 per square foot installed, and a typical project about $6,277 to $16,986. That is a Philadelphia vinyl band. Brick and stone are not in it. It is not a bid for this house.",
+          "faqs": [
+            {
+              "q": "Can I replace one wall of siding in Lower Paxton Township?",
+              "a": "Ask whether the sound siding at your Lower Paxton Township house can stay and how the installer will finish the adjoining corners."
+            },
+            {
+              "q": "What affects siding cost in Lower Paxton Township?",
+              "a": "The wall area at a Lower Paxton Township home is only part of the scope. Corner trim and repairs to the wall beneath also matter."
+            }
+          ]
+        },
+        "windows": {
+          "answer": "For Lower Paxton Township housing, the ACS gives 1980 as the median construction year. About 6% of Lower Paxton Township homes predate 1940.",
+          "priceNote": "Modernize, Window Replacement Cost in Pennsylvania, updated August 27, 2026: about $1,028 per window installed as a statewide average. The same guide's city table only runs from about $1,019 to $1,038, and it lists both Lancaster and York at $1,028, so it does not show a meaningful local discount. Count the openings on this house.",
+          "faqs": [
+            {
+              "q": "Does every window in my Lower Paxton Township house need the same installation?",
+              "a": "A sound frame may take an insert at your Lower Paxton Township house. A deteriorated sill may call for a full-frame scope."
+            },
+            {
+              "q": "How is window replacement priced in Lower Paxton Township?",
+              "a": "The count, size, and condition of the openings at your Lower Paxton Township house help decide the scope window by window."
+            }
+          ]
+        },
+        "gutters": {
+          "answer": "About 59% of Lower Paxton Township housing units are single-family detached. For Lower Paxton Township, the ACS counts about 22,669 units overall.",
+          "priceNote": "Angi, gutter installation in Philadelphia, updated July 8, 2026: about $5 to $36 per linear foot, aluminum about $7 to $12, and a typical project about $737 to $1,998. Outlet location and fascia condition move a job around inside that band. This is not a local bid.",
+          "faqs": [
+            {
+              "q": "Where should the downspouts at my Lower Paxton Township home go?",
+              "a": "Walk the lot at your Lower Paxton Township home and look for a path that carries runoff clear of the foundation."
+            },
+            {
+              "q": "What changes the cost of gutters in Lower Paxton Township?",
+              "a": "Measure the gutter runs at the Lower Paxton Township house and identify every outlet. Fascia repairs and difficult access add work."
+            }
+          ]
+        },
+        "gutter-guards": {
+          "answer": "The ACS counts roughly 22,669 units in Lower Paxton Township. About 14% share the single-family attached classification there.",
+          "priceNote": "The same Angi Philadelphia gutter guide, updated July 8, 2026, lists gutter guards around $4 to $11 per linear foot. A cover does not mean the gutter never needs a look, and it is the wrong first step when the trough or the fascia has already failed.",
+          "faqs": [
+            {
+              "q": "What should I check before adding gutter guards in Lower Paxton Township?",
+              "a": "Look inside the gutters at your Lower Paxton Township house to see whether needles, leaves, or shingle grit are clogging the outlets."
+            },
+            {
+              "q": "What affects the cost of gutter guards in Lower Paxton Township?",
+              "a": "The length and profile of each gutter on your Lower Paxton Township house affect the fit. Repair loose gutters before covering them."
+            }
+          ]
+        }
+      }
+    },
+    "susquehanna-township-pa": {
+      "answer": "The ACS estimates 12,529 housing units in Susquehanna Township. The median construction year in Susquehanna Township is 1976. About 51% are detached houses. The attached single-family share in Susquehanna Township is 20%. The total for Susquehanna Township carries a margin of error of 518 units.",
+      "riskLead": "",
+      "localSections": [
+        {
+          "heading": "Weather records near Susquehanna Township",
+          "paragraphs": [
+            "NOAA recorded three-quarter-inch hail east of Progress on September 21, 2024."
+          ]
+        },
+        {
+          "heading": "Permit and property checks in Susquehanna Township",
+          "paragraphs": [
+            "Susquehanna Township accepts residential permit applications digitally or at its municipal office. The township asks applicants to include a site plan."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Where can I confirm exterior permit requirements in Susquehanna Township?",
+          "a": "Susquehanna Township accepts residential permit applications digitally or at its municipal office. The township asks applicants to include a site plan."
+        }
+      ],
+      "sources": [
+        "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204375528",
+        "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+        "https://www.dauphincounty.gov/about-the-county/municipalities",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1209204",
+        "https://www.susquehannatwp.com/208/Permit-Information"
+      ],
+      "services": {
+        "roofing": {
+          "answer": "The ACS median year built in Susquehanna Township is 1976. That survey counts about 12,529 housing units across Susquehanna Township.",
+          "priceNote": "Published band, not a local bid. Jack Gray, RRO, Pennsylvania Roof Replacement Cost Guide (Roof Observations, updated January 11, 2026) puts architectural asphalt near $7.10 per square foot installed on a simple 6/12 pitch, about $12,070 for 1,700 square feet of roof, including that table's tear-off allowance. Three-tab asphalt is near $6.45 per square foot. The guide says complexity can add as much as 30 percent. Angi, Philadelphia shingle costs, updated May 26, 2026, shows project totals about $7,695 to $24,624, typical near $10,773. Slate on that Pennsylvania table starts near $24 per square foot. None of these figures is a Roof & Beyond price.",
+          "faqs": [
+            {
+              "q": "Can I tell how old a roof is from Susquehanna Township housing figures?",
+              "a": "Look for an installation record for your Susquehanna Township house. The Census dates the structure itself."
+            },
+            {
+              "q": "For a Susquehanna Township reroof, what changes the estimate?",
+              "a": "Roof area, the number of layers to remove, and any decking repairs shape the estimate for a Susquehanna Township house."
+            }
+          ]
+        },
+        "roof-repair": {
+          "answer": "About 8% of Susquehanna Township housing dates to 1939 or earlier. The Susquehanna Township median is 1976 for building age.",
+          "priceNote": "A repair is not a percentage of a replacement. The January 11, 2026 Pennsylvania guide prices full roofs (about $6.45 per square foot for 3-tab and about $7.10 for architectural asphalt on a simple 6/12), not one number for a flashing repair. If the field is done, that replacement band is the published context. The visit decides which scope this house is.",
+          "faqs": [
+            {
+              "q": "Where should I look first for a leak in Susquehanna Township?",
+              "a": "Photograph where the stain appears inside your Susquehanna Township home and note whether it shows up during wind-driven rain."
+            },
+            {
+              "q": "What affects roof repair cost in Susquehanna Township?",
+              "a": "For roof repair in Susquehanna Township, the scope depends on the entry point and how far water has reached underneath."
+            }
+          ]
+        },
+        "siding": {
+          "answer": "Of about 12,529 homes in Susquehanna Township, about 20% are single-family attached. The ACS puts Susquehanna Township’s detached share at 51%.",
+          "priceNote": "Angi, vinyl siding in Philadelphia, updated February 25, 2026: about $2 to $9 per square foot installed, and a typical project about $6,277 to $16,986. That is a Philadelphia vinyl band. Brick and stone are not in it. It is not a bid for this house.",
+          "faqs": [
+            {
+              "q": "Can I replace one wall of siding in Susquehanna Township?",
+              "a": "Ask whether the sound siding at your Susquehanna Township house can stay and how the installer will finish the adjoining corners."
+            },
+            {
+              "q": "What affects siding cost in Susquehanna Township?",
+              "a": "The wall area at a Susquehanna Township home is only part of the scope. Corner trim and repairs to the wall beneath also matter."
+            }
+          ]
+        },
+        "windows": {
+          "answer": "For Susquehanna Township housing, the ACS gives 1976 as the median construction year. About 8% of Susquehanna Township homes predate 1940.",
+          "priceNote": "Modernize, Window Replacement Cost in Pennsylvania, updated August 27, 2026: about $1,028 per window installed as a statewide average. The same guide's city table only runs from about $1,019 to $1,038, and it lists both Lancaster and York at $1,028, so it does not show a meaningful local discount. Count the openings on this house.",
+          "faqs": [
+            {
+              "q": "Does every window in my Susquehanna Township house need the same installation?",
+              "a": "A sound frame may take an insert at your Susquehanna Township house. A deteriorated sill may call for a full-frame scope."
+            },
+            {
+              "q": "How is window replacement priced in Susquehanna Township?",
+              "a": "The count, size, and condition of the openings at your Susquehanna Township house help decide the scope window by window."
+            }
+          ]
+        },
+        "gutters": {
+          "answer": "About 51% of Susquehanna Township housing units are single-family detached. For Susquehanna Township, the ACS counts about 12,529 units overall.",
+          "priceNote": "Angi, gutter installation in Philadelphia, updated July 8, 2026: about $5 to $36 per linear foot, aluminum about $7 to $12, and a typical project about $737 to $1,998. Outlet location and fascia condition move a job around inside that band. This is not a local bid.",
+          "faqs": [
+            {
+              "q": "Where should the downspouts at my Susquehanna Township home go?",
+              "a": "Walk the lot at your Susquehanna Township home and look for a path that carries runoff clear of the foundation."
+            },
+            {
+              "q": "What changes the cost of gutters in Susquehanna Township?",
+              "a": "Measure the gutter runs at the Susquehanna Township house and identify every outlet. Fascia repairs and difficult access add work."
+            }
+          ]
+        },
+        "gutter-guards": {
+          "answer": "The ACS counts roughly 12,529 units in Susquehanna Township. About 20% share the single-family attached classification there.",
+          "priceNote": "The same Angi Philadelphia gutter guide, updated July 8, 2026, lists gutter guards around $4 to $11 per linear foot. A cover does not mean the gutter never needs a look, and it is the wrong first step when the trough or the fascia has already failed.",
+          "faqs": [
+            {
+              "q": "What should I check before adding gutter guards in Susquehanna Township?",
+              "a": "Look inside the gutters at your Susquehanna Township house to see whether needles, leaves, or shingle grit are clogging the outlets."
+            },
+            {
+              "q": "What affects the cost of gutter guards in Susquehanna Township?",
+              "a": "The length and profile of each gutter on your Susquehanna Township house affect the fit. Repair loose gutters before covering them."
+            }
+          ]
+        }
+      }
+    },
+    "swatara-township-pa": {
+      "answer": "The ACS estimates 11,055 housing units in Swatara Township. The median construction year in Swatara Township is 1975. About 56% are detached houses. The attached single-family share in Swatara Township is 23%. The total for Swatara Township carries a margin of error of 522 units.",
+      "riskLead": "",
+      "localSections": [
+        {
+          "heading": "Weather records near Swatara Township",
+          "paragraphs": [
+            "NOAA recorded 0.88-inch hail near Rutherford and 0.75-inch hail south of Chambers Hill on September 21, 2024."
+          ]
+        },
+        {
+          "heading": "Permit and property checks in Swatara Township",
+          "paragraphs": [
+            "Swatara’s Building and Codes office distinguishes routine maintenance from alterations and asks homeowners to call if unsure about a building or zoning permit."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Where can I confirm exterior permit requirements in Swatara Township?",
+          "a": "Swatara’s Building and Codes office distinguishes routine maintenance from alterations and asks homeowners to call if unsure about a building or zoning permit."
+        }
+      ],
+      "sources": [
+        "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204375672",
+        "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+        "https://www.dauphincounty.gov/about-the-county/municipalities",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1209209",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1209210",
+        "https://swataratwp.com/codes-permits/"
+      ],
+      "services": {
+        "roofing": {
+          "answer": "The ACS median year built in Swatara Township is 1975. That survey counts about 11,055 housing units across Swatara Township.",
+          "priceNote": "Published band, not a local bid. Jack Gray, RRO, Pennsylvania Roof Replacement Cost Guide (Roof Observations, updated January 11, 2026) puts architectural asphalt near $7.10 per square foot installed on a simple 6/12 pitch, about $12,070 for 1,700 square feet of roof, including that table's tear-off allowance. Three-tab asphalt is near $6.45 per square foot. The guide says complexity can add as much as 30 percent. Angi, Philadelphia shingle costs, updated May 26, 2026, shows project totals about $7,695 to $24,624, typical near $10,773. Slate on that Pennsylvania table starts near $24 per square foot. None of these figures is a Roof & Beyond price.",
+          "faqs": [
+            {
+              "q": "Can I tell how old a roof is from Swatara Township housing figures?",
+              "a": "Look for an installation record for your Swatara Township house. The Census dates the structure itself."
+            },
+            {
+              "q": "For a Swatara Township reroof, what changes the estimate?",
+              "a": "Roof area, the number of layers to remove, and any decking repairs shape the estimate for a Swatara Township house."
+            }
+          ]
+        },
+        "roof-repair": {
+          "answer": "About 9% of Swatara Township housing dates to 1939 or earlier. The Swatara Township median is 1975 for building age.",
+          "priceNote": "A repair is not a percentage of a replacement. The January 11, 2026 Pennsylvania guide prices full roofs (about $6.45 per square foot for 3-tab and about $7.10 for architectural asphalt on a simple 6/12), not one number for a flashing repair. If the field is done, that replacement band is the published context. The visit decides which scope this house is.",
+          "faqs": [
+            {
+              "q": "Where should I look first for a leak in Swatara Township?",
+              "a": "Photograph where the stain appears inside your Swatara Township home and note whether it shows up during wind-driven rain."
+            },
+            {
+              "q": "What affects roof repair cost in Swatara Township?",
+              "a": "For roof repair in Swatara Township, the scope depends on the entry point and how far water has reached underneath."
+            }
+          ]
+        },
+        "siding": {
+          "answer": "Of about 11,055 homes in Swatara Township, about 23% are single-family attached. The ACS puts Swatara Township’s detached share at 56%.",
+          "priceNote": "Angi, vinyl siding in Philadelphia, updated February 25, 2026: about $2 to $9 per square foot installed, and a typical project about $6,277 to $16,986. That is a Philadelphia vinyl band. Brick and stone are not in it. It is not a bid for this house.",
+          "faqs": [
+            {
+              "q": "Can I replace one wall of siding in Swatara Township?",
+              "a": "Ask whether the sound siding at your Swatara Township house can stay and how the installer will finish the adjoining corners."
+            },
+            {
+              "q": "What affects siding cost in Swatara Township?",
+              "a": "The wall area at a Swatara Township home is only part of the scope. Corner trim and repairs to the wall beneath also matter."
+            }
+          ]
+        },
+        "windows": {
+          "answer": "For Swatara Township housing, the ACS gives 1975 as the median construction year. About 9% of Swatara Township homes predate 1940.",
+          "priceNote": "Modernize, Window Replacement Cost in Pennsylvania, updated August 27, 2026: about $1,028 per window installed as a statewide average. The same guide's city table only runs from about $1,019 to $1,038, and it lists both Lancaster and York at $1,028, so it does not show a meaningful local discount. Count the openings on this house.",
+          "faqs": [
+            {
+              "q": "Does every window in my Swatara Township house need the same installation?",
+              "a": "A sound frame may take an insert at your Swatara Township house. A deteriorated sill may call for a full-frame scope."
+            },
+            {
+              "q": "How is window replacement priced in Swatara Township?",
+              "a": "The count, size, and condition of the openings at your Swatara Township house help decide the scope window by window."
+            }
+          ]
+        },
+        "gutters": {
+          "answer": "About 56% of Swatara Township housing units are single-family detached. For Swatara Township, the ACS counts about 11,055 units overall.",
+          "priceNote": "Angi, gutter installation in Philadelphia, updated July 8, 2026: about $5 to $36 per linear foot, aluminum about $7 to $12, and a typical project about $737 to $1,998. Outlet location and fascia condition move a job around inside that band. This is not a local bid.",
+          "faqs": [
+            {
+              "q": "Where should the downspouts at my Swatara Township home go?",
+              "a": "Walk the lot at your Swatara Township home and look for a path that carries runoff clear of the foundation."
+            },
+            {
+              "q": "What changes the cost of gutters in Swatara Township?",
+              "a": "Measure the gutter runs at the Swatara Township house and identify every outlet. Fascia repairs and difficult access add work."
+            }
+          ]
+        },
+        "gutter-guards": {
+          "answer": "The ACS counts roughly 11,055 units in Swatara Township. About 23% share the single-family attached classification there.",
+          "priceNote": "The same Angi Philadelphia gutter guide, updated July 8, 2026, lists gutter guards around $4 to $11 per linear foot. A cover does not mean the gutter never needs a look, and it is the wrong first step when the trough or the fascia has already failed.",
+          "faqs": [
+            {
+              "q": "What should I check before adding gutter guards in Swatara Township?",
+              "a": "Look inside the gutters at your Swatara Township house to see whether needles, leaves, or shingle grit are clogging the outlets."
+            },
+            {
+              "q": "What affects the cost of gutter guards in Swatara Township?",
+              "a": "The length and profile of each gutter on your Swatara Township house affect the fit. Repair loose gutters before covering them."
+            }
+          ]
+        }
+      }
+    },
+    "derry-township-pa": {
+      "answer": "The ACS estimates 10,432 housing units in Derry Township. The median construction year in Derry Township is 1979. About 50% are detached houses. The attached single-family share in Derry Township is 22%. The total for Derry Township carries a margin of error of 343 units.",
+      "riskLead": "",
+      "localSections": [
+        {
+          "heading": "Weather records near Derry Township",
+          "paragraphs": [
+            "NOAA describes June 2010 thunderstorm winds that caused widespread damage west of Campbelltown in Derry Township."
+          ]
+        },
+        {
+          "heading": "Permit and property checks in Derry Township",
+          "paragraphs": [
+            "Derry Township publishes building permit materials. Contact Community Development to describe any structural work included in the scope."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Where can I confirm exterior permit requirements in Derry Township?",
+          "a": "Derry Township publishes building permit materials. Contact Community Development to describe any structural work included in the scope."
+        }
+      ],
+      "sources": [
+        "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204318936",
+        "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+        "https://www.dauphincounty.gov/about-the-county/municipalities",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=227803",
+        "https://www.derrytownship.org/permits/derry-township_permits"
+      ],
+      "services": {
+        "roofing": {
+          "answer": "The ACS median year built in Derry Township is 1979. That survey counts about 10,432 housing units across Derry Township.",
+          "priceNote": "Published band, not a local bid. Jack Gray, RRO, Pennsylvania Roof Replacement Cost Guide (Roof Observations, updated January 11, 2026) puts architectural asphalt near $7.10 per square foot installed on a simple 6/12 pitch, about $12,070 for 1,700 square feet of roof, including that table's tear-off allowance. Three-tab asphalt is near $6.45 per square foot. The guide says complexity can add as much as 30 percent. Angi, Philadelphia shingle costs, updated May 26, 2026, shows project totals about $7,695 to $24,624, typical near $10,773. Slate on that Pennsylvania table starts near $24 per square foot. None of these figures is a Roof & Beyond price.",
+          "faqs": [
+            {
+              "q": "Can I tell how old a roof is from Derry Township housing figures?",
+              "a": "Look for an installation record for your Derry Township house. The Census dates the structure itself."
+            },
+            {
+              "q": "For a Derry Township reroof, what changes the estimate?",
+              "a": "Roof area, the number of layers to remove, and any decking repairs shape the estimate for a Derry Township house."
+            }
+          ]
+        },
+        "roof-repair": {
+          "answer": "About 7% of Derry Township housing dates to 1939 or earlier. The Derry Township median is 1979 for building age.",
+          "priceNote": "A repair is not a percentage of a replacement. The January 11, 2026 Pennsylvania guide prices full roofs (about $6.45 per square foot for 3-tab and about $7.10 for architectural asphalt on a simple 6/12), not one number for a flashing repair. If the field is done, that replacement band is the published context. The visit decides which scope this house is.",
+          "faqs": [
+            {
+              "q": "Where should I look first for a leak in Derry Township?",
+              "a": "Photograph where the stain appears inside your Derry Township home and note whether it shows up during wind-driven rain."
+            },
+            {
+              "q": "What affects roof repair cost in Derry Township?",
+              "a": "For roof repair in Derry Township, the scope depends on the entry point and how far water has reached underneath."
+            }
+          ]
+        },
+        "siding": {
+          "answer": "Of about 10,432 homes in Derry Township, about 22% are single-family attached. The ACS puts Derry Township’s detached share at 50%.",
+          "priceNote": "Angi, vinyl siding in Philadelphia, updated February 25, 2026: about $2 to $9 per square foot installed, and a typical project about $6,277 to $16,986. That is a Philadelphia vinyl band. Brick and stone are not in it. It is not a bid for this house.",
+          "faqs": [
+            {
+              "q": "Can I replace one wall of siding in Derry Township?",
+              "a": "Ask whether the sound siding at your Derry Township house can stay and how the installer will finish the adjoining corners."
+            },
+            {
+              "q": "What affects siding cost in Derry Township?",
+              "a": "The wall area at a Derry Township home is only part of the scope. Corner trim and repairs to the wall beneath also matter."
+            }
+          ]
+        },
+        "windows": {
+          "answer": "For Derry Township housing, the ACS gives 1979 as the median construction year. About 7% of Derry Township homes predate 1940.",
+          "priceNote": "Modernize, Window Replacement Cost in Pennsylvania, updated August 27, 2026: about $1,028 per window installed as a statewide average. The same guide's city table only runs from about $1,019 to $1,038, and it lists both Lancaster and York at $1,028, so it does not show a meaningful local discount. Count the openings on this house.",
+          "faqs": [
+            {
+              "q": "Does every window in my Derry Township house need the same installation?",
+              "a": "A sound frame may take an insert at your Derry Township house. A deteriorated sill may call for a full-frame scope."
+            },
+            {
+              "q": "How is window replacement priced in Derry Township?",
+              "a": "The count, size, and condition of the openings at your Derry Township house help decide the scope window by window."
+            }
+          ]
+        },
+        "gutters": {
+          "answer": "About 50% of Derry Township housing units are single-family detached. For Derry Township, the ACS counts about 10,432 units overall.",
+          "priceNote": "Angi, gutter installation in Philadelphia, updated July 8, 2026: about $5 to $36 per linear foot, aluminum about $7 to $12, and a typical project about $737 to $1,998. Outlet location and fascia condition move a job around inside that band. This is not a local bid.",
+          "faqs": [
+            {
+              "q": "Where should the downspouts at my Derry Township home go?",
+              "a": "Walk the lot at your Derry Township home and look for a path that carries runoff clear of the foundation."
+            },
+            {
+              "q": "What changes the cost of gutters in Derry Township?",
+              "a": "Measure the gutter runs at the Derry Township house and identify every outlet. Fascia repairs and difficult access add work."
+            }
+          ]
+        },
+        "gutter-guards": {
+          "answer": "The ACS counts roughly 10,432 units in Derry Township. About 22% share the single-family attached classification there.",
+          "priceNote": "The same Angi Philadelphia gutter guide, updated July 8, 2026, lists gutter guards around $4 to $11 per linear foot. A cover does not mean the gutter never needs a look, and it is the wrong first step when the trough or the fascia has already failed.",
+          "faqs": [
+            {
+              "q": "What should I check before adding gutter guards in Derry Township?",
+              "a": "Look inside the gutters at your Derry Township house to see whether needles, leaves, or shingle grit are clogging the outlets."
+            },
+            {
+              "q": "What affects the cost of gutter guards in Derry Township?",
+              "a": "The length and profile of each gutter on your Derry Township house affect the fit. Repair loose gutters before covering them."
+            }
+          ]
+        }
+      }
+    },
+    "linglestown-pa": {
+      "answer": "The ACS estimates 2,804 housing units in Linglestown. The median construction year in Linglestown is 1969. About 88% are detached houses. The attached single-family share in Linglestown is 8%. The total for Linglestown carries a margin of error of 328 units.",
+      "riskLead": "",
+      "localSections": [
+        {
+          "heading": "Weather records near Linglestown",
+          "paragraphs": [
+            "The June 26, 2024 wind report east of Skyline View is a regional reference for Linglestown. NOAA describes snapped trees in the reported area."
+          ]
+        },
+        {
+          "heading": "Permit and property checks in Linglestown",
+          "paragraphs": [
+            "Ask Lower Paxton Township’s building codes office about the scope for a Linglestown parcel in the township."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Where can I confirm exterior permit requirements in Linglestown?",
+          "a": "Ask Lower Paxton Township’s building codes office about the scope for a Linglestown parcel in the township."
+        }
+      ],
+      "sources": [
+        "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=16000US4243672",
+        "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+        "https://www.dauphincounty.gov/about-the-county/municipalities",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1193202",
+        "https://lowerpaxton-pa.gov/171/Building-Codes"
+      ],
+      "services": {
+        "roofing": {
+          "answer": "The ACS median year built in Linglestown is 1969. That survey counts about 2,804 housing units across Linglestown.",
+          "priceNote": "Published band, not a local bid. Jack Gray, RRO, Pennsylvania Roof Replacement Cost Guide (Roof Observations, updated January 11, 2026) puts architectural asphalt near $7.10 per square foot installed on a simple 6/12 pitch, about $12,070 for 1,700 square feet of roof, including that table's tear-off allowance. Three-tab asphalt is near $6.45 per square foot. The guide says complexity can add as much as 30 percent. Angi, Philadelphia shingle costs, updated May 26, 2026, shows project totals about $7,695 to $24,624, typical near $10,773. Slate on that Pennsylvania table starts near $24 per square foot. None of these figures is a Roof & Beyond price.",
+          "faqs": [
+            {
+              "q": "Can I tell how old a roof is from Linglestown housing figures?",
+              "a": "Look for an installation record for your Linglestown house. The Census dates the structure itself."
+            },
+            {
+              "q": "For a Linglestown reroof, what changes the estimate?",
+              "a": "Roof area, the number of layers to remove, and any decking repairs shape the estimate for a Linglestown house."
+            }
+          ]
+        },
+        "roof-repair": {
+          "answer": "About 5% of Linglestown housing dates to 1939 or earlier. The Linglestown median is 1969 for building age.",
+          "priceNote": "A repair is not a percentage of a replacement. The January 11, 2026 Pennsylvania guide prices full roofs (about $6.45 per square foot for 3-tab and about $7.10 for architectural asphalt on a simple 6/12), not one number for a flashing repair. If the field is done, that replacement band is the published context. The visit decides which scope this house is.",
+          "faqs": [
+            {
+              "q": "Where should I look first for a leak in Linglestown?",
+              "a": "Photograph where the stain appears inside your Linglestown home and note whether it shows up during wind-driven rain."
+            },
+            {
+              "q": "What affects roof repair cost in Linglestown?",
+              "a": "For roof repair in Linglestown, the scope depends on the entry point and how far water has reached underneath."
+            }
+          ]
+        },
+        "siding": {
+          "answer": "Of about 2,804 homes in Linglestown, about 8% are single-family attached. The ACS puts Linglestown’s detached share at 88%.",
+          "priceNote": "Angi, vinyl siding in Philadelphia, updated February 25, 2026: about $2 to $9 per square foot installed, and a typical project about $6,277 to $16,986. That is a Philadelphia vinyl band. Brick and stone are not in it. It is not a bid for this house.",
+          "faqs": [
+            {
+              "q": "Can I replace one wall of siding in Linglestown?",
+              "a": "Ask whether the sound siding at your Linglestown house can stay and how the installer will finish the adjoining corners."
+            },
+            {
+              "q": "What affects siding cost in Linglestown?",
+              "a": "The wall area at a Linglestown home is only part of the scope. Corner trim and repairs to the wall beneath also matter."
+            }
+          ]
+        },
+        "windows": {
+          "answer": "For Linglestown housing, the ACS gives 1969 as the median construction year. About 5% of Linglestown homes predate 1940.",
+          "priceNote": "Modernize, Window Replacement Cost in Pennsylvania, updated August 27, 2026: about $1,028 per window installed as a statewide average. The same guide's city table only runs from about $1,019 to $1,038, and it lists both Lancaster and York at $1,028, so it does not show a meaningful local discount. Count the openings on this house.",
+          "faqs": [
+            {
+              "q": "Does every window in my Linglestown house need the same installation?",
+              "a": "A sound frame may take an insert at your Linglestown house. A deteriorated sill may call for a full-frame scope."
+            },
+            {
+              "q": "How is window replacement priced in Linglestown?",
+              "a": "The count, size, and condition of the openings at your Linglestown house help decide the scope window by window."
+            }
+          ]
+        },
+        "gutters": {
+          "answer": "About 88% of Linglestown housing units are single-family detached. For Linglestown, the ACS counts about 2,804 units overall.",
+          "priceNote": "Angi, gutter installation in Philadelphia, updated July 8, 2026: about $5 to $36 per linear foot, aluminum about $7 to $12, and a typical project about $737 to $1,998. Outlet location and fascia condition move a job around inside that band. This is not a local bid.",
+          "faqs": [
+            {
+              "q": "Where should the downspouts at my Linglestown home go?",
+              "a": "Walk the lot at your Linglestown home and look for a path that carries runoff clear of the foundation."
+            },
+            {
+              "q": "What changes the cost of gutters in Linglestown?",
+              "a": "Measure the gutter runs at the Linglestown house and identify every outlet. Fascia repairs and difficult access add work."
+            }
+          ]
+        },
+        "gutter-guards": {
+          "answer": "The ACS counts roughly 2,804 units in Linglestown. About 8% share the single-family attached classification there.",
+          "priceNote": "The same Angi Philadelphia gutter guide, updated July 8, 2026, lists gutter guards around $4 to $11 per linear foot. A cover does not mean the gutter never needs a look, and it is the wrong first step when the trough or the fascia has already failed.",
+          "faqs": [
+            {
+              "q": "What should I check before adding gutter guards in Linglestown?",
+              "a": "Look inside the gutters at your Linglestown house to see whether needles, leaves, or shingle grit are clogging the outlets."
+            },
+            {
+              "q": "What affects the cost of gutter guards in Linglestown?",
+              "a": "The length and profile of each gutter on your Linglestown house affect the fit. Repair loose gutters before covering them."
+            }
+          ]
+        }
+      }
+    },
+    "steelton-pa": {
+      "answer": "The ACS estimates 2,629 housing units in Steelton. The median construction year in Steelton is 1949. About 28% are detached houses. The attached single-family share in Steelton is 55%. The total for Steelton carries a margin of error of 292 units.",
+      "riskLead": "",
+      "localSections": [
+        {
+          "heading": "Weather records near Steelton",
+          "paragraphs": [
+            "The county hazard plan lists Steelton in its September 2021 entry for severe weather associated with Ida."
+          ]
+        },
+        {
+          "heading": "Permit and property checks in Steelton",
+          "paragraphs": [
+            "The Steelton Codes Department posts a residential permit application. Ask the borough about the scope and any access that would affect its streets."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Where can I confirm exterior permit requirements in Steelton?",
+          "a": "The Steelton Codes Department posts a residential permit application. Ask the borough about the scope and any access that would affect its streets."
+        }
+      ],
+      "sources": [
+        "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204373888",
+        "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+        "https://www.dauphincounty.gov/about-the-county/municipalities",
+        "https://www.dauphincounty.gov/docs/default-source/public-safety/hazard-mitigation-plan.pdf",
+        "https://www.steeltonpa.com/codes-department/"
+      ],
+      "services": {
+        "roofing": {
+          "answer": "The ACS median year built in Steelton is 1949. That survey counts about 2,629 housing units across Steelton.",
+          "priceNote": "Published band, not a local bid. Jack Gray, RRO, Pennsylvania Roof Replacement Cost Guide (Roof Observations, updated January 11, 2026) puts architectural asphalt near $7.10 per square foot installed on a simple 6/12 pitch, about $12,070 for 1,700 square feet of roof, including that table's tear-off allowance. Three-tab asphalt is near $6.45 per square foot. The guide says complexity can add as much as 30 percent. Angi, Philadelphia shingle costs, updated May 26, 2026, shows project totals about $7,695 to $24,624, typical near $10,773. Slate on that Pennsylvania table starts near $24 per square foot. None of these figures is a Roof & Beyond price.",
+          "faqs": [
+            {
+              "q": "Can I tell how old a roof is from Steelton housing figures?",
+              "a": "Look for an installation record for your Steelton house. The Census dates the structure itself."
+            },
+            {
+              "q": "For a Steelton reroof, what changes the estimate?",
+              "a": "Roof area, the number of layers to remove, and any decking repairs shape the estimate for a Steelton house."
+            }
+          ]
+        },
+        "roof-repair": {
+          "answer": "About 39% of Steelton housing dates to 1939 or earlier. The Steelton median is 1949 for building age.",
+          "priceNote": "A repair is not a percentage of a replacement. The January 11, 2026 Pennsylvania guide prices full roofs (about $6.45 per square foot for 3-tab and about $7.10 for architectural asphalt on a simple 6/12), not one number for a flashing repair. If the field is done, that replacement band is the published context. The visit decides which scope this house is.",
+          "faqs": [
+            {
+              "q": "Where should I look first for a leak in Steelton?",
+              "a": "Photograph where the stain appears inside your Steelton home and note whether it shows up during wind-driven rain."
+            },
+            {
+              "q": "What affects roof repair cost in Steelton?",
+              "a": "For roof repair in Steelton, the scope depends on the entry point and how far water has reached underneath."
+            }
+          ]
+        },
+        "siding": {
+          "answer": "Of about 2,629 homes in Steelton, about 55% are single-family attached. The ACS puts Steelton’s detached share at 28%.",
+          "priceNote": "Angi, vinyl siding in Philadelphia, updated February 25, 2026: about $2 to $9 per square foot installed, and a typical project about $6,277 to $16,986. That is a Philadelphia vinyl band. Brick and stone are not in it. It is not a bid for this house.",
+          "faqs": [
+            {
+              "q": "Can I replace one wall of siding in Steelton?",
+              "a": "Ask whether the sound siding at your Steelton house can stay and how the installer will finish the adjoining corners."
+            },
+            {
+              "q": "What affects siding cost in Steelton?",
+              "a": "The wall area at a Steelton home is only part of the scope. Corner trim and repairs to the wall beneath also matter."
+            }
+          ]
+        },
+        "windows": {
+          "answer": "For Steelton housing, the ACS gives 1949 as the median construction year. About 39% of Steelton homes predate 1940.",
+          "priceNote": "Modernize, Window Replacement Cost in Pennsylvania, updated August 27, 2026: about $1,028 per window installed as a statewide average. The same guide's city table only runs from about $1,019 to $1,038, and it lists both Lancaster and York at $1,028, so it does not show a meaningful local discount. Count the openings on this house.",
+          "faqs": [
+            {
+              "q": "Does every window in my Steelton house need the same installation?",
+              "a": "A sound frame may take an insert at your Steelton house. A deteriorated sill may call for a full-frame scope."
+            },
+            {
+              "q": "How is window replacement priced in Steelton?",
+              "a": "The count, size, and condition of the openings at your Steelton house help decide the scope window by window."
+            }
+          ]
+        },
+        "gutters": {
+          "answer": "About 28% of Steelton housing units are single-family detached. For Steelton, the ACS counts about 2,629 units overall.",
+          "priceNote": "Angi, gutter installation in Philadelphia, updated July 8, 2026: about $5 to $36 per linear foot, aluminum about $7 to $12, and a typical project about $737 to $1,998. Outlet location and fascia condition move a job around inside that band. This is not a local bid.",
+          "faqs": [
+            {
+              "q": "Where should the downspouts at my Steelton home go?",
+              "a": "Walk the lot at your Steelton home and look for a path that carries runoff clear of the foundation."
+            },
+            {
+              "q": "What changes the cost of gutters in Steelton?",
+              "a": "Measure the gutter runs at the Steelton house and identify every outlet. Fascia repairs and difficult access add work."
+            }
+          ]
+        },
+        "gutter-guards": {
+          "answer": "The ACS counts roughly 2,629 units in Steelton. About 55% share the single-family attached classification there.",
+          "priceNote": "The same Angi Philadelphia gutter guide, updated July 8, 2026, lists gutter guards around $4 to $11 per linear foot. A cover does not mean the gutter never needs a look, and it is the wrong first step when the trough or the fascia has already failed.",
+          "faqs": [
+            {
+              "q": "What should I check before adding gutter guards in Steelton?",
+              "a": "Look inside the gutters at your Steelton house to see whether needles, leaves, or shingle grit are clogging the outlets."
+            },
+            {
+              "q": "What affects the cost of gutter guards in Steelton?",
+              "a": "The length and profile of each gutter on your Steelton house affect the fit. Repair loose gutters before covering them."
+            }
+          ]
+        }
+      }
+    },
+    "penbrook-pa": {
+      "answer": "The ACS estimates 1,479 housing units in Penbrook. The median construction year in Penbrook is 1952. About 31% are detached houses. The attached single-family share in Penbrook is 32%. The total for Penbrook carries a margin of error of 198 units.",
+      "riskLead": "",
+      "localSections": [
+        {
+          "heading": "Weather records near Penbrook",
+          "paragraphs": [
+            "The September 2024 hail report east of Progress provides nearby weather context for Penbrook."
+          ]
+        },
+        {
+          "heading": "Permit and property checks in Penbrook",
+          "paragraphs": [
+            "Penbrook accepts permit applications via its Citizen’s Engagement Portal."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Where can I confirm exterior permit requirements in Penbrook?",
+          "a": "Penbrook accepts permit applications via its Citizen’s Engagement Portal."
+        }
+      ],
+      "sources": [
+        "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204358712",
+        "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+        "https://www.dauphincounty.gov/about-the-county/municipalities",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1209204",
+        "https://www.penbrook.org/portal/"
+      ],
+      "services": {
+        "roofing": {
+          "answer": "The ACS median year built in Penbrook is 1952. That survey counts about 1,479 housing units across Penbrook.",
+          "priceNote": "Published band, not a local bid. Jack Gray, RRO, Pennsylvania Roof Replacement Cost Guide (Roof Observations, updated January 11, 2026) puts architectural asphalt near $7.10 per square foot installed on a simple 6/12 pitch, about $12,070 for 1,700 square feet of roof, including that table's tear-off allowance. Three-tab asphalt is near $6.45 per square foot. The guide says complexity can add as much as 30 percent. Angi, Philadelphia shingle costs, updated May 26, 2026, shows project totals about $7,695 to $24,624, typical near $10,773. Slate on that Pennsylvania table starts near $24 per square foot. None of these figures is a Roof & Beyond price.",
+          "faqs": [
+            {
+              "q": "Can I tell how old a roof is from Penbrook housing figures?",
+              "a": "Look for an installation record for your Penbrook house. The Census dates the structure itself."
+            },
+            {
+              "q": "For a Penbrook reroof, what changes the estimate?",
+              "a": "Roof area, the number of layers to remove, and any decking repairs shape the estimate for a Penbrook house."
+            }
+          ]
+        },
+        "roof-repair": {
+          "answer": "About 38% of Penbrook housing dates to 1939 or earlier. The Penbrook median is 1952 for building age.",
+          "priceNote": "A repair is not a percentage of a replacement. The January 11, 2026 Pennsylvania guide prices full roofs (about $6.45 per square foot for 3-tab and about $7.10 for architectural asphalt on a simple 6/12), not one number for a flashing repair. If the field is done, that replacement band is the published context. The visit decides which scope this house is.",
+          "faqs": [
+            {
+              "q": "Where should I look first for a leak in Penbrook?",
+              "a": "Photograph where the stain appears inside your Penbrook home and note whether it shows up during wind-driven rain."
+            },
+            {
+              "q": "What affects roof repair cost in Penbrook?",
+              "a": "For roof repair in Penbrook, the scope depends on the entry point and how far water has reached underneath."
+            }
+          ]
+        },
+        "siding": {
+          "answer": "Of about 1,479 homes in Penbrook, about 32% are single-family attached. The ACS puts Penbrook’s detached share at 31%.",
+          "priceNote": "Angi, vinyl siding in Philadelphia, updated February 25, 2026: about $2 to $9 per square foot installed, and a typical project about $6,277 to $16,986. That is a Philadelphia vinyl band. Brick and stone are not in it. It is not a bid for this house.",
+          "faqs": [
+            {
+              "q": "Can I replace one wall of siding in Penbrook?",
+              "a": "Ask whether the sound siding at your Penbrook house can stay and how the installer will finish the adjoining corners."
+            },
+            {
+              "q": "What affects siding cost in Penbrook?",
+              "a": "The wall area at a Penbrook home is only part of the scope. Corner trim and repairs to the wall beneath also matter."
+            }
+          ]
+        },
+        "windows": {
+          "answer": "For Penbrook housing, the ACS gives 1952 as the median construction year. About 38% of Penbrook homes predate 1940.",
+          "priceNote": "Modernize, Window Replacement Cost in Pennsylvania, updated August 27, 2026: about $1,028 per window installed as a statewide average. The same guide's city table only runs from about $1,019 to $1,038, and it lists both Lancaster and York at $1,028, so it does not show a meaningful local discount. Count the openings on this house.",
+          "faqs": [
+            {
+              "q": "Does every window in my Penbrook house need the same installation?",
+              "a": "A sound frame may take an insert at your Penbrook house. A deteriorated sill may call for a full-frame scope."
+            },
+            {
+              "q": "How is window replacement priced in Penbrook?",
+              "a": "The count, size, and condition of the openings at your Penbrook house help decide the scope window by window."
+            }
+          ]
+        },
+        "gutters": {
+          "answer": "About 31% of Penbrook housing units are single-family detached. For Penbrook, the ACS counts about 1,479 units overall.",
+          "priceNote": "Angi, gutter installation in Philadelphia, updated July 8, 2026: about $5 to $36 per linear foot, aluminum about $7 to $12, and a typical project about $737 to $1,998. Outlet location and fascia condition move a job around inside that band. This is not a local bid.",
+          "faqs": [
+            {
+              "q": "Where should the downspouts at my Penbrook home go?",
+              "a": "Walk the lot at your Penbrook home and look for a path that carries runoff clear of the foundation."
+            },
+            {
+              "q": "What changes the cost of gutters in Penbrook?",
+              "a": "Measure the gutter runs at the Penbrook house and identify every outlet. Fascia repairs and difficult access add work."
+            }
+          ]
+        },
+        "gutter-guards": {
+          "answer": "The ACS counts roughly 1,479 units in Penbrook. About 32% share the single-family attached classification there.",
+          "priceNote": "The same Angi Philadelphia gutter guide, updated July 8, 2026, lists gutter guards around $4 to $11 per linear foot. A cover does not mean the gutter never needs a look, and it is the wrong first step when the trough or the fascia has already failed.",
+          "faqs": [
+            {
+              "q": "What should I check before adding gutter guards in Penbrook?",
+              "a": "Look inside the gutters at your Penbrook house to see whether needles, leaves, or shingle grit are clogging the outlets."
+            },
+            {
+              "q": "What affects the cost of gutter guards in Penbrook?",
+              "a": "The length and profile of each gutter on your Penbrook house affect the fit. Repair loose gutters before covering them."
+            }
+          ]
+        }
+      }
+    },
+    "highspire-pa": {
+      "answer": "The ACS estimates 1,436 housing units in Highspire. The median construction year in Highspire is 1964. About 35% are detached houses. The attached single-family share in Highspire is 25%. The total for Highspire carries a margin of error of 214 units.",
+      "riskLead": "",
+      "localSections": [
+        {
+          "heading": "Weather records near Highspire",
+          "paragraphs": [
+            "NOAA reported downed trees in Highspire during wind events on June 26 and September 21, 2024."
+          ]
+        },
+        {
+          "heading": "Permit and property checks in Highspire",
+          "paragraphs": [
+            "Highspire publishes its building permit process and directs applicants to its Code Enforcement Office to schedule required inspections."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Where can I confirm exterior permit requirements in Highspire?",
+          "a": "Highspire publishes its building permit process and directs applicants to its Code Enforcement Office to schedule required inspections."
+        }
+      ],
+      "sources": [
+        "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204334664",
+        "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+        "https://www.dauphincounty.gov/about-the-county/municipalities",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1193169",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1209239",
+        "https://highspire.gov/permit-process-application/"
+      ],
+      "services": {
+        "roofing": {
+          "answer": "The ACS median year built in Highspire is 1964. That survey counts about 1,436 housing units across Highspire.",
+          "priceNote": "Published band, not a local bid. Jack Gray, RRO, Pennsylvania Roof Replacement Cost Guide (Roof Observations, updated January 11, 2026) puts architectural asphalt near $7.10 per square foot installed on a simple 6/12 pitch, about $12,070 for 1,700 square feet of roof, including that table's tear-off allowance. Three-tab asphalt is near $6.45 per square foot. The guide says complexity can add as much as 30 percent. Angi, Philadelphia shingle costs, updated May 26, 2026, shows project totals about $7,695 to $24,624, typical near $10,773. Slate on that Pennsylvania table starts near $24 per square foot. None of these figures is a Roof & Beyond price.",
+          "faqs": [
+            {
+              "q": "Can I tell how old a roof is from Highspire housing figures?",
+              "a": "Look for an installation record for your Highspire house. The Census dates the structure itself."
+            },
+            {
+              "q": "For a Highspire reroof, what changes the estimate?",
+              "a": "Roof area, the number of layers to remove, and any decking repairs shape the estimate for a Highspire house."
+            }
+          ]
+        },
+        "roof-repair": {
+          "answer": "About 20% of Highspire housing dates to 1939 or earlier. The Highspire median is 1964 for building age.",
+          "priceNote": "A repair is not a percentage of a replacement. The January 11, 2026 Pennsylvania guide prices full roofs (about $6.45 per square foot for 3-tab and about $7.10 for architectural asphalt on a simple 6/12), not one number for a flashing repair. If the field is done, that replacement band is the published context. The visit decides which scope this house is.",
+          "faqs": [
+            {
+              "q": "Where should I look first for a leak in Highspire?",
+              "a": "Photograph where the stain appears inside your Highspire home and note whether it shows up during wind-driven rain."
+            },
+            {
+              "q": "What affects roof repair cost in Highspire?",
+              "a": "For roof repair in Highspire, the scope depends on the entry point and how far water has reached underneath."
+            }
+          ]
+        },
+        "siding": {
+          "answer": "Of about 1,436 homes in Highspire, about 25% are single-family attached. The ACS puts Highspire’s detached share at 35%.",
+          "priceNote": "Angi, vinyl siding in Philadelphia, updated February 25, 2026: about $2 to $9 per square foot installed, and a typical project about $6,277 to $16,986. That is a Philadelphia vinyl band. Brick and stone are not in it. It is not a bid for this house.",
+          "faqs": [
+            {
+              "q": "Can I replace one wall of siding in Highspire?",
+              "a": "Ask whether the sound siding at your Highspire house can stay and how the installer will finish the adjoining corners."
+            },
+            {
+              "q": "What affects siding cost in Highspire?",
+              "a": "The wall area at a Highspire home is only part of the scope. Corner trim and repairs to the wall beneath also matter."
+            }
+          ]
+        },
+        "windows": {
+          "answer": "For Highspire housing, the ACS gives 1964 as the median construction year. About 20% of Highspire homes predate 1940.",
+          "priceNote": "Modernize, Window Replacement Cost in Pennsylvania, updated August 27, 2026: about $1,028 per window installed as a statewide average. The same guide's city table only runs from about $1,019 to $1,038, and it lists both Lancaster and York at $1,028, so it does not show a meaningful local discount. Count the openings on this house.",
+          "faqs": [
+            {
+              "q": "Does every window in my Highspire house need the same installation?",
+              "a": "A sound frame may take an insert at your Highspire house. A deteriorated sill may call for a full-frame scope."
+            },
+            {
+              "q": "How is window replacement priced in Highspire?",
+              "a": "The count, size, and condition of the openings at your Highspire house help decide the scope window by window."
+            }
+          ]
+        },
+        "gutters": {
+          "answer": "About 35% of Highspire housing units are single-family detached. For Highspire, the ACS counts about 1,436 units overall.",
+          "priceNote": "Angi, gutter installation in Philadelphia, updated July 8, 2026: about $5 to $36 per linear foot, aluminum about $7 to $12, and a typical project about $737 to $1,998. Outlet location and fascia condition move a job around inside that band. This is not a local bid.",
+          "faqs": [
+            {
+              "q": "Where should the downspouts at my Highspire home go?",
+              "a": "Walk the lot at your Highspire home and look for a path that carries runoff clear of the foundation."
+            },
+            {
+              "q": "What changes the cost of gutters in Highspire?",
+              "a": "Measure the gutter runs at the Highspire house and identify every outlet. Fascia repairs and difficult access add work."
+            }
+          ]
+        },
+        "gutter-guards": {
+          "answer": "The ACS counts roughly 1,436 units in Highspire. About 25% share the single-family attached classification there.",
+          "priceNote": "The same Angi Philadelphia gutter guide, updated July 8, 2026, lists gutter guards around $4 to $11 per linear foot. A cover does not mean the gutter never needs a look, and it is the wrong first step when the trough or the fascia has already failed.",
+          "faqs": [
+            {
+              "q": "What should I check before adding gutter guards in Highspire?",
+              "a": "Look inside the gutters at your Highspire house to see whether needles, leaves, or shingle grit are clogging the outlets."
+            },
+            {
+              "q": "What affects the cost of gutter guards in Highspire?",
+              "a": "The length and profile of each gutter on your Highspire house affect the fit. Repair loose gutters before covering them."
+            }
+          ]
+        }
+      }
+    },
+    "paxtang-pa": {
+      "answer": "The ACS estimates 712 housing units in Paxtang. The median construction year in Paxtang is 1938. About 66% are detached houses. The attached single-family share in Paxtang is 21%. The total for Paxtang carries a margin of error of 85 units.",
+      "riskLead": "",
+      "localSections": [
+        {
+          "heading": "Weather records near Paxtang",
+          "paragraphs": [
+            "NOAA’s September 2024 hail report east of Progress is a nearby reference for Paxtang."
+          ]
+        },
+        {
+          "heading": "Permit and property checks in Paxtang",
+          "paragraphs": [
+            "Paxtang’s building and zoning page calls for a permit application for structural repairs."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Where can I confirm exterior permit requirements in Paxtang?",
+          "a": "Paxtang’s building and zoning page calls for a permit application for structural repairs."
+        }
+      ],
+      "sources": [
+        "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204358504",
+        "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+        "https://www.dauphincounty.gov/about-the-county/municipalities",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1209204",
+        "https://www.paxtang.org/buildingpermits"
+      ],
+      "services": {
+        "roofing": {
+          "answer": "The ACS median year built in Paxtang is 1938. That survey counts about 712 housing units across Paxtang.",
+          "priceNote": "Published band, not a local bid. Jack Gray, RRO, Pennsylvania Roof Replacement Cost Guide (Roof Observations, updated January 11, 2026) puts architectural asphalt near $7.10 per square foot installed on a simple 6/12 pitch, about $12,070 for 1,700 square feet of roof, including that table's tear-off allowance. Three-tab asphalt is near $6.45 per square foot. The guide says complexity can add as much as 30 percent. Angi, Philadelphia shingle costs, updated May 26, 2026, shows project totals about $7,695 to $24,624, typical near $10,773. Slate on that Pennsylvania table starts near $24 per square foot. None of these figures is a Roof & Beyond price.",
+          "faqs": [
+            {
+              "q": "Can I tell how old a roof is from Paxtang housing figures?",
+              "a": "Look for an installation record for your Paxtang house. The Census dates the structure itself."
+            },
+            {
+              "q": "For a Paxtang reroof, what changes the estimate?",
+              "a": "Roof area, the number of layers to remove, and any decking repairs shape the estimate for a Paxtang house."
+            }
+          ]
+        },
+        "roof-repair": {
+          "answer": "About 61% of Paxtang housing dates to 1939 or earlier. The Paxtang median is 1938 for building age.",
+          "priceNote": "A repair is not a percentage of a replacement. The January 11, 2026 Pennsylvania guide prices full roofs (about $6.45 per square foot for 3-tab and about $7.10 for architectural asphalt on a simple 6/12), not one number for a flashing repair. If the field is done, that replacement band is the published context. The visit decides which scope this house is.",
+          "faqs": [
+            {
+              "q": "Where should I look first for a leak in Paxtang?",
+              "a": "Photograph where the stain appears inside your Paxtang home and note whether it shows up during wind-driven rain."
+            },
+            {
+              "q": "What affects roof repair cost in Paxtang?",
+              "a": "For roof repair in Paxtang, the scope depends on the entry point and how far water has reached underneath."
+            }
+          ]
+        },
+        "siding": {
+          "answer": "Of about 712 homes in Paxtang, about 21% are single-family attached. The ACS puts Paxtang’s detached share at 66%.",
+          "priceNote": "Angi, vinyl siding in Philadelphia, updated February 25, 2026: about $2 to $9 per square foot installed, and a typical project about $6,277 to $16,986. That is a Philadelphia vinyl band. Brick and stone are not in it. It is not a bid for this house.",
+          "faqs": [
+            {
+              "q": "Can I replace one wall of siding in Paxtang?",
+              "a": "Ask whether the sound siding at your Paxtang house can stay and how the installer will finish the adjoining corners."
+            },
+            {
+              "q": "What affects siding cost in Paxtang?",
+              "a": "The wall area at a Paxtang home is only part of the scope. Corner trim and repairs to the wall beneath also matter."
+            }
+          ]
+        },
+        "windows": {
+          "answer": "For Paxtang housing, the ACS gives 1938 as the median construction year. About 61% of Paxtang homes predate 1940.",
+          "priceNote": "Modernize, Window Replacement Cost in Pennsylvania, updated August 27, 2026: about $1,028 per window installed as a statewide average. The same guide's city table only runs from about $1,019 to $1,038, and it lists both Lancaster and York at $1,028, so it does not show a meaningful local discount. Count the openings on this house.",
+          "faqs": [
+            {
+              "q": "Does every window in my Paxtang house need the same installation?",
+              "a": "A sound frame may take an insert at your Paxtang house. A deteriorated sill may call for a full-frame scope."
+            },
+            {
+              "q": "How is window replacement priced in Paxtang?",
+              "a": "The count, size, and condition of the openings at your Paxtang house help decide the scope window by window."
+            }
+          ]
+        },
+        "gutters": {
+          "answer": "About 66% of Paxtang housing units are single-family detached. For Paxtang, the ACS counts about 712 units overall.",
+          "priceNote": "Angi, gutter installation in Philadelphia, updated July 8, 2026: about $5 to $36 per linear foot, aluminum about $7 to $12, and a typical project about $737 to $1,998. Outlet location and fascia condition move a job around inside that band. This is not a local bid.",
+          "faqs": [
+            {
+              "q": "Where should the downspouts at my Paxtang home go?",
+              "a": "Walk the lot at your Paxtang home and look for a path that carries runoff clear of the foundation."
+            },
+            {
+              "q": "What changes the cost of gutters in Paxtang?",
+              "a": "Measure the gutter runs at the Paxtang house and identify every outlet. Fascia repairs and difficult access add work."
+            }
+          ]
+        },
+        "gutter-guards": {
+          "answer": "The ACS counts roughly 712 units in Paxtang. About 21% share the single-family attached classification there.",
+          "priceNote": "The same Angi Philadelphia gutter guide, updated July 8, 2026, lists gutter guards around $4 to $11 per linear foot. A cover does not mean the gutter never needs a look, and it is the wrong first step when the trough or the fascia has already failed.",
+          "faqs": [
+            {
+              "q": "What should I check before adding gutter guards in Paxtang?",
+              "a": "Look inside the gutters at your Paxtang house to see whether needles, leaves, or shingle grit are clogging the outlets."
+            },
+            {
+              "q": "What affects the cost of gutter guards in Paxtang?",
+              "a": "The length and profile of each gutter on your Paxtang house affect the fit. Repair loose gutters before covering them."
+            }
+          ]
+        }
+      }
+    },
+    "lower-swatara-township-pa": {
+      "answer": "The ACS estimates 4,170 housing units in Lower Swatara Township. The median construction year in Lower Swatara Township is 1983. About 67% are detached houses. The attached single-family share in Lower Swatara Township is 14%. The total for Lower Swatara Township carries a margin of error of 251 units.",
+      "riskLead": "",
+      "localSections": [
+        {
+          "heading": "Weather records near Lower Swatara Township",
+          "paragraphs": [
+            "The county hazard plan lists Lower Swatara Township in its entry for the remnants of Hurricane Ida in September 2021. The township’s published 2015 IRC climate chart lists a ground snow load of 25 pounds per square foot. Confirm current design criteria with the township if roof framing changes."
+          ]
+        },
+        {
+          "heading": "Permit and property checks in Lower Swatara Township",
+          "paragraphs": [
+            "Lower Swatara Township lists structural alterations and new porch roof framing among residential projects that need a building permit."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Where can I confirm exterior permit requirements in Lower Swatara Township?",
+          "a": "Lower Swatara Township lists structural alterations and new porch roof framing among residential projects that need a building permit."
+        }
+      ],
+      "sources": [
+        "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204345120",
+        "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+        "https://www.dauphincounty.gov/about-the-county/municipalities",
+        "https://www.dauphincounty.gov/docs/default-source/public-safety/hazard-mitigation-plan.pdf",
+        "https://www.lowerswatara.org/code-enforcement/files/when-residential-permit-required",
+        "https://lowerswatara.org/wp-content/uploads/2025/11/climate_design_chart-1.pdf"
+      ],
+      "services": {
+        "roofing": {
+          "answer": "The ACS median year built in Lower Swatara Township is 1983. That survey counts about 4,170 housing units across Lower Swatara Township.",
+          "priceNote": "Published band, not a local bid. Jack Gray, RRO, Pennsylvania Roof Replacement Cost Guide (Roof Observations, updated January 11, 2026) puts architectural asphalt near $7.10 per square foot installed on a simple 6/12 pitch, about $12,070 for 1,700 square feet of roof, including that table's tear-off allowance. Three-tab asphalt is near $6.45 per square foot. The guide says complexity can add as much as 30 percent. Angi, Philadelphia shingle costs, updated May 26, 2026, shows project totals about $7,695 to $24,624, typical near $10,773. Slate on that Pennsylvania table starts near $24 per square foot. None of these figures is a Roof & Beyond price.",
+          "faqs": [
+            {
+              "q": "Can I tell how old a roof is from Lower Swatara Township housing figures?",
+              "a": "Look for an installation record for your Lower Swatara Township house. The Census dates the structure itself."
+            },
+            {
+              "q": "For a Lower Swatara Township reroof, what changes the estimate?",
+              "a": "Roof area, the number of layers to remove, and any decking repairs shape the estimate for a Lower Swatara Township house."
+            }
+          ]
+        },
+        "roof-repair": {
+          "answer": "About 2% of Lower Swatara Township housing dates to 1939 or earlier. The Lower Swatara Township median is 1983 for building age.",
+          "priceNote": "A repair is not a percentage of a replacement. The January 11, 2026 Pennsylvania guide prices full roofs (about $6.45 per square foot for 3-tab and about $7.10 for architectural asphalt on a simple 6/12), not one number for a flashing repair. If the field is done, that replacement band is the published context. The visit decides which scope this house is.",
+          "faqs": [
+            {
+              "q": "Where should I look first for a leak in Lower Swatara Township?",
+              "a": "Photograph where the stain appears inside your Lower Swatara Township home and note whether it shows up during wind-driven rain."
+            },
+            {
+              "q": "What affects roof repair cost in Lower Swatara Township?",
+              "a": "For roof repair in Lower Swatara Township, the scope depends on the entry point and how far water has reached underneath."
+            }
+          ]
+        },
+        "siding": {
+          "answer": "Of about 4,170 homes in Lower Swatara Township, about 14% are single-family attached. The ACS puts Lower Swatara Township’s detached share at 67%.",
+          "priceNote": "Angi, vinyl siding in Philadelphia, updated February 25, 2026: about $2 to $9 per square foot installed, and a typical project about $6,277 to $16,986. That is a Philadelphia vinyl band. Brick and stone are not in it. It is not a bid for this house.",
+          "faqs": [
+            {
+              "q": "Can I replace one wall of siding in Lower Swatara Township?",
+              "a": "Ask whether the sound siding at your Lower Swatara Township house can stay and how the installer will finish the adjoining corners."
+            },
+            {
+              "q": "What affects siding cost in Lower Swatara Township?",
+              "a": "The wall area at a Lower Swatara Township home is only part of the scope. Corner trim and repairs to the wall beneath also matter."
+            }
+          ]
+        },
+        "windows": {
+          "answer": "For Lower Swatara Township housing, the ACS gives 1983 as the median construction year. About 2% of Lower Swatara Township homes predate 1940.",
+          "priceNote": "Modernize, Window Replacement Cost in Pennsylvania, updated August 27, 2026: about $1,028 per window installed as a statewide average. The same guide's city table only runs from about $1,019 to $1,038, and it lists both Lancaster and York at $1,028, so it does not show a meaningful local discount. Count the openings on this house.",
+          "faqs": [
+            {
+              "q": "Does every window in my Lower Swatara Township house need the same installation?",
+              "a": "A sound frame may take an insert at your Lower Swatara Township house. A deteriorated sill may call for a full-frame scope."
+            },
+            {
+              "q": "How is window replacement priced in Lower Swatara Township?",
+              "a": "The count, size, and condition of the openings at your Lower Swatara Township house help decide the scope window by window."
+            }
+          ]
+        },
+        "gutters": {
+          "answer": "About 67% of Lower Swatara Township housing units are single-family detached. For Lower Swatara Township, the ACS counts about 4,170 units overall.",
+          "priceNote": "Angi, gutter installation in Philadelphia, updated July 8, 2026: about $5 to $36 per linear foot, aluminum about $7 to $12, and a typical project about $737 to $1,998. Outlet location and fascia condition move a job around inside that band. This is not a local bid.",
+          "faqs": [
+            {
+              "q": "Where should the downspouts at my Lower Swatara Township home go?",
+              "a": "Walk the lot at your Lower Swatara Township home and look for a path that carries runoff clear of the foundation."
+            },
+            {
+              "q": "What changes the cost of gutters in Lower Swatara Township?",
+              "a": "Measure the gutter runs at the Lower Swatara Township house and identify every outlet. Fascia repairs and difficult access add work."
+            }
+          ]
+        },
+        "gutter-guards": {
+          "answer": "The ACS counts roughly 4,170 units in Lower Swatara Township. About 14% share the single-family attached classification there.",
+          "priceNote": "The same Angi Philadelphia gutter guide, updated July 8, 2026, lists gutter guards around $4 to $11 per linear foot. A cover does not mean the gutter never needs a look, and it is the wrong first step when the trough or the fascia has already failed.",
+          "faqs": [
+            {
+              "q": "What should I check before adding gutter guards in Lower Swatara Township?",
+              "a": "Look inside the gutters at your Lower Swatara Township house to see whether needles, leaves, or shingle grit are clogging the outlets."
+            },
+            {
+              "q": "What affects the cost of gutter guards in Lower Swatara Township?",
+              "a": "The length and profile of each gutter on your Lower Swatara Township house affect the fit. Repair loose gutters before covering them."
+            }
+          ]
+        }
+      }
+    },
+    "west-hanover-township-pa": {
+      "answer": "The ACS estimates 5,089 housing units in West Hanover Township. The median construction year in West Hanover Township is 2000. About 58% are detached houses. The attached single-family share in West Hanover Township is 31%. The total for West Hanover Township carries a margin of error of 330 units.",
+      "riskLead": "",
+      "localSections": [
+        {
+          "heading": "Weather records near West Hanover Township",
+          "paragraphs": [
+            "NOAA reported snapped and downed trees east of Skyline View on June 26, 2024, with wind estimated near 60 mph."
+          ]
+        },
+        {
+          "heading": "Permit and property checks in West Hanover Township",
+          "paragraphs": [
+            "West Hanover Township posts residential construction permit information on its Building and Code Enforcement page."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Where can I confirm exterior permit requirements in West Hanover Township?",
+          "a": "West Hanover Township posts residential construction permit information on its Building and Code Enforcement page."
+        }
+      ],
+      "sources": [
+        "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204383128",
+        "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+        "https://www.dauphincounty.gov/about-the-county/municipalities",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1193202",
+        "https://westhanover.com/200/Building-Code-Enforcement"
+      ],
+      "services": {
+        "roofing": {
+          "answer": "The ACS median year built in West Hanover Township is 2000. That survey counts about 5,089 housing units across West Hanover Township.",
+          "priceNote": "Published band, not a local bid. Jack Gray, RRO, Pennsylvania Roof Replacement Cost Guide (Roof Observations, updated January 11, 2026) puts architectural asphalt near $7.10 per square foot installed on a simple 6/12 pitch, about $12,070 for 1,700 square feet of roof, including that table's tear-off allowance. Three-tab asphalt is near $6.45 per square foot. The guide says complexity can add as much as 30 percent. Angi, Philadelphia shingle costs, updated May 26, 2026, shows project totals about $7,695 to $24,624, typical near $10,773. Slate on that Pennsylvania table starts near $24 per square foot. None of these figures is a Roof & Beyond price.",
+          "faqs": [
+            {
+              "q": "Can I tell how old a roof is from West Hanover Township housing figures?",
+              "a": "Look for an installation record for your West Hanover Township house. The Census dates the structure itself."
+            },
+            {
+              "q": "For a West Hanover Township reroof, what changes the estimate?",
+              "a": "Roof area, the number of layers to remove, and any decking repairs shape the estimate for a West Hanover Township house."
+            }
+          ]
+        },
+        "roof-repair": {
+          "answer": "About 6% of West Hanover Township housing dates to 1939 or earlier. The West Hanover Township median is 2000 for building age.",
+          "priceNote": "A repair is not a percentage of a replacement. The January 11, 2026 Pennsylvania guide prices full roofs (about $6.45 per square foot for 3-tab and about $7.10 for architectural asphalt on a simple 6/12), not one number for a flashing repair. If the field is done, that replacement band is the published context. The visit decides which scope this house is.",
+          "faqs": [
+            {
+              "q": "Where should I look first for a leak in West Hanover Township?",
+              "a": "Photograph where the stain appears inside your West Hanover Township home and note whether it shows up during wind-driven rain."
+            },
+            {
+              "q": "What affects roof repair cost in West Hanover Township?",
+              "a": "For roof repair in West Hanover Township, the scope depends on the entry point and how far water has reached underneath."
+            }
+          ]
+        },
+        "siding": {
+          "answer": "Of about 5,089 homes in West Hanover Township, about 31% are single-family attached. The ACS puts West Hanover Township’s detached share at 58%.",
+          "priceNote": "Angi, vinyl siding in Philadelphia, updated February 25, 2026: about $2 to $9 per square foot installed, and a typical project about $6,277 to $16,986. That is a Philadelphia vinyl band. Brick and stone are not in it. It is not a bid for this house.",
+          "faqs": [
+            {
+              "q": "Can I replace one wall of siding in West Hanover Township?",
+              "a": "Ask whether the sound siding at your West Hanover Township house can stay and how the installer will finish the adjoining corners."
+            },
+            {
+              "q": "What affects siding cost in West Hanover Township?",
+              "a": "The wall area at a West Hanover Township home is only part of the scope. Corner trim and repairs to the wall beneath also matter."
+            }
+          ]
+        },
+        "windows": {
+          "answer": "For West Hanover Township housing, the ACS gives 2000 as the median construction year. About 6% of West Hanover Township homes predate 1940.",
+          "priceNote": "Modernize, Window Replacement Cost in Pennsylvania, updated August 27, 2026: about $1,028 per window installed as a statewide average. The same guide's city table only runs from about $1,019 to $1,038, and it lists both Lancaster and York at $1,028, so it does not show a meaningful local discount. Count the openings on this house.",
+          "faqs": [
+            {
+              "q": "Does every window in my West Hanover Township house need the same installation?",
+              "a": "A sound frame may take an insert at your West Hanover Township house. A deteriorated sill may call for a full-frame scope."
+            },
+            {
+              "q": "How is window replacement priced in West Hanover Township?",
+              "a": "The count, size, and condition of the openings at your West Hanover Township house help decide the scope window by window."
+            }
+          ]
+        },
+        "gutters": {
+          "answer": "About 58% of West Hanover Township housing units are single-family detached. For West Hanover Township, the ACS counts about 5,089 units overall.",
+          "priceNote": "Angi, gutter installation in Philadelphia, updated July 8, 2026: about $5 to $36 per linear foot, aluminum about $7 to $12, and a typical project about $737 to $1,998. Outlet location and fascia condition move a job around inside that band. This is not a local bid.",
+          "faqs": [
+            {
+              "q": "Where should the downspouts at my West Hanover Township home go?",
+              "a": "Walk the lot at your West Hanover Township home and look for a path that carries runoff clear of the foundation."
+            },
+            {
+              "q": "What changes the cost of gutters in West Hanover Township?",
+              "a": "Measure the gutter runs at the West Hanover Township house and identify every outlet. Fascia repairs and difficult access add work."
+            }
+          ]
+        },
+        "gutter-guards": {
+          "answer": "The ACS counts roughly 5,089 units in West Hanover Township. About 31% share the single-family attached classification there.",
+          "priceNote": "The same Angi Philadelphia gutter guide, updated July 8, 2026, lists gutter guards around $4 to $11 per linear foot. A cover does not mean the gutter never needs a look, and it is the wrong first step when the trough or the fascia has already failed.",
+          "faqs": [
+            {
+              "q": "What should I check before adding gutter guards in West Hanover Township?",
+              "a": "Look inside the gutters at your West Hanover Township house to see whether needles, leaves, or shingle grit are clogging the outlets."
+            },
+            {
+              "q": "What affects the cost of gutter guards in West Hanover Township?",
+              "a": "The length and profile of each gutter on your West Hanover Township house affect the fit. Repair loose gutters before covering them."
+            }
+          ]
+        }
+      }
+    },
+    "halifax-pa": {
+      "answer": "The ACS estimates 298 housing units in Halifax. The median construction year in Halifax is 1938. About 61% are detached houses. The attached single-family share in Halifax is 10%. The total for Halifax carries a margin of error of 58 units.",
+      "riskLead": "",
+      "localSections": [
+        {
+          "heading": "Weather records near Halifax",
+          "paragraphs": [
+            "NOAA logged a fallen tree that crushed part of a porch in Halifax on June 26, 2024."
+          ]
+        },
+        {
+          "heading": "Permit and property checks in Halifax",
+          "paragraphs": [
+            "Confirm whether your project needs a permit with the municipality listed on the parcel record."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Where can I confirm exterior permit requirements in Halifax?",
+          "a": "Confirm whether your project needs a permit with the municipality listed on the parcel record."
+        }
+      ],
+      "sources": [
+        "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204332032",
+        "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+        "https://www.dauphincounty.gov/about-the-county/municipalities",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1193203"
+      ],
+      "services": {
+        "roofing": {
+          "answer": "The ACS median year built in Halifax is 1938. That survey counts about 298 housing units across Halifax.",
+          "priceNote": "Published band, not a local bid. Jack Gray, RRO, Pennsylvania Roof Replacement Cost Guide (Roof Observations, updated January 11, 2026) puts architectural asphalt near $7.10 per square foot installed on a simple 6/12 pitch, about $12,070 for 1,700 square feet of roof, including that table's tear-off allowance. Three-tab asphalt is near $6.45 per square foot. The guide says complexity can add as much as 30 percent. Angi, Philadelphia shingle costs, updated May 26, 2026, shows project totals about $7,695 to $24,624, typical near $10,773. Slate on that Pennsylvania table starts near $24 per square foot. None of these figures is a Roof & Beyond price.",
+          "faqs": [
+            {
+              "q": "Can I tell how old a roof is from Halifax housing figures?",
+              "a": "Look for an installation record for your Halifax house. The Census dates the structure itself."
+            },
+            {
+              "q": "For a Halifax reroof, what changes the estimate?",
+              "a": "Roof area, the number of layers to remove, and any decking repairs shape the estimate for a Halifax house."
+            }
+          ]
+        },
+        "roof-repair": {
+          "answer": "About 56% of Halifax housing dates to 1939 or earlier. The Halifax median is 1938 for building age.",
+          "priceNote": "A repair is not a percentage of a replacement. The January 11, 2026 Pennsylvania guide prices full roofs (about $6.45 per square foot for 3-tab and about $7.10 for architectural asphalt on a simple 6/12), not one number for a flashing repair. If the field is done, that replacement band is the published context. The visit decides which scope this house is.",
+          "faqs": [
+            {
+              "q": "Where should I look first for a leak in Halifax?",
+              "a": "Photograph where the stain appears inside your Halifax home and note whether it shows up during wind-driven rain."
+            },
+            {
+              "q": "What affects roof repair cost in Halifax?",
+              "a": "For roof repair in Halifax, the scope depends on the entry point and how far water has reached underneath."
+            }
+          ]
+        },
+        "siding": {
+          "answer": "Of about 298 homes in Halifax, about 10% are single-family attached. The ACS puts Halifax’s detached share at 61%.",
+          "priceNote": "Angi, vinyl siding in Philadelphia, updated February 25, 2026: about $2 to $9 per square foot installed, and a typical project about $6,277 to $16,986. That is a Philadelphia vinyl band. Brick and stone are not in it. It is not a bid for this house.",
+          "faqs": [
+            {
+              "q": "Can I replace one wall of siding in Halifax?",
+              "a": "Ask whether the sound siding at your Halifax house can stay and how the installer will finish the adjoining corners."
+            },
+            {
+              "q": "What affects siding cost in Halifax?",
+              "a": "The wall area at a Halifax home is only part of the scope. Corner trim and repairs to the wall beneath also matter."
+            }
+          ]
+        },
+        "windows": {
+          "answer": "For Halifax housing, the ACS gives 1938 as the median construction year. About 56% of Halifax homes predate 1940.",
+          "priceNote": "Modernize, Window Replacement Cost in Pennsylvania, updated August 27, 2026: about $1,028 per window installed as a statewide average. The same guide's city table only runs from about $1,019 to $1,038, and it lists both Lancaster and York at $1,028, so it does not show a meaningful local discount. Count the openings on this house.",
+          "faqs": [
+            {
+              "q": "Does every window in my Halifax house need the same installation?",
+              "a": "A sound frame may take an insert at your Halifax house. A deteriorated sill may call for a full-frame scope."
+            },
+            {
+              "q": "How is window replacement priced in Halifax?",
+              "a": "The count, size, and condition of the openings at your Halifax house help decide the scope window by window."
+            }
+          ]
+        },
+        "gutters": {
+          "answer": "About 61% of Halifax housing units are single-family detached. For Halifax, the ACS counts about 298 units overall.",
+          "priceNote": "Angi, gutter installation in Philadelphia, updated July 8, 2026: about $5 to $36 per linear foot, aluminum about $7 to $12, and a typical project about $737 to $1,998. Outlet location and fascia condition move a job around inside that band. This is not a local bid.",
+          "faqs": [
+            {
+              "q": "Where should the downspouts at my Halifax home go?",
+              "a": "Walk the lot at your Halifax home and look for a path that carries runoff clear of the foundation."
+            },
+            {
+              "q": "What changes the cost of gutters in Halifax?",
+              "a": "Measure the gutter runs at the Halifax house and identify every outlet. Fascia repairs and difficult access add work."
+            }
+          ]
+        },
+        "gutter-guards": {
+          "answer": "The ACS counts roughly 298 units in Halifax. About 10% share the single-family attached classification there.",
+          "priceNote": "The same Angi Philadelphia gutter guide, updated July 8, 2026, lists gutter guards around $4 to $11 per linear foot. A cover does not mean the gutter never needs a look, and it is the wrong first step when the trough or the fascia has already failed.",
+          "faqs": [
+            {
+              "q": "What should I check before adding gutter guards in Halifax?",
+              "a": "Look inside the gutters at your Halifax house to see whether needles, leaves, or shingle grit are clogging the outlets."
+            },
+            {
+              "q": "What affects the cost of gutter guards in Halifax?",
+              "a": "The length and profile of each gutter on your Halifax house affect the fit. Repair loose gutters before covering them."
+            }
+          ]
+        }
+      }
+    },
+    "millersburg-pa": {
+      "answer": "The ACS estimates 1,284 housing units in Millersburg. The median construction year in Millersburg is 1953. About 50% are detached houses. The attached single-family share in Millersburg is 24%. The total for Millersburg carries a margin of error of 123 units.",
+      "riskLead": "",
+      "localSections": [
+        {
+          "heading": "Weather records near Millersburg",
+          "paragraphs": [
+            "NOAA logged a Millersburg downburst on June 29, 2024, with winds estimated at 95 mph."
+          ]
+        },
+        {
+          "heading": "Permit and property checks in Millersburg",
+          "paragraphs": [
+            "Millersburg has a building height ordinance for new construction in its defined historic district area. Check the parcel and describe planned height changes to the borough."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Where can I confirm exterior permit requirements in Millersburg?",
+          "a": "Millersburg has a building height ordinance for new construction in its defined historic district area. Check the parcel and describe planned height changes to the borough."
+        }
+      ],
+      "sources": [
+        "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204349680",
+        "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+        "https://www.dauphincounty.gov/about-the-county/municipalities",
+        "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1178792",
+        "https://www.millersburgpa.org/wp-content/uploads/Ordinances/2014/03-14%20building%20height.pdf"
+      ],
+      "services": {
+        "roofing": {
+          "answer": "The ACS median year built in Millersburg is 1953. That survey counts about 1,284 housing units across Millersburg.",
+          "priceNote": "Published band, not a local bid. Jack Gray, RRO, Pennsylvania Roof Replacement Cost Guide (Roof Observations, updated January 11, 2026) puts architectural asphalt near $7.10 per square foot installed on a simple 6/12 pitch, about $12,070 for 1,700 square feet of roof, including that table's tear-off allowance. Three-tab asphalt is near $6.45 per square foot. The guide says complexity can add as much as 30 percent. Angi, Philadelphia shingle costs, updated May 26, 2026, shows project totals about $7,695 to $24,624, typical near $10,773. Slate on that Pennsylvania table starts near $24 per square foot. None of these figures is a Roof & Beyond price.",
+          "faqs": [
+            {
+              "q": "Can I tell how old a roof is from Millersburg housing figures?",
+              "a": "Look for an installation record for your Millersburg house. The Census dates the structure itself."
+            },
+            {
+              "q": "For a Millersburg reroof, what changes the estimate?",
+              "a": "Roof area, the number of layers to remove, and any decking repairs shape the estimate for a Millersburg house."
+            }
+          ]
+        },
+        "roof-repair": {
+          "answer": "About 38% of Millersburg housing dates to 1939 or earlier. The Millersburg median is 1953 for building age.",
+          "priceNote": "A repair is not a percentage of a replacement. The January 11, 2026 Pennsylvania guide prices full roofs (about $6.45 per square foot for 3-tab and about $7.10 for architectural asphalt on a simple 6/12), not one number for a flashing repair. If the field is done, that replacement band is the published context. The visit decides which scope this house is.",
+          "faqs": [
+            {
+              "q": "Where should I look first for a leak in Millersburg?",
+              "a": "Photograph where the stain appears inside your Millersburg home and note whether it shows up during wind-driven rain."
+            },
+            {
+              "q": "What affects roof repair cost in Millersburg?",
+              "a": "For roof repair in Millersburg, the scope depends on the entry point and how far water has reached underneath."
+            }
+          ]
+        },
+        "siding": {
+          "answer": "Of about 1,284 homes in Millersburg, about 24% are single-family attached. The ACS puts Millersburg’s detached share at 50%.",
+          "priceNote": "Angi, vinyl siding in Philadelphia, updated February 25, 2026: about $2 to $9 per square foot installed, and a typical project about $6,277 to $16,986. That is a Philadelphia vinyl band. Brick and stone are not in it. It is not a bid for this house.",
+          "faqs": [
+            {
+              "q": "Can I replace one wall of siding in Millersburg?",
+              "a": "Ask whether the sound siding at your Millersburg house can stay and how the installer will finish the adjoining corners."
+            },
+            {
+              "q": "What affects siding cost in Millersburg?",
+              "a": "The wall area at a Millersburg home is only part of the scope. Corner trim and repairs to the wall beneath also matter."
+            }
+          ]
+        },
+        "windows": {
+          "answer": "For Millersburg housing, the ACS gives 1953 as the median construction year. About 38% of Millersburg homes predate 1940.",
+          "priceNote": "Modernize, Window Replacement Cost in Pennsylvania, updated August 27, 2026: about $1,028 per window installed as a statewide average. The same guide's city table only runs from about $1,019 to $1,038, and it lists both Lancaster and York at $1,028, so it does not show a meaningful local discount. Count the openings on this house.",
+          "faqs": [
+            {
+              "q": "Does every window in my Millersburg house need the same installation?",
+              "a": "A sound frame may take an insert at your Millersburg house. A deteriorated sill may call for a full-frame scope."
+            },
+            {
+              "q": "How is window replacement priced in Millersburg?",
+              "a": "The count, size, and condition of the openings at your Millersburg house help decide the scope window by window."
+            }
+          ]
+        },
+        "gutters": {
+          "answer": "About 50% of Millersburg housing units are single-family detached. For Millersburg, the ACS counts about 1,284 units overall.",
+          "priceNote": "Angi, gutter installation in Philadelphia, updated July 8, 2026: about $5 to $36 per linear foot, aluminum about $7 to $12, and a typical project about $737 to $1,998. Outlet location and fascia condition move a job around inside that band. This is not a local bid.",
+          "faqs": [
+            {
+              "q": "Where should the downspouts at my Millersburg home go?",
+              "a": "Walk the lot at your Millersburg home and look for a path that carries runoff clear of the foundation."
+            },
+            {
+              "q": "What changes the cost of gutters in Millersburg?",
+              "a": "Measure the gutter runs at the Millersburg house and identify every outlet. Fascia repairs and difficult access add work."
+            }
+          ]
+        },
+        "gutter-guards": {
+          "answer": "The ACS counts roughly 1,284 units in Millersburg. About 24% share the single-family attached classification there.",
+          "priceNote": "The same Angi Philadelphia gutter guide, updated July 8, 2026, lists gutter guards around $4 to $11 per linear foot. A cover does not mean the gutter never needs a look, and it is the wrong first step when the trough or the fascia has already failed.",
+          "faqs": [
+            {
+              "q": "What should I check before adding gutter guards in Millersburg?",
+              "a": "Look inside the gutters at your Millersburg house to see whether needles, leaves, or shingle grit are clogging the outlets."
+            },
+            {
+              "q": "What affects the cost of gutter guards in Millersburg?",
+              "a": "The length and profile of each gutter on your Millersburg house affect the fit. Repair loose gutters before covering them."
+            }
+          ]
+        }
+      }
     }
   }
 }

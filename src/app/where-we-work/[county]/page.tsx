@@ -90,6 +90,16 @@ const countyFaqs = {
       a: "Call (717) 804-0990 or send the address through the contact form. The office is listed as Media, PA, and hours are 9 AM to 8 PM, seven days a week.",
     },
   ],
+  dauphin: [
+    {
+      q: "Which page should I use for a house in Hershey?",
+      a: "Use Hershey for the Census community’s housing profile and Derry Township for township-wide housing and municipal guidance.",
+    },
+    {
+      q: "What should I photograph after a Dauphin County storm?",
+      a: "From the ground, photograph fallen branches, visibly displaced roof materials and where gutter runoff lands. Include new water marks indoors if you can reach them safely.",
+    },
+  ],
   cumberland: [
     {
       q: "Does the Shippensburg page cover both counties?",

@@ -18,16 +18,16 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div>
           <img
-            src="/brand/rb-combined-logo-dark.svg"
+            src="/brand/rb-combined-logo-on-navy-transparent.png"
             alt="Roof & Beyond Home Solutions"
-            width={260}
-            height={50}
+            width={3875}
+            height={646}
             loading="lazy"
-            className="h-14 w-auto"
+            className="h-auto w-64 max-w-full"
           />
           <p className="mt-5 max-w-sm text-[15px] leading-7 text-white/75">
             Roofing, roof repair, siding, windows, gutters, and gutter guards
-            for houses in Lancaster, Chester, Delaware, York, and Cumberland counties.
+            for houses in Lancaster, Chester, Delaware, York, Cumberland, and Dauphin counties.
           </p>
           <ul className="mt-5 space-y-2 text-[15px] text-white/85">
             <li>

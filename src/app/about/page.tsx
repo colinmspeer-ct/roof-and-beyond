@@ -12,10 +12,10 @@ import { breadcrumbNode, companyGraph } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: { absolute: "About Roof & Beyond Home Solutions | Roofing Contractor in Media, PA" },
-  description: `${brand.dba} estimates roofing, roof repair, siding, windows, gutters, and gutter guards in five Pennsylvania counties.`,
+  description: `${brand.dba} estimates roofing, roof repair, siding, windows, gutters, and gutter guards in six Pennsylvania counties.`,
   openGraph: {
     title: "About the company",
-    description: `${brand.dba} estimates roofing, roof repair, siding, windows, gutters, and gutter guards in five Pennsylvania counties.`,
+    description: `${brand.dba} estimates roofing, roof repair, siding, windows, gutters, and gutter guards in six Pennsylvania counties.`,
     siteName: brand.dba,
     images: [socialImage],
   },
@@ -51,7 +51,7 @@ export default function AboutPage() {
             About <span className="text-orange">{brand.dba}</span>
           </>
         }
-        sub="A residential roofing and exterior contractor for houses in Lancaster, Chester, Delaware, York, and Cumberland counties."
+        sub="A residential roofing and exterior contractor for houses in Lancaster, Chester, Delaware, York, Cumberland, and Dauphin counties."
         actions={<HeroActions estimateHref="/contact/#estimate" phoneDisplay={brand.phoneDisplay} phoneTel={brand.phoneTel} />}
       />
       <TrustSignals />
@@ -66,7 +66,7 @@ export default function AboutPage() {
           <p>
             The work is exterior only: roofing, roof repair, siding, windows,
             gutters, and gutter guards. Service covers the communities listed
-            for Lancaster, Chester, Delaware, York, and Cumberland counties. The public
+            for Lancaster, Chester, Delaware, York, Cumberland, and Dauphin counties. The public
             location is {brand.locality}. Hours are {brand.hours}.
           </p>
           <p>

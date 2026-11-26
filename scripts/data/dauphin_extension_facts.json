@@ -1,0 +1,522 @@
+{
+  "Harrisburg": {
+    "kind": "city",
+    "housing": {
+      "units": 24130,
+      "units_moe": 759,
+      "thin": false,
+      "median_year": 1947,
+      "median_moe": 3,
+      "pct_pre1939": 43,
+      "pct_pre1970": 77,
+      "pct_since1990": 9,
+      "pct_since2010": 3,
+      "pct_detached": 14,
+      "pct_attached": 43,
+      "pct_mobile": 1
+    },
+    "zips": [
+      "17101",
+      "17102",
+      "17103",
+      "17104",
+      "17110",
+      "17111",
+      "17120"
+    ],
+    "storm": "The county hazard plan names Harrisburg among the communities affected by flash flooding during the remnants of Tropical Storm Debby in August 2024.",
+    "permit": "Harrisburg’s Historic Architectural Review Board reviews projects under the city’s historic preservation rules. Ask the city how the proposed change would be reviewed.",
+    "sources": [
+      "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204332800",
+      "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+      "https://www.dauphincounty.gov/about-the-county/municipalities",
+      "https://www.dauphincounty.gov/docs/default-source/public-safety/hazard-mitigation-plan.pdf",
+      "https://www.harrisburgpa.gov/government/boards_commissions/architectural_review_board.php"
+    ]
+  },
+  "Hershey": {
+    "kind": "community",
+    "housing": {
+      "units": 5982,
+      "units_moe": 376,
+      "thin": false,
+      "median_year": 1970,
+      "median_moe": 3,
+      "pct_pre1939": 10,
+      "pct_pre1970": 49,
+      "pct_since1990": 19,
+      "pct_since2010": 2,
+      "pct_detached": 48,
+      "pct_attached": 15,
+      "pct_mobile": 0
+    },
+    "zips": [
+      "17033",
+      "17036",
+      "17078"
+    ],
+    "storm": "NOAA indexes a June 22, 2010 wind event under Hershey. The narrative places widespread damage west of Campbelltown in Derry Township.",
+    "permit": "For a Hershey parcel in Derry Township, use the township’s building permit page or ask Community Development about the change you plan.",
+    "sources": [
+      "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=16000US4234144",
+      "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+      "https://www.dauphincounty.gov/about-the-county/municipalities",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=227803",
+      "https://www.derrytownship.org/permits/derry-township_permits"
+    ]
+  },
+  "Hummelstown": {
+    "kind": "borough",
+    "housing": {
+      "units": 2308,
+      "units_moe": 161,
+      "thin": false,
+      "median_year": 1965,
+      "median_moe": 5,
+      "pct_pre1939": 17,
+      "pct_pre1970": 58,
+      "pct_since1990": 24,
+      "pct_since2010": 11,
+      "pct_detached": 56,
+      "pct_attached": 7,
+      "pct_mobile": 0
+    },
+    "zips": [
+      "17036"
+    ],
+    "storm": "The county hazard plan lists heavy snowfall in Hummelstown on February 12–13, 2024.",
+    "permit": "The borough zoning map shows a historic district. Compare the parcel to the map and confirm review with the borough for the proposed change.",
+    "sources": [
+      "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204336232",
+      "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+      "https://www.dauphincounty.gov/about-the-county/municipalities",
+      "https://www.dauphincounty.gov/docs/default-source/public-safety/hazard-mitigation-plan.pdf",
+      "https://hummelstown.gov/vertical/sites/%7B437B2BC8-0AC7-4EFC-83ED-3C811AD97AEB%7D/uploads/Hummelstown_Boro_Zoning_Map_-_Overlay_and_Boundary_Update.pdf"
+    ]
+  },
+  "Middletown": {
+    "kind": "borough",
+    "housing": {
+      "units": 4767,
+      "units_moe": 250,
+      "thin": false,
+      "median_year": 1958,
+      "median_moe": 4,
+      "pct_pre1939": 27,
+      "pct_pre1970": 59,
+      "pct_since1990": 16,
+      "pct_since2010": 7,
+      "pct_detached": 33,
+      "pct_attached": 21,
+      "pct_mobile": 3
+    },
+    "zips": [
+      "17057"
+    ],
+    "storm": "The county hazard plan lists Middletown for heavy snow in February 2024 and severe weather from Ida’s remnants in September 2021.",
+    "permit": "Middletown’s codes fee schedule includes a roofing permit category for roof repair. Confirm the paperwork for the proposed work with the borough.",
+    "sources": [
+      "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204349128",
+      "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+      "https://www.dauphincounty.gov/about-the-county/municipalities",
+      "https://www.dauphincounty.gov/docs/default-source/public-safety/hazard-mitigation-plan.pdf",
+      "https://middletownborough.com/government/code-enforcement/fees/"
+    ]
+  },
+  "Lower Paxton Township": {
+    "kind": "township",
+    "housing": {
+      "units": 22669,
+      "units_moe": 738,
+      "thin": false,
+      "median_year": 1980,
+      "median_moe": 2,
+      "pct_pre1939": 6,
+      "pct_pre1970": 34,
+      "pct_since1990": 36,
+      "pct_since2010": 10,
+      "pct_detached": 59,
+      "pct_attached": 14,
+      "pct_mobile": 0
+    },
+    "zips": [
+      "17109",
+      "17110",
+      "17111",
+      "17112"
+    ],
+    "storm": "NOAA recorded hail east of Progress and at the northwest end of Rutherford on September 21, 2024. The entries concern the locations named in the reports.",
+    "permit": "Lower Paxton Township publishes building code and permit contacts. Ask the codes office how it treats the actual reroof scope, including structural repairs.",
+    "sources": [
+      "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204345056",
+      "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+      "https://www.dauphincounty.gov/about-the-county/municipalities",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1209204",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1209209",
+      "https://lowerpaxton-pa.gov/171/Building-Codes"
+    ]
+  },
+  "Susquehanna Township": {
+    "kind": "township",
+    "housing": {
+      "units": 12529,
+      "units_moe": 518,
+      "thin": false,
+      "median_year": 1976,
+      "median_moe": 3,
+      "pct_pre1939": 8,
+      "pct_pre1970": 41,
+      "pct_since1990": 37,
+      "pct_since2010": 9,
+      "pct_detached": 51,
+      "pct_attached": 20,
+      "pct_mobile": 1
+    },
+    "zips": [
+      "17103",
+      "17109",
+      "17110",
+      "17111"
+    ],
+    "storm": "NOAA recorded three-quarter-inch hail east of Progress on September 21, 2024.",
+    "permit": "Susquehanna Township accepts residential permit applications digitally or at its municipal office. The township asks applicants to include a site plan.",
+    "sources": [
+      "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204375528",
+      "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+      "https://www.dauphincounty.gov/about-the-county/municipalities",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1209204",
+      "https://www.susquehannatwp.com/208/Permit-Information"
+    ]
+  },
+  "Swatara Township": {
+    "kind": "township",
+    "housing": {
+      "units": 11055,
+      "units_moe": 522,
+      "thin": false,
+      "median_year": 1975,
+      "median_moe": 3,
+      "pct_pre1939": 9,
+      "pct_pre1970": 42,
+      "pct_since1990": 34,
+      "pct_since2010": 11,
+      "pct_detached": 56,
+      "pct_attached": 23,
+      "pct_mobile": 0
+    },
+    "zips": [
+      "17036",
+      "17104",
+      "17111",
+      "17113"
+    ],
+    "storm": "NOAA recorded 0.88-inch hail near Rutherford and 0.75-inch hail south of Chambers Hill on September 21, 2024.",
+    "permit": "Swatara’s Building and Codes office distinguishes routine maintenance from alterations and asks homeowners to call if unsure about a building or zoning permit.",
+    "sources": [
+      "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204375672",
+      "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+      "https://www.dauphincounty.gov/about-the-county/municipalities",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1209209",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1209210",
+      "https://swataratwp.com/codes-permits/"
+    ]
+  },
+  "Derry Township": {
+    "kind": "township",
+    "housing": {
+      "units": 10432,
+      "units_moe": 343,
+      "thin": false,
+      "median_year": 1979,
+      "median_moe": 3,
+      "pct_pre1939": 7,
+      "pct_pre1970": 35,
+      "pct_since1990": 33,
+      "pct_since2010": 7,
+      "pct_detached": 50,
+      "pct_attached": 22,
+      "pct_mobile": 1
+    },
+    "zips": [
+      "17033",
+      "17036",
+      "17078"
+    ],
+    "storm": "NOAA describes June 2010 thunderstorm winds that caused widespread damage west of Campbelltown in Derry Township.",
+    "permit": "Derry Township publishes building permit materials. Contact Community Development to describe any structural work included in the scope.",
+    "sources": [
+      "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204318936",
+      "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+      "https://www.dauphincounty.gov/about-the-county/municipalities",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=227803",
+      "https://www.derrytownship.org/permits/derry-township_permits"
+    ]
+  },
+  "Linglestown": {
+    "kind": "community",
+    "housing": {
+      "units": 2804,
+      "units_moe": 328,
+      "thin": false,
+      "median_year": 1969,
+      "median_moe": 7,
+      "pct_pre1939": 5,
+      "pct_pre1970": 51,
+      "pct_since1990": 23,
+      "pct_since2010": 5,
+      "pct_detached": 88,
+      "pct_attached": 8,
+      "pct_mobile": 1
+    },
+    "zips": [
+      "17112"
+    ],
+    "storm": "The June 26, 2024 wind report east of Skyline View is a regional reference for Linglestown. NOAA describes snapped trees in the reported area.",
+    "permit": "Ask Lower Paxton Township’s building codes office about the scope for a Linglestown parcel in the township.",
+    "sources": [
+      "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=16000US4243672",
+      "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+      "https://www.dauphincounty.gov/about-the-county/municipalities",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1193202",
+      "https://lowerpaxton-pa.gov/171/Building-Codes"
+    ]
+  },
+  "Steelton": {
+    "kind": "borough",
+    "housing": {
+      "units": 2629,
+      "units_moe": 292,
+      "thin": false,
+      "median_year": 1949,
+      "median_moe": 6,
+      "pct_pre1939": 39,
+      "pct_pre1970": 70,
+      "pct_since1990": 11,
+      "pct_since2010": 1,
+      "pct_detached": 28,
+      "pct_attached": 55,
+      "pct_mobile": 1
+    },
+    "zips": [
+      "17113"
+    ],
+    "storm": "The county hazard plan lists Steelton in its September 2021 entry for severe weather associated with Ida.",
+    "permit": "The Steelton Codes Department posts a residential permit application. Ask the borough about the scope and any access that would affect its streets.",
+    "sources": [
+      "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204373888",
+      "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+      "https://www.dauphincounty.gov/about-the-county/municipalities",
+      "https://www.dauphincounty.gov/docs/default-source/public-safety/hazard-mitigation-plan.pdf",
+      "https://www.steeltonpa.com/codes-department/"
+    ]
+  },
+  "Penbrook": {
+    "kind": "borough",
+    "housing": {
+      "units": 1479,
+      "units_moe": 198,
+      "thin": false,
+      "median_year": 1952,
+      "median_moe": 11,
+      "pct_pre1939": 38,
+      "pct_pre1970": 69,
+      "pct_since1990": 22,
+      "pct_since2010": 7,
+      "pct_detached": 31,
+      "pct_attached": 32,
+      "pct_mobile": 0
+    },
+    "zips": [
+      "17103",
+      "17109"
+    ],
+    "storm": "The September 2024 hail report east of Progress provides nearby weather context for Penbrook.",
+    "permit": "Penbrook accepts permit applications via its Citizen’s Engagement Portal.",
+    "sources": [
+      "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204358712",
+      "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+      "https://www.dauphincounty.gov/about-the-county/municipalities",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1209204",
+      "https://www.penbrook.org/portal/"
+    ]
+  },
+  "Highspire": {
+    "kind": "borough",
+    "housing": {
+      "units": 1436,
+      "units_moe": 214,
+      "thin": false,
+      "median_year": 1964,
+      "median_moe": 9,
+      "pct_pre1939": 20,
+      "pct_pre1970": 56,
+      "pct_since1990": 19,
+      "pct_since2010": 3,
+      "pct_detached": 35,
+      "pct_attached": 25,
+      "pct_mobile": 4
+    },
+    "zips": [
+      "17034"
+    ],
+    "storm": "NOAA reported downed trees in Highspire during wind events on June 26 and September 21, 2024.",
+    "permit": "Highspire publishes its building permit process and directs applicants to its Code Enforcement Office to schedule required inspections.",
+    "sources": [
+      "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204334664",
+      "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+      "https://www.dauphincounty.gov/about-the-county/municipalities",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1193169",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1209239",
+      "https://highspire.gov/permit-process-application/"
+    ]
+  },
+  "Paxtang": {
+    "kind": "borough",
+    "housing": {
+      "units": 712,
+      "units_moe": 85,
+      "thin": false,
+      "median_year": 1938,
+      "median_moe": null,
+      "pct_pre1939": 61,
+      "pct_pre1970": 97,
+      "pct_since1990": 0,
+      "pct_since2010": 0,
+      "pct_detached": 66,
+      "pct_attached": 21,
+      "pct_mobile": 0
+    },
+    "zips": [
+      "17111"
+    ],
+    "storm": "NOAA’s September 2024 hail report east of Progress is a nearby reference for Paxtang.",
+    "permit": "Paxtang’s building and zoning page calls for a permit application for structural repairs.",
+    "sources": [
+      "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204358504",
+      "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+      "https://www.dauphincounty.gov/about-the-county/municipalities",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1209204",
+      "https://www.paxtang.org/buildingpermits"
+    ]
+  },
+  "Lower Swatara Township": {
+    "kind": "township",
+    "housing": {
+      "units": 4170,
+      "units_moe": 251,
+      "thin": false,
+      "median_year": 1983,
+      "median_moe": 5,
+      "pct_pre1939": 2,
+      "pct_pre1970": 25,
+      "pct_since1990": 38,
+      "pct_since2010": 9,
+      "pct_detached": 67,
+      "pct_attached": 14,
+      "pct_mobile": 14
+    },
+    "zips": [
+      "17034",
+      "17057",
+      "17111"
+    ],
+    "storm": "The county hazard plan lists Lower Swatara Township in its entry for the remnants of Hurricane Ida in September 2021. The township’s published 2015 IRC climate chart lists a ground snow load of 25 pounds per square foot. Confirm current design criteria with the township if roof framing changes.",
+    "permit": "Lower Swatara Township lists structural alterations and new porch roof framing among residential projects that need a building permit.",
+    "sources": [
+      "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204345120",
+      "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+      "https://www.dauphincounty.gov/about-the-county/municipalities",
+      "https://www.dauphincounty.gov/docs/default-source/public-safety/hazard-mitigation-plan.pdf",
+      "https://www.lowerswatara.org/code-enforcement/files/when-residential-permit-required",
+      "https://lowerswatara.org/wp-content/uploads/2025/11/climate_design_chart-1.pdf"
+    ]
+  },
+  "West Hanover Township": {
+    "kind": "township",
+    "housing": {
+      "units": 5089,
+      "units_moe": 330,
+      "thin": false,
+      "median_year": 2000,
+      "median_moe": 5,
+      "pct_pre1939": 6,
+      "pct_pre1970": 23,
+      "pct_since1990": 59,
+      "pct_since2010": 14,
+      "pct_detached": 58,
+      "pct_attached": 31,
+      "pct_mobile": 3
+    },
+    "zips": [
+      "17036",
+      "17111",
+      "17112"
+    ],
+    "storm": "NOAA reported snapped and downed trees east of Skyline View on June 26, 2024, with wind estimated near 60 mph.",
+    "permit": "West Hanover Township posts residential construction permit information on its Building and Code Enforcement page.",
+    "sources": [
+      "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204383128",
+      "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+      "https://www.dauphincounty.gov/about-the-county/municipalities",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1193202",
+      "https://westhanover.com/200/Building-Code-Enforcement"
+    ]
+  },
+  "Halifax": {
+    "kind": "borough",
+    "housing": {
+      "units": 298,
+      "units_moe": 58,
+      "thin": false,
+      "median_year": 1938,
+      "median_moe": null,
+      "pct_pre1939": 56,
+      "pct_pre1970": 68,
+      "pct_since1990": 5,
+      "pct_since2010": 0,
+      "pct_detached": 61,
+      "pct_attached": 10,
+      "pct_mobile": 4
+    },
+    "zips": [
+      "17032"
+    ],
+    "storm": "NOAA logged a fallen tree that crushed part of a porch in Halifax on June 26, 2024.",
+    "permit": "Confirm whether your project needs a permit with the municipality listed on the parcel record.",
+    "sources": [
+      "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204332032",
+      "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+      "https://www.dauphincounty.gov/about-the-county/municipalities",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1193203"
+    ]
+  },
+  "Millersburg": {
+    "kind": "borough",
+    "housing": {
+      "units": 1284,
+      "units_moe": 123,
+      "thin": false,
+      "median_year": 1953,
+      "median_moe": 4,
+      "pct_pre1939": 38,
+      "pct_pre1970": 70,
+      "pct_since1990": 12,
+      "pct_since2010": 3,
+      "pct_detached": 50,
+      "pct_attached": 24,
+      "pct_mobile": 0
+    },
+    "zips": [
+      "17061"
+    ],
+    "storm": "NOAA logged a Millersburg downburst on June 29, 2024, with winds estimated at 95 mph.",
+    "permit": "Millersburg has a building height ordinance for new construction in its defined historic district area. Check the parcel and describe planned height changes to the borough.",
+    "sources": [
+      "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=06000US4204349680",
+      "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+      "https://www.dauphincounty.gov/about-the-county/municipalities",
+      "https://www.ncei.noaa.gov/stormevents/eventdetails.jsp?id=1178792",
+      "https://www.millersburgpa.org/wp-content/uploads/Ordinances/2014/03-14%20building%20height.pdf"
+    ]
+  }
+}

@@ -48,6 +48,16 @@ export const countyCopy: Record<
       "Codorus Creek runs through the city, and the Susquehanna bounds Wrightsville. Low streets in those places have a flood history that a Leader Heights split-level does not. The community pages keep that difference in the first paragraph.",
     ],
   },
+  dauphin: {
+    h1: "Roofs and exterior drainage in Dauphin County",
+    metaTitle: "Roofing and exterior work in Dauphin County, Pennsylvania",
+    metaDescription: "Request a free roofing, siding, window, or gutter estimate in Dauphin County, PA, from Harrisburg and Hershey to Millersburg.",
+    paragraphs: [
+      "A storm inspection in Harrisburg might begin at a shared masonry wall. After the June 2024 Millersburg downburst, the exposed roof edge and nearby tree strikes are natural places to start. NOAA’s storm records describe particular events and locations. The community pages pair those records with practical inspection guidance.",
+      "Dauphin County’s hazard plan records heavy snow in Hummelstown, Middletown, and Millersburg in February 2024. Tell us where snow collects against a lower roof or porch. Drainage and flashing in that spot can be part of a free written estimate.",
+      "The Hershey page uses the Census community boundary. The Derry Township page covers the municipality and uses township-wide estimates. If a project changes framing or visible exterior materials, look up the parcel jurisdiction before contacting the building office.",
+    ],
+  },
   cumberland: {
     h1: "Cumberland Valley roofs, walls, and drainage",
     metaTitle: "Roofing and exterior work in Cumberland County, Pennsylvania",

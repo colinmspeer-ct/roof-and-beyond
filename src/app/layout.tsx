@@ -18,14 +18,15 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL(brand.url),
   title: {
-    default: `${brand.dba} | Roofs, walls, and gutters in five Pennsylvania counties`,
+    default: `${brand.dba} | Roofs, walls, and gutters in six Pennsylvania counties`,
     template: `%s | ${brand.dba}`,
   },
   description: brand.description,
   icons: {
-    icon: [32, 192, 512].map((size) => ({
-      url: `/brand/icon-${size}.png`, sizes: `${size}x${size}`, type: "image/png",
-    })),
+    icon: [
+      { url: "/brand/icon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/brand/rb-square-logo-1024.png", sizes: "1024x1024", type: "image/png" },
+    ],
     apple: { url: "/brand/icon-180.png", sizes: "180x180", type: "image/png" },
   },
   applicationName: brand.dba,
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     siteName: brand.dba,
     locale: "en_US",
     title: {
-      default: `${brand.dba} | Roofs, walls, and gutters in five Pennsylvania counties`,
+      default: `${brand.dba} | Roofs, walls, and gutters in six Pennsylvania counties`,
       template: `%s | ${brand.dba}`,
     },
     description: brand.description,

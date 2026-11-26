@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 4177 -H 0.0.0.0",
-    "prebuild": "python3 scripts/compose_local.py && python3 scripts/generate_content.py && python3 scripts/write_llms.py && node scripts/sync-town-routes.mjs && node scripts/write-og.mjs && python3 scripts/fetch-remedi.py",
+    "prebuild": "python3 scripts/compose_local.py && python3 scripts/generate_content.py && python3 scripts/write_llms.py && node scripts/sync-town-routes.mjs && node scripts/write-og.mjs && python3 scripts/fetch-remedi.py --use-cache",
     "build": "next build",
     "postbuild": "node scripts/check-duplicates.mjs && node scripts/check-links.mjs && node scripts/check-remedi.mjs && python3 scripts/check-meta.py",
     "start": "next start",

@@ -14,9 +14,9 @@ import { brand, socialImage } from "@/content/brand";
 import { photos } from "@/content/media";
 import { companyGraph, faqNode } from "@/lib/schema";
 
-const title = `Roofing Contractor & Roofers in Lancaster, Chester, Delaware, York & Cumberland Counties, PA | ${brand.dba}`;
+const title = `Roofing Contractor & Roofers in Lancaster, Chester, Delaware, York, Cumberland & Dauphin Counties, PA | ${brand.dba}`;
 const description =
-  "Get a free roofing, siding, window, or gutter estimate in Lancaster, Chester, Delaware, York, or Cumberland County, PA.";
+  "Get a free roofing, siding, window, or gutter estimate in Lancaster, Chester, Delaware, York, Cumberland, or Dauphin County, PA.";
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -38,7 +38,7 @@ const faqs = [
   },
   {
     q: "Where do you work?",
-    a: "Lancaster, Chester, Delaware, York, and Cumberland counties. Each county page lists the communities by name.",
+    a: "Lancaster, Chester, Delaware, York, Cumberland, and Dauphin counties. Each county page lists the communities by name.",
   },
   {
     q: "How does a free estimate work?",
@@ -73,7 +73,7 @@ export default function HomePage() {
         title={
           <>
             Roofing, siding &amp; gutters for houses in{" "}
-            <span className="text-orange">Lancaster, Chester, Delaware, York &amp; Cumberland counties</span>
+            <span className="text-orange">Lancaster, Chester, Delaware, York, Cumberland &amp; Dauphin counties</span>
           </>
         }
         sub="Roof replacement, roof repair, siding, windows, gutters, and gutter guards. A free written estimate comes first, so you know the scope and the price before anything is scheduled."
@@ -100,7 +100,7 @@ export default function HomePage() {
                 contractor based in {brand.locality} (PA HIC #{brand.hic}). We estimate{" "}
                 <strong>roof replacement</strong>, <strong>roof repair</strong>, <strong>siding</strong>,{" "}
                 <strong>windows</strong>, <strong>gutters</strong>, and <strong>gutter guards</strong> for
-                houses in Lancaster, Chester, Delaware, York, and Cumberland counties. Call{" "}
+                houses in Lancaster, Chester, Delaware, York, Cumberland, and Dauphin counties. Call{" "}
                 <a className="font-bold text-navy underline" href={`tel:${brand.phoneTel}`}>
                   {brand.phoneDisplay}
                 </a>
@@ -184,7 +184,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 py-16 lg:py-20">
           <SectionHeading
             eyebrow="Where we work"
-            title="Roofers serving five Pennsylvania counties"
+            title="Roofers serving six Pennsylvania counties"
             intro="Open a county to see every community by name. Each town page links roofing, roof repair, siding, windows, gutters, and gutter guards for houses there."
           />
           <div className="mt-10">
