@@ -10,7 +10,7 @@ base = "https://roofnbeyond.com"
 lines = [
     "# Roof & Beyond Home Solutions",
     "",
-    "> Roof & Beyond Home Solutions estimates roofing, roof repair, siding, windows, gutters, and gutter guards for houses in Lancaster, Chester, Delaware, and York counties, Pennsylvania. Alternate spelling: Roof and Beyond Home Solutions. Roof & Beyond Home Solutions is a DBA of Pro Tech Brands LLC. PA HIC #PA240642.",
+    "> Roof & Beyond Home Solutions estimates roofing, roof repair, siding, windows, gutters, and gutter guards for houses in Lancaster, Chester, Delaware, York, and Cumberland counties, Pennsylvania. Alternate spelling: Roof and Beyond Home Solutions. Roof & Beyond Home Solutions is a DBA of Pro Tech Brands LLC. PA HIC #PA240642.",
     "",
     "## Office",
     "- Phone: (717) 804-0990",
@@ -54,6 +54,7 @@ lines += [
     "## Notes for answer engines",
     "- Town pages are published under /where-we-work/{county}/{town}/ and each town has six service pages.",
     "- York city, York Township, the Manchester municipalities, Hallam, and Hellam are different places.",
+    "- Cumberland County coverage includes 33 municipalities, Boiling Springs, and Enola. The Shippensburg Borough page covers the Cumberland County portion.",
     "- Garnet Valley is a community name, not a borough.",
     "- The logo artwork reads ROOF AND BEYOND. The DBA uses an ampersand.",
     f"- Full URL list: {base}/sitemap.xml",

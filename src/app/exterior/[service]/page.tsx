@@ -13,7 +13,7 @@ import { SectionHeading } from "@/components/section-heading";
 import { CountyCards, ServiceCards } from "@/components/sections";
 import { TrustSignals } from "@/components/trust-signals";
 import { brand, serviceOrder, socialImage, type ServiceSlug } from "@/content/brand";
-import { serviceKeyword, servicePhoto } from "@/content/media";
+import { serviceGallery, serviceKeyword, servicePhoto } from "@/content/media";
 import { servicePages } from "@/content/service-pages";
 import { breadcrumbNode, faqNode, serviceNode } from "@/lib/schema";
 
@@ -23,7 +23,7 @@ export function generateStaticParams() {
 
 export const dynamicParams = false;
 
-const AREA = "Lancaster, Chester, Delaware & York Counties, PA";
+const AREA = "Lancaster, Chester, Delaware, York & Cumberland Counties, PA";
 
 export async function generateMetadata({
   params,
@@ -75,7 +75,7 @@ export default async function ServicePage({
           serviceType: page.label,
           url: `${brand.url}/exterior/${page.slug}/`,
           description: page.metaDescription,
-          areaName: "Lancaster, Chester, Delaware, and York counties, Pennsylvania",
+          areaName: "Lancaster, Chester, Delaware, York, and Cumberland counties, Pennsylvania",
         })}
       />
       <PageHero
@@ -102,12 +102,36 @@ export default async function ServicePage({
           ))}
           <h2>Questions about {page.label.toLowerCase()}</h2>
           <FaqList faqs={page.faqs} openFirst />
-          <figure className="mt-12">
-            <div className="overflow-hidden rounded-2xl shadow-card">
-              <Picture photo={photo} sizes="(min-width: 1024px) 720px, 100vw" className="block" imgClassName="h-auto" />
-            </div>
-            <figcaption className="mt-2 text-xs text-muted">Stock photo. Not a {brand.dba} project.</figcaption>
-          </figure>
+          {page.slug === "roofing" ? (
+            <>
+              <h2>When storm damage affects a roof replacement</h2>
+              <p>
+                Strong winds can leave a roof with exposed underlayment or loose shingles along several edges.
+                Photograph what you can see from the ground. The roof inspection should show which slopes are
+                affected and whether the remaining shingles and decking can support a repair.
+              </p>
+            </>
+          ) : null}
+          {page.slug === "roof-repair" ? (
+            <>
+              <h2>Leaks and missing shingles after a storm</h2>
+              <p>
+                Note where the first indoor stain appeared and when the rain began. A repair visit traces
+                moisture from that spot to possible entry points, including loose flashing, a torn shingle,
+                or damage around a vent.
+              </p>
+            </>
+          ) : null}
+          <div className="mt-8 grid gap-5 sm:grid-cols-2">
+            {serviceGallery[page.slug].map((image) => (
+              <figure key={image.webp} className="m-0 min-w-0">
+                <div className="aspect-[16/10] overflow-hidden rounded-2xl shadow-card">
+                  <Picture photo={image} sizes="(min-width: 640px) 360px, 100vw" className="block h-full" />
+                </div>
+                <figcaption className="mt-2 text-xs text-muted">Illustrative photo</figcaption>
+              </figure>
+            ))}
+          </div>
         </article>
         <aside className="lg:sticky lg:top-28 lg:self-start">
           <div className="rounded-2xl bg-navy p-6 text-white">
@@ -155,8 +179,8 @@ export default async function ServicePage({
         <div className="mx-auto max-w-7xl px-4 py-16">
           <SectionHeading
             eyebrow="Where we work"
-            title={`${page.label} across four Pennsylvania counties`}
-            intro="Each county page lists the towns we serve. Town pages show local housing and storm records next to the service."
+            title={`${page.label} across five Pennsylvania counties`}
+            intro="Each county page lists the towns we serve. Town pages show local housing figures and explain the scope of each service."
           />
           <div className="mt-10">
             <CountyCards />

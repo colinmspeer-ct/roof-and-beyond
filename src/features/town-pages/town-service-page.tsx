@@ -14,7 +14,7 @@ import { CallCard, LocalDetails, Sources } from "@/components/town-bits";
 import { serviceBlurb } from "@/content/media";
 import { TrustSignals } from "@/components/trust-signals";
 import { brand, serviceOrder, socialImage, type ServiceSlug } from "@/content/brand";
-import { serviceKeyword, servicePhoto } from "@/content/media";
+import { serviceKeyword, townPhoto } from "@/content/media";
 import {
   getTown,
   neighborTowns,
@@ -92,6 +92,13 @@ export default async function TownServicePage({
     "gutter-guards": `Gutter guard cost in ${town.name}, PA`,
   }[block.slug];
 
+  const planning = (
+    <>
+      <h2>Planning {block.label.toLowerCase()} work in {town.name}</h2>
+      <p>{block.answer}</p>
+    </>
+  );
+
   return (
     <main>
       <JsonLd data={breadcrumbNode(crumbs)} />
@@ -107,7 +114,7 @@ export default async function TownServicePage({
         })}
       />
       <PageHero
-        photo={servicePhoto[block.slug]}
+        photo={townPhoto(town, block.slug)}
         crumbs={crumbs}
         eyebrow={`${kw.variation} · ${town.countyName}`}
         title={
@@ -129,10 +136,10 @@ export default async function TownServicePage({
             {block.paragraphs.map((paragraph) => (
               <p key={paragraph.slice(0, 60)}>{paragraph}</p>
             ))}
+            {town.county === "cumberland" ? planning : null}
           </article>
           <div className="prose-rb mt-10">
-            <h2>Planning {block.label.toLowerCase()} work in {town.name}</h2>
-            <p>{block.answer}</p>
+            {town.county !== "cumberland" ? planning : null}
             <h2>{block.label} questions in {town.name}</h2>
             <FaqList faqs={block.faqs} />
           </div>
@@ -161,7 +168,7 @@ export default async function TownServicePage({
             </Link>
           </div>
           <div className="mt-10">
-            <FactKey />
+            <FactKey countyWeather={town.county === "cumberland"} />
           </div>
         </div>
         <aside className="space-y-6 lg:sticky lg:top-28 lg:self-start">

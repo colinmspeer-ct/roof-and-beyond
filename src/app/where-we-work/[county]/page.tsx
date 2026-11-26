@@ -90,6 +90,16 @@ const countyFaqs = {
       a: "Call (717) 804-0990 or send the address through the contact form. The office is listed as Media, PA, and hours are 9 AM to 8 PM, seven days a week.",
     },
   ],
+  cumberland: [
+    {
+      q: "Does the Shippensburg page cover both counties?",
+      a: "The Shippensburg Borough page covers the Cumberland County portion. Shippensburg Township has its own page and housing figures.",
+    },
+    {
+      q: "Where do I check which Cumberland County municipality serves my house?",
+      a: "Look up the parcel with Cumberland County and confirm the borough or township before asking about permits. Postal names such as Mechanicsburg may apply to properties beyond the borough.",
+    },
+  ],
 } as const;
 
 export default async function CountyPage({
@@ -133,7 +143,7 @@ export default async function CountyPage({
           <SectionHeading
             eyebrow={`${places.length} towns`}
             title={`Towns we serve in ${county.name}`}
-            intro="Pick your town for local housing age, storm records, and links to all six services there."
+            intro="Pick your town for local housing figures and links to all six services."
           />
           <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {places.map((town) => (

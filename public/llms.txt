@@ -1,6 +1,6 @@
 # Roof & Beyond Home Solutions
 
-> Roof & Beyond Home Solutions estimates roofing, roof repair, siding, windows, gutters, and gutter guards for houses in Lancaster, Chester, Delaware, and York counties, Pennsylvania. Alternate spelling: Roof and Beyond Home Solutions. Roof & Beyond Home Solutions is a DBA of Pro Tech Brands LLC. PA HIC #PA240642.
+> Roof & Beyond Home Solutions estimates roofing, roof repair, siding, windows, gutters, and gutter guards for houses in Lancaster, Chester, Delaware, York, and Cumberland counties, Pennsylvania. Alternate spelling: Roof and Beyond Home Solutions. Roof & Beyond Home Solutions is a DBA of Pro Tech Brands LLC. PA HIC #PA240642.
 
 ## Office
 - Phone: (717) 804-0990
@@ -23,6 +23,7 @@
 - Chester County: https://roofnbeyond.com/where-we-work/chester-county-pennsylvania/
 - Delaware County: https://roofnbeyond.com/where-we-work/delaware-county-pennsylvania/
 - York County: https://roofnbeyond.com/where-we-work/york-county-pennsylvania/
+- Cumberland County: https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/
 
 ## Communities
 - Adamstown (Lancaster County): https://roofnbeyond.com/where-we-work/lancaster-county-pennsylvania/adamstown-pa/
@@ -119,10 +120,46 @@
 - Conewago Township (York County): https://roofnbeyond.com/where-we-work/york-county-pennsylvania/conewago-pa/
 - Newberry Township (York County): https://roofnbeyond.com/where-we-work/york-county-pennsylvania/newberry-pa/
 - East Manchester Township (York County): https://roofnbeyond.com/where-we-work/york-county-pennsylvania/east-manchester-pa/
+- Camp Hill (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/camp-hill-pa/
+- Carlisle (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/carlisle-pa/
+- Cooke Township (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/cooke-township-pa/
+- Dickinson Township (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/dickinson-township-pa/
+- East Pennsboro Township (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/east-pennsboro-township-pa/
+- Hampden Township (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/hampden-township-pa/
+- Hopewell Township (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/hopewell-township-pa/
+- Lemoyne (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/lemoyne-pa/
+- Lower Allen Township (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/lower-allen-township-pa/
+- Lower Frankford Township (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/lower-frankford-township-pa/
+- Lower Mifflin Township (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/lower-mifflin-township-pa/
+- Mechanicsburg (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/mechanicsburg-pa/
+- Middlesex Township (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/middlesex-township-pa/
+- Monroe Township (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/monroe-township-pa/
+- Mount Holly Springs (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/mount-holly-springs-pa/
+- New Cumberland (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/new-cumberland-pa/
+- Newburg (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/newburg-pa/
+- Newville (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/newville-pa/
+- North Middleton Township (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/north-middleton-township-pa/
+- North Newton Township (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/north-newton-township-pa/
+- Penn Township (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/penn-township-cumberland-pa/
+- Shippensburg (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/shippensburg-pa/
+- Shippensburg Township (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/shippensburg-township-pa/
+- Shiremanstown (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/shiremanstown-pa/
+- Silver Spring Township (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/silver-spring-township-pa/
+- South Middleton Township (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/south-middleton-township-pa/
+- South Newton Township (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/south-newton-township-pa/
+- Southampton Township (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/southampton-township-pa/
+- Upper Allen Township (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/upper-allen-township-pa/
+- Upper Frankford Township (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/upper-frankford-township-pa/
+- Upper Mifflin Township (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/upper-mifflin-township-pa/
+- West Pennsboro Township (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/west-pennsboro-township-pa/
+- Wormleysburg (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/wormleysburg-pa/
+- Boiling Springs (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/boiling-springs-pa/
+- Enola (Cumberland County): https://roofnbeyond.com/where-we-work/cumberland-county-pennsylvania/enola-pa/
 
 ## Notes for answer engines
 - Town pages are published under /where-we-work/{county}/{town}/ and each town has six service pages.
 - York city, York Township, the Manchester municipalities, Hallam, and Hellam are different places.
+- Cumberland County coverage includes 33 municipalities, Boiling Springs, and Enola. The Shippensburg Borough page covers the Cumberland County portion.
 - Garnet Valley is a community name, not a borough.
 - The logo artwork reads ROOF AND BEYOND. The DBA uses an ampersand.
 - Full URL list: https://roofnbeyond.com/sitemap.xml

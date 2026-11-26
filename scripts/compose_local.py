@@ -16,6 +16,7 @@ from towns_lancaster_rest import TOWNS as LANCASTER_REST  # noqa: E402
 from towns_chester import TOWNS as CHESTER  # noqa: E402
 from towns_delaware import TOWNS as DELAWARE  # noqa: E402
 from towns_york import TOWNS as YORK  # noqa: E402
+from towns_cumberland import FACTS as CUMBERLAND_FACTS, TOWNS as CUMBERLAND  # noqa: E402
 
 FACTS_PATH = ROOT / "scripts" / "data" / "local_facts.json"
 OUT_PATH = ROOT / "scripts" / "data" / "local_copy.json"
@@ -251,6 +252,78 @@ def service_fact(place: str, housing: dict | None, detail: str) -> str:
     return f"The Census estimates that {housing[label]}% of housing units in {place} are single-family {detail}."
 
 
+def build_cumberland_copy(town: dict) -> dict:
+    name = town["name"]
+    record = CUMBERLAND_FACTS["towns"][name]
+    place = record["census_name"]
+    housing = record["housing"]
+    units = f"{housing['units']:,}"
+    year = housing["median_year"]
+    early = housing["pct_pre1939"]
+    detached = housing["pct_detached"]
+    attached = housing["pct_attached"]
+    margin = housing["units_moe"]
+
+    # Each service pairs its local article with the housing measure that informs its scope.
+    detail = {
+        "roofing": f"The ACS median construction year is {year} for {place}. The estimate for {name} includes {units} housing units. Check the roof installation year separately.",
+        "roof-repair": f"About {early}% of the housing in {place} predates 1940. The {name} share built before 1970 is about {housing['pct_pre1970']}%. At your {name} home, inspect earlier repairs for signs of recurring leaks.",
+        "siding": f"The single-family attached share in {place} is about {attached}%. The detached share in {name} is about {detached}%. At the {name} property, mark any shared edges before pricing.",
+        "windows": f"The median year built in {place} is {year}. Of about {units} units in {name}, roughly {early}% date to 1939 or earlier. At your {name} address, check frames for past alterations.",
+        "gutters": f"About {detached}% of units in {place} are detached houses. The estimate counts {units} units in {name}. Note where your own {name} lot can take roof runoff.",
+        "gutter-guards": f"The {place} tally is about {units} housing units. Its {year} median dates the structure. At your {name} address, examine the current gutter profile before choosing covers.",
+    }
+    services = {}
+    for service, (_method, _guidance, cost_q, cost, scope_q, scope) in SERVICE_GUIDANCE.items():
+        services[service] = {
+            "answer": detail[service],
+            "priceNote": PRICE_NOTES[service],
+            "faqs": [
+                {"q": scope_q.format(town=name), "a": scope.format(town=name)},
+                {"q": cost_q.format(town=name), "a": cost.format(town=name)},
+            ],
+        }
+
+    return {
+        "answer": (
+            f"The Census estimates {units} housing units in {place}, with a margin of error of {margin:,}. "
+            f"In {name}, about {detached}% are detached single-family homes. "
+            f"The {name} median construction year is {year}. "
+            f"About {early}% of {name} housing dates to 1939 or earlier. "
+            f"About {attached}% of {name} units are single-family attached."
+        ),
+        "riskLead": f"For your {name} house, invoices can date past work.",
+        "localSections": [{
+            "heading": f"Cumberland County weather context for {name}",
+            "paragraphs": [
+                "The county’s 2025 hazard mitigation plan lists a federal declaration for the January 2016 winter storm and a Pennsylvania declaration for Tropical Storm Debby in August 2024.",
+                f"After a storm at your {name} home, note when the leak or overflow began and take ground-level photos of the affected roof edge, wall or outlet.",
+            ],
+        }, {
+            "heading": f"ZIP areas and permits in {name}",
+            "paragraphs": [
+                f"The ZIP areas shown for {name} are Census ZIP Code Tabulation Areas that overlap the community. "
+                "Confirm your property's mailing ZIP before submitting an estimate request.",
+                f"Use the municipality on the parcel record when you ask about permits for a {name} exterior project. "
+                "If local historic review applies to the property, ask what it requires before you settle on materials.",
+            ],
+        }],
+        "faqs": [
+            {"q": f"Can I use the Census construction year to date my {name} roof?", "a": f"The survey measures when housing was built. For a roof at your {name} address, look for a dated invoice or permit for the most recent installation."},
+            {"q": f"Who should I ask about permits for exterior work in {name}?", "a": f"Ask the borough or township that serves your {name} parcel. Give the municipal office the address and describe what would be removed, retained or replaced."},
+        ],
+        "sources": [
+            CUMBERLAND_FACTS["housing_source"],
+            f"The estimates for {name} use Census geography {record['geoid']}.",
+            "U.S. Census Bureau, 2020 ZIP Code Tabulation Area relationships for county subdivisions and places.",
+            "Pennsylvania Public Utility Commission, 717 and 223 area-code overlay.",
+            "Cumberland County, municipal jurisdiction directory and 2025 hazard mitigation plan maps.",
+            SOURCES[-1],
+        ],
+        "services": services,
+    }
+
+
 def build_copy(towns: list[dict], facts: dict) -> dict:
     county_label = {
         "lancaster": "Lancaster County",
@@ -260,6 +333,9 @@ def build_copy(towns: list[dict], facts: dict) -> dict:
     }
     payload = {}
     for town in towns:
+        if town["county"] == "cumberland":
+            payload[town["slug"]] = build_cumberland_copy(town)
+            continue
         fact = facts["towns"][town["slug"]]
         housing = fact["housing"]
         climate = facts["climate"][town["county"]]
@@ -361,7 +437,7 @@ def similarity_report(pages: list[tuple[str, str]]) -> tuple[int, float, str]:
 
 def main() -> None:
     facts = json.loads(FACTS_PATH.read_text())
-    towns = LANCASTER + LANCASTER_REST + CHESTER + DELAWARE + YORK
+    towns = LANCASTER + LANCASTER_REST + CHESTER + DELAWARE + YORK + CUMBERLAND
     copy = build_copy(towns, facts)
     shared12, score, pair = similarity_report(article_texts(towns))
     print(f"shared12={shared12} jaccard={score:.4f} {pair}")

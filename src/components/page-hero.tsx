@@ -45,6 +45,9 @@ export function PageHero({
           aria-hidden="true"
           className="absolute inset-0 bg-[linear-gradient(100deg,rgb(1_20_51/0.94)_0%,rgb(2_31_77/0.86)_45%,rgb(2_31_77/0.55)_100%)]"
         />
+        <span className="absolute bottom-2 left-4 rounded bg-navy-deep/85 px-2 py-1 text-xs text-white">
+          Illustrative photo
+        </span>
       </div>
       <div
         className={cn(

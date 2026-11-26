@@ -12,7 +12,7 @@ import { PillLinks, ServiceCards } from "@/components/sections";
 import { CallCard, LocalDetails, Sources, shortKind } from "@/components/town-bits";
 import { TrustSignals } from "@/components/trust-signals";
 import { brand, socialImage } from "@/content/brand";
-import { countyPhoto } from "@/content/media";
+import { townPhoto } from "@/content/media";
 import {
   getCounty,
   getTown,
@@ -78,6 +78,14 @@ export default async function TownPage({
     (item) => item.slug !== town.slug && !town.neighbors.includes(item.slug),
   );
 
+  const housing = (
+    <>
+      <h2>Housing and exterior work in {town.name}</h2>
+      <p>{town.answer}</p>
+      <p>{town.riskLead}</p>
+    </>
+  );
+
   return (
     <main>
       <JsonLd data={breadcrumbNode(crumbs)} />
@@ -93,7 +101,7 @@ export default async function TownPage({
         })}
       />
       <PageHero
-        photo={countyPhoto[town.county]}
+        photo={townPhoto(town)}
         crumbs={crumbs}
         eyebrow={`${town.countyName} · ${shortKind(town.kind)}${town.zips.length ? ` · ${town.zips.join(", ")}` : ""}`}
         title={
@@ -115,11 +123,10 @@ export default async function TownPage({
             {town.paragraphs.map((paragraph) => (
               <p key={paragraph.slice(0, 60)}>{paragraph}</p>
             ))}
+            {town.county === "cumberland" ? housing : null}
           </article>
           <div className="prose-rb mt-10">
-            <h2>Housing and exterior work in {town.name}</h2>
-            <p>{town.answer}</p>
-            <p>{town.riskLead}</p>
+            {town.county !== "cumberland" ? housing : null}
             {town.localSections.map((section) => (
               <section key={section.heading}>
                 <h2>{section.heading}</h2>
@@ -132,7 +139,7 @@ export default async function TownPage({
             <FaqList faqs={town.faqs} />
           </div>
           <div className="mt-10">
-            <FactKey />
+            <FactKey countyWeather={town.county === "cumberland"} />
           </div>
         </div>
         <aside className="space-y-6 lg:sticky lg:top-28 lg:self-start">
@@ -148,7 +155,7 @@ export default async function TownPage({
           <SectionHeading
             eyebrow={`Services in ${town.name}`}
             title={`Roofing and exterior services in ${town.name}`}
-            intro={`Each page applies the trade to houses in ${town.name}: local housing age, storm records, and what goes into the estimate.`}
+            intro={`Each page applies the trade to houses in ${town.name}: local housing and what goes into the estimate.`}
           />
           <div className="mt-10">
             <ServiceCards

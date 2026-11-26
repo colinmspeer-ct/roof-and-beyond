@@ -12,10 +12,10 @@ import { breadcrumbNode, companyGraph } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: { absolute: "About Roof & Beyond Home Solutions | Roofing Contractor in Media, PA" },
-  description: `${brand.dba} estimates roofing, roof repair, siding, windows, gutters, and gutter guards in four Pennsylvania counties.`,
+  description: `${brand.dba} estimates roofing, roof repair, siding, windows, gutters, and gutter guards in five Pennsylvania counties.`,
   openGraph: {
     title: "About the company",
-    description: `${brand.dba} estimates roofing, roof repair, siding, windows, gutters, and gutter guards in four Pennsylvania counties.`,
+    description: `${brand.dba} estimates roofing, roof repair, siding, windows, gutters, and gutter guards in five Pennsylvania counties.`,
     siteName: brand.dba,
     images: [socialImage],
   },
@@ -42,7 +42,7 @@ export default function AboutPage() {
       <JsonLd data={breadcrumbNode(crumbs)} />
       <JsonLd data={companyGraph()} />
       <PageHero
-        photo={photos.clapboard}
+        photo={photos.home}
         crumbs={crumbs}
         compact
         eyebrow={`PA HIC #${brand.hic} · ${brand.locality}`}
@@ -51,7 +51,7 @@ export default function AboutPage() {
             About <span className="text-orange">{brand.dba}</span>
           </>
         }
-        sub="A residential roofing and exterior contractor for houses in Lancaster, Chester, Delaware, and York counties."
+        sub="A residential roofing and exterior contractor for houses in Lancaster, Chester, Delaware, York, and Cumberland counties."
         actions={<HeroActions estimateHref="/contact/#estimate" phoneDisplay={brand.phoneDisplay} phoneTel={brand.phoneTel} />}
       />
       <TrustSignals />
@@ -66,7 +66,7 @@ export default function AboutPage() {
           <p>
             The work is exterior only: roofing, roof repair, siding, windows,
             gutters, and gutter guards. Service covers the communities listed
-            for Lancaster, Chester, Delaware, and York counties. The public
+            for Lancaster, Chester, Delaware, York, and Cumberland counties. The public
             location is {brand.locality}. Hours are {brand.hours}.
           </p>
           <p>
@@ -108,7 +108,7 @@ export default function AboutPage() {
         </div>
       </section>
       <section className="mx-auto max-w-7xl px-4 py-16">
-        <SectionHeading eyebrow="Where we work" title="Four Pennsylvania counties" />
+        <SectionHeading eyebrow="Where we work" title="Five Pennsylvania counties" />
         <div className="mt-8">
           <CountyCards />
         </div>

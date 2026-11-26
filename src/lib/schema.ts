@@ -28,8 +28,8 @@ export function companyNode() {
     legalName: brand.legalName,
     alternateName: brand.alternateName,
     url: brand.url,
-    logo: `${brand.url}/brand/rb-combined-logo.svg`,
-    image: `${brand.url}/brand/rb-combined-logo.svg`,
+    logo: `${brand.url}/brand/rb-square-logo-1024.png`,
+    image: `${brand.url}/brand/rb-combined-logo-on-white.png`,
     description: brand.description,
     telephone: brand.phoneTel,
     email: brand.email,
@@ -38,7 +38,6 @@ export function companyNode() {
       "@type": "PostalAddress",
       addressLocality: "Media",
       addressRegion: "PA",
-      postalCode: brand.postalCode,
       addressCountry: "US",
     },
     identifier: {

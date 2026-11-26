@@ -36,6 +36,7 @@ export function ServiceCards({
                   imgClassName={`transition duration-500 group-hover:scale-105 ${slug === "gutter-guards" ? "object-[30%_80%]" : ""}`}
                 />
               </div>
+              <p className="px-5 pt-2 text-xs text-muted">Illustrative photo</p>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="text-xl text-navy">{page.label}</h3>
                 <p className="mt-2 flex-1 text-[15px] leading-6 text-muted">{blurbFor(slug)}</p>
@@ -61,7 +62,7 @@ export const estimateSteps = [
 
 export function Steps() {
   return (
-    <ol className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+    <ol className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
       {estimateSteps.map((step, index) => (
         <li key={step.title} className="relative rounded-2xl border border-line bg-white p-6 shadow-card">
           <span className="grid size-12 place-items-center rounded-xl bg-navy text-lg font-extrabold text-white">
@@ -80,11 +81,12 @@ const countyTagline: Record<string, string> = {
   chester: "Borough twins, Main Line slate, and newer colonials on suburban lots.",
   delaware: "The western slice of the county around the Media county seat.",
   york: "The city, its ring of townships, and the boroughs out toward the river.",
+  cumberland: "West Shore boroughs, Carlisle, and townships across the Cumberland Valley.",
 };
 
 export function CountyCards({ current }: { current?: string }) {
   return (
-    <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+    <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
       {counties
         .filter((county) => county.slug !== current)
         .map((county) => {

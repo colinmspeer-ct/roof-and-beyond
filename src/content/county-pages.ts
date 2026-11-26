@@ -43,9 +43,20 @@ export const countyCopy: Record<
     metaDescription:
       "House exterior estimates in York County, from the city and its townships to Hanover, Red Lion, and the southern boroughs.",
     paragraphs: [
-      "York County is the fourth county on this site. The pages cover the city, the large townships around it, and the boroughs people actually name: Hanover, Red Lion, Dallastown, West York, Spring Grove, Dillsburg, Wrightsville, and the southern towns along Interstate 83.",
+      "York County coverage includes the city, the large townships around it, and the boroughs people actually name: Hanover, Red Lion, Dallastown, West York, Spring Grove, Dillsburg, Wrightsville, and the southern towns along Interstate 83.",
       "York city is not York Township. Manchester borough is not Manchester Township, and neither is East Manchester Township. Hallam and Hellam are spelled differently because they are different places. Dover borough sits inside Dover Township and has its own page. Mixing those names sends a homeowner to the wrong housing stock.",
       "Codorus Creek runs through the city, and the Susquehanna bounds Wrightsville. Low streets in those places have a flood history that a Leader Heights split-level does not. The community pages keep that difference in the first paragraph.",
+    ],
+  },
+  cumberland: {
+    h1: "Cumberland Valley roofs, walls, and drainage",
+    metaTitle: "Roofing and exterior work in Cumberland County, Pennsylvania",
+    metaDescription:
+      "Get a written estimate for roofing, roof repair, siding, windows, gutters, or gutter guards in Cumberland County, PA.",
+    paragraphs: [
+      "Cumberland County runs from the West Shore of the Susquehanna through Carlisle and west to Shippensburg. A porch roof on a compact West Shore lot can raise different access and drainage questions from a long eave facing open land. Look at where the water goes after it leaves the roof as well as what happens on the slope itself.",
+      "On the South Mountain side, start your estimate with a view of the eaves and the grade around the house. In a borough, show where a wall, porch or downspout comes close to the next property. That gives the estimator a way to describe each transition or outlet in writing.",
+      "The directory covers the county’s 33 municipalities and includes separate entries for Boiling Springs in South Middleton Township and Enola in East Pennsboro Township. The Shippensburg Borough entry covers the Cumberland County portion. Use the municipality for permit questions, since a mailing name can cover more than one local government.",
     ],
   },
 };

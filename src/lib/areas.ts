@@ -20,7 +20,8 @@ export type ServiceBlock = {
 export type Town = {
   slug: string;
   name: string;
-  county: "lancaster" | "chester" | "delaware" | "york";
+  county: "lancaster" | "chester" | "delaware" | "york" | "cumberland";
+  photoIndex: number;
   countySlug: string;
   countyName: string;
   kind: string;

@@ -26,7 +26,7 @@ export default function ExteriorIndexPage() {
     <main>
       <JsonLd data={breadcrumbNode(crumbs)} />
       <PageHero
-        photo={photos.paHouse}
+        photo={photos.farmhouse}
         crumbs={crumbs}
         compact
         eyebrow="Six exterior services"

@@ -13,9 +13,9 @@ import { breadcrumbNode } from "@/lib/schema";
 import { shortKind } from "@/components/town-bits";
 
 export const metadata: Metadata = {
-  title: "Roofers Serving Lancaster, Chester, Delaware & York Counties | Service Area",
+  title: "Roofers Serving Lancaster, Chester, Delaware, York & Cumberland Counties | Service Area",
   description:
-    "Roof & Beyond Home Solutions lists the communities it covers in Lancaster, Chester, Delaware, and York counties. Town names are on each county page.",
+    "Find roofing and exterior services by town in Lancaster, Chester, Delaware, York, and Cumberland counties, Pennsylvania.",
   alternates: { canonical: "/where-we-work/" },
 };
 
@@ -30,13 +30,13 @@ export default function WhereWeWorkPage() {
     <main>
       <JsonLd data={breadcrumbNode(crumbs)} />
       <PageHero
-        photo={photos.rowHouses}
+        photo={photos.twins}
         crumbs={crumbs}
         compact
-        eyebrow={`${total} communities · 4 counties`}
+        eyebrow={`${total} communities · ${counties.length} counties`}
         title={
           <>
-            Where we work: <span className="text-orange">Lancaster, Chester, Delaware &amp; York counties</span>
+            Where we work: <span className="text-orange">Lancaster, Chester, Delaware, York &amp; Cumberland counties</span>
           </>
         }
         sub="Find your county, then your town. Every town page links roofing, roof repair, siding, windows, gutters, and gutter guards for houses there."
@@ -47,17 +47,15 @@ export default function WhereWeWorkPage() {
         <article data-unique="true" className="prose-rb max-w-3xl">
           <h2>Communities, not a vague service area</h2>
           <p>
-            The map is four Pennsylvania counties. Lancaster, Chester, and
-            Delaware match a specific town list. York County adds the city, the
-            townships around it, and the boroughs homeowners actually name.
-            Garnet Valley is included as a community name, not as a borough that
-            does not exist.
+            Find towns across five Pennsylvania counties, from Media and the Main
+            Line to Lancaster, York, and the Cumberland Valley. Cumberland has
+            pages for all 33 municipalities, plus Boiling Springs and Enola.
           </p>
           <p>
             Open a county, then a town. Each town page links roofing, roof repair,
             siding, windows, gutters, and gutter guards for houses in that place.
             The figures on a town page are tied to that place: Census housing
-            years, NOAA storm rows, and any National Register district that matched.
+            years and ZIP areas, with storm and district records where available.
           </p>
         </article>
         <div className="mt-12 grid gap-6 lg:grid-cols-2">

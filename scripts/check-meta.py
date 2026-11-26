@@ -38,7 +38,7 @@ for page in sorted(out.rglob("*.html")):
         continue
     description = parser.descriptions[0]
     max_length = max(max_length, len(description))
-    if len(description) > 160 or not description.endswith((".", "!", "?")) or description.endswith(("..", "…")):
+    if len(description) > 155 or not description.endswith((".", "!", "?")) or description.endswith(("..", "…")):
         problems.append(f"{route}: invalid description ({len(description)} characters): {description!r}")
     normalized = " ".join(description.casefold().split())
     if normalized in seen:

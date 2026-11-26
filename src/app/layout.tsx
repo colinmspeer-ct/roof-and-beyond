@@ -18,17 +18,23 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL(brand.url),
   title: {
-    default: `${brand.dba} | Roofs, walls, and gutters in four Pennsylvania counties`,
+    default: `${brand.dba} | Roofs, walls, and gutters in five Pennsylvania counties`,
     template: `%s | ${brand.dba}`,
   },
   description: brand.description,
+  icons: {
+    icon: [32, 192, 512].map((size) => ({
+      url: `/brand/icon-${size}.png`, sizes: `${size}x${size}`, type: "image/png",
+    })),
+    apple: { url: "/brand/icon-180.png", sizes: "180x180", type: "image/png" },
+  },
   applicationName: brand.dba,
   openGraph: {
     type: "website",
     siteName: brand.dba,
     locale: "en_US",
     title: {
-      default: `${brand.dba} | Roofs, walls, and gutters in four Pennsylvania counties`,
+      default: `${brand.dba} | Roofs, walls, and gutters in five Pennsylvania counties`,
       template: `%s | ${brand.dba}`,
     },
     description: brand.description,

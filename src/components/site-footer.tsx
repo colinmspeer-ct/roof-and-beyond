@@ -27,7 +27,7 @@ export function SiteFooter() {
           />
           <p className="mt-5 max-w-sm text-[15px] leading-7 text-white/75">
             Roofing, roof repair, siding, windows, gutters, and gutter guards
-            for houses in Lancaster, Chester, Delaware, and York counties.
+            for houses in Lancaster, Chester, Delaware, York, and Cumberland counties.
           </p>
           <ul className="mt-5 space-y-2 text-[15px] text-white/85">
             <li>

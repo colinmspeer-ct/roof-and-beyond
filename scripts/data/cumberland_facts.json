@@ -1,0 +1,831 @@
+{
+  "housing_source": "U.S. Census Bureau ACS 2020–2024 five-year estimates, tables B25024, B25034 and B25035, via Census Reporter.",
+  "housing_queries": [
+    "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=060%7C05000US42041",
+    "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=160%7C05000US42041"
+  ],
+  "municipalities_source": "https://www.cumberlandcountypa.gov/1975/MDJ-Jurisdiction-by-Municipality",
+  "geography_source": "https://www.cumberlandcountypa.gov/DocumentCenter/View/54454/TEXT---2025-Cumberland-County-HMP_Plan-111325",
+  "zip_source": "https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html",
+  "area_code_source": "https://www.puc.beta.pa.gov/telecommunications/area-codes/",
+  "towns": {
+    "Boiling Springs": {
+      "geoid": "16000US4207472",
+      "census_name": "Boiling Springs CDP",
+      "kind": "village in South Middleton Township",
+      "zips": [
+        "17007"
+      ],
+      "housing": {
+        "units": 1258,
+        "units_moe": 170,
+        "thin": false,
+        "median_year": 1986,
+        "median_moe": 5,
+        "pct_pre1939": 15,
+        "pct_pre1970": 24,
+        "pct_since1990": 44,
+        "pct_since2010": 7,
+        "pct_detached": 90,
+        "pct_attached": 4,
+        "pct_mobile": 0
+      }
+    },
+    "Camp Hill": {
+      "geoid": "06000US4204111000",
+      "census_name": "Camp Hill borough",
+      "kind": "borough",
+      "zips": [
+        "17011"
+      ],
+      "housing": {
+        "units": 3602,
+        "units_moe": 226,
+        "thin": false,
+        "median_year": 1953,
+        "median_moe": 3,
+        "pct_pre1939": 27,
+        "pct_pre1970": 89,
+        "pct_since1990": 5,
+        "pct_since2010": 1,
+        "pct_detached": 76,
+        "pct_attached": 3,
+        "pct_mobile": 0
+      }
+    },
+    "Carlisle": {
+      "geoid": "06000US4204111272",
+      "census_name": "Carlisle borough",
+      "kind": "borough",
+      "zips": [
+        "17013"
+      ],
+      "housing": {
+        "units": 9819,
+        "units_moe": 498,
+        "thin": false,
+        "median_year": 1953,
+        "median_moe": 6,
+        "pct_pre1939": 40,
+        "pct_pre1970": 66,
+        "pct_since1990": 14,
+        "pct_since2010": 2,
+        "pct_detached": 36,
+        "pct_attached": 27,
+        "pct_mobile": 0
+      }
+    },
+    "Cooke Township": {
+      "geoid": "06000US4204115920",
+      "census_name": "Cooke Township",
+      "kind": "township",
+      "zips": [
+        "17241",
+        "17324"
+      ],
+      "housing": {
+        "units": 187,
+        "units_moe": 38,
+        "thin": false,
+        "median_year": 1959,
+        "median_moe": 10,
+        "pct_pre1939": 24,
+        "pct_pre1970": 58,
+        "pct_since1990": 27,
+        "pct_since2010": 5,
+        "pct_detached": 97,
+        "pct_attached": 2,
+        "pct_mobile": 2
+      }
+    },
+    "Dickinson Township": {
+      "geoid": "06000US4204119144",
+      "census_name": "Dickinson Township",
+      "kind": "township",
+      "zips": [
+        "17015",
+        "17065",
+        "17324"
+      ],
+      "housing": {
+        "units": 2175,
+        "units_moe": 158,
+        "thin": false,
+        "median_year": 1989,
+        "median_moe": 5,
+        "pct_pre1939": 18,
+        "pct_pre1970": 24,
+        "pct_since1990": 48,
+        "pct_since2010": 6,
+        "pct_detached": 88,
+        "pct_attached": 1,
+        "pct_mobile": 10
+      }
+    },
+    "East Pennsboro Township": {
+      "geoid": "06000US4204121680",
+      "census_name": "East Pennsboro Township",
+      "kind": "township",
+      "zips": [
+        "17011",
+        "17025",
+        "17050",
+        "17053",
+        "17093"
+      ],
+      "housing": {
+        "units": 9286,
+        "units_moe": 315,
+        "thin": false,
+        "median_year": 1978,
+        "median_moe": 4,
+        "pct_pre1939": 13,
+        "pct_pre1970": 41,
+        "pct_since1990": 35,
+        "pct_since2010": 10,
+        "pct_detached": 53,
+        "pct_attached": 21,
+        "pct_mobile": 2
+      }
+    },
+    "Enola": {
+      "geoid": "16000US4223744",
+      "census_name": "Enola CDP",
+      "kind": "community in East Pennsboro Township",
+      "zips": [
+        "17025",
+        "17093"
+      ],
+      "housing": {
+        "units": 2818,
+        "units_moe": 283,
+        "thin": false,
+        "median_year": 1969,
+        "median_moe": 5,
+        "pct_pre1939": 15,
+        "pct_pre1970": 51,
+        "pct_since1990": 22,
+        "pct_since2010": 8,
+        "pct_detached": 40,
+        "pct_attached": 23,
+        "pct_mobile": 2
+      }
+    },
+    "Hampden Township": {
+      "geoid": "06000US4204132296",
+      "census_name": "Hampden Township",
+      "kind": "township",
+      "zips": [
+        "17011",
+        "17025",
+        "17050",
+        "17055"
+      ],
+      "housing": {
+        "units": 13637,
+        "units_moe": 470,
+        "thin": false,
+        "median_year": 1987,
+        "median_moe": 2,
+        "pct_pre1939": 2,
+        "pct_pre1970": 21,
+        "pct_since1990": 45,
+        "pct_since2010": 15,
+        "pct_detached": 61,
+        "pct_attached": 22,
+        "pct_mobile": 3
+      }
+    },
+    "Hopewell Township": {
+      "geoid": "06000US4204135672",
+      "census_name": "Hopewell Township",
+      "kind": "township",
+      "zips": [
+        "17240",
+        "17257"
+      ],
+      "housing": {
+        "units": 917,
+        "units_moe": 121,
+        "thin": false,
+        "median_year": 1986,
+        "median_moe": 5,
+        "pct_pre1939": 8,
+        "pct_pre1970": 18,
+        "pct_since1990": 43,
+        "pct_since2010": 7,
+        "pct_detached": 90,
+        "pct_attached": 2,
+        "pct_mobile": 7
+      }
+    },
+    "Lemoyne": {
+      "geoid": "06000US4204142648",
+      "census_name": "Lemoyne borough",
+      "kind": "borough",
+      "zips": [
+        "17011",
+        "17043"
+      ],
+      "housing": {
+        "units": 2441,
+        "units_moe": 255,
+        "thin": false,
+        "median_year": 1949,
+        "median_moe": 12,
+        "pct_pre1939": 44,
+        "pct_pre1970": 79,
+        "pct_since1990": 13,
+        "pct_since2010": 7,
+        "pct_detached": 42,
+        "pct_attached": 26,
+        "pct_mobile": 0
+      }
+    },
+    "Lower Allen Township": {
+      "geoid": "06000US4204144832",
+      "census_name": "Lower Allen Township",
+      "kind": "township",
+      "zips": [
+        "17011",
+        "17043",
+        "17050",
+        "17055",
+        "17070"
+      ],
+      "housing": {
+        "units": 7899,
+        "units_moe": 437,
+        "thin": false,
+        "median_year": 1976,
+        "median_moe": 4,
+        "pct_pre1939": 6,
+        "pct_pre1970": 42,
+        "pct_since1990": 38,
+        "pct_since2010": 16,
+        "pct_detached": 53,
+        "pct_attached": 11,
+        "pct_mobile": 2
+      }
+    },
+    "Lower Frankford Township": {
+      "geoid": "06000US4204144904",
+      "census_name": "Lower Frankford Township",
+      "kind": "township",
+      "zips": [
+        "17015",
+        "17241"
+      ],
+      "housing": {
+        "units": 711,
+        "units_moe": 99,
+        "thin": false,
+        "median_year": 1981,
+        "median_moe": 4,
+        "pct_pre1939": 5,
+        "pct_pre1970": 23,
+        "pct_since1990": 33,
+        "pct_since2010": 8,
+        "pct_detached": 74,
+        "pct_attached": 0,
+        "pct_mobile": 25
+      }
+    },
+    "Lower Mifflin Township": {
+      "geoid": "06000US4204144984",
+      "census_name": "Lower Mifflin Township",
+      "kind": "township",
+      "zips": [
+        "17241"
+      ],
+      "housing": {
+        "units": 713,
+        "units_moe": 91,
+        "thin": false,
+        "median_year": 1984,
+        "median_moe": 4,
+        "pct_pre1939": 12,
+        "pct_pre1970": 26,
+        "pct_since1990": 40,
+        "pct_since2010": 11,
+        "pct_detached": 60,
+        "pct_attached": 0,
+        "pct_mobile": 39
+      }
+    },
+    "Mechanicsburg": {
+      "geoid": "06000US4204148376",
+      "census_name": "Mechanicsburg borough",
+      "kind": "borough",
+      "zips": [
+        "17050",
+        "17055"
+      ],
+      "housing": {
+        "units": 4605,
+        "units_moe": 341,
+        "thin": false,
+        "median_year": 1959,
+        "median_moe": 4,
+        "pct_pre1939": 34,
+        "pct_pre1970": 63,
+        "pct_since1990": 12,
+        "pct_since2010": 8,
+        "pct_detached": 58,
+        "pct_attached": 11,
+        "pct_mobile": 0
+      }
+    },
+    "Middlesex Township": {
+      "geoid": "06000US4204149072",
+      "census_name": "Middlesex Township",
+      "kind": "township",
+      "zips": [
+        "17013",
+        "17015",
+        "17050"
+      ],
+      "housing": {
+        "units": 2818,
+        "units_moe": 270,
+        "thin": false,
+        "median_year": 1986,
+        "median_moe": 4,
+        "pct_pre1939": 10,
+        "pct_pre1970": 29,
+        "pct_since1990": 41,
+        "pct_since2010": 13,
+        "pct_detached": 53,
+        "pct_attached": 11,
+        "pct_mobile": 30
+      }
+    },
+    "Monroe Township": {
+      "geoid": "06000US4204150472",
+      "census_name": "Monroe Township",
+      "kind": "township",
+      "zips": [
+        "17007",
+        "17015",
+        "17019",
+        "17055"
+      ],
+      "housing": {
+        "units": 2472,
+        "units_moe": 185,
+        "thin": false,
+        "median_year": 1979,
+        "median_moe": 4,
+        "pct_pre1939": 19,
+        "pct_pre1970": 33,
+        "pct_since1990": 31,
+        "pct_since2010": 14,
+        "pct_detached": 89,
+        "pct_attached": 4,
+        "pct_mobile": 1
+      }
+    },
+    "Mount Holly Springs": {
+      "geoid": "06000US4204151592",
+      "census_name": "Mount Holly Springs borough",
+      "kind": "borough",
+      "zips": [
+        "17065"
+      ],
+      "housing": {
+        "units": 902,
+        "units_moe": 148,
+        "thin": false,
+        "median_year": 1955,
+        "median_moe": 5,
+        "pct_pre1939": 33,
+        "pct_pre1970": 67,
+        "pct_since1990": 15,
+        "pct_since2010": 1,
+        "pct_detached": 52,
+        "pct_attached": 19,
+        "pct_mobile": 7
+      }
+    },
+    "New Cumberland": {
+      "geoid": "06000US4204153464",
+      "census_name": "New Cumberland borough",
+      "kind": "borough",
+      "zips": [
+        "17043",
+        "17070"
+      ],
+      "housing": {
+        "units": 3536,
+        "units_moe": 227,
+        "thin": false,
+        "median_year": 1953,
+        "median_moe": 3,
+        "pct_pre1939": 23,
+        "pct_pre1970": 85,
+        "pct_since1990": 4,
+        "pct_since2010": 1,
+        "pct_detached": 68,
+        "pct_attached": 14,
+        "pct_mobile": 0
+      }
+    },
+    "Newburg": {
+      "geoid": "06000US4204153344",
+      "census_name": "Newburg borough",
+      "kind": "borough",
+      "zips": [
+        "17240"
+      ],
+      "housing": {
+        "units": 183,
+        "units_moe": 82,
+        "thin": true,
+        "median_year": 1952,
+        "median_moe": 43,
+        "pct_pre1939": 48,
+        "pct_pre1970": 55,
+        "pct_since1990": 13,
+        "pct_since2010": 1,
+        "pct_detached": 91,
+        "pct_attached": 4,
+        "pct_mobile": 0
+      }
+    },
+    "Newville": {
+      "geoid": "06000US4204154320",
+      "census_name": "Newville borough",
+      "kind": "borough",
+      "zips": [
+        "17241"
+      ],
+      "housing": {
+        "units": 580,
+        "units_moe": 71,
+        "thin": false,
+        "median_year": 1938,
+        "median_moe": null,
+        "pct_pre1939": 72,
+        "pct_pre1970": 84,
+        "pct_since1990": 7,
+        "pct_since2010": 0,
+        "pct_detached": 31,
+        "pct_attached": 30,
+        "pct_mobile": 2
+      }
+    },
+    "North Middleton Township": {
+      "geoid": "06000US4204155216",
+      "census_name": "North Middleton Township",
+      "kind": "township",
+      "zips": [
+        "17013",
+        "17015"
+      ],
+      "housing": {
+        "units": 5315,
+        "units_moe": 345,
+        "thin": false,
+        "median_year": 1980,
+        "median_moe": 4,
+        "pct_pre1939": 7,
+        "pct_pre1970": 31,
+        "pct_since1990": 34,
+        "pct_since2010": 11,
+        "pct_detached": 68,
+        "pct_attached": 20,
+        "pct_mobile": 7
+      }
+    },
+    "North Newton Township": {
+      "geoid": "06000US4204155248",
+      "census_name": "North Newton Township",
+      "kind": "township",
+      "zips": [
+        "17241",
+        "17257"
+      ],
+      "housing": {
+        "units": 929,
+        "units_moe": 65,
+        "thin": false,
+        "median_year": 1978,
+        "median_moe": 6,
+        "pct_pre1939": 20,
+        "pct_pre1970": 40,
+        "pct_since1990": 35,
+        "pct_since2010": 5,
+        "pct_detached": 83,
+        "pct_attached": 0,
+        "pct_mobile": 11
+      }
+    },
+    "Penn Township": {
+      "geoid": "06000US4204158824",
+      "census_name": "Penn Township",
+      "kind": "township",
+      "zips": [
+        "17015",
+        "17241",
+        "17257"
+      ],
+      "housing": {
+        "units": 1157,
+        "units_moe": 106,
+        "thin": false,
+        "median_year": 1982,
+        "median_moe": 3,
+        "pct_pre1939": 18,
+        "pct_pre1970": 29,
+        "pct_since1990": 31,
+        "pct_since2010": 4,
+        "pct_detached": 89,
+        "pct_attached": 1,
+        "pct_mobile": 9
+      }
+    },
+    "Shippensburg": {
+      "geoid": "06000US4204170352",
+      "census_name": "the Cumberland County portion of Shippensburg Borough",
+      "kind": "borough",
+      "zips": [
+        "17257"
+      ],
+      "housing": {
+        "units": 2272,
+        "units_moe": 266,
+        "thin": false,
+        "median_year": 1949,
+        "median_moe": 10,
+        "pct_pre1939": 34,
+        "pct_pre1970": 68,
+        "pct_since1990": 12,
+        "pct_since2010": 3,
+        "pct_detached": 33,
+        "pct_attached": 9,
+        "pct_mobile": 0
+      }
+    },
+    "Shippensburg Township": {
+      "geoid": "06000US4204170360",
+      "census_name": "Shippensburg Township",
+      "kind": "township",
+      "zips": [
+        "17257"
+      ],
+      "housing": {
+        "units": 1004,
+        "units_moe": 141,
+        "thin": false,
+        "median_year": 1983,
+        "median_moe": 5,
+        "pct_pre1939": 10,
+        "pct_pre1970": 17,
+        "pct_since1990": 39,
+        "pct_since2010": 4,
+        "pct_detached": 25,
+        "pct_attached": 24,
+        "pct_mobile": 14
+      }
+    },
+    "Shiremanstown": {
+      "geoid": "06000US4204170384",
+      "census_name": "Shiremanstown borough",
+      "kind": "borough",
+      "zips": [
+        "17011"
+      ],
+      "housing": {
+        "units": 767,
+        "units_moe": 101,
+        "thin": false,
+        "median_year": 1956,
+        "median_moe": 3,
+        "pct_pre1939": 27,
+        "pct_pre1970": 73,
+        "pct_since1990": 6,
+        "pct_since2010": 1,
+        "pct_detached": 52,
+        "pct_attached": 25,
+        "pct_mobile": 0
+      }
+    },
+    "Silver Spring Township": {
+      "geoid": "06000US4204170792",
+      "census_name": "Silver Spring Township",
+      "kind": "township",
+      "zips": [
+        "17015",
+        "17025",
+        "17050",
+        "17055"
+      ],
+      "housing": {
+        "units": 8439,
+        "units_moe": 257,
+        "thin": false,
+        "median_year": 2000,
+        "median_moe": 3,
+        "pct_pre1939": 7,
+        "pct_pre1970": 19,
+        "pct_since1990": 67,
+        "pct_since2010": 33,
+        "pct_detached": 74,
+        "pct_attached": 16,
+        "pct_mobile": 3
+      }
+    },
+    "South Middleton Township": {
+      "geoid": "06000US4204172336",
+      "census_name": "South Middleton Township",
+      "kind": "township",
+      "zips": [
+        "17007",
+        "17013",
+        "17015",
+        "17019",
+        "17065",
+        "17324"
+      ],
+      "housing": {
+        "units": 7096,
+        "units_moe": 385,
+        "thin": false,
+        "median_year": 1986,
+        "median_moe": 3,
+        "pct_pre1939": 6,
+        "pct_pre1970": 21,
+        "pct_since1990": 44,
+        "pct_since2010": 12,
+        "pct_detached": 68,
+        "pct_attached": 12,
+        "pct_mobile": 9
+      }
+    },
+    "South Newton Township": {
+      "geoid": "06000US4204172384",
+      "census_name": "South Newton Township",
+      "kind": "township",
+      "zips": [
+        "17257",
+        "17266",
+        "17324"
+      ],
+      "housing": {
+        "units": 488,
+        "units_moe": 56,
+        "thin": false,
+        "median_year": 1975,
+        "median_moe": 7,
+        "pct_pre1939": 29,
+        "pct_pre1970": 44,
+        "pct_since1990": 28,
+        "pct_since2010": 4,
+        "pct_detached": 88,
+        "pct_attached": 0,
+        "pct_mobile": 8
+      }
+    },
+    "Southampton Township": {
+      "geoid": "06000US4204171904",
+      "census_name": "Southampton Township",
+      "kind": "township",
+      "zips": [
+        "17257",
+        "17307"
+      ],
+      "housing": {
+        "units": 3119,
+        "units_moe": 263,
+        "thin": false,
+        "median_year": 1996,
+        "median_moe": 5,
+        "pct_pre1939": 10,
+        "pct_pre1970": 20,
+        "pct_since1990": 59,
+        "pct_since2010": 21,
+        "pct_detached": 69,
+        "pct_attached": 1,
+        "pct_mobile": 12
+      }
+    },
+    "Upper Allen Township": {
+      "geoid": "06000US4204178736",
+      "census_name": "Upper Allen Township",
+      "kind": "township",
+      "zips": [
+        "17019",
+        "17027",
+        "17055"
+      ],
+      "housing": {
+        "units": 9141,
+        "units_moe": 373,
+        "thin": false,
+        "median_year": 1988,
+        "median_moe": 2,
+        "pct_pre1939": 6,
+        "pct_pre1970": 24,
+        "pct_since1990": 46,
+        "pct_since2010": 18,
+        "pct_detached": 54,
+        "pct_attached": 28,
+        "pct_mobile": 2
+      }
+    },
+    "Upper Frankford Township": {
+      "geoid": "06000US4204179032",
+      "census_name": "Upper Frankford Township",
+      "kind": "township",
+      "zips": [
+        "17015",
+        "17241"
+      ],
+      "housing": {
+        "units": 836,
+        "units_moe": 100,
+        "thin": false,
+        "median_year": 1987,
+        "median_moe": 6,
+        "pct_pre1939": 13,
+        "pct_pre1970": 28,
+        "pct_since1990": 46,
+        "pct_since2010": 11,
+        "pct_detached": 69,
+        "pct_attached": 2,
+        "pct_mobile": 27
+      }
+    },
+    "Upper Mifflin Township": {
+      "geoid": "06000US4204179152",
+      "census_name": "Upper Mifflin Township",
+      "kind": "township",
+      "zips": [
+        "17240",
+        "17241"
+      ],
+      "housing": {
+        "units": 523,
+        "units_moe": 75,
+        "thin": false,
+        "median_year": 1987,
+        "median_moe": 6,
+        "pct_pre1939": 17,
+        "pct_pre1970": 25,
+        "pct_since1990": 46,
+        "pct_since2010": 7,
+        "pct_detached": 79,
+        "pct_attached": 1,
+        "pct_mobile": 20
+      }
+    },
+    "West Pennsboro Township": {
+      "geoid": "06000US4204183800",
+      "census_name": "West Pennsboro Township",
+      "kind": "township",
+      "zips": [
+        "17013",
+        "17015",
+        "17081",
+        "17241"
+      ],
+      "housing": {
+        "units": 2339,
+        "units_moe": 152,
+        "thin": false,
+        "median_year": 1976,
+        "median_moe": 6,
+        "pct_pre1939": 26,
+        "pct_pre1970": 42,
+        "pct_since1990": 25,
+        "pct_since2010": 3,
+        "pct_detached": 81,
+        "pct_attached": 7,
+        "pct_mobile": 7
+      }
+    },
+    "Wormleysburg": {
+      "geoid": "06000US4204186528",
+      "census_name": "Wormleysburg borough",
+      "kind": "borough",
+      "zips": [
+        "17011",
+        "17043"
+      ],
+      "housing": {
+        "units": 1370,
+        "units_moe": 145,
+        "thin": false,
+        "median_year": 1969,
+        "median_moe": 5,
+        "pct_pre1939": 14,
+        "pct_pre1970": 51,
+        "pct_since1990": 15,
+        "pct_since2010": 1,
+        "pct_detached": 41,
+        "pct_attached": 12,
+        "pct_mobile": 0
+      }
+    }
+  }
+}

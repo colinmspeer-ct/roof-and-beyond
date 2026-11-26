@@ -1,11 +1,6 @@
 import type { ServiceSlug } from "@/content/brand";
 import type { Town } from "@/lib/areas";
 
-/**
- * Photo library. Every file is free-licensed stock (see CREDITS.md), so alt
- * text says so instead of implying these are Roof & Beyond projects.
- * Swap in real job photos (renamed after the service) when Colin supplies them.
- */
 export type Photo = {
   webp: string;
   avif: string;
@@ -15,72 +10,120 @@ export type Photo = {
 };
 
 const file = (name: string, width: number, height: number, alt: string): Photo => ({
-  webp: `/images/${name}.webp`,
-  avif: `/images/${name}.avif`,
+  webp: `/images/gen/${name}.webp`,
+  avif: `/images/gen/${name}.avif`,
   width,
   height,
   alt,
 });
 
 export const photos = {
-  clapboard: file(
-    "clapboard-house",
-    1000,
-    750,
-    "White clapboard house with black shutters, a gray shingle porch roof, and a white picket fence. Painted lap siding, double-hung windows, and an asphalt roof are the parts of a house exterior a written estimate covers. Stock photo from Massachusetts, not a Roof & Beyond project.",
+  home: file(
+    "home-hero-chester-colonial", 1280, 720,
+    "A colonial house with a stone facade, white siding and a shingle roof. The front elevation shows where roofing, siding and gutter runs meet.",
   ),
-  paHouse: file(
-    "pennsylvania-house",
-    1000,
-    750,
-    "Small white Cape Cod style house with a brown asphalt shingle roof on a wide green lawn. A simple gable roof like this is a common roof replacement on Pennsylvania houses. Stock photo of a house in Centre County, Pennsylvania, outside the service area.",
+  farmhouse: file(
+    "roof-replacement-stone-farmhouse", 1280, 720,
+    "A stone farmhouse with dark shingles and a masonry chimney. The roof replacement scene shows the contrast between the chimney and the shingle field.",
   ),
-  shingles: file(
-    "shingles",
-    960,
-    640,
-    "Close view of gray architectural asphalt shingles with pine needles caught in the laps. Worn granules, lifted tabs, and debris at the seams are what a roof repair visit looks for. Stock photo, not a Roof & Beyond project.",
+  brickColonial: file(
+    "roof-replacement-lancaster-brick-colonial", 1280, 720,
+    "A brick colonial with a dark shingle roof over the main house. The roof replacement scene shows the eaves above the upper windows.",
   ),
-  rowHouses: file(
-    "row-houses",
-    900,
-    967,
-    "A row of attached houses with lap siding and covered front porches along a narrow street. Shared walls and connected eaves change how siding and gutters are replaced on row homes. Stock photo from Hagerstown, Maryland, outside the service area.",
+  crew: file(
+    "roof-replacement-harnessed-crew", 1280, 720,
+    "Roofers wearing safety harnesses work on a pitched roof. The roof replacement crew is spread across the slope.",
   ),
-  window: file(
-    "window-detail",
-    1000,
-    750,
-    "Close view of a light-colored window frame with a muntin bar and an insect screen. The sash, frame, and trim around each opening are listed separately in a window replacement estimate. Stock photo, not a Roof & Beyond project.",
+  tearOff: file(
+    "roof-replacement-tear-off", 1280, 720,
+    "A roof replacement in progress with shingles pulled back from the deck. The exposed area shows the surface an installer can inspect during tear-off.",
   ),
-  gutterRain: file(
-    "gutter-rain",
-    1000,
-    750,
-    "Rainwater pouring off a roof edge into a white aluminum rain gutter during a storm. A gutter that overflows or pulls away from the fascia sends water down the wall toward the foundation. Stock photo, not a Roof & Beyond project.",
+  flashing: file(
+    "roof-repair-chimney-flashing", 1152, 864,
+    "Metal flashing meets a masonry chimney on an asphalt shingle roof. Chimney flashing is a roof repair detail where the roof meets the brickwork.",
+  ),
+  iceDam: file(
+    "roof-repair-ice-dam", 1280, 720,
+    "Snow and ice collect along the lower edge of a sloped roof. The frozen edge illustrates where backed-up meltwater can lead to roof repair.",
+  ),
+  storm: file(
+    "storm-damage-missing-shingles", 1024, 1024,
+    "Several asphalt shingles are missing from a roof slope. The bare patches illustrate a reason to request storm damage roof repair.",
+  ),
+  twins: file(
+    "siding-lancaster-twins", 1280, 720,
+    "Two adjoining homes have lap siding above their front porches. The two facades illustrate the trim transitions involved in siding replacement.",
+  ),
+  splitLevel: file(
+    "siding-split-level", 1280, 720,
+    "A split-level house has horizontal siding above a lower wall. The change in exterior finish illustrates a transition to detail during siding replacement.",
+  ),
+  vinyl: file(
+    "siding-vinyl-installation", 1280, 720,
+    "An installer fits horizontal vinyl siding on an exterior wall. The scene shows vinyl siding installation while part of the wall is still exposed.",
+  ),
+  brickRanch: file(
+    "window-replacement-brick-ranch-pair", 1152, 864,
+    "A pair of windows sits side by side in a brick ranch wall. The brick and surrounding trim show the edges to measure for window replacement.",
+  ),
+  stoneOpening: file(
+    "window-replacement-stone-opening", 1152, 864,
+    "A white window sits inside an opening in a stone wall. The masonry and sill frame the window replacement detail.",
+  ),
+  seamless: file(
+    "gutter-installation-seamless", 1280, 720,
+    "A continuous gutter runs along the roof edge beneath the shingles. The seamless gutter installation illustrates how the trough follows the fascia.",
+  ),
+  guards: file(
+    "gutter-guards-fall-maple", 1280, 720,
+    "Maple leaves rest on a guard along the roof edge. The gutter guard screen covers the trough beneath the leaves.",
   ),
 } as const;
 
-const gutterGuardPhoto: Photo = {
-  ...photos.gutterRain,
-  alt: "An open white gutter filling with rain, with no gutter guard over the trough. A gutter guard or gutter cover changes what can collect in the trough under trees. Stock photo, not a Roof & Beyond project.",
+export const servicePhoto: Record<ServiceSlug, Photo> = {
+  roofing: photos.brickColonial,
+  "roof-repair": photos.flashing,
+  siding: photos.twins,
+  windows: photos.stoneOpening,
+  gutters: photos.seamless,
+  "gutter-guards": photos.guards,
 };
 
-export const servicePhoto: Record<ServiceSlug, Photo> = {
-  roofing: photos.paHouse,
-  "roof-repair": photos.shingles,
-  siding: photos.rowHouses,
-  windows: photos.window,
-  gutters: photos.gutterRain,
-  "gutter-guards": gutterGuardPhoto,
+export const serviceGallery: Record<ServiceSlug, Photo[]> = {
+  roofing: [photos.tearOff, photos.crew, photos.storm],
+  "roof-repair": [photos.storm, photos.iceDam],
+  siding: [photos.vinyl, photos.splitLevel],
+  windows: [photos.brickRanch, photos.home],
+  gutters: [photos.guards, photos.iceDam],
+  "gutter-guards": [photos.seamless, photos.home],
 };
 
 export const countyPhoto: Record<Town["county"], Photo> = {
-  lancaster: photos.rowHouses,
-  chester: photos.paHouse,
-  delaware: photos.clapboard,
-  york: photos.shingles,
+  lancaster: photos.brickColonial,
+  chester: photos.home,
+  delaware: photos.twins,
+  york: photos.splitLevel,
+  cumberland: photos.farmhouse,
 };
+
+const exteriorPhotos = [
+  photos.home, photos.farmhouse, photos.brickColonial, photos.twins,
+  photos.splitLevel,
+];
+
+const localServicePhotos: Record<ServiceSlug, Photo[]> = {
+  roofing: [photos.brickColonial, photos.farmhouse, photos.crew, photos.tearOff, photos.home],
+  "roof-repair": [photos.flashing, photos.iceDam, photos.storm, photos.tearOff, photos.farmhouse],
+  siding: [photos.twins, photos.vinyl, photos.splitLevel, photos.home, photos.brickRanch],
+  windows: [photos.stoneOpening, photos.brickRanch, photos.home, photos.brickColonial, photos.twins],
+  gutters: [photos.seamless, photos.iceDam, photos.guards, photos.home, photos.farmhouse],
+  "gutter-guards": [photos.guards, photos.seamless, photos.home, photos.iceDam, photos.brickColonial],
+};
+
+export function townPhoto(town: Town, service?: ServiceSlug): Photo {
+  const pool = service ? localServicePhotos[service] : exteriorPhotos;
+  return pool[town.photoIndex];
+}
 
 /** Short card copy for service tiles (outside the unique-content article). */
 export const serviceBlurb: Record<ServiceSlug, string> = {
