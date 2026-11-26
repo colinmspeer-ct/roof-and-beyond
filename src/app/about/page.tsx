@@ -108,7 +108,7 @@ export default function AboutPage() {
         </div>
       </section>
       <section className="mx-auto max-w-7xl px-4 py-16">
-        <SectionHeading eyebrow="Where we work" title="Five Pennsylvania counties" />
+        <SectionHeading eyebrow="Where we work" title="Six Pennsylvania counties" />
         <div className="mt-8">
           <CountyCards />
         </div>

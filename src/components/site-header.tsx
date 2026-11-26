@@ -14,7 +14,7 @@ export function TopBar() {
         <p className="flex min-w-0 items-center gap-1.5">
           <MapPin aria-hidden="true" className="size-3.5 shrink-0 text-orange" />
           <span className="truncate">
-            <span className="sm:hidden">Five Pennsylvania counties</span>
+            <span className="sm:hidden">Six Pennsylvania counties</span>
             <span className="hidden sm:inline">
               Serving houses in Lancaster, Chester, Delaware, York, Cumberland &amp; Dauphin counties, PA
             </span>

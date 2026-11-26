@@ -69,7 +69,7 @@ export default function HomePage() {
       <JsonLd data={faqNode(faqs)} />
       <PageHero
         photo={photos.home}
-        eyebrow="Roofing & exterior contractor · Five PA counties"
+        eyebrow="Roofing & exterior contractor · Six PA counties"
         title={
           <>
             Roofing, siding &amp; gutters for houses in{" "}
