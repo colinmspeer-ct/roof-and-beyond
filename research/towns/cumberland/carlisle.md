@@ -1,0 +1,7 @@
+# Carlisle
+
+- ACS 2020–2024 geography 06000US4204111272 (Carlisle borough). Estimated 9,819 units, median year 1953, 36% detached and 27% attached. [Census table extract](https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25024,B25034,B25035&geo_ids=060%7C05000US42041)
+- ZIP areas are 2020 ZCTA land overlaps. [Census relationships](https://www.census.gov/geographies/reference-files/2020/geo/relationship-files.html)
+- Winter storm declaration in January 2016 and Tropical Storm Debby in August 2024 are county-level records. [County hazard plan](https://www.cumberlandcountypa.gov/DocumentCenter/View/54454/TEXT---2025-Cumberland-County-HMP_Plan-111325)
+- Municipal jurisdiction should be checked against the parcel. [County municipality directory](https://www.cumberlandcountypa.gov/1975/MDJ-Jurisdiction-by-Municipality)
+- The borough’s Historical Architectural Review Board reviews permit applications for historic district work. The homeowner guide covers exterior work visible from a public way. [Review board](https://www.carlislepa.org/government/boards_commissions/historical_architectural_review_board.php) · [Borough guide](https://cms8.revize.com/revize/carlislepa/Government/boards/HARB/Historic%20Reference%20Guide%20for%20Homeowners.pdf)

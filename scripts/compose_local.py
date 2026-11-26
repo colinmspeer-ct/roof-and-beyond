@@ -284,6 +284,13 @@ def build_cumberland_copy(town: dict) -> dict:
             ],
         }
 
+    carlisle_review = (
+        "In Carlisle’s Historic District, ask the borough about its Historical Architectural Review "
+        "Board application before changing an exterior feature visible from a public way."
+    ) if name == "Carlisle" else ""
+    if carlisle_review:
+        services["roofing"]["answer"] += " " + carlisle_review
+
     return {
         "answer": (
             f"The Census estimates {units} housing units in {place}, with a margin of error of {margin:,}. "
@@ -301,12 +308,13 @@ def build_cumberland_copy(town: dict) -> dict:
             ],
         }, {
             "heading": f"ZIP areas and permits in {name}",
-            "paragraphs": [
+            "paragraphs": list(filter(None, [
+                carlisle_review,
                 f"The ZIP areas shown for {name} are Census ZIP Code Tabulation Areas that overlap the community. "
                 "Confirm your property's mailing ZIP before submitting an estimate request.",
                 f"Use the municipality on the parcel record when you ask about permits for a {name} exterior project. "
                 "If local historic review applies to the property, ask what it requires before you settle on materials.",
-            ],
+            ])),
         }],
         "faqs": [
             {"q": f"Can I use the Census construction year to date my {name} roof?", "a": f"The survey measures when housing was built. For a roof at your {name} address, look for a dated invoice or permit for the most recent installation."},
@@ -318,6 +326,7 @@ def build_cumberland_copy(town: dict) -> dict:
             "U.S. Census Bureau, 2020 ZIP Code Tabulation Area relationships for county subdivisions and places.",
             "Pennsylvania Public Utility Commission, 717 and 223 area-code overlay.",
             "Cumberland County, municipal jurisdiction directory and 2025 hazard mitigation plan maps.",
+            *(["https://www.carlislepa.org/government/boards_commissions/historical_architectural_review_board.php"] if carlisle_review else []),
             SOURCES[-1],
         ],
         "services": services,
